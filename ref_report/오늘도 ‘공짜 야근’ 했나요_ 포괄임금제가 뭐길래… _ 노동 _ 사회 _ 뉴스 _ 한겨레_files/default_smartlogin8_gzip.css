@@ -1,0 +1,508 @@
+#smartLoginWrapper p { padding: 0px; margin: 0px; }
+
+#smartLoginWrapper {
+	position: relative;
+    width: 320px;
+	height: 483px;
+	border-radius: 10px;
+	border: 1px solid #595959;
+	background-color: #ffffff;
+	font-family: "맑은 고딕", "Malgun Gothic", "Arial";
+	font-size: 12px;
+	color: #555555;
+}
+
+#smartLoginWrapper a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#smartLoginTop {
+	background-color: #F6F6F6;
+	border-radius: 10px;
+}
+
+#smartLoginTop_title {
+	background-color: #595959;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	height: 30px;
+}
+
+#smartLoginTop_title #livere_logo {
+	width: 72px;
+	height: 21px;
+	background: url("//101.livere.co.kr/images/ver8/smartlogin/icon.png") no-repeat 0px 0px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 5px;
+	display: none; /*라이브리 로고 없애기*/
+}
+
+#smartLoginTop_title #smartLogin_logo {
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+
+#smartLoginTop_title #smartLogin_close {
+	background: url("//101.livere.co.kr/images/ver8/smartlogin/smart_login_close.png") no-repeat;
+	width: 11px;
+	height: 12px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-top: 9px;
+	margin-right: 10px;
+	cursor: pointer;
+	border: none;
+	text-indent: -9999px;
+}
+
+#smartLoginTop_des {
+	line-height: 16px;
+	/*height: 72px;*/
+	border-bottom: 1px solid #d9d9d9;
+	padding-bottom: 10px;
+}
+
+#smartLoginTop_des #loginDes {
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#loginDes .des {	display: block; }
+
+#smartLoginNotLogged .snsContainer, #smartLoginLogged .snsContainer {
+	width: 225px;
+	position: relative;
+	float: left;
+	display: inline-block;
+	zoom: 1; *display: inline; 
+}
+
+#smartLoginNotLogged .snsLoginBox, #smartLoginLogged .snsLoginBox {
+	width: 203px;
+	height: 52px;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #f9f9f9;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f9f9f9));
+	background: -moz-linear-gradient(top,  #f9f9f9,  #f9f9f9);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f9f9f9, endColorstr=#f9f9f9);
+}
+
+#smartLoginWrapper .loginSns_left, #smartLoginWrapper .loginSns_center, #smartLoginWrapper .loginSns_right {
+	display: inline-block;
+	zoom: 1; *display: inline;
+}
+
+.snsLoginBox .loginSns_left {
+	width: 49px;
+	height: 52px;
+	background: none;
+	border: none;
+	border-right: 1px solid #EAEAEA;
+}
+
+.loginSns_left .primary_acc {
+	background: url("//101.livere.co.kr/images/ver8/smartlogin/primary.png") no-repeat;
+	width: 19px;
+	height: 19px;
+	position: absolute;
+	top: -5px;
+	left: -3px;
+	*top: 0px;
+	*left: 0px;
+	display: none;
+}
+
+.primary .primary_acc, .active .primary_acc { display: block; text-indent: -9999px; }
+
+
+.loginCheckBox {
+	width: 18px;
+	height: 18px;
+	float: left;
+	text-indent: -9999px;
+}
+
+.loginCheckBoxOrigin {
+	position: relative;
+	top: -18px;
+	left: 20px;
+	width: 18px;
+	height: 18px;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	filter: alpha(opacity=0);
+	opacity: 0;
+	cursor: pointer;
+	display: none;
+}
+
+#smartLoginContent_top {
+	height: auto;
+	/*margin-bottom: 20px;
+	margin-top: 20px;*/
+}
+
+#contentTop_left, #contentTop_right { display: inline-block; }
+
+#contentTop_left { float: left; }
+
+#contentTop_right { float: right; width: 100%;}
+
+#contentTop_left #leftDes {
+	display: block;
+	margin: 25px 10%;
+	text-align: center;
+}
+
+#contentTop_right #smartLogout {
+	text-align: center;
+	margin-right: 13px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+#smartLogout #logoutTxt {
+	color: #4f4f4f;
+	font-weight: bold;
+}
+
+#liverePlugIn #smartLogout,
+#smartLogout {
+	width: 90px;
+	height: auto;
+	float: left;
+	padding: 7px 15px;
+	margin: 0px auto 30px;
+	border: 1px solid #d9d9d9; 
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.01, #f9f9f9), color-stop(1, #f9f9f9) ); 
+	background-image: -moz-linear-gradient( center top, #f9f9f9, #f9f9f9 ); 
+	background-image: -ms-linear-gradient(#f9f9f9 0%, #f9f9f9 100%); Filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#f9f9f9, endColorstr=#f9f9f9); 
+	border-radius: 5px; 
+	-webkit-box-sizing: border-box !important; 
+	-moz-box-sizing: border-box !important; 
+	box-sizing: border-box !important;
+}
+#smartLogout:hover span{
+	text-decoration: none;
+}
+#liverePlugIn #lvSetPosting,
+#lvSetPosting {
+	float: right;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	padding: 5px;
+	padding-right: 8px;
+	margin: 10px 15px 10px 0px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.loginSns_left, .loginSns_center, .loginSns_right {
+	display: inline-block;
+	height: 52px;
+}
+
+.loginSns_left, .loginSns_center { float: left; }
+
+.loginSns_right {
+	float: right;
+	width: 50px;
+}
+
+.loginTitle {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: #4f4f4f;
+}
+
+#login_wrapper { cursor: pointer; }
+
+#smartLoginLogged .on .loginTitle { color: #000000; }
+
+#smartLoginNotLogged .loginIcon, #smartLoginLogged .loginIcon {
+	display: block;
+	width: 49px;
+	height: 52px;
+	cursor: pointer;
+	border: none;
+	background: none;
+	text-indent: -9999px;
+}
+#smartLoginLogged #smartLogin_livere.on {
+	border: 1px solid #d60036;
+	background: #d60036;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d60036', endColorstr='#d60036');
+	background: -webkit-gradient(linear, left top, left bottom, from(#d60036), to(#d60036));
+	background: -moz-linear-gradient(top,  #d60036,  #d60036);
+}
+#smartLoginLogged #smartLogin_facebook.on {
+	border: 1px solid #6281ad;
+	background: #6281ad;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6281ad', endColorstr='#6281ad');
+	background: -webkit-gradient(linear, left top, left bottom, from(#6281ad), to(#6281ad));
+	background: -moz-linear-gradient(top,  #6281ad,  #6281ad);
+}
+#smartLoginLogged #smartLogin_twitter.on {
+	border: 1px solid #5fa8dc;
+	background: #5fa8dc;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5fa8dc', endColorstr='#5fa8dc');
+	background: -webkit-gradient(linear, left top, left bottom, from(#5fa8dc), to(#5fa8dc));
+	background: -moz-linear-gradient(top,  #5fa8dc,  #5fa8dc);
+}
+#smartLoginLogged #smartLogin_naver.on {
+	border: 1px solid #1ec700;
+	background: #1ec700;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1ec700', endColorstr='#1ec700');
+	background: -webkit-gradient(linear, left top, left bottom, from(#1ec700), to(#1ec700));
+	background: -moz-linear-gradient(top,  #1ec700,  #1ec700);
+}
+
+#smartLoginLogged #smartLogin_kakao.on {
+	border: 1px solid #FFEB00;
+	background: #FFEB00;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEB00', endColorstr='#FFEB00');
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFEB00), to(#FFEB00));
+	background: -moz-linear-gradient(top,  #FFEB00,  #FFEB00);
+}
+
+#smartLoginLogged #smartLogin_instagram.on {
+	border: 1px solid #e4405f;
+    background:  #e4405f;
+    Filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#e4405f, endColorstr=#e4405f);
+    background: -moz-radial-gradient(circle at 30% 115%, rgba(254,211,115,1) 1%, rgba(254,211,115,1) 10%, rgba(241,82,69,1) 45%, rgba(155,54,183,1) 80%, rgba(81,94,207,1) 100%);
+    background: -webkit-radial-gradient(circle at 30% 115%, rgba(254,211,115,1) 1%, rgba(254,211,115,1) 10%, rgba(241,82,69,1) 45%, rgba(155,54,183,1) 80%, rgba(81,94,207,1) 100%);
+    background: radial-gradient(circle at 20% 190%, rgba(254,211,115,1) 20%, rgba(254,211,115,1) 10%, rgba(241,82,69,1) 45%, rgba(155,54,183,1) 85%, rgba(81,94,207,1) 100%);
+}
+#smartLoginLogged #smartLogin_google_plus.on {
+	border: 1px solid #dd4b39;
+	background: #dd4b39;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dd4b39', endColorstr='#dd4b39');
+	background: -webkit-gradient(linear, left top, left bottom, from(#dd4b39), to(#dd4b39));
+	background: -moz-linear-gradient(top, #dd4b39, #dd4b39);
+}
+#smartLoginLogged #smartLogin_tistory.on {
+	border: 1px solid #ec7000;
+	background: #ec7000;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ec7000', endColorstr='#ec7000');
+	background: -webkit-gradient(linear, left top, left bottom, from(#ec7000), to(#ec7000));
+	background: -moz-linear-gradient(top,  #ec7000,  #ec7000);
+}
+#smartLoginLogged #smartLogin_github.on {
+	border: 1px solid #191313;
+	background: #191313;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#191313', endColorstr='#191313');
+	background: -webkit-gradient(linear, left top, left bottom, from(#191313), to(#191313));
+	background: -moz-linear-gradient(top,  #191313,  #191313);
+}
+#smartLoginLogged #smartLogin_linkedIn.on {
+	border: 1px solid #0077B5;
+	background: #0077B5;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0077B5', endColorstr='#0077B5');
+	background: -webkit-gradient(linear, left top, left bottom, from(#0077B5), to(#0077B5));
+	background: -moz-linear-gradient(top,  #0077B5,  #0077B5);
+}
+#smartLoginLogged #smartLogin_weibo_sina.on {
+	border: 1px solid #e6162d;
+	background: #e6162d;
+	filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#e6162d, endColorstr=#e6162d);
+	background: -webkit-gradient(linear, left top, left bottom, from(#e6162d), to(#e6162d));
+	background: -moz-linear-gradient(top, #e6162d, #e6162d);
+}
+#smartLoginLogged #smartLogin_wechat.on {
+	border: 1px solid #edb53d;
+	background: #fde4bb;
+	filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#fde4bb, endColorstr=#f9b609);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fde4bb), to(#f9b609));
+	background: -moz-linear-gradient(top, #fde4bb, #f9b609);
+}
+#smartLoginLogged #smartLogin_qq.on {
+	border: 1px solid #12b7f5;
+	background: #12b7f5;
+	filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#12b7f5, endColorstr=#12b7f5);
+	background: -webkit-gradient(linear, left top, left bottom, from(#12b7f5), to(#12b7f5));
+	background: -moz-linear-gradient(top, #12b7f5, #12b7f5);
+}
+#smartLoginLogged #smartLogin_renren.on {
+	border: 1px solid #227dc5;
+	background: #227dc5;
+	filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#227dc5, endColorstr=#227dc5);
+	background: -webkit-gradient(linear, left top, left bottom, from(#227dc5), to(#227dc5));
+	background: -moz-linear-gradient(top, #227dc5, #227dc5);
+}
+#smartLoginLogged #smartLogin_douban.on {
+	border: 1px solid #3ca353;
+	background: #3ca353;
+	filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#3ca353, endColorstr=#3ca353);
+	background: -webkit-gradient(linear, left top, left bottom, from(#3ca353), to(#3ca353));
+	background: -moz-linear-gradient(top, #3ca353, #3ca353);
+}
+#smartLoginLogged #smartLogin_open_y_jp.on {
+	border: 1px solid #cc1d21;
+	background: #cc1d21;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc1d21', endColorstr='#cc1d21');
+	background: -webkit-gradient(linear, left top, left bottom, from(#cc1d21), to(#cc1d21));
+	background: -moz-linear-gradient(top,  #cc1d21,  #cc1d21);
+}
+#smartLoginLogged #smartLogin_mixi.on {
+	border: 1px solid #fcb325;
+	border-bottom: 1px solid #f97c10;
+	background: #fbb224;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbb224', endColorstr='#fa9c14');
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbb224), to(#fa9c14));
+	background: -moz-linear-gradient(top,  #fbb224,  #fa9c14);
+}
+#smartLoginLogged #smartLogin_baidu.on {
+	border: 1px solid #2319dc;
+	background: #2319dc;
+	filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#2319dc, endColorstr=#2319dc);
+	background: -webkit-gradient(linear, left top, left bottom, from(#2319dc), to(#2319dc));
+	background: -moz-linear-gradient(top, #2319dc, #2319dc);
+}
+
+#smartLoginLogged #smartLogin_facebook.on .loginTitle, 
+#smartLoginLogged #smartLogin_open_y_jp.on .loginTitle, 
+#smartLoginLogged #smartLogin_linkedIn.on .loginTitle, 
+#smartLoginLogged #smartLogin_github.on .loginTitle { 
+	color: #ffffff; 
+}
+
+#smart_view_container .loginSns_left { background: url('//101.livere.co.kr/images/var8_event/new/livere8_event_icon.png') no-repeat 0px 0px; }
+#smartLoginNotLogged #smartLogin_livere.off .loginSns_left { background-position: 19px -1209px; }
+#smartLoginNotLogged #smartLogin_facebook.off .loginSns_left { background-position: 16px 6px; }
+#smartLoginNotLogged #smartLogin_twitter.off .loginSns_left { background-position: 16px -93px; }
+#smartLoginNotLogged #smartLogin_naver.off .loginSns_left { background-position: 16px -255px; }
+#smartLoginNotLogged #smartLogin_kakao.off .loginSns_left { background-position: 16px -176px; }
+#smartLoginNotLogged #smartLogin_instagram.off .loginSns_left { background-position: 16px -334px; }
+#smartLoginNotLogged #smartLogin_google_plus.off .loginSns_left { background-position: 16px -917px; }
+#smartLoginNotLogged #smartLogin_tistory.off .loginSns_left { background-position: 16px -1108px; }
+#smartLoginNotLogged #smartLogin_github.off .loginSns_left { background-position: 14px -2127px; }
+#smartLoginNotLogged #smartLogin_linkedIn.off .loginSns_left { background-position: 19px -1008px; }
+#smartLoginNotLogged #smartLogin_weibo_sina.off .loginSns_left { background-position: 16px -1415px; }
+#smartLoginNotLogged #smartLogin_wechat.off .loginSns_left { background-position: 16px -1312px; }
+#smartLoginNotLogged #smartLogin_qq.off .loginSns_left { background-position: 19px -1513px; }
+#smartLoginNotLogged #smartLogin_renren.off .loginSns_left { background-position: 17px -1620px; }
+#smartLoginNotLogged #smartLogin_douban.off .loginSns_left { background-position: 18px -1723px; }
+#smartLoginNotLogged #smartLogin_open_y_jp.off .loginSns_left { background-position: 17px -2032px; }
+#smartLoginNotLogged #smartLogin_mixi.off .loginSns_left { background-position: 16px -1932px; }
+#smartLoginNotLogged #smartLogin_baidu.off .loginSns_left { background-position: 17px -1826px; }
+
+#smartLoginLogged #smartLogin_livere.on .loginSns_left { background-position: 19px -1260px; border-right: 1px solid #d60036; }
+#smartLoginLogged #smartLogin_facebook.on .loginSns_left { background-position: 15px -47px; border-right: 1px solid #6281ad; }
+#smartLoginLogged #smartLogin_twitter.on .loginSns_left { background-position: 17px -132px; border-right: 1px solid #5fa8dc; }
+#smartLoginLogged #smartLogin_naver.on .loginSns_left { background-position: 15px -292px; border-right: 1px solid #1ec700; }
+#smartLoginLogged #smartLogin_kakao.on .loginSns_left { background-position: 17px -218px; border-right: 1px solid #FFEB00; }
+#smartLoginLogged #smartLogin_instagram.on .loginSns_left { background-position: 17px -378px; border-right: 1px solid #e4405f; }
+#smartLoginLogged #smartLogin_google_plus.on .loginSns_left { background-position: 17px -962px; border-right: 1px solid #dd4b39; }
+#smartLoginLogged #smartLogin_tistory.on .loginSns_left { background-position: 16px -1157px; border-right: 1px solid #ec7000; }
+#smartLoginLogged #smartLogin_github.on .loginSns_left { background-position: 14px -2185px; border-right: 1px solid #191313; }
+#smartLoginLogged #smartLogin_linkedIn.on .loginSns_left { background-position: 19px -1057px; border-right: 1px solid #007bb4; }
+#smartLoginLogged #smartLogin_weibo_sina.on .loginSns_left { background-position: 16px -1462px; border-right: 1px solid #e6162d; }
+#smartLoginLogged #smartLogin_wechat.on .loginSns_left { background-position: 17px -962px; border-right: 1px solid #04b300; }
+#smartLoginLogged #smartLogin_qq.on .loginSns_left { background-position: 19px -1567px; border-right: 1px solid #12b7f5; }
+#smartLoginLogged #smartLogin_renren.on .loginSns_left { background-position: 17px -1673px; border-right: 1px solid #227dc5; }
+#smartLoginLogged #smartLogin_douban.on .loginSns_left { background-position: 18px -1774px; border-right: 1px solid #3ca353; }
+#smartLoginLogged #smartLogin_open_y_jp.on .loginSns_left { background-position: 17px -962px; border-right: 1px solid #e00328; }
+#smartLoginLogged #smartLogin_mixi.on .loginSns_left { background-position: 17px -962px; border-right: 1px solid #e0c074; }
+#smartLoginLogged #smartLogin_baidu.on .loginSns_left { background-position: 17px -1879px; border-right: 1px solid #2319dc; }
+
+.loginSns_right .check_on, .loginSns_right .check_off {
+	width: 18px;
+	height: 18px;
+	margin-top: 17px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+#smartLoginWrapper .loginSns_right .check_on.livereView, 
+#smartLoginWrapper .loginSns_right .check_off.livereView {
+	display: block;
+}
+
+.loginSns_right .check_on { background: url("//101.livere.co.kr/images/ver8/smartlogin/checked.png") no-repeat; }
+
+.loginSns_right .check_off { background: url("//101.livere.co.kr/images/ver8/smartlogin/checkbox.png") no-repeat; }
+
+.livere_hand { cursor: pointer; }
+
+#smartLoginLogged #smartLogin_twitter .on .loginTitle, #smartLoginLogged #smartLogin_cyworld .on .loginTitle, #smartLoginLogged #smartLogin_mixi .on .loginTitle {
+color: #000000;
+}
+
+#smartLoginWrapper p { font-weight: bold; }
+#smartLoginWrapper .livereColor1 { color: #555; }
+#smartLoginWrapper .livereColor2 { color: #D81118; }
+#smartLoginWrapper #S_liverePowered { position: absolute; bottom: 10px; right: 10%; }
+/*.livere_mobile #contentTop_left {margin-top: 15px;}*/
+.livere_mobile #smartLoginWrapper #S_liverePowered, .livere_mobile #smartLoginWrapper .livereColor1, .livere_mobile #smartLoginWrapper .livereColor2 { font-size: 13px; }
+.livere_mobile { position: relative; }
+.livere_mobile #smartLoginWrapper, .livere_mobile #liverePlugIn * { font-size: 14px; font-family: Arial; }
+/*.livere_mobile #smart_view_container { position: absolute; top: 0px; left: 0px; z-index: 5; }*/
+.livere_mobile #smartLoginWrapper { width: 99.7%; height: auto; color: #000; position: relative; }
+.livere_mobile #smartLoginTop_title { height: 30px; }
+.livere_mobile #smartLoginTop_title #livere_logo { margin-top: 7px; }
+.livere_mobile #smartLoginTop_title #smartLogin_logo { margin-top: 7px; }
+.livere_mobile #smartLoginTop_title #smartLogin_close { margin-top: 9px; }
+.livere_mobile #smartLoginTop_des { padding-bottom: 0; width: 100%; height: auto; overflow: hidden; }
+.livere_mobile #smartLoginTop_des #loginDes { margin-top: 8px; margin-bottom: 8px; margin-right: 10px; margin-left: 10px; padding: 0; }
+.livere_mobile #loginDes .des { margin-bottom: 7px; font-size: 13px; }
+.livere_mobile #smartLoginNotLogged, .livere_mobile #smartLoginLogged { width: 80%; height: auto; display: inline-block; margin: 0 0 0 10%; padding: 0; }
+.livere_mobile #smartLoginNotLogged .snsLoginBox, .livere_mobile #smartLoginLogged .snsLoginBox { width: 100%; height: 45px; margin-left: 0; margin-bottom: 15px; }
+.livere_mobile .snsLoginBox .loginSns_left { width: 60px; height: 100%; }
+.livere_mobile .loginCheckBoxOrigin { top: -28px; left: 7px; width: 25px; height: 25px; display: none;}
+.livere_mobile #smartLogout { padding: 8px 0px; }
+.livere_mobile #contentTop_left { width: 100%; }
+.livere_mobile #contentTop_right { width: 100%; float: left; }
+.livere_mobile #contentTop_right #smartLogout { margin-left: 13px; border: none; background: none; box-shadow: none; width: auto; float: none; }
+.livere_mobile #smartLogout #logoutTxt { font-size: 14px; font-weight: bold; color: #000; }
+.livere_mobile .loginSns_left .primary_acc { background: url("//101.livere.co.kr/images/ver8/m_icon.png") no-repeat 0px -381px; -webkit-background-size: 169px; background-size: 169px; }
+.livere_mobile #contentTop_right #checkin_tip, .livere_mobile #smartLoginContent #smartLogin_done { width: auto; height: auto; float: right; margin: 13px; padding: 5px 8px; border: 1px solid #595959; background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.01, #595959), color-stop(1, #595959) ); background-image: -moz-linear-gradient( center top, #595959, #595959 ); background-image: -ms-linear-gradient(#595959 0%, #595959 100%); Filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#595959, endColorstr=#595959); border-radius: 5px; }
+.livere_mobile #contentTop_right #checkin_tip_txt, .livere_mobile #smartLoginContent #smartLogin_done_txt { font-size: 14px; font-weight: bold; color: #fff; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer { width: 90%; position: absolute; top: 15%; z-index: 10; border: 5px solid #606060; border-radius: 5px; box-shadow: 0px 2px 10px rgba(0,0,0,0.5); margin-left: -50%; left: 54%; -webkit-text-size-adjust: none; background: #fff; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_title { padding: 8px 10px 6px; border-bottom: 1px solid #a5a5a5; background: url("//101.livere.co.kr/images/ver8/tip_title_pattern.png") repeat; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_title strong { font-size: 15px; /*background: url("//101.livere.co.kr/images/ver8/m_icon.png") no-repeat 0 -601px; -webkit-background-size: 190px; background-size: 190px; padding-left: 56px;*/ }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_title #tip_layer_close { width: 35px; height: 35px; text-indent: -9999em; background: url("//101.livere.co.kr/images/ver8/m_icon.png") no-repeat -145px -363px; -webkit-background-size: 180px; background-size: 180px; border: none; float: right; margin-top: -25px; margin-right: -21px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content { background: #f6f6f6; border-radius: 0 0 10px 10px; padding: 15px 10px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul { margin: 0; list-style: none; -webkit-text-size-adjust: none; padding-left: 0; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul .tip_content_text { margin-bottom: 15px; font-size: 13px; background: url("//101.livere.co.kr/images/ver8/m_icon.png") no-repeat -146px -446px; -webkit-background-size: 200px; background-size: 200px; padding-left: 88px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul #tip_uncheck { background-position: -146px -504px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul #tip_primary_acc {background-position: -140px -578px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul #tip_logout {background: none; padding-left: 0px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul li b { display: block; font-size: 14px; }
+.livere_mobile #smartLoginWrapper #checkin_tip_layer #tip_layer_content ul #tip_logout b { display: inline-block; text-decoration: underline; margin-right: 15px; font-size: 12px; letter-spacing: -1px; }
+.livere_mobile #smartLoginNotLogged .loginIcon, .livere_mobile #smartLoginLogged .loginIcon { width: 60px; height: 45px; }
+.livere_mobile .loginTitle { margin-top: 0; line-height: 46px; }
+.livere_mobile .loginSns_right .check_on, .livere_mobile .loginSns_right .check_off { width: 25px; height: 26px; margin-top: 10px; margin-left: 15px; background: url("//101.livere.co.kr/images/ver8/m_icon.png") no-repeat 0 -377px; -webkit-background-size: 140px; background-size: 140px; }
+.livere_mobile .loginSns_right .check_on { background-position: 0 -407px; }
+.livere_mobile .loginSns_right .check_off { background-position: 0 -378px; }
+.livere_mobile #smartLoginNotLogged .snsLoginBox.off .loginCheckBox { display: none; }
+.livere_mobile #smartLoginContent #smartLogin_done { width: 90px; height: auto; float: right; padding: 7px 15px; margin: 0px auto 30px; -webkit-box-sizing: border-box !important; -moz-box-sizing: border-box !important; box-sizing: border-box !important; }
+.livere_mobile #smartLoginContent #smartLogin_done.notLogged { display: block; float: none; margin: 10px auto 40px; }
+.livere_mobile #smartLoginBtnWrapper { width: 190px; margin: 10px auto; }
+.livere_mobile #smartLoginNotLogged .snsLink { background: url('//101.livere.co.kr/images/ver8/snsLink.png') no-repeat;
+	border: 0;
+	width: 30px;
+	height: 35px;
+	float: right;
+	margin: 5px;
+	text-indent: -9999px;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+.livere_mobile #smartLoginLogged .snsLink { display: none; } 
+
+@media not all, only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all {
+	#smart_view_container .loginSns_left { background: url('//101.livere.co.kr/images/var8_event/new/livere8_event_icon@3x.png') no-repeat 0px 0px; background-size: 139px; }
+}

@@ -1,0 +1,51 @@
+@charset 'utf-8';
+
+/* Reset */
+html, body,
+h1, h2, h3, h4, h5, h6,
+div, p, blockquote, pre, address,
+header,nav,aside,hgroup,footer,article,section,
+ul, ol, li, dl, dt, dd,
+table, caption, th, td,
+form, fieldset, legend,
+hr,frame {margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+ul, ol {list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+caption {text-align:left;}
+img, fieldset, abbr, acronym,frameset {border:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal;font-weight:normal;}
+q:before, q:after {content: '';}
+input, select, button {font-size:11px;vertical-align:middle;}
+input, button {overflow:visible;}
+/* Base */
+body {font:12px/1.4 Dotum,돋움,AppleGothic,sans-serif,Gulim,굴림;color:#898989;letter-spacing:0em;}
+hr,table caption, fieldset legend {display:none;}
+img {vertical-align:top;}
+a {color:#898989;text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:underline;}
+label,input.button, input.submit , input.image,button {cursor:pointer;}
+textarea, pre {color:#898989;font-size:12px;letter-spacing:-0.05em;font-family:Dotum,돋움;overflow:auto;}
+.invisible {position:absolute;width:0;height:0;overflow:hidden;visibility:hidden;font-size:0;}
+.advertisement {position:relative;width:320px;}
+.advertisement section.ad01 {width:318px;height:48px;border:1px solid #aeaeaf;background:#fff;}
+.advertisement section.ad01 .tit {float:left;width:143px;height:44px;padding:4px 0 0 10px;border-right:1px solid #aeaeaf;}
+.advertisement section.ad01 .tit p a {display:inline-block;width:130px;height:14px;color:#555;font-size:11px;overflow:hidden;line-height:16px;letter-spacing:-1px;text-overflow:ellipsis;word-wrap:normal;}
+.advertisement .thum {float:left;width:165px;margin:-1px 0 0 -1px;}
+.advertisement .thum .thum_item {float:left;position:relative;}
+.advertisement .thum .thum_item a {display:block;width:50px;height:50px;}
+.advertisement .thum .thum_item .d_outline {position:absolute;left:0;top:0;display:block;width:48px;height:48px;border:1px solid #aeaeaf;}
+
+.advertisement .on_outline {position:absolute;left:154px;top:0;display:block;width:46px;height:46px;border:2px solid #000;z-index:10;}
+
+.advertisement .slick-slider {margin-bottom:0;}
+.advertisement .slick-list {width:174px;}/* (썸네일+여백)갯수* 넓이 */
+
+/* svg Btn */
+.advertisement.usenotSvg .iad {display:none;}
+.advertisement .iad {position:absolute;z-index:999;right:170px;top:5px;}
+.advertisement .iad p a {display:block;width:16px;height:16px;background:url(http://img.iacstatic.co.kr/adbayimg/templates/about_shopbox_v33/svn_info.png) 0 0 no-repeat;font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;font-weight:bold;color:#282095;text-indent:-10000px;}
+.advertisement .iad p a:hover {width:86px;background:url(http://img.iacstatic.co.kr/adbayimg/templates/about_shopbox_v33/svn_open.png) 0 0 no-repeat;text-indent:0px;}
+.advertisement .svgArea .svg_on, .svgArea.svgHover .svg_off {display:none;}
+.advertisement .svgArea.svgHover .svg_on {display:block;}
+.advertisement .svgArea.svgHover .svg_on a {text-decoration:none;}

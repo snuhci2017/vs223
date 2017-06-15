@@ -1,0 +1,115 @@
+#livereWriteFormFunction.openedStickerPanel { border-bottom: none; border-radius: 0; margin-bottom: 0px; }
+#livereStickerBtnConatiner { border-right: 1px solid #eee; }
+#livereStickerBtnConatiner #livereStickerOpenBtn { float: left; width: 54px; background: url("//101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat 8px -267px; }
+#livereStickerOpenBtn span { float: left; width: 9px; height: 30px; margin-left: 35px; margin-right: 10px; background: url("//101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat 0px -202px; }
+/* 
+.sprite-attached_delete{ background-position: 0 0; width: 17px; height: 17px; } 
+.sprite-btn_sticker{ background-position: 0 -32px; width: 18px; height: 18px; } 
+.sprite-btn_sticker_new{ background-position: 0 -65px; width: 20px; height: 20px; } 
+.sprite-btn_sticker_on{ background-position: 0 -100px; width: 18px; height: 18px; } 
+.sprite-next{ background-position: 0 -133px; width: 5px; height: 8px; } 
+.sprite-prev{ background-position: 0 -156px; width: 5px; height: 8px; } 
+.sprite-sticker_history{ background-position: 0 -179px; width: 23px; height: 21px; } 
+.sprite-sticker_off{ background-position: 0 -215px; width: 9px; height: 5px; } 
+.sprite-sticker_off_hover{ background-position: 0 -235px; width: 9px; height: 5px; } 
+.sprite-sticker_on{ background-position: 0 -255px; width: 9px; height: 5px; } 
+ */
+.livereReply_useMouseOver #livereStickerBtnConatiner #livereStickerOpenBtn:hover,
+.livereReply_useMouseOver #livereStickerBtnConatiner #livereStickerOpenBtn:focus { background-color: #eee; }
+.livereReply_useMouseOver #livereStickerBtnConatiner #livereStickerOpenBtn:hover,
+.livereReply_useMouseOver #livereStickerBtnConatiner #livereStickerOpenBtn:focus,
+.livereReply_useMouseOver .openedStickerPanel #livereStickerBtnConatiner #livereStickerOpenBtn { background-position: 8px -59px; }
+.livereReply_useMouseOver #livereStickerBtnConatiner #livereStickerOpenBtn:hover span,
+.livereReply_useMouseOver #livereStickerBtnConatiner #livereStickerOpenBtn:focus span { background-position: 0 -222px; }
+.livereReply_useMouseOver .openedStickerPanel #livereStickerBtnConatiner #livereStickerOpenBtn span { background-position: 0px -243px; }
+
+#livereStickerPanel { border: 1px solid #e5e5e5; margin-bottom: 15px; background-color: #fff; }
+
+/* #livereStickerGroupContainer { background-color: #fafafa; overflow: visible; margin-bottom: -1px; } */
+#livereStickerGroupContainer { background-color: #fafafa; }
+#livereStickerGroupContainer .livereStickerGroupCarouselBtn { float: left; width: 20px; }
+#livereStickerGroupContainer .livereStickerGroupCarouselBtn span { width: 20px; height: 30px; background: url("//101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat 0 -156px; float: left; }
+
+#livereStickerGroupContainer #livereStickerGroupCarouselBtn_prev { border-right: 1px solid #e5e5e5; }
+#livereStickerGroupContainer #livereStickerGroupCarouselBtn_next { border-left: 1px solid #e5e5e5; }
+#livereStickerGroupContainer #livereStickerGroupCarouselBtn_prev span { background-position: 6px -145px; }
+#livereStickerGroupContainer #livereStickerGroupCarouselBtn_next span { background-position: 6px -122px; }
+ 
+#livereStickerGroupCarousel { float: left; width: 100%;  overflow: hidden; }
+#livereStickerGroupCarousel.livereStickerGroupCarousel_m { overflow-x: auto; overflow-y: hidden; }
+#livereStickerGroupWrapper { width: auto; margin-left: 0; }
+#livereStickerGroupWrapper .livereStickerGroupBtnWrapper { float: left; border-right: 1px solid #e5e5e5; }
+#livereStickerGroupWrapper .livereStickerGroupBtnWrapper.selectedLivereStickerGroup { border-bottom: 1px solid #fff; background-color: #fff; }
+#livereStickerGroupWrapper .livereStickerGroupBtn { float: left; width: 40px; }
+#livereStickerGroupWrapper .livereStickerGroup_icon { float: left; width: 40px; height: 30px; }
+#livereStickerGroup_recently .livereStickerGroup_icon { background: url("//101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat 8px -174px; }
+#livereStickerGroup_giraplenfriends .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/giraplenfriends/giraplenfriends.png") no-repeat 0 0; }
+#livereStickerGroup_yoplait .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/yoplait/yoplait.png") no-repeat 0 0; }
+#livereStickerGroup_wemade .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/wemade/btn_pc.png") no-repeat 0 0; }
+#livereStickerGroup_ichannela .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/ichannela/ichannela.png") no-repeat 0 0; }
+#livereStickerGroup_goyang .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/goyang/goyang_think.png") no-repeat 0 0; }
+#livereStickerGroup_koreafont .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/koreafont/koreafont.png") no-repeat 0 0; }
+#livereStickerGroup_daehansuda .livereStickerGroup_icon { background: url("//101.livere.co.kr/sticker/daehansuda/daehansuda.png") no-repeat 0 0; }
+#livereStickerGroup_sociallg .livereStickerGroup_icon { background: url('//101.livere.co.kr/sticker/sociallg/btn_pc.png') no-repeat 0 0;}
+#livereStickerGroup_sewol .livereStickerGroup_icon { background: url('//101.livere.co.kr/sticker/sewol/btn_pc.png') no-repeat 0 0;}
+#livereStickerGroup_wonsoonc .livereStickerGroup_icon { background: url('//101.livere.co.kr/sticker/wonsoonc/btn_pc.png') no-repeat 0 0;}
+#livereStickerGroup_aliemo .livereStickerGroup_icon { background: url('//101.livere.co.kr/sticker/aliemo/btn_pc.png') no-repeat 0 0;}
+#livereStickerGroup_bccard_worldcup .livereStickerGroup_icon{background: url("//101.livere.co.kr/sticker/bccard_worldcup/lorea_btn_m.png") no-repeat 0 0;}
+#livereStickerGroup_loisnluis .livereStickerGroup_icon { background: url('//101.livere.co.kr/sticker/loisnluis/pc_btn.png') no-repeat 0 0; }
+#livereStickerGroup_ybtour .livereStickerGroup_icon { background: url('//101.livere.co.kr/sticker/ybtour/btn_pc.png') no-repeat 0 0; }
+
+#livereStickerConatiner { width: 100%; border-top: 1px solid #e5e5e5; margin-top: -1px; }
+#livereStickerPageCarousel { max-height: 236px; .height: 105px; overflow-x: hidden; overflow-y: auto; }
+#livereStickerWrapper .livereStickerBtnWrapper { float: left; }
+#livereStickerWrapper .livereStickerBtn { float: left; }
+#livereSticker_recentlyEmptyWrapper { text-align: center; }
+
+#livereWriteParamsForm.livereChoseSticker { margin-left: 75px; border-left: 0; }
+#livereSticker_choseWrapper { position: relative; float: left; border-left: 1px solid #e5e5e5; background-color: #fff; }
+#livereSticker_choseWrapper #livereSticker_chose { float: left; padding: 7px 7px 8px; .padding: 6px 7px; _padding: 4px 5px 5px; }
+#livereSticker_choseWrapper #livereSticker_chose img {  float: left; width: 60px; height: 60px; }
+#removeLivereSticker { position: absolute; right: 5px; bottom: 5px; float: left; background: url("//101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat 0 0; width: 17px; height: 17px; }
+.livereReply_useMouseOver #livereSticker_chose #removeLivereSticker { display: none; }
+.livereReply_useMouseOver #livereSticker_chose:hover #removeLivereSticker,
+.livereReply_useMouseOver #livereSticker_chose:focus #removeLivereSticker { display: block; }
+
+#livereStickerWrapper { padding: 10px; }
+#livereStickerWrapper .livereStickerBtn { margin-right: 10px; }
+#livereStickerWrapper .livereStickerBtn img { width: 90px; height: 90px; }
+
+#livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText p { margin-left: 90px; }
+.livere_mobile #livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText p { margin-left: 75px; }
+#livereReplyWrapper .attachedLivereStickerWrapper .livereChildReply .livereArticleText p { margin-left: 0px; }
+#livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText .attachedLivereStickerAnchor { float: left; position: relative; }
+#livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText .attachedLivereSticker { width: 90px; height: 90px; float: left; margin-bottom: 5px; }
+.livere_mobile #livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText .attachedLivereSticker { width: 75px; height: 75px; }
+
+/*20130923 LSW*/
+#livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner {position: relative;}
+/*#livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn {background: none; border: none; background: url("//101.livere.co.kr/images/ver8/sticker/main_sticker.png") no-repeat 0 0; position: absolute; width: 58px; height: 48px; bottom: 25px; left: 0px;}*/
+/*#livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn {background: none; border: none; background: url("//101.livere.co.kr/sticker/wemade/guide_pc_weme.png") no-repeat 0 0; position: absolute; width: 92px; height: 66px; bottom: 13px; left: -40px;}*/
+#livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn { background: none; border: none; background: url("//101.livere.co.kr/images/ver8/sticker/sticker_guide_btn.png") no-repeat 0 0; position: absolute; width: 92px; height: 66px; bottom: 13px; left: -44px; }
+#livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn span {display: inline-block; text-indent: -9999px;}
+
+#livereContainer.livere_mobile #livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner {position: relative;}
+#livereContainer.livere_mobile #livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn {background: none; border: none; background: url("//101.livere.co.kr/images/ver8/sticker/sticker_guide_btn_m.png") no-repeat 0 0; position: absolute; width: 94px; height: 78px; bottom: -4px; left: -40px; background-size: 82px;}
+/*#livereContainer.livere_mobile #livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn {background: none; border: none; background: url("//101.livere.co.kr/images/ver8/sticker/main_sticker_m.png") no-repeat 0 0; position: absolute; width: 94px; height: 78px; bottom: 13px; left: -15px; background-size: 82px;}*/
+/*#livereContainer.livere_mobile #livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn {background: none; border: none; background: url("//101.livere.co.kr/sticker/wemade/guide_m_weme.png") no-repeat 0 0; position: absolute; width: 92px; height: 66px; bottom: 3px; left: -40px; background-size: 82px;}*/
+#livereContainer.livere_mobile #livereWriteForm #livereFunctionWrapper #livereStickerBtnConatiner #livereStickerGuideBtn span {display: inline-block; text-indent: -9999px;}
+
+/*20130925 SOO*/
+#livereWriteParamsForm.livereChoseSticker { margin-left: 65px; }
+#livereContainer.livere_mobile #livereSticker_choseWrapper #livereSticker_chose img {  float: left; width: 50px; height: 50px; }
+/*20131011 SOO*/
+#livereStickerPageCarousel p, #livereStickerADText a { font-family: "Dotum"; font-size: 11px; line-height: 13px; }
+#livereStickerPageCarousel p { margin: 0 10px 0 10px; padding-bottom: 10px; color: #6f6f6f; }
+#livereStickerADText { height: auto; border-top: 1px solid #e5e5e5; padding: 5px 0 5px 5px; }
+#livereStickerADText a { padding-left: 14px; background: url("http://101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat -14px -307px; }
+#livereStickerADText a:hover { text-decoration: underline; }
+#livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText .attachedLivereStickerAnchor .attachedLivereStickerAnchorIcon {
+background: url("http://101.livere.co.kr/images/ver8/sticker/sticker_icon_pc.png") no-repeat 0 -332px; width: 23px; height: 23px; position: absolute; top: 0; left: 0; }
+#livereContainer.livere_mobile #livereStickerPageCarousel p, #livereContainer.livere_mobile #livereStickerADText a { font-family: auto; }
+#livereContainer.livere_mobile #livereStickerPageCarousel p { font-size: 10px; }
+#livereContainer.livere_mobile #livereStickerADText a { padding-left: 14px; background: url("http://101.livere.co.kr/images/ver8/sticker/sticker_icon_m.png") no-repeat 0 -245px; background-size: 21px; }
+#livereContainer.livere_mobile #livereReplyWrapper .attachedLivereStickerWrapper .livereArticleText .attachedLivereStickerAnchor .attachedLivereStickerAnchorIcon {
+background: url("http://101.livere.co.kr/images/ver8/sticker/sticker_icon_m.png") no-repeat 0 -395px; background-size: 31px; }

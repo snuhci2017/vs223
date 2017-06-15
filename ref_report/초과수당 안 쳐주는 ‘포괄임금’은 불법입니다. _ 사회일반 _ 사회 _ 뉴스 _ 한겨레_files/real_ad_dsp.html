@@ -1,0 +1,111 @@
+
+<!-- saved from url=(0086)http://realdsp.realclick.co.kr/real_ad_dsp.html?gmcode=aGFuaWJpejAwMDAxXzY5Mjg=&scode= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR"><script type="text/javascript" src="./jquery-1.6.2.min.js"></script> <!-- 공통사용 -->
+		</head><body marginwidth="0" marginheight="0"><div id="ad_hanibiz00001_6928"><img src="./itg.rc" width="0" height="0" style="display: block"><a title="리얼클릭DSP 광고입니다." name="ad_alink" class="ad" target="_blank" href="http://realadr.realclick.co.kr/dsp/?method=aGFuaWJpejAwMDAxXzY5Mjh8NTAzNHw0MTU2NHw1MDB8MTQ5NTcyNTk3NXwxfDExMTF8MHwwfDB8fE58fHx8Z3JhbmNpdHl4aXwxMjc2fDZ8MHx8MHx8MHww"><img alt="리얼클릭DSP 광고입니다." border="0" src="./41564_93105_2.JPG" height="600" width="160"></a></div><script>
+	var Base64 = {
+		_keyStr : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+		encode : function(input) {
+			var output = "";
+			var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+			var i = 0;
+			input = Base64._utf8_encode(input);
+			while (i < input.length) {
+				chr1 = input.charCodeAt(i++);
+				chr2 = input.charCodeAt(i++);
+				chr3 = input.charCodeAt(i++);
+				enc1 = chr1 >> 2;
+				enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+				enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+				enc4 = chr3 & 63;
+				if (isNaN(chr2)) {
+					enc3 = enc4 = 64
+				} else if (isNaN(chr3)) {
+					enc4 = 64
+				}
+				output = output + this._keyStr.charAt(enc1)
+						+ this._keyStr.charAt(enc2) + this._keyStr.charAt(enc3)
+						+ this._keyStr.charAt(enc4)
+			}
+			return output
+		},
+		_utf8_encode : function(string) {
+			string = string.replace(/\r\n/g, "\n");
+			var utftext = "";
+			for (var n = 0; n < string.length; n++) {
+				var c = string.charCodeAt(n);
+				if (c < 128) {
+					utftext += String.fromCharCode(c)
+				} else if ((c > 127) && (c < 2048)) {
+					utftext += String.fromCharCode((c >> 6) | 192);
+					utftext += String.fromCharCode((c & 63) | 128)
+				} else {
+					utftext += String.fromCharCode((c >> 12) | 224);
+					utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+					utftext += String.fromCharCode((c & 63) | 128)
+				}
+			}
+			return utftext
+		}
+	};
+	var date = new Date();
+	var uip = "147.46.113.61";
+	var now_time = date.getTime();
+	var rand_no = Math.floor(Math.random() * 10000);
+	var user_value = uip + "|" + now_time + "|" + rand_no;
+	var user_val = Base64.encode(user_value);
+	function SetCookie(uVal) {
+		var cKey = 'REALUCODE';
+		var cValue = uVal;
+		var validity = 360;
+		date.setDate(date.getDate() + validity);
+		document.cookie = cKey + '=' + escape(cValue) + ';expires='
+				+ date.toGMTString() + ';path=/;domain=realclick.co.kr;'
+	}
+	function GetCookie(cKey) {
+		var allcookies = document.cookie;
+		var cookies = allcookies.split("; ");
+		for (var i = 0; i < cookies.length; i++) {
+			var keyValues = cookies[i].split("=");
+			if (keyValues[0] == cKey) {
+				return unescape(keyValues[1]);
+			}
+		}
+		return ""
+	}
+	var user_cookie = '';
+	user_cookie = GetCookie('REALUCODE');
+	var user_local = '';
+	user_local = localStorage.getItem('REALUCODE');
+	var cookieChk = true;
+	if (user_cookie == '') {
+		if (user_local != null) {
+			SetCookie(user_local);
+		} else {
+			SetCookie(user_val);
+			if (typeof (Storage) !== "undefined") {
+				localStorage.setItem('REALUCODE', user_val);
+			}
+			cookieChk = false;
+		}
+	}
+	if (user_local == null && cookieChk == true) {
+		if (user_cookie != '') {
+			if (typeof (Storage) !== "undefined") {
+				localStorage.setItem('REALUCODE', user_cookie);
+			}
+		} else {
+			SetCookie(user_val);
+			if (typeof (Storage) !== "undefined") {
+				localStorage.setItem('REALUCODE', user_val);
+			}
+		}
+	}
+	if (user_cookie != '' && user_local != null && user_cookie != user_local) {
+		if (typeof (Storage) !== "undefined") {
+			localStorage.setItem('REALUCODE', user_cookie);
+		}
+	}
+</script>
+
+
+</body></html>

@@ -1,0 +1,549 @@
+@charset 'utf-8';
+@import url('base.css');
+@import url('common.css');
+@import url('opinion.css');
+@import url('cartoon.css');
+@import url('esc.css');
+@import url('toyo.css');
+@import url('graphic.css');
+
+@import url('series.css');
+@import url('issue.css');
+@import url('gudok.css');
+
+@import url('rest.css');
+@import url('search.css');
+
+@import url('photo.css');
+@import url('etc.css');
+@import url('munhak.css');
+@import url('exploration.css');
+@import url('bar.css');
+@import url('weconomy.css');
+
+
+@import url('banner.css'); /*광고관련css변경*/
+
+/* section layout */
+#header {position: relative; width: 970px; margin: 0 auto; text-align: left;  z-index:1000;}
+#container { position: relative;  width: 970px; margin: 0 auto; text-align: left; z-index:100; }
+#container:after{ content:" "; display:block; clear:both; }     
+#contents-section { position:relative; overflow:hidden; margin-top:30px; background:url(http://img.hani.co.kr/section-image/15/hani/images/section/section_bg.gif) right top repeat-y;}
+#contents-section .section-left {float:left; width:643px; margin-right:13px; position:relative;}
+#contents-section .section-right {float:right; width:300px; padding-left:14px; position:relative;}
+#contents-section .section-right .padding_bottom {height:50px;}
+#contents {float: left; width: 643px; padding-right:13px; min-height: 100%; padding-bottom:0px; }
+#aside {float: right; width: 300px; padding-left: 14px;}
+#aside .padding_bottom {width:100%; height:50px;}
+
+.ie7 #container .index  { padding-top:30px;}
+
+/* section top */
+#header-logo { position: relative;  height:72px;  background:url(http://img.hani.co.kr/section-image/15/hani/images/common/line_three.gif) repeat-x left bottom; z-index: 2010; }
+#header-logo .logo { position:absolute; bottom:20px; left:40px;}
+#header-logo .menu-all { position:absolute; bottom:20px; left:0; cursor:pointer}
+#header-logo .section-top-title { text-align:center; padding-top:20px; font-size:30px; line-height:1.2em; color:#000;}
+#header-logo .section-top-title span{ font-size:20px;}
+#header-logo .header-ect { z-index:1008;}
+#header-logo .header-ect .top_login {position:absolute; right:40px; bottom:17px;}
+#login-box  { position:absolute; right:0; top:65px;}
+
+#search_form { z-index: 1009;}
+#search_form .open_search{ position:absolute; right:7px; bottom:17px; cursor:pointer;}
+
+#header .navi { overflow:hidden; /* position: relative;*/ width: 100%; z-index: 2000; }
+#header .navi .menu li .sub-menu { display:none; position: absolute; top: 43px; left: 0; width: 970px; height: 30px; z-index: 2002}
+#header .navi .menu li.selected .sub-menu { display:block; }
+#header .navi .menu li .sub-menu li { padding: 8px 12px 8px 11px; background: url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bul/bul_1x2_999.gif) no-repeat 100% 50%; font-size:12px; }
+#header .navi .menu li .sub-menu li.last-chlid { background: none; }
+
+#menu-all .article-plus{ position: absolute; *left:0; top:65px; background-color:#fff; padding:0;-webkit-box-shadow: 2px 4px 4px rgba(0,0,0,0.5);-moz-box-shadow: 2px 4px 4px rgba(0,0,0,0.5);box-shadow: 2px 4px 4px rgba(0,0,0,0.5); text-align:center; z-index:3002;}
+
+/* section body */
+
+.only-txt { color:#f35213; padding-right:5px;}
+.icon_solo { position:absolute; top:1px; left:1px;  display:block;  height:28px; background-color:#f35213; color:#fff; font-size:17px; font-weight:bold; padding: 8px 8px 0 8px; white-space: nowrap;}
+
+.article-photo { position:relative; display:block}
+.icon_photo_photo { position:absolute; bottom:1px; right:1px;  display:block; margin:0; border:0; }
+.icon_photo_pictorial { position:absolute; bottom:1px; right:1px;  display:block; margin:0; border:0; }
+.icon_photo_story { position:absolute; bottom:1px; right:1px;  display:block; margin:0; border:0; }
+.icon_photo_video { position:absolute; bottom:1px; right:1px;  display:block; margin:0; border:0; }
+.section-top-article .article-photo .icon_photo_photo,
+.section-top-article .article-photo .icon_photo_pictorial,
+.section-top-article .article-photo .icon_photo_story,
+.section-top-article .article-photo .icon_photo_video,
+.section-top-area .article-photo .icon_photo_photo,
+.section-top-area .article-photo .icon_photo_pictorial,
+.section-top-area .article-photo .icon_photo_story,
+.section-top-area .article-photo .icon_photo_video,
+.photo .icon_photo_photo,
+.photo .icon_photo_pictorial,
+.photo .icon_photo_story,
+.photo .icon_photo_video { border:0 !important;   }
+
+
+/*#contents-section .article-photo { position:relative;}
+#contents-section .article-photo .icon_photo_video { position:absolute; bottom:1px; right:1px;  display:block; margin:0; border:0; border-top:1px solid #b9b9bb; border-left:1px solid #b9b9bb;}
+#contents-section img { border:1px solid #dddddd;}*/
+
+.section-top-article {background:url(http://img.hani.co.kr/section-image/15/hani/images/common/line_two.gif) repeat-x 0 bottom; margin-bottom:20px;}
+.section-top-article .article-title {color:#000;font-size:32px;font-weight:bold;letter-spacing:-0.05em;line-height: 1.3em;/* height:43px; */}
+.section-top-article .article-title a { color:#000; }
+.section-top-article .article-photo {  width:643px; height:280px;}
+.section-top-article .article-photo img {border:1px solid #dddddd;}
+.section-top-article .article-photo a img {width:641px;height:278px;}
+.section-top-article .article-prologue { line-height:1.5em; font-size:13px; color:#666; padding: 10px 0 }
+.section-top-article .article-prologue a { color:#666;}
+.section-top-article .more-article { padding-bottom:20px;}
+.section-top-article .more-article li { font-size:15px; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_more_article.png) no-repeat 0 2px; padding-left:12px; padding-bottom:5px; line-height:1.5em;}
+
+.section-top-area { position:relative;  overflow:hidden; margin-top:30px; margin-bottom:10px;  border-bottom:1px solid #000000;}
+.section-top-area .category { display:block; font-size:12px; color: #777; padding-top:10px; font-weight:normal;}
+.section-top-area .category a { color:#777;}
+.section-top-area h4 { font-size:16px; color:#222; padding-top:5px; line-height:1.3em; }
+.section-top-sum { float:left; width:200px; margin-bottom:20px;}
+.section-top-sum li.kisa01 {border-bottom:1px solid #dddddd; padding-bottom:15px; margin-bottom:20px; }
+.section-top-area img {border:1px solid #dddddd;}
+.section-top-area ul li a img {width:198px;height:118px;}
+
+.section-top-list{ position:relative;  overflow:hidden; float:left; padding-left:20px; width:400px;}
+.section-top-list li { padding: 9px 0 9px; width:400px; overflow:hidden;   white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; } 
+.section-top-list li.first { padding:0 0 9px; }
+.section-top-list li a{font-size: 17px; color:#222; font-weight:bold; }
+
+.section-top-sumArea{ position:relative;  overflow:hidden;}
+.section-top-sumArea li { float:left; width: 200px; height:210px;  margin-right: 20px; margin-bottom:20px;}
+.section-top-sumArea li.kisa01, 
+.section-top-sumArea li.kisa02,
+.section-top-sumArea li.kisa03 { border-bottom:1px solid #dddddd;}
+.section-top-sumArea li.kisa03,
+.section-top-sumArea li.kisa06 { margin-right:0; }
+
+
+/*올림픽용 리스트*/
+#contents-section.special01 { margin-top:0;}
+#contents-section.special01 .section-special-title { background-color:#fff; padding-bottom:30px;}
+#contents-section.special01 .section-top-article .article-title  { padding-top:10px;}
+#contents-section.special01 .section-top-sumArea li { position:relative; height:222px; margin-bottom:0;}
+#contents-section.special01 .section-top-sumArea li.kisa01, 
+#contents-section.special01 .section-top-sumArea li.kisa02 { border-bottom:0; }
+#contents-section.special01 .section-top-sumArea li.kisa05, 
+#contents-section.special01 .section-top-sumArea li.kisa06,
+#contents-section.special01 .section-top-sumArea li.kisa07,
+#contents-section.special01 .section-top-sumArea li.kisa08 { border-bottom:1px solid #dddddd; }
+#contents-section.special01 .section-top-sumArea li.kisa03,
+#contents-section.special01 .section-top-sumArea li.kisa05,
+#contents-section.special01 .section-top-sumArea li.kisa08 { margin-right:0;}
+#contents-section.special01 .section-top-sumArea li.kisa06 {margin-right: 20px;}
+
+
+#contents-section.special01 .section-top-sumArea li.kisa05 { padding-top:30px; height:220px;}
+#contents-section.special01 .section-top-sumArea li.kisa06 ,
+#contents-section.special01 .section-top-sumArea li.kisa07 ,
+#contents-section.special01 .section-top-sumArea li.kisa08 { padding-top:30px;}
+#contents-section.special01 .section-top-sumArea li.kisa04 {width:420px;height:252px;}
+#contents-section.special01 .section-top-sumArea li .multi {position:relative;  overflow:hidden;}
+#contents-section.special01 .section-top-sumArea li .multi .article-photo { display:block;width:418px; height:250px;}
+#contents-section.special01 .section-top-sumArea li .multi .article-photo img {border:1px solid #dddddd;}
+#contents-section.special01 .section-top-sumArea li .multi .article-photo a img {width:418px;height:250px;}
+#contents-section.special01 .section-top-sumArea li .multi .imgDesc { position:absolute; left:0; bottom: 0px; width: 420px; }
+#contents-section.special01 .section-top-sumArea li .multi .text_over { overflow: hidden; zoom: 1;position: relative;z-index: 2; padding:5px 8px 8px;}
+#contents-section.special01 .section-top-sumArea li .multi .shadow { width: 418px;  height:100%;position:absolute; left:1px; bottom: 0px; background-color: #000; opacity: 0.8; filter: alpha(opacity=80);}
+#contents-section.special01 .section-top-sumArea li .multi .article-title  {display: block; color:#fff;font-size: 20px;font-weight: bold;line-height:1.2em;}
+#contents-section.special01 .section-top-sumArea li .multi .article-title a { color:#fff; }
+#contents-section.special01 .section-top-sumArea li .multi .category {font-size:12px;color:#a1a1a1; padding:0 0 3px; font-weight:normal;}
+#contents-section.special01 .section-top-sumArea li .multi .category a { color:#a1a1a1;}
+#contents-section.special01 .section-top-sumArea li .multi .article-prologue { line-height:1.3em; font-size:12px; color:#a1a1a1; padding: 5px 0 0; }
+#contents-section.special01 .section-top-sumArea li .multi .article-prologue a { color:#a1a1a1;}
+
+#contents-section.special01 .section-top-list { float:none; padding-left:0; width:640px; padding: 30px 0;}
+#contents-section.special01 .section-top-list li { width: 300px; float:left;}
+#contents-section.special01 .section-top-list li.list02,
+#contents-section.special01 .section-top-list li.list04,
+#contents-section.special01 .section-top-list li.list06,
+#contents-section.special01 .section-top-list li.list08,
+#contents-section.special01 .section-top-list li.list10 { float:right;}
+#contents-section.special01 .section-top-list li a{font-size: 15px;}
+
+
+/*20170110 - type추가*/
+#navi-sub.navi-left { position:relative; width:970px;  margin: 0 auto; text-align: left;  height:43px; border-bottom:1px solid #c3c3c3; z-index: 1001 }
+#navi-sub.navi-left ul { position:relative; height:43px; margin: 0 auto;  }
+#navi-sub.navi-left ul:before { display: table;content: " ";}
+#navi-sub.navi-left li { display:inline-block; *display:inline; vertical-align:middle; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_bar_1x14.gif) no-repeat right 50%; font-size:15px; letter-spacing: -0.03em;}
+#navi-sub.navi-left li.last { background-image:none; padding-right:0px;} 
+#navi-sub.navi-left li h3 { display:block; float:left;font-size:15px; vertical-align:middle; line-height:1.1em;  padding:14px 13px 15px; margin-left:-3px;}
+#navi-sub.navi-left li h3 a { color:#222; font-size:15px;}
+#navi-sub.navi-left li a { text-decoration:none;}
+#navi-sub.navi-left li.selected  h3 a{border-bottom:1px solid #f35213}
+#navi-sub.navi-left li.plus { float:right;}
+#navi-sub.navi-left li.plus h3 a{ background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_bar3.gif) no-repeat right 50%; padding-right:15px;}
+#navi-sub.navi-left li.plus.selected h3{ padding:13px 12px 14px;  border:1px solid #c3c3c3; border-bottom:1px solid #fff; background-color:#fff; z-index:1003;  z-index:1}
+#navi-sub.navi-left li.plus.selected h3 a{border-bottom:1px solid #bbbbbb}
+#navi-sub.navi-left li.plus.selected h3 a,
+#navi-sub.navi-left li.plus h3 a:hover {border-bottom:1px solid #bbbbbb; color:#bbbbbb; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_bar3_on.gif) no-repeat right 50%;}
+
+#navi-sub.navi-left li.plus .over-list{ position:absolute; right:0; top:43px;width:230px; background-color:#fff; padding:0;  border:1px solid #c3c3c3;   -webkit-box-shadow: 2px 4px 4px rgba(0,0,0,0.5);-moz-box-shadow: 2px 4px 4px rgba(0,0,0,0.5);box-shadow: 2px 4px 4px rgba(0,0,0,0.5);   z-index:-1 ; margin-left:-3px;}
+#navi-sub.navi-left li.plus .over-list ul{ background:none; height:auto; padding: 6px 15px 15px ;}
+#navi-sub.navi-left li.plus .over-list ul li { display:block; font-size:15px; padding:10px 15px 0 0;background-image:none; text-align:left;  }
+#navi-sub.navi-left li.selected  h3 a, #navi-sub.navi-left li h3 a:hover, 
+#navi-sub.navi-left li.plus .over-list ul li a:hover { color:#f35213 ; border-bottom:1px solid #f35213}
+
+.section-top-listArea { position:relative; overflow:hidden; margin-bottom:30px; border-bottom:1px solid #000;}
+.section-top-listArea  .article-area { display:block; overflow:hidden; padding:25px 0; border-bottom:1px solid #f1f1f1}
+.section-top-listArea  .article-area.first { padding-top:0;}
+.section-top-listArea  .article-title{ font-size:18px; color:#222; margin-top:5px; margin-bottom:6px; letter-spacing:-0.05em; line-height:1.2em;}
+.section-top-listArea  .category { display:block; font-size:12px; color: #777; padding:0; font-weight:normal; padding-top: 5px; }
+.section-top-listArea  .category a {color: #777;}
+.section-top-listArea  .article-photo {float:left; display:block;}
+.section-top-listArea  .article-photo img{width:198px;height:118px;margin-right:20px; margin-bottom:0px; border:1px solid #dadada}
+.section-top-listArea  .article-prologue {font-size:13px; color:#888; padding-right:10px;}
+.section-top-listArea  .article-prologue .date { display:block; font-size:12px; color:#bebebe; margin-top:3px; }
+.section-top-listArea  .more-article { overflow:hidden; margin-top:10px;}
+.section-top-listArea  .more-article li { background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_more_article.png) no-repeat 0 30%; padding-left:12px; padding-bottom:3px;}
+.section-top-listArea  .more-article li a{ color:#666; font-size:13px;}
+
+
+
+/* 국제판 박스 */
+ .section-top-box01 { position:relative; overflow:hidden; clear:both; width:643px; margin-bottom:20px; padding-top:40px;}
+ .section-top-box01:after { content: "."; display: block; font-size: 0; height: 0; line-height: 0; clear: both;  }
+ .section-top-box01 .title { text-align:left; position:relative; font-size:16px; margin-bottom:7px; font-weight:bold;}
+ .section-top-box01 .plus { display:block; font-size:13px; position:absolute; right:0; bottom:0; background: url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_aw_right.png) no-repeat right 50%; padding-right:15px; }
+ .section-top-box01 .section-box-kisa { position:relative;  overflow:hidden; border:1px solid #e4e4e4; background-color:#fafafa} 
+ .section-top-box01 .section-box-kisa .left{ float:left; width:290px; padding:15px 10px 0 15px; border-right:1px solid #e4e4e4; min-height:94px;}
+ .section-top-box01 .section-box-kisa .left img { float:left; width:112px; height:68px;}
+ .section-top-box01 .section-box-kisa .left h4 {text-align:left;  margin-left:120px; font-size:16px; color:#222;  line-height:1.2em; margin-top:-5px; }
+ .section-top-box01 .section-box-kisa .left .prologue {text-align:left;  margin-left:120px; display:block; font-size:12px; color: #777; padding-top:5px; font-weight:normal;}
+ .section-top-box01 .section-box-kisa .left .prologue a { color:#777;}
+ .section-top-box01 .section-box-kisa .right{ float:right; width:305px; padding:10px 10px 0 10px;}
+ .section-top-box01  .section-box-kisa .right .list{ position:relative;  overflow:hidden;}
+ .section-top-box01 .section-box-kisa .right .list li{text-align:left; font-size: 14px;padding-left: 8px;line-height:2.2em; width:297px; background: url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_dot_2x14.gif) no-repeat 0 50%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; }
+ .section-top-box01 .section-box-kisa .right .list li a{font-size: 14px; color:#222; font-weight:bold; }
+
+/*책과생각탑영역*/
+.section-top-book { position: relative; overflow:hidden; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #000000;}
+.section-top-book .book-top { float:left; width:420px;height:252px; position:relative; overflow:hidden;  margin-bottom:20px;}
+.section-top-book .book-top  .article-photo { display:block;width:418px; height:250px;}
+.section-top-book .book-top  .article-photo img {border:1px solid #dddddd;}
+.section-top-book .book-top  .article-photo a img {width:418px;height:250px;}
+.section-top-book .book-top  .imgDesc { position:absolute; left:0; bottom: 0px; width: 420px; }
+.section-top-book .book-top  .text_over { overflow: hidden; zoom: 1;position: relative;z-index: 2; padding:5px 8px 8px;}
+.section-top-book .book-top  .shadow { width:100%; height:100%;position:absolute; left:0; bottom: 0px; background-color: #000; opacity: 0.8; filter: alpha(opacity=80);}
+.section-top-book .book-top  .article-title  {display: block; color:#fff;font-size: 20px;font-weight: bold;line-height:1.2em;}
+.section-top-book .book-top  .article-title a { color:#fff; }
+.section-top-book .book-top  .category {font-size:12px;color:#a1a1a1; padding:0 0 3px; font-weight:normal;}
+.section-top-book .book-top  .category a { color:#a1a1a1;}
+.section-top-book .book-top  .article-prologue { line-height:1.3em; font-size:12px; color:#a1a1a1; padding: 5px 0 0; }
+.section-top-book .book-top  .article-prologue a { color:#a1a1a1;}
+.section-top-book .box-list { float:left; width:198px;position:relative; overflow:hidden; border: 1px solid #dedfe4;  height:250px;   margin-right: 20px; margin-bottom:20px;}
+.section-top-book .box-list  .article-photo {  width:198px;height:118px;}
+.section-top-book .box-list  .article-photo a img {width:198px;height:118px;}
+.section-top-book .box-list  .article-title { padding: 0 8px; color:#222; font-size:15px; font-weight:bold; letter-spacing:-0.05em; line-height:1.3em; height:40px; overflow:hidden; }
+.section-top-book .box-list  .article-title a { color:#000; }
+.section-top-book .box-list  .article-prologue { line-height:1.4em; font-size:12px; color:#666; padding:5px 8px 0;}
+.section-top-book .box-list  .article-prologue a { color:#666;}
+.section-top-book .box-list  .category {display:block;font-size:12px;color:#999; padding:3px 8px 5px; font-weight:normal;overflow: hidden; height: 16px;}
+.section-top-book .box-list  .category a { color:#999;}
+.section-top-book .box-list.kisa01,
+.section-top-book .box-list.kisa04,
+.section-top-book .box-list.kisa07 { float:right; margin-right:0;}
+.section-top-book .box-list2 { float:left;position:relative; overflow:hidden;}
+.section-top-book .section-top-list { padding-top:20px;}
+
+/* 뉴스 정렬 옵션 영역 */
+.section-sorting-option { padding-bottom: 20px; zoom: 1; }
+.section-sorting-option:after { content: "."; display: block; font-size: 0; height: 0; line-height: 0; clear: both;  }
+.section-sorting-option .title-img { float: left; }
+.section-sorting-option .title-img .menu { float: left; margin:8px 0px 0px 0px;}
+.section-sorting-option .title-img .menu li { float: left; padding:1px 9px 0 0; margin-right: 8px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bul/bul_1x11_d5d5d5.gif) no-repeat 100% 50%;  }
+.section-sorting-option .title-img .menu li.last-child { background: none; margin-right: 0; }
+.section-sorting-option .title-img .menu li a { font-size: 13px; letter-spacing: -1px; }
+.section-sorting-option .title-img .menu li.selected a { font-weight: bold; color: #000 !important; }
+.section-sorting-option .sorting-inner { float: right; margin:8px 0px 0px 0px;}
+.section-sorting-option .sort-key { float: left; }
+.section-sorting-option .sort-key li { float: left; padding:1px 9px 0 0; margin-right: 8px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bul/bul_1x11_d5d5d5.gif) no-repeat 100% 50%;  }
+.section-sorting-option .sort-key li.last-child { background: none; margin-right: 0; }
+.section-sorting-option .sort-key li a { font-size: 11px; letter-spacing: -1px; }
+.section-sorting-option .sort-key li.selected a { font-weight: bold; color: #000 !important; }
+.section-sorting-option .widgets { float: left; margin:3px 0 0; }
+.section-sorting-option .widgets li { float: left; padding-right:5px; height:12px; }
+.section-sorting-option .widgets li a.rss { display:block; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_rss.png) no-repeat 0 bottom; width:12px; height:12px;}
+.section-sorting-option .widgets li a.help { display:block; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_Qmark.png) no-repeat 0 bottom; width:10px; height:12px;}
+.section-sorting-option .inner-sorting { position: relative; width: 100%; z-index: 1000; }
+.section-sorting-option .inner-sorting .rss-url-copy { display: none; position: absolute; right: 0; top: 20px; width: 326px; height: 58px; border: 2px solid #c8dbda; background: #fff; }
+.section-sorting-option .inner-sorting .rss-url-copy .inner-copy { position: relative; width: 306px; height: 40px; padding: 18px 0 0 18px; }
+.section-sorting-option .inner-sorting .rss-url-copy .inner-copy .rss-layer-close { position: absolute; right: 7px; top: 5px; cursor: pointer; }
+.section-sorting-option .inner-sorting .rss-url-copy .inner-copy .copy-url { width: 255px; height: 20px; border: 1px solid #dbdbdb; }
+.section-sorting-option .inner-sorting .rss-url-copy .inner-copy img { vertical-align: top; cursor: pointer; }
+
+
+
+
+/* 리스트 */
+.section-list-area .list{ position:relative; overflow:hidden; padding:20px 0 20px; border-bottom:1px solid #f1f1f1}
+.section-list-area .list.first { padding:0 0 20px;}
+.section-list-area .list .article-area { display:block; overflow:hidden;}
+.section-list-area .list .article-title{ font-size:18px; color:#222; margin-top:5px; margin-bottom:6px; letter-spacing:-0.05em; line-height:1.2em;}
+.section-list-area .list .category { display:block; font-size:12px; color: #777; padding:0; font-weight:normal; padding-top: 5px; }
+.section-list-area .list .category a {color: #777;}
+.section-list-area .list .article-photo {float:left; display:block;}
+.section-list-area .list .article-photo img{width:198px;height:118px;margin-right:20px; margin-bottom:0px; border:1px solid #dadada}
+.section-list-area .list .article-prologue {font-size:13px; color:#888; padding-right:10px;}
+.section-list-area .list .article-prologue .date { display:block; font-size:12px; color:#bebebe; margin-top:3px; }
+.section-list-area .list .more-article { overflow:hidden; margin-top:10px;}
+.section-list-area .list .more-article li { background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_more_article.png) no-repeat 0 30%; padding-left:12px; padding-bottom:3px;}
+.section-list-area .list .more-article li a{ color:#666; font-size:13px;}
+
+.section-list-area.photo-view { position:relative; overflow:hidden;}
+.section-list-area.photo-view ul { position:relative; overflow:hidden;}
+.section-list-area.photo-view .list{ position:relative; overflow:hidden; padding:0; border:0; width:200px; float:left; padding-left:20px; margin-bottom:40px;}
+.section-list-area.photo-view .list.first { padding: 0 0 0 0;}
+.section-list-area.photo-view .list .article-area { display:block; overflow:hidden; width:200px;}
+.section-list-area.photo-view .list .article-title{ font-size:17px; color:#222; margin-top:5px; margin-bottom:6px; letter-spacing:-0.05em; line-height:1.2em;}
+.section-list-area.photo-view .list .category { display:block; font-size:12px; color: #777; padding:0; font-weight:normal; padding-top: 5px; }
+.section-list-area.photo-view .list .category a {color: #777;}
+.section-list-area.photo-view .list .article-photo {display:block;}
+.section-list-area.photo-view .list .article-photo img{width:198px;height:118px;margin-bottom:8px;border:1px solid #dadada}
+.section-list-area.photo-view .list .article-prologue {font-size:13px; color:#888; padding-top: 8px; line-height: 22px;}
+.section-list-area.photo-view .list .article-prologue .date { display:block; font-size:12px; color:#bebebe; margin-top:3px; }
+
+.section-list-area.photo-view2 { position:relative; overflow:hidden; margin:30px 0;}
+.section-list-area.photo-view2 .line { position:relative; overflow:hidden;}
+.section-list-area.photo-view2 .list{ position:relative; overflow:hidden; padding:0; border:0; width:306px; float:left;}
+.section-list-area.photo-view2 .list.left { padding-right:15px }
+.section-list-area.photo-view2 .list.right {padding-left:14px; border-left:1px solid #e4e4e4; }
+.section-list-area.photo-view2 .list .article-area { display:block; position:relative; overflow:hidden; width:306px; min-height:270px; border-bottom:1px solid #e4e4e4; margin-top:20px; }
+.section-list-area.photo-view2 .list .article-title{ font-size:17px; color:#222; margin-top:5px;  letter-spacing:-0.05em; line-height:1.2em;}
+.section-list-area.photo-view2 .list .category { display:block; font-size:12px; color: #777; padding:0; font-weight:normal; padding-top: 5px; }
+.section-list-area.photo-view2 .list .category a {color: #777;}
+.section-list-area.photo-view2 .list .article-photo {display:block;}
+.section-list-area.photo-view2 .list .article-photo img{width:304px;height:182px;margin:0 0 8px;border:1px solid #e4e4e4}
+.section-list-area.photo-view2 .line.first .article-area { margin-top:0;}
+.section-list-area.photo-view2 .line.last .article-area { border-bottom:0;}
+.section-list-area.photo-view2 .list .article-area .photo-new-window {position: absolute;left: 6px;top:162px;}
+
+/*.section-list-area.photo-view2.bigimg .list.right {padding-left:14px; border-left:0; }*/
+
+.section-list-area .more-title-area{ position:relative; overflow:hidden; margin-top:20px;  padding-top:20px; border-top:1px solid #e4e4e4;}
+.section-list-area .more-title { float:left;}
+.section-list-area .more-title a{display:block; background: url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_plus_article.png) no-repeat right 50%; padding-right: 20px;}
+
+
+
+.section-list-area .list .photo-fix {display:block; width:198px; height:118px; margin-right:20px; border:1px solid #dadada;}
+.section-list-area .list .photo-fix-bg {background-position:50% 50%; width:100%; height:100%;background-size: cover;}
+
+
+/* 리스트 페이징 */
+.paginate { padding:30px 0 30px; text-align:center;} 
+.paginate a{ display: inline-block; position: relative;padding: 4px 8px 4px 8px;border: 1px solid #fff;font-size: 12px; font-weight:bold;font-family: Verdana;color: #666;line-height: normal;text-decoration: none;vertical-align: top;}
+.paginate a:hover {color:#009790;border:1px solid #e9e9e9; }
+.paginate a.selected { border:1px solid #009790; color:#009790;}
+.paginate a.next{ border:1px solid #e9e9e9; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_aw_right.png) no-repeat right 50%; padding: 5px 15px 5px 8px; font-weight:normal;} 
+.paginate a.prev{ border:1px solid #e9e9e9; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_aw_left.png) no-repeat left 50%; padding: 5px 8px 5px 15px;font-weight:normal;}
+
+
+/* 섹션우측영역 */
+
+.section-right  .section-title { border-top:2px solid #000; height:25px; padding-top:10px; color:#000; font-size:15px;}
+.section-right  .section-title  a {color:#000; font-size:15px;}
+.section-right  .section-more a{ position:absolute; right:0; top:14px; display:block; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_plus_article.png) no-repeat; width:14px; height:14px; }
+
+.section-right .article { position:relative; overflow:hidden; padding:10px 0 5px; border-bottom:1px dotted #a7a7a7;}
+.section-right .article.last {border-bottom:0;}
+.section-right .article .photo{ display:block; position:relative;}
+.section-right .article .photo img {border:1px solid #dadada}
+.section-right .article .title { font-size:16px; color:#222; padding:5px 0 10px; line-height:1.3em; letter-spacing:-0.05em }
+.section-right .article .category { display:block; font-size:12px; color: #999; padding:0; font-weight:normal; margin-top:7px;}
+.section-right .article .category a { color:#999}
+
+.section-right .article-right { position:relative; overflow:hidden; padding:9px 0; border-top:1px dotted #a7a7a7;}
+.section-right .article-right.first {border-top:0;}
+.section-right .article-right .title{ font-size:14px; color:#222; line-height:1.3em; padding:8px 0 5px;  }
+.section-right .article-right .category { display:block; font-size:13px; padding:0 0 2px; font-weight:normal;}
+.section-right .article-right .category a { /*color:#999*/}
+.section-right .article-right .photo {float:right; display:block; position:relative;}
+.section-right .article-right .photo img { width:108px;height:64px;margin-left:10px; border:1px solid #dadada}
+.section-right .article-serial .article-right .title { padding:0;}
+.section-right .article-serial { position:relative;}
+.section-right .article-news .article-right { /*position:relative; overflow:hidden; padding:9px 0; border-bottom:1px dotted #a7a7a7;*/}
+.section-right .article-right .num { float:left; display:block; width:24px; height:35px; font-size:13px; color:#666; font-family:Arial; padding-top:10px;}
+.section-right .article-popularity .article-right .title { display:table}
+.section-right .article-popularity .article { border-bottom:0;}
+
+.section-right .ad-300X250 { padding:18px 0 20px; }
+.section-right .article-like .text { text-align:right; color:#777; font-size:11px;}
+#contents-section.contents-section-dable .section-right{ padding-bottom:0;}
+
+.scroll-area { border: 1px solid #ececec;  background-color:#fdfdfd; height:20px; }
+.scroll-area .icon-scroll{ display:block; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_aw_scroll.gif) no-repeat 50% 50%; width:100%; height:20px; text-indent:-999px; overflow:hidden }
+
+
+
+
+
+
+/****************** 개편전 내용 수정 공통사항 적용 ************************/
+
+/* 상단 타이틀 영역 */
+.headings-section { position: relative; padding-bottom: 20px; zoom: 1;  }
+.headings-section:after { content: "."; display: block; font-size: 0; height: 0; line-height: 0; clear: both; }
+.headings-section .left { float: left; }
+.headings-section .right { float: right; }
+.headings-section .main-title { float: left;  font-size:25px; line-height:1.3em; letter-spacing: -0.08em;}
+.headings-section .sub-title { float: left; padding-left: 12px; font-weight: bold; font-size: 16px; color: #000; line-height: 30px; letter-spacing: -1px; }
+.headings-section .menu { float: left; }
+.headings-section .menu li { float: left; padding:1px 9px 0 0; margin-right: 8px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bul/bul_1x11_d5d5d5.gif) no-repeat 100% 50%;  }
+.headings-section .menu li.last-child { background: none; margin-right: 0; }
+.headings-section .menu li a { font-size: 13px; letter-spacing: -1px; }
+.headings-section .menu li.selected a { font-weight: bold; color: #000 !important; }
+
+.headings-section .total-article-view { float: left; padding-top: 8px; }
+.headings-section .total-article-view a { padding-right: 10px; font-size: 11px; color: #666; line-height: 18px; }
+.headings-section .widgets { float: left; padding-top: 4px;}
+.headings-section .widgets li { float: left; padding-right:5px; height:12px; }
+.headings-section .widgets li a.rss { display:block; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_rss.png) no-repeat 0 bottom; width:12px; height:12px;}
+.headings-section .widgets li a.help { display:block; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_Qmark.png) no-repeat 0 bottom; width:10px; height:12px;}
+
+#social-related-links { overflow: hidden; height: 25px; padding-right: 6px; }
+#social-related-links .source-area { float: left }
+#social-related-links .inner { float: right; }
+#social-related-links .widgets { float: left; text-align: right; }
+#social-related-links .widgets.first-child { padding-right: 32px; }
+#social-related-links .widgets li { float: left; padding-left: 2px; }
+#social-related-links .widgets .icon { float: left; }
+#social-related-links .widgets .count { float: left; text-align: left; }
+#social-related-links .widgets .count.first-child { padding-right: 4px; }
+#social-related-links { overflow: hidden; margin-top: -8px; }
+#social-related-links #hotissue-related-url { float: left; }
+#social-related-links #hotissue-related-url img { padding-left: 7px; vertical-align: middle; }
+#social-related-links #series-related-url { float: left; }
+#social-related-links #series-related-url img { padding-left: 7px; vertical-align: middle; }
+#social-related-links .inner { float: right; }
+
+/* widgets */
+.widgets span.icon { display: inline-block; width: 19px; height: 18px; background: url(http://img.hani.co.kr/section-image/12/news/hani/images/com/ico/ico_set.gif) no-repeat 0 0; vertical-align: middle; }/*2013.5.9 수정*/
+.widgets span.count a { display: inline-block; height: 16px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bg/bg_sns_inquiry_number_bubble_left.gif) no-repeat 0 0; line-height: 17px; font-weight: bold; }
+.widgets span.count a .inner-button { display: inline-block; height: 16px; padding: 0 6px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bg/bg_sns_inquiry_number_bubble_right.gif) no-repeat 100% 0; line-height: 17px; font-weight: bold; }
+.widgets .facebook span.icon {}
+.widgets .twitter span.icon { background-position: -21px 0; }
+.widgets .metooday span.icon { background-position: -41px 0; }
+.widgets .cyworld span.icon { background-position: -61px 0; }
+.widgets .msn span.icon { background-position: -81px 0; }
+.widgets .naver span.icon { background-position: -140px 0; }
+.widgets .google2 span.icon { background-position: -160px 0; }/*2013.5.9 추가*/
+.widgets .gplus span.icon { background-position: -180px 0; }/*2013.5.9 추가*/
+.widgets .mail span.icon { background-position: -200px 0; }
+.widgets .facebook .count a { color: #14488f; }
+.widgets .twitter .count a { color: #4ca5ff; }
+.widgets .google .count a { color: #888; }
+.widgets .hani span.icon { width: 39px; height: 16px; margin-right: 2px; background-image: url(http://img.hani.co.kr/section-image/12/news/hani/images/com/ico/ico_hani.gif); }
+.widgets .rss span.icon { width: 16px; height: 16px; background-position: -102px 0; }
+.widgets .help span.icon { width: 16px; height: 16px; background-position: -122px 0; }
+.widgets .google span.icon { width: 24px; height: 16px; margin: 0 2px 0 5px; background-image: url(http://img.hani.co.kr/section-image/12/news/hani/images/com/ico/ico_google.gif); }
+.widgets .gplus2 span.icon { display: inline-block; width: 24px; height: 15px; background: url(http://img.hani.co.kr/section-image/12/news/hani/images/com/ico/ico_gplus.gif) no-repeat 0 0; vertical-align: middle; }/*2013.5.15 추가*/
+.widgets .gplus2  { vertical-align:top;}
+.widgets .gplus2 span.text{ vertical-align:top; padding-left:3px;}
+.ie6 .widgets .gplus2, .ie7 .widgets .gplus2{ overflow:hidden; display:none;}
+
+
+/* 오른쪽 영역 - 컨텐츠 레이아웃 (공통) */
+#aside .aside-section .list li {padding-left: 8px;background: url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bul/bul_2x2_666.gif) no-repeat 0 13px;line-height: 29px; font-size: 13px;}
+#aside .aside-section .list li a { color:#333;}
+#aside .aside-section { margin-top: 20px; zoom: 1; }
+#aside .aside-section:after { content: "."; display: block; font-size: 0; height: 0; line-height: 0; clear: both; }
+#aside .aside-section.first-child { margin-top: 0; padding-top: 3px; }
+#aside .aside-section.first-child h3 { margin-top: -3px; }
+#aside .aside-section.first-child h4 { margin-top: -3px; }
+
+#aside .aside-section h3 { padding-bottom: 2px; font-size: 12px; color: #000; }
+#aside .aside-section h3.title { border-top: 2px solid #222; height: 25px; padding-top: 10px; color: #000; font-size: 15px;}
+#aside .aside-section h4 { padding-bottom: 2px; font-size: 12px; color: #000; }
+#aside .aside-section h4.title { border-top: 2px solid #222; height: 25px; padding-top: 10px; color: #000; font-size: 15px;}
+#aside .aside-section h4 .advertise { display: inline-block; width: 17px; height: 9px; margin: 2px 0 0 4px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/ico/ico_s_advertising.gif) no-repeat 0 0; text-indent: -500em; vertical-align: top; } /* 광고 아이콘 */
+
+#aside .aside-section .hani-advertise_280_240 { width:280px; height:240px; margin:0px 0px 0px -20px; }
+#aside .aside-section .hani-advertise_280_250 { width:280px; height:250px; margin:0px 0px 0px -20px; }
+
+
+/* 트위터 기사 */
+#aside .twitter-control { position: absolute; top:8px; right: 0; z-index: 100; font-size: 0; line-height: 0; background: #fff;}
+#aside .twitter-control button { border:none;}
+#aside .twitter-control #twitter-stop.off{ display:block; width:60px; height:18px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/btn/btn_Tupdate.gif) no-repeat 0 0; }
+#aside .twitter-control #twitter-play.off{ display:block; width:60px; height:18px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/btn/btn_Tupdate.gif) no-repeat -61px 0;}
+#aside .twitter-control #twitter-stop.on{ display:block; width:60px; height:18px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/btn/btn_Tupdate.gif) no-repeat 0 -19px; }
+#aside .twitter-control #twitter-play.on{ display:block; width:60px; height:18px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/btn/btn_Tupdate.gif) no-repeat -61px -19px;}
+#aside .twitter-control .submit_desc {  display: block; overflow: hidden; position: absolute; top: -1000em; left: 0; }
+#aside #twitter-news { position: relative; margin-bottom:20px; }
+#aside #twitter-news h3 {}
+#aside #twitter-news h3 .twitter { display: inline-block; width: 64px; height: 12px; margin-left: 15px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/twitter_logo.gif) no-repeat 0 0; vertical-align: top; } 
+#aside #twitter-news dl { overflow: hidden; margin-top: 5px; zoom: 1; }
+#aside #twitter-news dl.first-child { margin-top: 0; }
+#aside #twitter-news dl dt { float: left; width: 55px; }
+#aside #twitter-news dl dt a { color: #333; font-weight: bold;  }
+#aside #twitter-news dl dd { float: left; width: 195px; color: #333; }
+#aside #twitter-news dl dd a.twitter-page { display: block; color: #888;}
+#aside #twitter-news #tw { padding-top:10px;}
+
+
+/* 멀티미디어 */
+#multimedia { position: relative; margin-bottom:20px; }
+#multimedia .multimedia-contents { overflow: hidden; }
+#multimedia .multimedia-contents .main-image { overflow: hidden; position: relative; width: 300px; height: 180px; background: #333; }
+#multimedia .multimedia-contents .main-image img{width: 298px; height: 178px; border:1px solid #d2d2d2; }
+#multimedia .multimedia-contents .desc{ position: absolute; bottom: 0; left: 0; width: 100%; padding:12px 0 10px; background:url(http://img.hani.co.kr/section-image/12/news/hani/images/com/bg/bg_multimedia.png) repeat-x 0 0; text-align: center; color: #fff; line-height: 11px;	}
+#multimedia .multimedia-contents .thumb-image {overflow: hidden; width: 298px; padding: 5px 0; }
+#multimedia .multimedia-contents .thumb-image ul { overflow: hidden;}
+#multimedia .multimedia-contents .thumb-image li {overflow: hidden; float: left; margin-left: 5px; }
+#multimedia .multimedia-contents .thumb-image li.first-child { margin-left:0; }
+#multimedia .multimedia-contents .thumb-image li a { position: relative; _position: static; display: block; }
+#multimedia .multimedia-contents .thumb-image li a img { vertical-align: top; width:94px; height:56px;  border:1px solid #d2d2d2 }
+#multimedia .multimedia-contents .thumb-image li a span {display: none; position: absolute; top: 0; left: 0; width: 90px; height: 52px; border: 3px solid #ed1b23}
+#multimedia .multimedia-contents .thumb-image li a:hover span { display: block; }
+
+
+/****************** 기사본문에 사용중인 sns영역 연재에서 사용 20151104 ************************/
+.article-tools { position:relative; height:30px;}
+.article-tools .tools { position:absolute; top:0; left:0;}
+.article-tools .tools li { float:left; padding:7px 10px; overflow:hidden; position:relative; } 
+.article-tools .tools li .icon{ float:left; display:block; cursor:pointer; height:22px; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_tools.png) no-repeat 0 0;  }
+.article-tools .tools li.selected { background-color:#e9e9e9;}
+.article-tools .tools li.tool-f .icon{ background-position: 0 0; width:11px;}
+.article-tools .tools li.tool-t .icon{ background-position: -35px 0; width:23px;}
+.article-tools .tools li.tool-share .icon{ background-position: -81px 0; width:24px;}
+.article-tools .tools li.tool-scrap .icon{ background-position: -124px 0; width:22px;}
+.article-tools .tools li.tool-print .icon{ background-position: -165px 0; width:19px;}
+.article-tools .tools li .overlay {display:none; position:absolute; top:0; left:0; z-index:1;}
+.article-tools .tools li.selected .overlay { display:block }
+.article-tools .tools li .overlay .icon-area {text-align:left; height:22px; padding:7px 10px; background-color:#e9e9e9; font-size:12px; color:#000; text-align:left; font-weight:bold;}
+.article-tools .tools li .overlay .icon { display:inline-block; overflow:hidden;}
+.article-tools .tools li .overlay em { vertical-align:top; padding:0 10px; }
+
+.article-tools .tools li.tool-f .overlay{ min-width:95px; }
+.article-tools .tools li.tool-t .overlay{ left:0px; min-width:115px;}
+.article-tools .tools li.tool-share .overlay{ left:0px; width:200px;}
+.article-tools .tools li.tool-scrap .overlay{ left:118px;}
+.article-tools .tools li.tool-print .overlay{ left:156px}
+
+.article-tools .tools li.tool-share .overlay a { display:block; float:left; background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_share_all.png) no-repeat 0 0; height:25px; margin-left:15px; }
+.article-tools .tools li.tool-share .overlay a.s-g { background-position: 0 -64px; width:21px; } 
+.article-tools .tools li.tool-share .overlay a.s-k { background-position: -42px -64px; width:12px; } 
+.article-tools .tools li.tool-share .overlay a.s-c { background-position: -75px -64px; width:23px; } 
+.article-tools .tools li.tool-share .overlay a.s-m { background-position: -120px -64px; width:24px; } 
+
+.article-tools .tools li.tool-f:hover .icon,
+.article-tools .tools li.tool-f .overlay .icon{ background-position: 0 -28px;}
+.article-tools .tools li.tool-t:hover .icon,
+.article-tools .tools li.tool-t .overlay .icon{ background-position: -35px -28px; width:23px;}
+.article-tools .tools li.tool-share:hover .icon,
+.article-tools .tools li.tool-share .overlay .icon{ background-position: -81px -28px; width:24px;}
+.article-tools .tools li.tool-scrap:hover .icon{ background-position: -124px -28px; width:22px;}
+.article-tools .tools li.tool-print:hover .icon{ background-position: -165px -28px; width:19px;}
+
+.article-tools .tools li.tool-scrap.selected,
+.article-tools .tools li.tool-print.selected { background-color:#fff;}
+
+.article-tools .gudok-on { position:absolute; right:0; bottom: 0; font-size: 13px;}
+.article-tools .gudok-on strong { font-size: 16px;}

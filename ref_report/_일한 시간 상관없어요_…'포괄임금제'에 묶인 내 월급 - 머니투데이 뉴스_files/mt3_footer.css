@@ -1,0 +1,56 @@
+/* «≤≈Õ */
+#footer {position:relative; margin:0 auto; width:970px; height:99px;}
+#footer .rellink {overflow:hidden; height:30px; background:#f4f4f4; border-top:2px solid #b8bbc0; border-bottom:1px solid #e6e7eb;}
+#footer .rellink .link {padding-top:12px; text-align:center;}
+#footer .rellink .link li {display:inline-block; padding:0 7px; background:url(http://menu.mt.co.kr/bil/bl_square16.gif) no-repeat 0 4px; vertical-align:top;}
+#footer .rellink .link li a {display:inline-block; vertical-align:top;}
+#footer .rellink .link li img {vertical-align:top;}
+#footer .rellink .link li:first-child {background:none;}
+#footer .cmt1 {padding-top:9px; font-size:11px; text-align:center; line-height:19px; color:#8f8f8f;}
+#footer .cmt1 .warning {letter-spacing:-0.9px;}
+#footer .cmt1 .copyright {font-family:Tahoma;}
+#footer .cmt1 .copyright em {font-style:normal; color:#b66b6d;}
+#footer .cmt1 .resolution {letter-spacing:-0.9px; color:#7692c1;}
+#footer .cmt1 .resolution strong {font-weight:normal;}
+
+/* MT«≤≈Õ */
+#mt_footer {clear:both; position:relative; margin:0 auto; width:970px; height:133px; background:url(http://menu.mt.co.kr/common/etc/logo_mt3_75x15.png) no-repeat 0 18px; border-top:2px solid #808080;}
+
+#mt_footer .rellink {overflow:hidden; margin:17px 0 0 94px; font-size:13px; letter-spacing:-0.6px;}
+#mt_footer .rellink a {color:#404040;}
+
+#mt_footer .copyright {overflow:hidden; margin-top:14px; font-size:11px; letter-spacing:-0.7px; line-height:20px;}
+#mt_footer .copyright  address {display:block; font-style:normal; text-align:justify; color:#808080;}
+#mt_footer .copyright .cmt1 {color:#666;}
+#mt_footer .copyright .cpr {letter-spacing:0; color:#666;}
+#mt_footer .copyright .cpr strong {font-weight:normal; color:#f52525;}
+
+#mt_footer .ctr_sallv {position:absolute; top:16px; right:0; width:114px; height:20px; background:url(http://menu.mt.co.kr/common/button/btn_sAllv1.png) no-repeat 0 0;}
+#mt_footer .sallv_area {position:absolute; left:0; bottom:133px; display:table; vertical-align:top; z-index:2;}
+#mt_footer .sallv_area h3 {position:absolute; bottom:23px; right:31px;}
+#mt_footer .sallv_area .abox {display:table-cell; padding-bottom:21px; width:522px; background:#f3f3f3; vertical-align:top; border:1px solid #405ba6;}
+#mt_footer .sallv_area .bbox {display:table-cell; width:448px; background:#3d58a5; vertical-align:top;}
+#mt_footer .sallv_area .boxtb {display:table; width:100%;}
+#mt_footer .sallv_area .bbox1 {display:table-cell; padding-bottom:7px; background:#4966b9;}
+#mt_footer .sallv_area .bbox2 {display:table-cell; padding-bottom:21px;}
+#mt_footer .sallv_area .group00 {overflow:hidden;}
+#mt_footer .sallv_area .group00 .bundle {float:left; width:108px;}
+#mt_footer .sallv_area .group00 .bundle .group1 {overflow:hidden; line-height:24px; letter-spacing:-0.5px;}
+#mt_footer .sallv_area .group00 .bundle .group1 dt {color:#4966b9;}
+#mt_footer .sallv_area .group00 .bundle .group1 dt a {color:#4966b9;}
+#mt_footer .sallv_area .bbox .group00 .bundle .group1 dt {color:#ed5a5a;}
+#mt_footer .sallv_area .group00 .bundle .group1 dd {}
+#mt_footer .sallv_area .group00 .bundle .group1 dd + dt {margin-top:27px;}
+#mt_footer .sallv_area .group00 .bundle .group1 dd a {color:#404040;}
+#mt_footer .sallv_area .bbox .group00 .bundle .group1 dd a {color:#fff;}
+#mt_footer .sallv_area .group00 .bundle .group2 {overflow:hidden; letter-spacing:-0.5px;}
+#mt_footer .sallv_area .group00 .bundle .group2 dt {display:none;}
+#mt_footer .sallv_area .group00 .bundle .group2 dd {overflow:hidden; margin-top:10px; padding-left:23px; height:16px; line-height:18px;}
+.ie9 #mt_footer .sallv_area .group00 .bundle .group2 dd {line-height:14px;}
+.ie10 #mt_footer .sallv_area .group00 .bundle .group2 dd {line-height:14px;}
+.ie11 #mt_footer .sallv_area .group00 .bundle .group2 dd {line-height:14px;}
+#mt_footer .sallv_area .group00 .bundle .group2 dt + dd {margin-top:5px;}
+#mt_footer .sallv_area .group00 .bundle .group2 dd.fcb {background:url(http://menu.mt.co.kr/common/icon/icon_facebook13x13_circle1.png) no-repeat 0 0;}
+#mt_footer .sallv_area .group00 .bundle .group2 dd.twt {background:url(http://menu.mt.co.kr/common/icon/icon_twitter13x13_circle1.png) no-repeat 0 0;}
+#mt_footer .sallv_area .group00 .bundle .group2 dd a {color:#a0b6f5;}
+#mt_footer .sallv_area .close {position:absolute; top:11px; right:12px; width:13px; height:13px; background:url(http://menu.mt.co.kr/common/button/btn_close5.gif) no-repeat 0 0;}

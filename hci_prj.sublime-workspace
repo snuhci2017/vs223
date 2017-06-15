@@ -1,0 +1,780 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gps_",
+				"gps_mutex"
+			],
+			[
+				"wrr",
+				"wrr_se"
+			],
+			[
+				"writer",
+				"waiting_writers"
+			],
+			[
+				"wa",
+				"waiting_writers"
+			],
+			[
+				"wait",
+				"waiting"
+			],
+			[
+				"get",
+				"get_rot"
+			],
+			[
+				"end",
+				"end_degree"
+			],
+			[
+				"task",
+				"task_ptr"
+			],
+			[
+				"rot",
+				"rot_lock"
+			],
+			[
+				"bra",
+				"broadcast"
+			],
+			[
+				"moni",
+				"monitor_queue"
+			],
+			[
+				"mut",
+				"mutex_lock"
+			],
+			[
+				"st",
+				"start_rot_range"
+			],
+			[
+				"has",
+				"has_find"
+			],
+			[
+				"start",
+				"start_degree"
+			],
+			[
+				"lock",
+				"lock_init"
+			],
+			[
+				"wai",
+				"waiting_writer"
+			],
+			[
+				"retrun",
+				"return_value"
+			],
+			[
+				"ne",
+				"next_sibling_pid"
+			],
+			[
+				"nex",
+				"next_sibling"
+			],
+			[
+				"c",
+				"children_head"
+			],
+			[
+				"list",
+				"list_pos"
+			],
+			[
+				"child",
+				"children_head"
+			],
+			[
+				"chil",
+				"children_head"
+			],
+			[
+				"next",
+				"next_sibling_pid"
+			],
+			[
+				"pid",
+				"pid_t"
+			],
+			[
+				"children",
+				"children_head"
+			],
+			[
+				"cur",
+				"current_task"
+			],
+			[
+				"old",
+				"oldest_child_pid"
+			],
+			[
+				"curr",
+				"current_pid"
+			],
+			[
+				"cu",
+				"current_task"
+			],
+			[
+				"buf",
+				"buf_size"
+			],
+			[
+				"return",
+				"return_value"
+			],
+			[
+				"o",
+				"oldest_child"
+			],
+			[
+				"dfs",
+				"dfs_ptree"
+			],
+			[
+				"prin",
+				"prinfo"
+			],
+			[
+				"p",
+				"prinfo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 7004,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inde",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"in",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 286.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib2,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation') "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jun/hci/final_prj"
+	],
+	"file_history":
+	[
+		"/home/jun/hci/final_prj/index.html",
+		"/home/jun/Downloads/startbootstrap-grayscale-gh-pages/index.html",
+		"/home/jun/hci/final_prj/README.md",
+		"/home/jun/hci/d3/d3_hw/movie.html",
+		"/home/jun/os/os-team9/include/linux/fs.h",
+		"/home/jun/os/os-team9/fs/ext2/ext2.h",
+		"/home/jun/os/os-team9/fs/ext2/file.c",
+		"/home/jun/os/os-team9/kernel/gps.c",
+		"/home/jun/os/os-team9/include/linux/gps.h",
+		"/home/jun/os/os-team9/fs/ext2/inode.c",
+		"/home/jun/os/os-team9/fs/ext2/super.c",
+		"/home/jun/os/os-team9/fs/ext2/xattr_security.c",
+		"/home/jun/os/os-team9/fs/ext2/ialloc.c",
+		"/home/jun/os/os-team9/fs/ext2/dir.c",
+		"/home/jun/os/os-team9/include/linux/ext2_fs.h",
+		"/home/jun/os/os-team9/fs/ceph/caps.c",
+		"/home/jun/os/os-team9/include/linux/types.h",
+		"/home/jun/os/os-team9/fs/ext2/balloc.c",
+		"/home/jun/os/os-team9/include/linux/mutex.h",
+		"/home/jun/os/os-team9/kernel/mutex.c",
+		"/home/jun/os/os-team9/kernel/mutex.h",
+		"/home/jun/os/os-team9/include/linux/blockgroup_lock.h",
+		"/home/jun/os/os-team9/kernel/sched/core.c",
+		"/home/jun/os/os-team9/include/linux/sched.h",
+		"/home/jun/os/os-team9/kernel/sched/sched.h",
+		"/home/jun/os/os-team9/include/linux/percpu-defs.h",
+		"/home/jun/os/os-team9/include/linux/list.h",
+		"/home/jun/os/os-team9/arch/ia64/kernel/init_task.c",
+		"/home/jun/os/os-team9/kernel/sched/rt.c",
+		"/home/jun/os/os-team9/kernel/sched/fair.c",
+		"/home/jun/os/os-team9/kernel/sched/wrr.c",
+		"/home/jun/os/os-team9/init/init_task.c",
+		"/home/jun/os/os-team9/include/linux/jiffies.h",
+		"/home/jun/os/os-team9/drivers/gpu/drm/nouveau/include/nvif/list.h",
+		"/home/jun/os/os-team9/include/linux/spinlock.h",
+		"/home/jun/os/os-team9/include/linux/rcupdate.h",
+		"/home/jun/os/os-team9/drivers/staging/gdm72xx/netlink_k.c",
+		"/home/jun/os/os-team9/drivers/net/wireless/ipw2x00/ipw2200.c",
+		"/home/jun/os/os-team9/include/linux/compiler.h",
+		"/home/jun/os/os-team9/drivers/net/wireless/iwlwifi/iwl-notif-wait.h",
+		"/home/jun/os/os-team9/include/linux/tick.h",
+		"/home/jun/os/os-team9/arch/cris/include/asm/barrier.h",
+		"/home/jun/os/os-team9/include/linux/sched/wrr.h",
+		"/home/jun/os/os-team9/kernel/rotation.c",
+		"/home/jun/os/os-team9/include/linux/wait_lock.h",
+		"/home/jun/os/os-team9/include/linux/wait.h",
+		"/home/jun/os/os-team9/kernel/wait.c",
+		"/home/jun/os/os-team9/include/linux/spinlock_types.h",
+		"/home/jun/os/os-team9/drivers/md/persistent-data/dm-block-manager.c",
+		"/home/jun/os/os-team9/test/monitor_test.c",
+		"/home/jun/os/os-team9/include/linux/spinlock_api_smp.h",
+		"/home/jun/os/os-team9/kernel/spinlock.c",
+		"/home/jun/os/os-team9/include/linux/rotation.h",
+		"/home/jun/os/os-team9/include/asm-generic/bitops/lock.h",
+		"/home/jun/os/os-team9/include/trace/events/lock.h",
+		"/home/jun/os/os-team9/fs/locks.c",
+		"/home/jun/os/os-team9/test/rotd.c",
+		"/home/jun/os/os-team9/test/moniter_test.c",
+		"/home/jun/os/os-team9/arch/alpha/include/uapi/asm/signal.h",
+		"/home/jun/os/os-team9/include/linux/pid.h",
+		"/home/jun/os/os-team9/Project 1 Design plan.md",
+		"/home/jun/os/os-team9/kernel/ptree.c",
+		"/home/jun/os/os-team9/include/linux/prinfo.h",
+		"/home/jun/os/os-team9/include/linux/cred.h",
+		"/home/jun/os/os-team9/test/test.c",
+		"/home/jun/os/os-team9/arch/alpha/include/uapi/asm/byteorder.h",
+		"/home/jun/os/os-team9/Documentation/filesystems/configfs/configfs_example_explicit.c",
+		"/home/jun/os/os-team9/drivers/scsi/dc395x.c",
+		"/home/jun/os/os-team9/os_prj1_plan.md",
+		"/home/jun/os/os-team9/kernel/pid.c",
+		"/home/jun/os/os-team9/Documentation/accounting/taskstats-struct.txt",
+		"/home/jun/os/os-team9/include/trace/events/task.h",
+		"/home/jun/os/os-team9/kernel/issue.md",
+		"/home/jun/os/os-team9/include/linux/uidgid.h",
+		"/home/jun/os/os-team9/test/Makefile",
+		"/home/jun/os/os-team9/security/Makefile",
+		"/home/jun/os/os-team9/Makefile",
+		"/home/jun/os/os-team9/Documentation/ko_KR/HOWTO",
+		"/home/jun/os/os-team9/lib/string.c",
+		"/home/jun/os/os-team9/include/linux/string.h",
+		"/home/jun/os/os-team9/arch/arm/mach-ebsa110/include/mach/memory.h",
+		"/home/jun/os/os-team9/Documentation/lockstat.txt",
+		"/home/jun/os/os-team9/drivers/gpu/drm/vmwgfx/vmwgfx_fence.c",
+		"/home/jun/os/os-team9/include/uapi/asm-generic/errno-base.h",
+		"/home/jun/os/os-team9/arch/tile/kernel/process.c",
+		"/home/jun/os/os-team9/drivers/base/power/main.c",
+		"/home/jun/os/os-team9/arch/ia64/kernel/ptrace.c",
+		"/home/jun/os/os-team9/include/uapi/asm-generic/posix_types.h",
+		"/home/jun/os/os-team9/drivers/scsi/isci/task.c",
+		"/home/jun/os/os-team9/drivers/scsi/isci/task.h",
+		"/home/jun/os/os-team9/include/acpi/processor.h",
+		"/home/jun/os/os-team9/kernel/tracepoint.c",
+		"/home/jun/os/os-team9/include/linux/task_work.h",
+		"/home/jun/os/os-team9/Documentation/pi-futex.txt",
+		"/home/jun/koi/To do",
+		"/home/jun/koi/OS",
+		"/home/jun/Documents/필기",
+		"/home/jun/koi/system programming",
+		"/home/jun/Documents/datamining.txt",
+		"/home/jun/koi/한국 정치의 분석과 이해",
+		"/home/jun/koi/HCI",
+		"/home/jun/koi/16pre.txt",
+		"/home/jun/linux-3.10-artik/kernel/fork.c",
+		"/home/jun/linux-3.10-artik/kernel/exit.c",
+		"/home/jun/koi/로얄 상자"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 144.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mtime",
+			"read",
+			";",
+			"\n\t",
+			"i_lat_fractional;\n",
+			";",
+			"__le32",
+			"mtime",
+			"스",
+			"mtime",
+			"m_time",
+			"curr_loc",
+			"inode_info",
+			"__s32",
+			"__s32 ",
+			"__s32 i_lng_intger",
+			"__s32 ",
+			"inode_info",
+			"inode",
+			"ext2_fsync",
+			"ext2_release_file",
+			"struct mutex",
+			"file",
+			"mtime",
+			"atime",
+			"ctime",
+			"inode_operations",
+			"rt",
+			"RT",
+			"rt",
+			"sched_rt_entity",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"RT",
+			"rt",
+			"rt_bandwidth",
+			"rt",
+			"enqueue_task_wrr",
+			"task",
+			"set",
+			"dequeue_entity",
+			"pick",
+			"enqueue_task_wrr",
+			"dequeue_task_wrr",
+			"pick_next",
+			"task",
+			"enque",
+			"__enqueue_entity",
+			"enqueue",
+			"put_prev_task",
+			"pick_next_task",
+			"pick",
+			"set_next",
+			"set_next_entity",
+			"set_next",
+			"pick_next_entity",
+			"pick_next_task",
+			"pick_next_task_wrr",
+			"nr_running",
+			"wrr_rq",
+			"wrr_entity",
+			"rq",
+			"set_next_entity",
+			"dead",
+			"trigger_load_balance",
+			"load_balance",
+			"idle_balance",
+			"load_balance",
+			"stop",
+			"terminate",
+			"stop_sched_class",
+			"wrr_sched_class",
+			"stop_sched_class",
+			"put_prev_task",
+			"dequeue_task_wrr",
+			"__enqueue_entity",
+			"check_class_changed",
+			"switched_to",
+			"switched_to_wrr",
+			"switch_to_wrr",
+			"put_prev_entity",
+			"init_cfs_rq",
+			"init_fair",
+			"init_rt",
+			"init_rq",
+			"rq",
+			"rt_rq",
+			"rq",
+			"rt_rq",
+			"rq",
+			"init_rt_rq",
+			"init"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/jun/hci/final_prj"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1443,
+								1443
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 960.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 178.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 178.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gps.h",
+				"include/linux/gps.h"
+			],
+			[
+				"mutex.h",
+				"include/linux/mutex.h"
+			],
+			[
+				"gps.c",
+				"kernel/gps.c"
+			],
+			[
+				"mutex",
+				"include/linux/mutex.h"
+			],
+			[
+				"init/init",
+				"init/init_task.c"
+			],
+			[
+				"init_task.c",
+				"arch/ia64/kernel/init_task.c"
+			],
+			[
+				"wait.c",
+				"kernel/wait.c"
+			],
+			[
+				"sched.h",
+				"include/linux/sched.h"
+			],
+			[
+				"wait",
+				"include/linux/wait.h"
+			],
+			[
+				"lock.h",
+				"include/trace/events/lock.h"
+			],
+			[
+				"rota",
+				"include/linux/rotation.h"
+			],
+			[
+				"ro",
+				"kernel/rotation.c"
+			],
+			[
+				"wait.h",
+				"include/linux/wait.h"
+			],
+			[
+				"lock",
+				"fs/locks.c"
+			],
+			[
+				"rotation.h",
+				"include/linux/rotation.h"
+			],
+			[
+				"byteorder.h",
+				"arch/alpha/include/uapi/asm/byteorder.h"
+			],
+			[
+				"test.c",
+				"test/test.c"
+			],
+			[
+				"prin",
+				"include/linux/prinfo.h"
+			],
+			[
+				"prinfo",
+				"include/linux/prinfo.h"
+			],
+			[
+				"pid.h",
+				"include/linux/pid.h"
+			],
+			[
+				"list.h",
+				"include/linux/list.h"
+			],
+			[
+				"sched",
+				"include/linux/sched.h"
+			],
+			[
+				"prinfo.h",
+				"include/linux/prinfo.h"
+			],
+			[
+				"make",
+				"security/Makefile"
+			],
+			[
+				"makefile",
+				"test/Makefile"
+			],
+			[
+				"string.c",
+				"lib/string.c"
+			],
+			[
+				"string.h",
+				"include/linux/string.h"
+			],
+			[
+				"string",
+				"lib/string.c"
+			],
+			[
+				"memeory",
+				"arch/arm/mach-ebsa110/include/mach/memory.h"
+			],
+			[
+				"sche",
+				"include/linux/sched.h"
+			],
+			[
+				"taskstruct",
+				"Documentation/accounting/taskstats-struct.txt"
+			],
+			[
+				"tracepo",
+				"kernel/tracepoint.c"
+			],
+			[
+				"task",
+				"include/trace/events/task.h"
+			],
+			[
+				"process",
+				"include/acpi/processor.h"
+			],
+			[
+				"ptree",
+				"kernel/ptree.c"
+			],
+			[
+				"errno-base",
+				"include/uapi/asm-generic/errno-base.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "task_stuct",
+		"selected_items":
+		[
+			[
+				"task_stuct",
+				"task_struct"
+			]
+		],
+		"width": 1356.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 322.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

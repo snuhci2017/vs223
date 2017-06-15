@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0242)http://ad.about.co.kr/mad/html/443hyankyore/article06/bottom_middle?rurl=http%3A%2F%2Fwww.hani.co.kr&pb=http%3A%2F%2Fadex.ednplus.com%2Fxc%2Fh%2FFz56H4tr%2Fpassback%3Fr%3D0.25298184806%26xcg%3DMxMDEsNQTNxzyLXcD53wMMyDTNMQjsyIYW&pb_type=iframe -->
+<html xmlns="//www.w3.org/1999/xhtml" lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+
+<title>EDNPlus</title>
+<script src="./46391" type="text/javascript"></script>
+<script type="text/javascript">
+if (typeof window.jQuery == 'undefined') { document.writeln('<scri'+'pt type="text/javascri'+'pt" src="http://ad.about.co.kr/templates/common/script/jquery-1.8.2.min.js"></scri'+'pt>'); }
+document.writeln('<scr'+'ipt type="text/javascript" src="http://ad.about.co.kr/templates/common/script/jquery.base64.js"></scr'+'ipt>');
+document.writeln('<scr'+'ipt type="text/javascript" src="http://ad.about.co.kr/templates/common/script/adbay.controller.v1.10.js"></scr'+'ipt>');
+var _adbayInventoryData = { INV_WIDTH : 100, INV_HEIGHT : 50, GOODS_WIDTH : 70, GOODS_HEIGHT : 70, JSONP_URL : "http://adapi.about.co.kr/mad/jsonp/443hyankyore/article06/bottom_middle", INV_UIS : "sb,bn,sl" };
+</script><script type="text/javascript" src="./jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./jquery.base64.js"></script>
+<script type="text/javascript" src="./adbay.controller.v1.10.js"></script>
+
+
+</head>
+<body>
+<div id="adbayHouseContent" style="display:none;"><iframe id="adbayHouseContentFrame" src="./saved_resource.html" frameborder="0" scrolling="no" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" height="50"></iframe></div>
+
+<!-- sb -->
+<!--<link rel="stylesheet" type="text/css" href="http://script.about.co.kr/templates/css/sb/mobile/v1/mobile_shoppingbox_50_v1_0.css">-->
+<link rel="stylesheet" type="text/css" href="./mobile_shoppingbox.v2.css">
+<script type="text/javascript" src="./mobileShoppingBox.js"></script>
+<script>
+function openLink(url)
+{
+    var newWin = window.open(url, '_blank');
+}
+function adbayShoppingboxCallback50()
+{
+	if(adbayAdsContents.is_ep)
+    {
+          $("#ref").attr("href","http://www.ednplus.com/info");
+    }
+    else
+    {
+    	  $("#ref").attr("href","http://www.ednplus.com");
+    }
+    
+	_url = adbayAdsContents.redirect.split('?');
+	    _param = $.base64('decode', _url[1]).split('&');
+	    _nlogo = true;
+		for(i=_param.length; i>0; i--){
+			if(_param[i] == 'seller='){
+				_nlogo=false; break;
+			}
+		}
+
+		if(_nlogo)
+		{
+			$("#adbay_sb_logo").html('<img src="'+adbayAdsContents.logo+'" width="40" height="10" alt="" />');
+		}
+		else
+		{
+			if(adbayAdsContents.logo_target == "_top")
+			{
+				$("#adbay_sb_logo").html('<a href="'+adbayAdsContents.redirect+'" target="_top"><img src="'+adbayAdsContents.logo+'" width="40" height="10" alt="" /></a>');
+			}
+			else
+			{
+				$("#adbay_sb_logo").html('<a href="javascript:openLink(\''+adbayAdsContents.redirect+'\');"><img src="'+adbayAdsContents.logo+'" width="40" height="10" alt="" /></a>');
+			}
+		}
+	$("#shoppingbox_50").show();
+		
+	var items = "";
+	for(var i=0; i < 10; i++)
+	{
+		if(adbayAdsContents.creatives[i].target == "_top")
+		{
+			items +="<div class='ad_list__item slider__item'><a href='"+adbayAdsContents.creatives[i].click+"' target='_top'><span class='img'><img src='"+adbayAdsContents.creatives[i].src+"' alt=''></span><span class='txt'>"+adbayAdsContents.creatives[i].txt+"</span></a></div>";
+		}
+		else
+		{
+			//items +="<div class='ad_list__item slider__item'><a href='"+adbayAdsContents.creatives[i].click+"' target='_blank'><span class='img'><img src='"+adbayAdsContents.creatives[i].src+"' alt=''></span><span class='txt'>"+adbayAdsContents.creatives[i].txt+"</span></a></div>";
+                        items +="<div class='ad_list__item slider__item'><a href='javascript:openLink(\""+adbayAdsContents.creatives[i].click+"\")' target='_blank'><span class='img'><img src='"+adbayAdsContents.creatives[i].src+"' alt=''></span><span class='txt'>"+adbayAdsContents.creatives[i].txt+"</span></a></div>";
+		}
+	}
+	var obj =$('.svgArea')
+	obj.on('click',function()
+	{
+		$(this).addClass('svgHover');
+	});
+	$("#slider").html(items);
+         initSlider('.slider');
+}
+</script>
+<div class="m_shoppingbox" id="shoppingbox_50" style="display: none; background-color:#fffff;">
+	<!-- iad -->
+	<div class="iad">
+		<p class="lowBro8" style="display:none;"><a href="http://www.ednplus.com/info" target="_blank" title="EDNplus 광고안내"></a></p>
+		<div class="svgArea">
+			<div class="svg_off">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+					<circle fill="#5A5A5A" cx="8" cy="8" r="8"></circle>
+					<rect x="7" y="3" fill="#FFFFFF" width="2" height="2"></rect>
+					<rect x="7" y="7" fill="#FFFFFF" width="2" height="6"></rect>
+				</svg>
+			</div>
+			<div class="svg_on">
+				<a href="http://www.ednplus.co.kr/" id="ref" target="_blank" title="EDN Plus 광고안내">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="-262 389 86 16" width="86" height="16">
+						<path fill="#5A5A5A" d="M-176 397c0 4.4-3.4 8-7.6 8h-70.7c-4.2 0-7.6-3.6-7.6-8s3.4-8 7.6-8h70.7c4.2 0 7.6 3.6 7.6 8z"></path>
+						<path fill="#FFF" d="M-252.8 401.4V394h4.7v1.5h-3v1.4h2.8v1.5h-2.8v1.6h3v1.5h-4.7zM-244.1 401.4h-2.9V394h2.9c1.8 0 2.5.9 2.5 1.9v3.6c0 1-.7 1.9-2.5 1.9zm.8-5c0-.6-.2-.9-1-.9h-1v4.4h1c.8 0 1-.3 1-.9v-2.6zM-239 396.5v4.9h-1.6V394h2l2.4 5.1V394h1.6v7.4h-2.1l-2.3-4.9zM-228.1 399.1h-1.3v2.2h-1.7V394h3c1.8 0 2.5.7 2.5 2.1v1c.1 1.3-.7 2-2.5 2zm.9-2.9c0-.5-.2-.8-.9-.8h-1.3v2.2h1.3c.7 0 .9-.3.9-.8v-.6zM-224.8 401.4v-7.5l1.6-.2v7.7h-1.6zM-220.3 396v3.6c0 .2.1.4.4.4.3 0 .8-.2 1.2-.4V396h1.6v5.4h-1.2l-.2-.4c-.7.3-1.5.5-2.2.5-.9 0-1.2-.7-1.2-1.7V396h1.6zM-214.2 401.5c-.6 0-1.4-.1-2-.3l.3-1.2c.4.1 1 .2 1.6.2.5 0 .6-.1.6-.5 0-.3 0-.4-.9-.6-1.3-.3-1.4-.7-1.4-1.7 0-1.1.4-1.6 2.1-1.6.4 0 1.2.1 1.6.2l-.1 1.2c-.5-.1-1.1-.2-1.5-.2-.5 0-.6.1-.6.4 0 .3 0 .4.7.5 1.5.3 1.7.7 1.7 1.8-.1 1.2-.6 1.8-2.1 1.8zM-209.5 390.5c-1.5 0-2.8 1.2-2.8 2.8s1.2 2.8 2.8 2.8 2.8-1.2 2.8-2.8-1.3-2.8-2.8-2.8zm1.4 3.2h-1v1h-.8v-1h-1v-.8h1v-1h.8v1h1v.8z"></path>
+						<text transform="translate(-205.185 400.894)" fill="#FFF" font-family="Dotum" font-size="11">광고</text>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- //iad -->
+	<div class="ad_list__wrap">
+		<h1 class="logo" id="adbay_sb_logo"></h1>
+                <div class="ad_list slider" id="slider">	
+                </div>
+	</div>
+</div>
+<!-- bn -->
+<!--<link rel='stylesheet' type='text/css' href='http://script.about.co.kr/templates/css/bn/mobile/v1/banner.css' />-->
+<style type="text/css">
+		*{padding:0;margin:0;vertical-align:top;}
+		.mobild_bnr {position:absolute;top:0;left:0;width:100%;}
+		.mobild_bnr .inner {margin:0 auto;text-align:center;}
+		.mobild_bnr .inner .in {position:relative;margin:0 auto;text-align:center;display:inline-block;}
+		.mobild_bnr img {border:0;}
+		.mobild_bnr .bnr {display:block;position:relative;}
+
+		/* 2015-07-28 */
+		.mobild_bnr .iad {position:absolute;z-index:999;right:5px;top:5px;text-align:left;}
+		.mobild_bnr.typeHor .iad {right:3px;top:3px;}
+		.mobild_bnr.typeVer .iad {right:3px;top:3px;}
+		.mobild_bnr.svgS .iad {right:3px;top:auto; bottom:3px;}
+
+		.mobild_bnr .iad p a {display:block;width:16px;height:16px;background:url(http://img.iacstatic.co.kr/adbayimg/templates/slide/info/svn_info.png) 0 0 no-repeat;font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;font-weight:bold;color:#282095;text-indent:-10000px;}
+		.mobild_bnr .iad p a:hover {width:86px;background:url(http://img.iacstatic.co.kr/adbayimg/templates/slide/info/svn_open.png) 0 0 no-repeat;text-indent:0px;}
+
+		.mobild_bnr .svgArea .svg_on, .svgArea.svgHover .svg_off {display:none;}
+		.mobild_bnr .svgArea.svgHover .svg_on {display:block;}
+		.mobild_bnr .svgArea.svgHover .svg_on a {text-decoration:none;}
+		/* //2015-07-28 */
+	</style>
+
+<script type="text/javascript">
+function openLink(url)
+{
+	var newWin = window.open(url, '_blank');
+}
+function adbayBannerCallback()
+{	
+	if(adbayAdsContents['creatives'][0]['target'] == "_top")
+	{
+		var code	= '<a class="bnr" href="'+adbayAdsContents['creatives'][0]['click']+'" target="_top"><img src="'+adbayAdsContents['creatives'][0]['src']+'" width="'+adbayAdsContents['creatives'][0]['w']+'" height="'+adbayAdsContents['creatives'][0]['h']+'" /></a>';
+	}
+	else
+	{
+		var code	= '<a class="bnr" href="javascript:openLink(\''+adbayAdsContents['creatives'][0]['click']+'\');"><img src="'+adbayAdsContents['creatives'][0]['src']+'" width="'+adbayAdsContents['creatives'][0]['w']+'" height="'+adbayAdsContents['creatives'][0]['h']+'" /></a>';
+	}
+	$("#adbay_bn_layer").html(code);
+	$("#mobild_bnr").show();
+	$(".inner").css('background', adbayAdsContents['bg-color']);
+	var obj =$('.svgArea');
+	obj.on('click',function()
+	{
+		$(this).addClass('svgHover');
+	});
+noImageCheck();
+}
+</script>
+<div class="mobild_bnr" id="mobild_bnr" style="">
+<div class="inner" style="background: rgb(88, 88, 88);">
+<div class="in">
+<div id="adbay_bn_layer"><a class="bnr" href="javascript:openLink(&#39;http://adclk.about.co.kr/click/443hyankyore/article06/bottom_middle?aW52X2lkeD01NjExJnByZF9pZHg9MjcmY2FtX2lkeD01NTA4JmFkc19pZHg9MTI2MDEmY3R2X2dycF9pZHg9MjM2MjcmY3R2X2lkeD0xODkxMzcmdG1wX2lkeD01MSZkZXZpY2U9MiZ1aT1ibiZpc190YXJnZXQ9MCZjYXRlZ29yeT0mcHR5cGU9MSZzaG9wX2lkPWNqbWFsbCZhY2NfaWR4PTUwNyZnb29kc19pZD0maXNfaG91c2U9MCZjbGllbnRfaXA9MjQ2OTI5NDM5NyZyZXNfdGltZT0xNDk1NzI1OTYxJnRhZz1qc29ucCZzdm5tPTdoJm90aGVyX209JnNlbGxlcj0maW5mbz0mcmVkaXJlY3Q9aHR0cHMlM0EvL2lyZC1kLnRsbmsuaW8vc2VydmUlM0ZhY3Rpb24lM0RjbGljayUyNnB1Ymxpc2hlcl9pZCUzRDE5NzMwNyUyNnNpdGVfaWQlM0Q2MDk5MCUyNmRlc3RpbmF0aW9uX2lkJTNENDgwMjMyJTI2YWdlbmN5X2lkJTNEMjkyJTI2cmVmX2lkJTNEcGNpZCUyNTNEYmQ0ZTY2ZGIwNzQxNGQ4NGI2Yjg5NTQ3ZjA1NzdmMmUlMjUyNnNob3BpZCUyNTNEJTI1MjZwcm9kY250JTI1M0QxJTI1MjZwcmljZSUyNTNEMCUyNTI2Z29vZHNjb2RlJTI1M0RUVU5FJTI2bXlfY2FtcGFpZ24lM0QxNzA1MjNfREFfZGVhcmphbmVfQU5EJmVjcG09NDYmcmVmPWh0dHAlM0EvL3d3dy5oYW5pLmNvLmty&#39;);"><img src="./99f3ab10f7c2aab465f880406eb356dd.jpg" width="320" height="50"></a></div>
+<!-- 2015-07-28 아이콘 추가 -->
+<div class="iad_wrap">
+	<div class="iad">
+		<p class="lowBro8" style="display:none;"><a href="http://www.ednplus.com/" target="_blank" title="about 광고안내"></a></p>
+		<div class="svgArea">
+			<div class="svg_off">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+					<circle fill="#5A5A5A" cx="8" cy="8" r="8"></circle>
+					<rect x="7" y="3" fill="#FFFFFF" width="2" height="2"></rect>
+					<rect x="7" y="7" fill="#FFFFFF" width="2" height="6"></rect>
+				</svg>
+			</div>
+			<div class="svg_on">
+				<a href="http://www.ednplus.com/" target="_blank" title="EDN Plus 광고안내">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="-262 389 86 16" width="86" height="16">
+						<path fill="#5A5A5A" d="M-176 397c0 4.4-3.4 8-7.6 8h-70.7c-4.2 0-7.6-3.6-7.6-8s3.4-8 7.6-8h70.7c4.2 0 7.6 3.6 7.6 8z"></path>
+						<path fill="#FFF" d="M-252.8 401.4V394h4.7v1.5h-3v1.4h2.8v1.5h-2.8v1.6h3v1.5h-4.7zM-244.1 401.4h-2.9V394h2.9c1.8 0 2.5.9 2.5 1.9v3.6c0 1-.7 1.9-2.5 1.9zm.8-5c0-.6-.2-.9-1-.9h-1v4.4h1c.8 0 1-.3 1-.9v-2.6zM-239 396.5v4.9h-1.6V394h2l2.4 5.1V394h1.6v7.4h-2.1l-2.3-4.9zM-228.1 399.1h-1.3v2.2h-1.7V394h3c1.8 0 2.5.7 2.5 2.1v1c.1 1.3-.7 2-2.5 2zm.9-2.9c0-.5-.2-.8-.9-.8h-1.3v2.2h1.3c.7 0 .9-.3.9-.8v-.6zM-224.8 401.4v-7.5l1.6-.2v7.7h-1.6zM-220.3 396v3.6c0 .2.1.4.4.4.3 0 .8-.2 1.2-.4V396h1.6v5.4h-1.2l-.2-.4c-.7.3-1.5.5-2.2.5-.9 0-1.2-.7-1.2-1.7V396h1.6zM-214.2 401.5c-.6 0-1.4-.1-2-.3l.3-1.2c.4.1 1 .2 1.6.2.5 0 .6-.1.6-.5 0-.3 0-.4-.9-.6-1.3-.3-1.4-.7-1.4-1.7 0-1.1.4-1.6 2.1-1.6.4 0 1.2.1 1.6.2l-.1 1.2c-.5-.1-1.1-.2-1.5-.2-.5 0-.6.1-.6.4 0 .3 0 .4.7.5 1.5.3 1.7.7 1.7 1.8-.1 1.2-.6 1.8-2.1 1.8zM-209.5 390.5c-1.5 0-2.8 1.2-2.8 2.8s1.2 2.8 2.8 2.8 2.8-1.2 2.8-2.8-1.3-2.8-2.8-2.8zm1.4 3.2h-1v1h-.8v-1h-1v-.8h1v-1h.8v1h1v.8z"></path>
+						<text transform="translate(-205.185 400.894)" fill="#FFF" font-family="Dotum" font-size="11">광고</text>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- // 2015-07-28아이콘 추가 -->
+</div>
+</div>
+</div>
+<!-- sl -->
+<link rel="stylesheet" href="./mobile_slide.css">
+<link rel="stylesheet" href="./slick.css">
+<script type="text/javascript" src="./slick.min.js"></script>
+<script type="text/javascript">
+function executeSlideRender(creatHmt)
+{
+	creatHmt();
+	$('div.thum').slick({
+		slidesToShow : 3,
+		slidesToScroll : 1,
+		autoplay : true,
+		autoplaySpeed : 3000,
+		arrows : false,
+		onAfterChange : function(){
+			var box = $('div.thum'),
+				objs = box.find('div.slick-slide'),
+				objOn = box.find('.slick-active:first'),
+				htm = '<a href='+objOn.find('a').attr('href')+' target="_blank">'+objOn.find('img').attr('alt')+'</a>';
+			objs.removeClass('on');
+			objOn.addClass('on');
+			$('#innerString').html(htm);
+			$('#on_outlineClick').attr('href',objOn.find('a').attr('href'));
+		}
+	});
+}
+function openLink(url) {
+	var newWin = window.open(url, '_blank');
+}
+function adbaySlideBannerCallback320x50()
+{
+    if(adbayAdsContents.is_ep)
+    {
+          $("#ref").attr("href","http://www.ednplus.com/info");
+    }
+    else
+    {
+    	  $("#ref").attr("href","http://www.ednplus.com");
+    }
+    
+	$("#slideBanner").show();
+
+	_url = adbayAdsContents.redirect.split('?');
+	_param = $.base64('decode', _url[1]).split('&');
+	_nlogo = true;
+	for(i=_param.length; i>0; i--){
+		if(_param[i] == 'seller='){
+			_nlogo=false; break;
+		}
+	}
+	
+	if(_nlogo)
+	{
+		$("#adbay_sl_logo").html('<h1><img src="'+adbayAdsContents.logo+'" width="90" height="28" alt="" /></h1>');
+	}
+	else
+	{
+		if(adbayAdsContents.logo_target == "_top")
+		{
+			$("#adbay_sl_logo").html('<h1><a href="'+adbayAdsContents.redirect+');" target="_top"><img src="'+adbayAdsContents.logo+'" width="90" height="28" alt="" /></a></h1>');
+		}
+		else
+		{
+			$("#adbay_sl_logo").html('<h1><a href="javascript:openLink(\''+adbayAdsContents.redirect+'\');"><img src="'+adbayAdsContents.logo+'" width="90" height="28" alt="" /></a></h1>');
+		}
+	}
+/*
+	if(adbayAdsContents.logo_target == "_top")
+	{
+		$("#adbay_sl_logo").html('<h1><a href="'+adbayAdsContents.redirect+');" target="_top"><img src="'+adbayAdsContents.logo+'" width="90" height="28" alt="" /></a></h1>');
+	}
+	else
+	{
+		$("#adbay_sl_logo").html('<h1><a href="javascript:openLink(\''+adbayAdsContents.redirect+'\');"><img src="'+adbayAdsContents.logo+'" width="90" height="28" alt="" /></a></h1>');
+	}
+*/	
+	if(!adbayAdsContents.is_ep)
+	{
+		$("#slideBanner").addClass('usenotSvg');
+	}
+	
+	var obj =$('.svgArea');
+	obj.on('click',function(){
+		$(this).addClass('svgHover');
+	});
+	
+	var creatHmt = function()
+	{
+		var $box = $('#thum'),
+			data = adbayAdsContents['creatives'],
+			htm = '',
+			$str = $('#innerString');
+		$.each(data,function(index){
+			if(this.target == "_top")
+			{
+				htm += '<div class="thum_item '+((index == 0)?'on':'')+'"><a href="'+this.click+'" target="_top"><span class="s_img"><img src="'+this.src+'" alt="'+this.txt+'" width="50" height="50" /></span><span class="d_outline"></span></a></div>';
+			}
+			else
+			{
+				htm += '<div class="thum_item '+((index == 0)?'on':'')+'"><a href="javascript:openLink(\''+this.click+'\')"><span class="s_img"><img src="'+this.src+'" alt="'+this.txt+'" width="50" height="50" /></span><span class="d_outline"></span></a></div>';
+			}
+		});
+
+		$str.find('a').attr('href',data[0].click).text(data[0].txt);
+		$('#on_outlineClick').attr('href',data[0].click);
+		$box.html(htm);
+	};
+
+	executeSlideRender(creatHmt);
+noImageCheck();
+}
+</script>
+<div class="advertisement" id="slideBanner" style="display:none;">
+<div class="iad">
+<p class="lowBro8" style="display:none;"><a href="http://www.ednplus.com/" target="_blank" title="EDN Plus 광고안내"></a></p>
+<div class="svgArea">
+	<div class="svg_off">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+			<circle fill="#5A5A5A" cx="8" cy="8" r="8"></circle>
+			<rect x="7" y="3" fill="#FFFFFF" width="2" height="2"></rect>
+			<rect x="7" y="7" fill="#FFFFFF" width="2" height="6"></rect>
+		</svg>
+	</div>
+	<div class="svg_on">
+		<a href="http://www.ednplus.com/info" id="ref" target="_blank" title="EDN Plus 광고안내">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="-262 389 86 16" width="86" height="16">
+				<path fill="#5A5A5A" d="M-176 397c0 4.4-3.4 8-7.6 8h-70.7c-4.2 0-7.6-3.6-7.6-8s3.4-8 7.6-8h70.7c4.2 0 7.6 3.6 7.6 8z"></path>
+				<path fill="#FFF" d="M-252.8 401.4V394h4.7v1.5h-3v1.4h2.8v1.5h-2.8v1.6h3v1.5h-4.7zM-244.1 401.4h-2.9V394h2.9c1.8 0 2.5.9 2.5 1.9v3.6c0 1-.7 1.9-2.5 1.9zm.8-5c0-.6-.2-.9-1-.9h-1v4.4h1c.8 0 1-.3 1-.9v-2.6zM-239 396.5v4.9h-1.6V394h2l2.4 5.1V394h1.6v7.4h-2.1l-2.3-4.9zM-228.1 399.1h-1.3v2.2h-1.7V394h3c1.8 0 2.5.7 2.5 2.1v1c.1 1.3-.7 2-2.5 2zm.9-2.9c0-.5-.2-.8-.9-.8h-1.3v2.2h1.3c.7 0 .9-.3.9-.8v-.6zM-224.8 401.4v-7.5l1.6-.2v7.7h-1.6zM-220.3 396v3.6c0 .2.1.4.4.4.3 0 .8-.2 1.2-.4V396h1.6v5.4h-1.2l-.2-.4c-.7.3-1.5.5-2.2.5-.9 0-1.2-.7-1.2-1.7V396h1.6zM-214.2 401.5c-.6 0-1.4-.1-2-.3l.3-1.2c.4.1 1 .2 1.6.2.5 0 .6-.1.6-.5 0-.3 0-.4-.9-.6-1.3-.3-1.4-.7-1.4-1.7 0-1.1.4-1.6 2.1-1.6.4 0 1.2.1 1.6.2l-.1 1.2c-.5-.1-1.1-.2-1.5-.2-.5 0-.6.1-.6.4 0 .3 0 .4.7.5 1.5.3 1.7.7 1.7 1.8-.1 1.2-.6 1.8-2.1 1.8zM-209.5 390.5c-1.5 0-2.8 1.2-2.8 2.8s1.2 2.8 2.8 2.8 2.8-1.2 2.8-2.8-1.3-2.8-2.8-2.8zm1.4 3.2h-1v1h-.8v-1h-1v-.8h1v-1h.8v1h1v.8z"></path>
+				<text transform="translate(-205.185 400.894)" fill="#FFF" font-family="Dotum" font-size="11">광고</text>
+			</svg>
+		</a>
+	</div>
+</div>
+</div>
+<section class="ad01">
+<a href="http://ad.about.co.kr/mad/html/443hyankyore/article06/bottom_middle?rurl=http%3A%2F%2Fwww.hani.co.kr&amp;pb=http%3A%2F%2Fadex.ednplus.com%2Fxc%2Fh%2FFz56H4tr%2Fpassback%3Fr%3D0.25298184806%26xcg%3DMxMDEsNQTNxzyLXcD53wMMyDTNMQjsyIYW&amp;pb_type=iframe#" class="on_outline" id="on_outlineClick" target="_blank"></a>
+<div class="tit">
+<div id="adbay_sl_logo"></div>
+<p id="innerString"></p>
+</div>
+<div class="thum" id="thum"></div>
+</section>
+</div>
+
+</body></html>

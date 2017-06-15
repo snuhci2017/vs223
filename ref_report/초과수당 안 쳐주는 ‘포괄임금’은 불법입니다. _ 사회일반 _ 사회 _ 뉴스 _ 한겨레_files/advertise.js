@@ -1,0 +1,1 @@
+	window.is_blocked_ad	= false;

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0191)http://www.dreamsearch.or.kr/servlet/adbnMobileBanner?from=http%3A//m.hani.co.kr/arti/politics/politics_general/792193.htmlu=2016083100002&us=7349&s=8061&cntad=1&cntsr=2&iwh=300_250&bntype=42 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>모바일 퀴즈형 배너 300*250</title>
+<link rel="stylesheet" type="text/css" href="./mobon_reset.css">
+
+<style type="text/css">
+/* global defaults */
+header, hgroup, footer, section, aside, nav, article {display:block; margin:0;padding:0;}
+body{-webkit-text-size-adjust:none;/*iphone font resizing*/}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,blockquote,button,th,td,textarea,input{margin:0;padding:0;  font-family:'돋움', Dotum, Helvetica, AppleGothic,}
+hr, legend {display:none;}
+img, fieldset {border:0 none;}
+body, h1, h2, h3, h4, h5, dl, dt, dd, th, td, p, form, fieldset, legend, input, div {font-size:12px; font-weight:normal;}
+ul, ol, li {list-style:none outside;}
+input, select, textarea, label{vertical-align:middle;}
+body,th,td{font-size:12px; font-family:dotum, gulim, sans-serif;}
+label, caption{position:absolute; left:-99999px; top:-99999px; z-index:99; display:none;}
+
+a:link, a:visited,a:hover{text-decoration:none; color:#000;}
+
+  .mobon_reset {position:relative; width:300px; height:250px; margin:0 auto; box-sizing:border-box; background-color:white; }
+  .mobon_reset .answerYes {display:none; position:absolute; left:0; top:0; z-index:120; width:100%; height:100%; background-color:#f8f8f8; }
+  .mobon_reset .answerYes .Icon {width:83px; height:83px; margin:25px auto 10px; overflow:hidden; }
+  .mobon_reset .answerYes .Icon img {width:100%; height:100%; }
+  .mobon_reset .answerYes .yesTitle {position:relative; z-index:70; height:45px; line-height:45px; text-align:center; font-size:20px; font-weight:bold; color:#fff; background-color:#000; overflow:hidden; }
+  .mobon_reset .answerYes .yesText { width:230px; height:60px; margin:16px auto 0; line-height:30px; text-align:center; color:#1b1b1b; letter-spacing:-.5px; font-size:20px; overflow:hidden;}
+  .mobon_reset .answerNo {display:none; position:absolute; left:0; top:0; z-index:120; width:100%; height:100%; background-color:#f8f8f8; }
+  .mobon_reset .answerNo .Icon {width:83px; height:83px; margin:25px auto 10px; overflow:hidden; }
+  .mobon_reset .answerNo .Icon img {width:100%; height:100%; }
+  .mobon_reset .answerNo .noTitle {position:relative; z-index:70; height:45px; line-height:45px; text-align:center; font-size:20px; font-weight:bold;  color:#fff; background-color:#000; overflow:hidden; }
+  .mobon_reset .answerNo .noText { width:230px; height:60px; margin:16px auto 0; line-height:30px; text-align:center; color:#1b1b1b; letter-spacing:-.5px; font-size:20px; overflow:hidden;}
+
+  #mobon_type01 {position:relative; width:300px; height:250px; padding:0; overflow:hidden; background:url('http://img.mobon.net/quiz/images4/bg_300x18.gif') repeat-y center top; background-size:100% auto; }
+  #mobon_type01 .item { position:absolute; left:50%; top:0; z-index:100; width:137px; height:137px; margin-left:-68px; background-repeat:no-repeat; background-position:50% 50%; background-size:cover;  overflow:hidden;  }
+  #mobon_type01 .quiz { margin:14px 0 6px 0; }
+  #mobon_type01 .titleWrap { height:106px; text-align:center; background-color:#000; }
+  #mobon_type01 .title { position:relative; padding:0 10px; line-height:22px; letter-spacing:-1px; font-size:18px; color:#fff; font-weight:bold; overflow:hidden;  }
+  #mobon_type01 .dragWrap { position:relative; height:140px; background:url('http://img.mobon.net/quiz/images4/move_bar.png') no-repeat center 70px; overflow:hidden; border-radius:23px;  }
+  #mobon_type01 .drag {position:absolute; left:50%; bottom:-16px; z-index:50; margin-left:-31px; padding:20px 25px; width:20px; overflow:hidden; }
+  #mobon_type01 .dragArea .yes {position:absolute; left:3px; top:55px; width:60px;}
+  #mobon_type01 .dragArea .no {position:absolute; right:1px; top:55px;; width:60px;}
+</style>
+
+<script type="text/javascript" src="./jquery-1.11.1.min.js"></script>
+<script src="./jquery-ui-1.8.2.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	var enliple_q_txt = ('사랑하는 가족을 위한 1위 상품이 여기에');
+	var enliple_a_check_txt = ('정답입니다~');
+	var enliple_a_txt = ('영감을 깨우는 휴식공간을 느껴보세요');
+	var enliple_ia_check_txt = ('틀렸습니다~');
+	var enliple_ia_txt = ('대한민국 안마의자 1위 바디프랜드');
+	var enliple_linkUrl = ('/servlet/drc?no=0&kno=0&s=8061&adgubun=PB&gb=PB&sc=f23c18a750d19f03480a0ef915053406&mc=8061&userid=bodyfriend&u=bodyfriend&product=mbw&slink=http%3A%2F%2Fwww.bodyfriend.co.kr%2Fmall%2F&mobonlinkcate=none&pb_gubun=QA&turl=http%3A%2F%2Fwww.bodyfriend.co.kr%2Fmall%2F&tgubun=two&viewTime=_8061_1495725952804_394&hId=6');
+	var enliple_img1 = ('http://img.mobon.net/ad/imgfile/f23c18a750d19f03480a0ef9150534061.png');
+	var enliple_img2 = ('http://img.mobon.net/ad/imgfile/f23c18a750d19f03480a0ef9150534061.png');
+	var enliple_imglogo = ('http://img.mobon.net/ad/imgfile/bodyfriend-222284954000.png');
+	var checkedClick = false;
+
+	var html = "	<div id=\"mobon_type01\"> ";
+	html += "		<div class=\"titleWrap\"> ";
+	html += "			<img src=\"http://img.mobon.net/quiz/images4/question.png\" alt=\"질문\" class=\"quiz\" /> ";
+	html += "			<div class=\"title\">"+enliple_q_txt+"</div> ";
+	html += "		</div> ";
+	html += "		<div class=\"dragWrap\"> ";
+	html += "			<div class=\"dragArea\"> ";
+	html += "				<img src=\""+enliple_img1+"\" alt=\"img\" class=\"item\" /> ";
+	html += "				<img src=\"http://img.mobon.net/quiz/images4/yes.png\" alt=\"yes\" class=\"yes\" onClick=\"javascript:Yes();\" /> ";
+	html += "     			<a id ='elp_click' href='"+enliple_linkUrl+"' target='_blank' style='display:none;'></a>";
+	html += "				<img src=\"http://img.mobon.net/quiz/images4/no.png\" alt=\"no\" class=\"no\" onClick=\"javascript:No();\" /> ";
+	html += "			</div> ";
+	html += "		</div> ";
+	html += "	</div> ";
+	html += "	<div class=\"answerYes\"> ";
+	html += "		<div class=\"yesTitle\">"+enliple_a_check_txt+"</div> ";
+	html += "		<div class=\"Icon\"><img src=\""+enliple_imglogo+"\" alt=\"아이콘\" /></div> ";
+	html += "		<div class=\"yesText\">"+enliple_a_txt+"</div> ";
+	html += "	</div> ";
+	html += "	<div class=\"answerNo\"> ";
+	html += "		<div class=\"noTitle\">"+enliple_ia_check_txt+"</div> ";
+	html += "		<div class=\"Icon\"><img src=\""+enliple_imglogo+"\" alt=\"아이콘\" /></div> ";
+	html += "		<div class=\"noText\">"+enliple_ia_txt+"</div> ";
+	html += "	</div> ";
+	$(".mobon_reset").html(html);	
+	
+	// 오 or 있다 쪽으로 드래그
+	$(".item").draggable({
+		axis: 'x',
+		containment: 'parent',
+		drag: function(event, ui) {
+			if (ui.position.left == 0) {
+				$("#mobon_type01").hide();
+				$(".answerYes").show();
+			}
+			if (ui.position.left > 40) {
+				$("#mobon_type01").hide();
+				$(".answerNo").show();
+			}
+		},
+		stop: function(event, ui) {
+			if (ui.position.left < 81 && ui.position.left > 0) {
+				$(this).animate({
+					left: 0
+				})
+			}
+			if (ui.position.left < 41 && ui.position.left > 0) {
+				$(this).animate({
+					left: 0
+				})
+			}
+		}
+	});
+
+	$('.item')[0].addEventListener('touchmove', function(event) {
+			if( $(".answerYes").css("display") == "block" || $(".answerNo").css("display") == "block" ) {
+				return;
+			}
+
+	    event.preventDefault();
+	    var el = event.target;
+	    var touch = event.touches[0];
+			var touchPosition = "";
+	    curX = touch.pageX - this.offsetLeft -70;
+		if(curX > 0){
+			$('.no').attr('src',$('.no').attr('src').split('no.png').join('no2.png'));
+			$('.yes').attr('src',$('.yes').attr('src').split('yes2.png').join('yes.png'));
+		}
+		if(curX < 0 ){
+			$('.yes').attr('src',$('.yes').attr('src').split('yes.png').join('yes2.png'));
+			$('.no').attr('src',$('.no').attr('src').split('no2.png').join('no.png'));
+		}
+		if(curX < 40 && curX > -40  ){
+			el.style.webkitTransform = 'translateX(' + curX + 'px)';
+		}
+	}, false);
+
+	$('.item')[0].addEventListener('touchend', function(event) {
+
+			if( curX < 0 )
+				touchPosition = "left";
+			else if( curX > 0 )
+				touchPosition = "right";
+			else
+				return;
+
+			if( touchPosition == "left" && curX > 0 )
+				return;
+			if( touchPosition == "right" && curX < 0 )
+				return;
+
+	    	if(curX < -30){
+				if(checkedClick)	return;
+				else checkedClick = true;
+				$("#mobon_type01").hide();
+				$(".answerYes").show();
+				setTimeout( function(){$("#elp_click ")[0].click();},800 );
+				return;
+	    	}
+			if(curX > 40 && curX <200){
+				if(checkedClick)	return;
+				else checkedClick = true;
+				$("#mobon_type01").hide();
+				$(".answerNo").show();
+				setTimeout( function(){$("#elp_click ")[0].click();},800 );
+				return;
+			}
+	}, false);
+
+	$('.item')[0].addEventListener('touchend', function(event) {
+	    this.style.webkitTransition = '-webkit-transform 0.3s ease-in';
+	    this.addEventListener( 'webkitTransitionEnd', function( event ) { this.style.webkitTransition = 'none'; }, false );
+	    this.style.webkitTransform = 'translateX(0px)';
+			$('.no').attr('src',$('.no').attr('src').split('no2.png').join('no.png'));
+			$('.yes').attr('src',$('.yes').attr('src').split('yes2.png').join('yes.png'));
+	}, false);
+
+});
+
+	function Yes() {
+		if(checkedClick)	return;
+		else checkedClick = true;
+		$("#mobon_type01").hide();
+		$(".answerYes").show();
+		setTimeout( function(){$("#elp_click ")[0].click();},800 );
+	}
+
+	function No() {
+		if(checkedClick)	return;
+		else checkedClick = true;
+		$("#mobon_type01").hide();
+		$(".answerNo").show();
+		setTimeout( function(){$("#elp_click ")[0].click();},800 );
+	}
+
+</script>
+</head>
+<body>
+<div class="mobon_reset">	<div id="mobon_type01"> 		<div class="titleWrap"> 			<img src="./question.png" alt="질문" class="quiz"> 			<div class="title">사랑하는 가족을 위한 1위 상품이 여기에</div> 		</div> 		<div class="dragWrap"> 			<div class="dragArea"> 				<img src="./f23c18a750d19f03480a0ef9150534061.png" alt="img" class="item ui-draggable"> 				<img src="./yes.png" alt="yes" class="yes" onclick="javascript:Yes();">      			<a id="elp_click" href="http://www.dreamsearch.or.kr/servlet/drc?no=0&amp;kno=0&amp;s=8061&amp;adgubun=PB&amp;gb=PB&amp;sc=f23c18a750d19f03480a0ef915053406&amp;mc=8061&amp;userid=bodyfriend&amp;u=bodyfriend&amp;product=mbw&amp;slink=http%3A%2F%2Fwww.bodyfriend.co.kr%2Fmall%2F&amp;mobonlinkcate=none&amp;pb_gubun=QA&amp;turl=http%3A%2F%2Fwww.bodyfriend.co.kr%2Fmall%2F&amp;tgubun=two&amp;viewTime=_8061_1495725952804_394&amp;hId=6" target="_blank" style="display:none;"></a>				<img src="./no.png" alt="no" class="no" onclick="javascript:No();"> 			</div> 		</div> 	</div> 	<div class="answerYes"> 		<div class="yesTitle">정답입니다~</div> 		<div class="Icon"><img src="./bodyfriend-222284954000.png" alt="아이콘"></div> 		<div class="yesText">영감을 깨우는 휴식공간을 느껴보세요</div> 	</div> 	<div class="answerNo"> 		<div class="noTitle">틀렸습니다~</div> 		<div class="Icon"><img src="./bodyfriend-222284954000.png" alt="아이콘"></div> 		<div class="noText">대한민국 안마의자 1위 바디프랜드</div> 	</div> </div>
+
+
+</body></html>

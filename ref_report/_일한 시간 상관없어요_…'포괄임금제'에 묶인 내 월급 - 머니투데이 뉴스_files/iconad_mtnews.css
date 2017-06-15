@@ -1,0 +1,118 @@
+/*Example CSS for the two demo scrollers*/
+#scrollDiv {
+	z-index:99999999999;
+}
+
+
+
+#pscroller1{
+	width: 55px;
+	padding: 0;
+	background-color:#fefefe;
+	z-index:99999999999;
+	float:left;
+	border: 1px solid #aaaaaa;
+}
+
+#pscroller2{
+	width: 55px;
+	padding: 0;
+	background-color:#fefefe;
+	z-index:99999999999;
+	float:left;
+	border: 1px solid #aaaaaa;
+}
+
+#iconlasOut{    
+	overflow:hidden;
+    float:left;
+	width:230px;
+	height:60px;
+}
+
+#textLasOut{    
+	overflow:hidden;
+    float:left;
+	width:230px;
+	height:60px;	
+}
+
+
+#sliderAdImage {
+	width:232px;
+	display: none;	
+}
+
+#sliderAdImage div {
+	float:left;
+}
+
+#sliderAdText {
+	width:230px;
+	display: none;
+}
+
+#sliderAdText div {
+	float:left;
+}
+
+
+.titleAdLink {
+	clear:both;
+}
+
+.textAdTitle {
+	letter-spacing:0px;
+	color: #2251a8;
+	margin-top:4px;
+	margin-left:5px;
+	cursor: pointer;
+	line-height:14px;
+	font-size:12px;
+}
+
+.textAdDesc {
+	letter-spacing:0px;
+	color: #666;
+	margin-top:4px;
+	margin-left:5px;
+	cursor: pointer;
+	line-height:14px;
+	font-size:12px;
+}
+
+.textAdSite {
+	letter-spacing:0px;
+	color: #218d44;
+	margin-top:4px;
+	margin-left:5px;
+	cursor: pointer;
+	line-height:14px;
+	font-size:12px;
+}
+
+
+.textAdLink {
+	color: #ffffff;
+}
+
+.closeBox {
+	z-index:1000000;
+	position:relative;
+	float:left;
+	width:14px;
+	height:60px;
+}
+
+.closeBox #btnClose {
+	position:absolute;
+	width: 11px;
+	height: 11px;
+	background-color:#888888;
+	top: 7px;
+	left:0;
+}
+
+.closeBox #btnClose img {
+	margin: 2px;	
+}

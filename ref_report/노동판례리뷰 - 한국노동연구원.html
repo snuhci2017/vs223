@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://www.kli.re.kr/kli/selectBbsNttView.do?key=43&bbsNo=9&nttNo=129782 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+<meta name="title" content="한국노동연구원">
+<meta name="author" content="한국노동연구원">
+<meta name="keywords" content="한국노동연구원">
+<meta name="description" content="한국노동연구원">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>노동판례리뷰 - 한국노동연구원</title>
+<link rel="stylesheet" href="./노동판례리뷰 - 한국노동연구원_files/basic.css">
+<link rel="stylesheet" href="./노동판례리뷰 - 한국노동연구원_files/mediaqueries.css">
+<script src="./노동판례리뷰 - 한국노동연구원_files/jquery-1.11.1.min.js"></script>
+<script src="./노동판례리뷰 - 한국노동연구원_files/sub.js"></script>
+<!--[if IE]>
+<script type="text/javascript" src="js/unitpngfix.js"></script>
+<script type="text/javascript" src="js/css3-mediaqueries.js" ></script>
+<script type="text/javascript" src="js/selectivizr-min.js" ></script>
+<![endif]-->
+
+<script type="text/javascript"> 
+
+	var href = location.href;
+	if(href.search(/^http\:\/\//) >= 0)
+	{
+		href = href.replace(/^http\:\/\//, 'https://');
+		location.href = href;
+	}
+
+
+jQuery(document).ready(function(){
+//2016-12-08 조민지
+	$(function()
+	{
+		function utillcontrol()
+		{
+			if ($(window).width() < 545)
+			{
+				// 컨트롤 추가
+				if ($('.top_service').find('.prev, .next').length == 0)
+				{
+					$('.util_menu').before('<a href="" class="prev"><img src="/site/kli/images/new_main/utill_prev.gif" alt="이전" /></a>');
+					$('.util_menu').before('<a href="" class="next"><img src="/site/kli/images/new_main/utill_next.gif" alt="다음" /></a>');
+				}
+				
+				// 이전 눌렀을 때
+				$('.top_service').find('.prev').bind('click', function()
+				{
+					$('.util_menu').append($('.util_menu').find('li:first'));
+					
+					return false;
+				});
+				
+				// 다음 눌렀을 때
+				$('.top_service').find('.next').bind('click', function()
+				{
+					$('.util_menu').find('li:first').before($('.util_menu').find('li:last'));
+					
+					return false;
+				});
+			}
+			else
+			{
+				$('.top_service').find('.prev, .next').remove();
+			};
+		}
+		
+		utillcontrol();
+		
+		$(window).resize(function()
+		{
+			utillcontrol();
+		}).reisze();
+	});
+
+});
+
+
+</script>
+
+</head>
+<body id="sub">
+<!-- skipNavigation-->
+<dl id="accessibility">
+	<dt>바로가기 및 건너띄기 링크</dt>
+	<dd><a href="https://www.kli.re.kr/kli/selectBbsNttView.do?key=43&amp;bbsNo=9&amp;nttNo=129782#body">본문 바로가기</a></dd>
+	<dd><a href="https://www.kli.re.kr/kli/selectBbsNttView.do?key=43&amp;bbsNo=9&amp;nttNo=129782#gnavigation">주메뉴 바로가기</a></dd>
+</dl>
+<!-- //skipNavigation -->
+<hr>
+
+<div id="wrap">
+
+	<div id="header">
+		<div class="top_service">
+			<ul class="util_menu">
+				<li class="on"><a href="https://www.kli.re.kr/kli/index.do">한국노동연구원</a></li>
+				<li><a href="https://www.kli.re.kr/eia/index.do">고용영향평가센터 </a></li>
+				<li><a href="https://www.kli.re.kr/klips/index.do">한국노동패널조사</a></li>
+				<li><a href="https://www.kli.re.kr/wps/index.do">사업체패널조사</a></li>
+				<li><a href="http://dl.kli.re.kr/" target="_blank" title="새창">전자도서관</a></li>
+			</ul>
+			<ul class="tsidemenu">
+			
+				
+				
+					<li><a href="https://www.kli.re.kr/kli/login.do?key=116">로그인</a></li>
+					<li><a href="https://www.kli.re.kr/kli/sub.do?key=117">회원가입</a></li>
+				
+			
+				<li><a href="https://www.kli.re.kr/kli/selectCartList.do?key=133">장바구니</a></li>
+				<li><a href="https://www.facebook.com/KLIinfo/" target="_blank" title="새창">페이스북</a></li>
+			<li><a href="https://twitter.com/kliinfo" target="_blank" title="새창">트위터</a></li>	
+				<li class="last"><a href="https://www.kli.re.kr/kli_eng/index.do">ENGLISH</a></li>
+			</ul>
+		</div>
+		
+		
+		
+
+
+<script>
+$(document).ready(function(){
+	
+	$(window).resize(function()
+	{
+		if ($(window).width() > 1005)
+		{
+			/* pc일경우 */
+			$("#gnavigation > li").bind("mouseenter focusin", function(){
+				$(".gnb").addClass("active");
+			}) .bind("mouseleave focusout", function(){
+				$(".gnb").removeClass("active");
+			});	
+		}
+		else
+		{
+			/* PC일경우 취소 */
+			$("#gnavigation > li").unbind();
+		};
+	}).resize();
+	
+	/* 타블렛 일경우 */
+	$(".allmenu").click(function(){
+		if ($(this).hasClass('menuActive') == false)
+		{
+			//$('.gnb').fadeIn();
+			$(".gnb, .allmenu").addClass("menuActive");
+		}
+		else
+		{
+			//$('.gnb').hide();
+			$('.gnb, .allmenu').removeClass("menuActive");
+		}
+	});
+	
+});
+</script>		
+
+<div class="logo_wrap">
+	<h1 class="logo"><a href="https://www.kli.re.kr/kli/index.do"><img src="./노동판례리뷰 - 한국노동연구원_files/logo.gif" alt="한국노동연구원"></a></h1>
+	<button type="button" class="allmenu">
+		<span class="bar1"></span>
+		<span class="bar2"></span>
+		<span class="bar3"></span>
+		전체메뉴
+	</button>
+	<div class="gnb">
+		<ul id="gnavigation">
+				<li class="depth1"><a href="https://www.kli.re.kr/kli/selectPblctListList.do?key=340" target="_self">발간자료</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/selectPblctListList.do?key=340" target="_self" class="tit_depth2 ">최신 발간물</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectRsrchReprtList.do?key=12" target="_self" class="tit_depth2 use_depth3">연구보고서</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectPdicalList.do?key=18" target="_self" class="tit_depth2 use_depth3">정기간행물</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectKlilavorReprtList.do?key=23" target="_self" class="tit_depth2 use_depth3">이슈페이퍼</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=428" target="_self" class="tit_depth2 ">발간물 구독 안내</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1"><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=6&amp;key=40" target="_self">고용노동정보</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=6&amp;key=40" target="_self" class="tit_depth2 ">노동시장/노사관계전망</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=7&amp;key=41" target="_self" class="tit_depth2 ">국내노동동향</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=8&amp;key=42" target="_self" class="tit_depth2 ">해외노동동향</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=9&amp;key=43" target="_self" class="tit_depth2 ">노동판례리뷰</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=10&amp;key=44" target="_self" class="tit_depth2 ">KLI 노동통계 Archive</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1"><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=1&amp;key=46" target="_self">알림광장</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=1&amp;key=46" target="_self" class="tit_depth2 ">공지사항</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectDscsnSeminarList.do?key=47" target="_self" class="tit_depth2 ">토론회 및 세미나</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=11&amp;key=48" target="_self" class="tit_depth2 ">영상자료</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectNesDataList.do?key=49" target="_self" class="tit_depth2 ">보도자료</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=13&amp;key=50" target="_self" class="tit_depth2 ">KLI 관련기사</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=14&amp;key=51" target="_self" class="tit_depth2 ">해외출장보고서</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=15&amp;key=54" target="_self" class="tit_depth2 use_depth3">채용정보</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=92&amp;key=456" target="_self" class="tit_depth2 ">입찰공고</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1"><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=17&amp;key=58" target="_self">참여광장</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=17&amp;key=58" target="_self" class="tit_depth2 use_depth3">인재등록</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=19&amp;key=62" target="_self" class="tit_depth2 ">연구과제 수시제안</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=423" target="_self" class="tit_depth2 use_depth3">노동정책연구 원고모집</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=4&amp;key=66" target="_self" class="tit_depth2 ">FAQ</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=21&amp;key=64" target="_self" class="tit_depth2 ">온라인신고센터</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=28&amp;key=60" target="_self" class="tit_depth2 ">홈페이지 오류신고</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1"><a href="https://www.kli.re.kr/kli/contents.do?key=76" target="_self">연구원 소개</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=76" target="_self" class="tit_depth2 use_depth3">원장실</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=81" target="_self" class="tit_depth2 use_depth3">KLI소개</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectDeptList.do?key=324&amp;view=on" target="_self" class="tit_depth2 use_depth3">조직안내</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=320" target="_self" class="tit_depth2 use_depth3">홍보관</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=91" target="_self" class="tit_depth2 use_depth3">연구분야</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=412" target="_self" class="tit_depth2 use_depth3">연구사업</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=422" target="_self" class="tit_depth2 ">교류협력기관</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=99" target="_self" class="tit_depth2 use_depth3">노사관계최고지도자과정</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=103" target="_self" class="tit_depth2 ">찾아오시는길</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1"><a href="https://www.kli.re.kr/kli/contents.do?key=352" target="_self">정부3.0</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=352" target="_self" class="tit_depth2 use_depth3">정보공개 제도안내</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=66&amp;key=108" target="_self" class="tit_depth2 ">사전정보공개</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=89&amp;key=444" target="_self" class="tit_depth2 ">사업실명제</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=112" target="_self" class="tit_depth2 use_depth3">공공데이터 개방</a></li>
+						<li><a href="https://www.kli.re.kr/kli/iframe.do?key=425&amp;url=http://www.g2b.go.kr:8101/ep/adjust/instBidCdList.do?gigwanCode=B090012&amp;useShortHeader=B090012&amp;order=desc&amp;instCl=2&amp;isPpsBidYn=Y" target="_self" class="tit_depth2 ">계약/입찰정보</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1 mobile"><a href="https://www.kli.re.kr/kli/login.do?key=116" target="_self">이용자가이드</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/login.do?key=116" target="_self" class="tit_depth2 ">로그인</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=117" target="_self" class="tit_depth2 use_depth3">KLI 회원정책</a></li>
+						<li><a href="https://www.kli.re.kr/kli/findId.do?key=121" target="_self" class="tit_depth2 ">ID/PW 찾기</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=122" target="_self" class="tit_depth2 ">개인정보 처리방침</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=123" target="_self" class="tit_depth2 ">이메일 무단수집거부</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=351" target="_self" class="tit_depth2 ">저작권정책</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=38&amp;key=124" target="_self" class="tit_depth2 ">관련사이트</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=125" target="_self" class="tit_depth2 ">RSS 서비스</a></li>
+						<li><a href="https://www.kli.re.kr/kli/sitemap.do?key=126" target="_self" class="tit_depth2 ">사이트맵</a></li>
+						<li><a href="https://www.kli.re.kr/kli/contents.do?key=67" target="_self" class="tit_depth2 ">홈페이지 안내</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="depth1 mobile"><a href="https://www.kli.re.kr/kli/updateMyInfoForm.do?key=129" target="_self">마이페이지</a>
+			<div class="submenu">
+				<ul class="depth2">
+						<li><a href="https://www.kli.re.kr/kli/updateMyInfoForm.do?key=129" target="_self" class="tit_depth2 use_depth3">내정보</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectScrapUserList.do?key=132" target="_self" class="tit_depth2 ">스크랩</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectCartList.do?key=133" target="_self" class="tit_depth2 ">장바구니</a></li>
+						<li><a href="https://www.kli.re.kr/kli/selectBookSaleList.do?key=134" target="_self" class="tit_depth2 ">구매결제관리</a></li>
+				</ul>
+			</div>
+		</li>
+		</ul>
+	</div>
+</div>	
+		
+		
+		
+		<div class="float_wrap">
+			<ul class="qlink_site">
+				<li><a href="https://www.kli.re.kr/kli/bookUserJoinStep1Form.do?key=119">도서회원안내</a></li>
+				<li><a href="https://www.kli.re.kr/kli/contents.do?key=99">노사관계최고지도자과정</a></li>
+				<li><a href="https://www.kli.re.kr/kli/webzineUserJoinStep1Form.do?key=371">웹진구독신청</a></li>
+			</ul>
+			
+			
+			<form name="searchForm" method="get" class="total_search" action="https://www.kli.re.kr/search/search.do" target="_blank">
+				<fieldset>
+					<legend>통합검색</legend>
+					<span class="select">
+						<select name="cate" id="cate" class="select" title="검색분류 선택">
+							<option value="">통합검색</option>
+							<option value="directory">디렉토리</option>
+							<option value="web">웹페이지</option>
+							<option value="staff">연구원</option>
+							<option value="pblct">발간자료</option>
+							<option value="board">게시판</option>
+						</select>					
+					</span>
+					<input id="query" name="query" type="text" title="검색어 입력" size="20">
+					<button type="submit" class="btn_search">Search</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- //header -->
+	
+	<hr>
+	
+	<div id="container">
+		<div class="wrap clearfix">	
+			<div id="side">
+				
+
+<div class="side_title">
+	<span>고용노동정보</span>
+</div>
+<div class="side_menu">
+	<ul>
+
+
+
+
+		
+
+			<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=6&amp;key=40" target="_self" class="tit"><span>노동시장/노사관계전망</span></a>
+			</li>
+
+		
+
+			<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=7&amp;key=41" target="_self" class="tit"><span>국내노동동향</span></a>
+			</li>
+
+		
+
+			<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=8&amp;key=42" target="_self" class="tit"><span>해외노동동향</span></a>
+			</li>
+
+		
+
+			<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=9&amp;key=43" target="_self" class="tit on"><span>노동판례리뷰</span></a>
+			</li>
+
+		
+
+			<li><a href="https://www.kli.re.kr/kli/selectBbsNttList.do?bbsNo=10&amp;key=44" target="_self" class="tit"><span>KLI 노동통계 Archive</span></a>
+			</li>
+
+	</ul>
+</div>
+<!-- //side_menu -->
+<script type="text/javascript">
+	jQuery(function($){
+		$('.side_menu li:nth-child(4) a.tit').addClass('on').next('ul').addClass('current').show().find('li:nth-child(1) a').addClass('on');
+	});//첫번째 nth-child(숫자) = 1depth , 두 번째 nth-child(숫자) = 2depth 활성화
+</script>    
+			</div>
+			<!-- //side -->
+			
+			<div id="colgroup">
+				<div class="sub_head NG">
+					<h1 class="sub_title">노동판례리뷰</h1>
+					<div class="path_box clearfix">
+						<div class="path">
+							<span><img src="./노동판례리뷰 - 한국노동연구원_files/ico_home.png" alt="홈"></span>
+							
+								
+								
+									<span>고용노동정보</span>
+								
+							
+								
+									<span class="cnt">노동판례리뷰</span>
+								
+								
+							
+						</div>
+						<div class="print">
+							<a href="https://www.kli.re.kr/site/kli/print.jsp?siteId=kli" onclick="window.open(this.href,&#39;print&#39;,&#39;toolbars=no, scrollbars=yes, width=840, height=800&#39;); return false;" target="_blank" title="인쇄 새창"><img src="./노동판례리뷰 - 한국노동연구원_files/ico_print.gif" alt="인쇄"></a>
+						</div>
+					</div>
+				</div>
+				<!-- //sub_head -->		
+				<div id="contents">		
+					
+					<script type="text/javascript" src="./노동판례리뷰 - 한국노동연구원_files/default.js"></script>
+<script type="text/javascript" src="./노동판례리뷰 - 한국노동연구원_files/board.js"></script>
+<script type="text/javascript">
+function fn_deleteBbsNtt( url ) {
+	if( confirm("삭제하시겠습니까?") ) {
+		window.location = url;
+	}
+}
+
+function fn_mainBbsNtt( url ) {
+	if( confirm("노출 상태를 시키시겠습니까?") ) {
+		window.location = url;
+	}
+}
+
+function fn_scrap(){
+	$("#ScrapForm").submit();
+}
+
+$(function() {
+	
+	var url = "https://www.kli.re.kr/kli/selectBbsNttView.do?key=43&bbsNo=9&nttNo=129782";
+	var title = "근로시간이 산정가능한 경우의 포괄임금제 인정 요건";
+	var agent = navigator.userAgent.toLowerCase(); 
+	
+	
+	$('.fa_bookmark').click(function(e) {
+   
+		if (window.sidebar) { // Mozilla Firefox Bookmark
+			window.sidebar.addPanel(title,url,'');
+			return false;
+		}else if(document.all){ // IE Favorite
+			e.preventDefault();
+			window.external.AddFavorite(url,title);
+		
+		}else if ( agent.search("trident") > -1 ) { // IE 11
+			window.external.AddFavorite(url,title);
+			return false;
+		}else if ( agent.search("edge/") > -1 ) { // IE EDGE
+			window.external.AddFavorite(url,title);
+			return false;
+		}else{ // webkit - safari/chrome
+			e.preventDefault();
+			alert('Press ' + (navigator.userAgent.toLowerCase().indexOf('mac') != - 1 ? 'Command/Cmd' : 'CTRL') + ' + D 를 클릭하세요.');
+		}
+	});
+});
+
+function fn_sendTwitter( url ) {
+	window.open( url, "twitter", "" );
+}
+function fn_sendFacebook( url ) {
+	window.open( url, "facebook", "" );
+}
+</script>
+
+<div class="precedent_view">
+	<h2 class="precedentTitle">근로시간이 산정가능한 경우의 포괄임금제 인정 요건</h2>
+	<div class="float_wrap">
+		<ol class="case_number">
+			<li>대법원 <i class="fa date"></i>2016-09-08 선고, 2014도8873 판결</li>
+			
+			
+			
+		</ol>
+		<br>
+		<p class="icon_sharing">
+			
+			<a href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.kli.re.kr%2fkli%2fselectBbsNttView.do%3fkey%3d43%26bbsNo%3d9%26nttNo%3d129782&amp;t=%ea%b7%bc%eb%a1%9c%ec%8b%9c%ea%b0%84%ec%9d%b4+%ec%82%b0%ec%a0%95%ea%b0%80%eb%8a%a5%ed%95%9c+%ea%b2%bd%ec%9a%b0%ec%9d%98+%ed%8f%ac%ea%b4%84%ec%9e%84%ea%b8%88%ec%a0%9c+%ec%9d%b8%ec%a0%95+%ec%9a%94%ea%b1%b4" onclick="fn_sendFacebook(this.href); return false;" title="해당 컨텐츠 페이스북에 추가하기">FACEBOOK</a>
+			
+			<a href="http://twitter.com/home?status=%ea%b7%bc%eb%a1%9c%ec%8b%9c%ea%b0%84%ec%9d%b4+%ec%82%b0%ec%a0%95%ea%b0%80%eb%8a%a5%ed%95%9c+%ea%b2%bd%ec%9a%b0%ec%9d%98+%ed%8f%ac%ea%b4%84%ec%9e%84%ea%b8%88%ec%a0%9c+%ec%9d%b8%ec%a0%95+%ec%9a%94%ea%b1%b4+https%3a%2f%2fwww.kli.re.kr%2fkli%2fselectBbsNttView.do%3fkey%3d43%26bbsNo%3d9%26nttNo%3d129782" onclick="fn_sendTwitter(this.href); return false;" class="fa_twitter" title="해당 컨텐츠 트위터에 추가하기">TWITTER</a>
+			<a href="javascript:fn_scrap();" class="fa_scrap">SCRAP</a>
+			
+				
+					<a href="javascript:alert(&#39;첨부된 파일이 없습니다.&#39;);" class="fa_download">DOWNLOAD</a>
+				
+				
+			
+			<a href="https://www.kli.re.kr/site/kli/print.jsp?siteId=kli" onclick="window.open(this.href,&#39;print&#39;,&#39;toolbars=no, scrollbars=yes, width=840, height=800&#39;); return false;" target="_blank" class="fa_print">PRINT</a>
+			
+			
+			<a href="https://www.kli.re.kr/kli/selectBbsNttView.do?key=43&amp;bbsNo=9&amp;nttNo=129782#" class="fa_bookmark" rel="sidebar">BOOKMARK</a>
+		</p>
+	</div>
+	<div class="precedent_original">
+
+		
+
+		<p><span style="color: rgb(74, 137, 220);">【판결요지】</span></p><p><span style="color: rgb(74, 137, 220);">근로시간,&nbsp;근로형태와&nbsp;업무의&nbsp;성질을&nbsp;고려할&nbsp;때&nbsp;근로시간의&nbsp;산정이&nbsp;어려운&nbsp;것으로&nbsp;인정되는&nbsp;경우에는&nbsp;사용자와&nbsp;근로자&nbsp;사이에&nbsp;기본임금을&nbsp;미리&nbsp;산정하지&nbsp;아니한&nbsp;채&nbsp;법정수당까지&nbsp;포함된&nbsp;금액을&nbsp;월급여액이나&nbsp;일당임금으로&nbsp;정하는&nbsp;등&nbsp;이른바&nbsp;포괄임금제에&nbsp;의한&nbsp;임금&nbsp;지급계약을&nbsp;체결하더라도&nbsp;그것이&nbsp;달리&nbsp;근로자에게&nbsp;불이익이&nbsp;없고&nbsp;여러&nbsp;사정에&nbsp;비추어&nbsp;정당하다고&nbsp;인정될&nbsp;때에는&nbsp;유효하다.&nbsp;그러나&nbsp;근로시간의&nbsp;산정이&nbsp;어려운&nbsp;경우가&nbsp;아니라면&nbsp;근로기준법상의&nbsp;근로시간에&nbsp;관한&nbsp;규정을&nbsp;그대로&nbsp;적용할&nbsp;수&nbsp;없다고&nbsp;볼&nbsp;만한&nbsp;특별한&nbsp;사정이&nbsp;없는&nbsp;한&nbsp;그것이&nbsp;근로기준법이&nbsp;정한&nbsp;근로시간에&nbsp;관한&nbsp;규제를&nbsp;위반하는지를&nbsp;따져,&nbsp;포괄임금에&nbsp;포함된&nbsp;법정수당이&nbsp;근로기준법이&nbsp;정한&nbsp;기준에&nbsp;따라&nbsp;산정된&nbsp;법정수당에&nbsp;미달한다면&nbsp;그에&nbsp;해당하는&nbsp;포괄임금제에&nbsp;의한&nbsp;임금&nbsp;지급계약&nbsp;부분은&nbsp;근로자에게&nbsp;불이익하여&nbsp;무효라&nbsp;할&nbsp;것이고,&nbsp;사용자는&nbsp;근로기준법의&nbsp;강행성과&nbsp;보충성&nbsp;원칙에&nbsp;의하여&nbsp;근로자에게&nbsp;그&nbsp;미달되는&nbsp;법정수당을&nbsp;지급할&nbsp;의무가&nbsp;있다.</span></p><p>&nbsp;</p><p>&nbsp;</p><p>이&nbsp;사건&nbsp;근로자들(A와&nbsp;B)은&nbsp;2011년에서&nbsp;2012년&nbsp;간&nbsp;의정부의&nbsp;한&nbsp;노인센터에서&nbsp;요양보호사로&nbsp;근무했던&nbsp;자들로&nbsp;급여에&nbsp;연장&nbsp;및&nbsp;야간근로&nbsp;수당&nbsp;등&nbsp;법정수당을&nbsp;모두&nbsp;포함시켜&nbsp;월&nbsp;110만&nbsp;원&nbsp;내외의&nbsp;임금을&nbsp;받았다(포괄임금계약).&nbsp;이들의&nbsp;임금을&nbsp;시급으로&nbsp;환원하면&nbsp;A는&nbsp;2011년&nbsp;3,577원,&nbsp;2012년&nbsp;3,546원이었으며,&nbsp;B는&nbsp;2011년과&nbsp;2012년&nbsp;모두&nbsp;3,452원이었다.&nbsp;이는&nbsp;당시의&nbsp;시간당&nbsp;최저임금에&nbsp;미치지&nbsp;못하는&nbsp;임금으로&nbsp;사업주&nbsp;C는&nbsp;｢최저임금법｣&nbsp;제6조&nbsp;위반과&nbsp;임금정산에&nbsp;관한&nbsp;｢근로기준법｣&nbsp;제36조&nbsp;위반으로&nbsp;기소되었다.&nbsp;제1심은&nbsp;요양보호사의&nbsp;업무&nbsp;특성상&nbsp;실제&nbsp;근로시간을&nbsp;정확하게&nbsp;산출해&nbsp;내는&nbsp;것이&nbsp;쉽지&nbsp;않으며&nbsp;A와&nbsp;B가&nbsp;C로부터&nbsp;지급받은&nbsp;월급이&nbsp;경기&nbsp;지역의&nbsp;요양기관에서&nbsp;다른&nbsp;요양보호사들이&nbsp;받는&nbsp;급여와&nbsp;큰&nbsp;차이가&nbsp;없다는&nbsp;점&nbsp;등을&nbsp;감안할&nbsp;때&nbsp;이&nbsp;사건의&nbsp;포괄임금계약은&nbsp;유효하여&nbsp;C에게&nbsp;무죄를&nbsp;선고하였다.</p><p>그러나&nbsp;원심인&nbsp;고등법원은&nbsp;①‘감시&nbsp;또는&nbsp;단속적으로&nbsp;근로에&nbsp;종사하는&nbsp;자’의&nbsp;경우도&nbsp;사용자가&nbsp;｢근로기준법｣상의&nbsp;근로시간과&nbsp;휴게&nbsp;규정의&nbsp;제외를&nbsp;받으려면&nbsp;｢근로기준법｣&nbsp;제63조에&nbsp;따라&nbsp;‘사용자가&nbsp;고용노동부장관의&nbsp;승인을&nbsp;받은&nbsp;경우’이어야&nbsp;하는&nbsp;것에&nbsp;비추어&nbsp;볼&nbsp;때&nbsp;포괄임금제가&nbsp;인정되기&nbsp;위해서는&nbsp;엄격한&nbsp;요건이&nbsp;필요한&nbsp;점,&nbsp;②요양보호사들의&nbsp;출․퇴근&nbsp;시간이&nbsp;정해져&nbsp;있고&nbsp;중증&nbsp;치매환자들의&nbsp;수발&nbsp;등&nbsp;업무의&nbsp;밀도가&nbsp;상당한&nbsp;점,&nbsp;③야간근무의&nbsp;경우&nbsp;4시간의&nbsp;휴게시간이&nbsp;정해져&nbsp;있으나&nbsp;요양대상자가&nbsp;비상벨을&nbsp;누르는&nbsp;경우가&nbsp;많아&nbsp;사실상&nbsp;잠을&nbsp;자지&nbsp;못하고&nbsp;늘&nbsp;대기상태였으며&nbsp;야간수면실&nbsp;또한&nbsp;위치&nbsp;구조상&nbsp;쉽게&nbsp;이용할&nbsp;수&nbsp;없었다는&nbsp;점을&nbsp;들어&nbsp;이&nbsp;사건&nbsp;노인센터의&nbsp;요양보호사들의&nbsp;업무가&nbsp;근로시간&nbsp;산정이&nbsp;어려운&nbsp;형태라&nbsp;볼&nbsp;수&nbsp;없다고&nbsp;전제한&nbsp;다음,&nbsp;이&nbsp;사건&nbsp;근로자들에게&nbsp;포괄임금제를&nbsp;적용함으로써&nbsp;최저임금법이&nbsp;정한&nbsp;최저임금에도&nbsp;미치지&nbsp;못한&nbsp;임금을&nbsp;지급한&nbsp;것과&nbsp;야간&nbsp;시간에&nbsp;휴게&nbsp;시간을&nbsp;주지&nbsp;않은&nbsp;것을&nbsp;인정하여&nbsp;C에게&nbsp;100만&nbsp;원의&nbsp;벌금형을&nbsp;선고하였다.&nbsp;</p><p>대법원은&nbsp;피고인의&nbsp;상고에&nbsp;대해&nbsp;원심의&nbsp;법리와&nbsp;사실판단이&nbsp;적법하다고&nbsp;판단하여&nbsp;상고를&nbsp;기각하였다.&nbsp;</p><p>&nbsp;</p><p>이&nbsp;사건은&nbsp;법률이&nbsp;정한&nbsp;최저임금에도&nbsp;미치지&nbsp;못하는&nbsp;임금&nbsp;지급이라는&nbsp;형사사건이나&nbsp;그&nbsp;전제로&nbsp;포괄임금제의&nbsp;유효성이&nbsp;쟁점이&nbsp;된다.&nbsp;만일&nbsp;사건의&nbsp;요양보호사들이&nbsp;맺은&nbsp;포괄임금계약이&nbsp;유효하다면&nbsp;사업주는&nbsp;｢최저임금법｣&nbsp;위반이&nbsp;아니게&nbsp;되기&nbsp;때문이다.&nbsp;먼저&nbsp;포괄임금의&nbsp;개념을&nbsp;살펴보면&nbsp;협의와&nbsp;광의로&nbsp;나눌&nbsp;수&nbsp;있는데,&nbsp;전자는&nbsp;“일정한&nbsp;연장․야간&nbsp;또는&nbsp;휴일근로에&nbsp;대한&nbsp;가산임금을&nbsp;합하여&nbsp;일정한&nbsp;금액을&nbsp;월급&nbsp;또는&nbsp;일급으로&nbsp;정하는&nbsp;경우(포괄역산임금제)”이며,&nbsp;여기에&nbsp;“기본임금은&nbsp;미리&nbsp;정하되&nbsp;연장근로&nbsp;등에&nbsp;대한&nbsp;가산임금을&nbsp;일정한&nbsp;금액으로&nbsp;지급하는&nbsp;경우(정액수당제)”를&nbsp;광의의&nbsp;포괄임금제로&nbsp;포함시키기도&nbsp;한다.&nbsp;이&nbsp;사건의&nbsp;경우는&nbsp;협의의&nbsp;포괄임금제라고&nbsp;할&nbsp;수&nbsp;있다.</p><p>포괄임금제의&nbsp;유효성에&nbsp;대해&nbsp;판례는&nbsp;오래전부터&nbsp;긍정하여&nbsp;왔다.&nbsp;1970년대부터&nbsp;사업장의&nbsp;관행이라는&nbsp;명목으로&nbsp;인정하여&nbsp;왔으며,&nbsp;1990년대&nbsp;중반&nbsp;이후에는&nbsp;포괄임금제라는&nbsp;용어를&nbsp;보편적으로&nbsp;사용하였다.&nbsp;다만,&nbsp;포괄임금제가&nbsp;적법하기&nbsp;위해서는&nbsp;“근로시간&nbsp;및&nbsp;근로형태와&nbsp;그&nbsp;업무의&nbsp;성질&nbsp;등을&nbsp;참작하여&nbsp;근로자의&nbsp;승낙하에&nbsp;제&nbsp;수당을&nbsp;미리&nbsp;기본임금에&nbsp;합산한&nbsp;일정액을&nbsp;월급여액으로&nbsp;지급하는&nbsp;내용의&nbsp;계약을&nbsp;체결하였다고&nbsp;하더라도&nbsp;단체협약이나&nbsp;취업규칙에&nbsp;비추어&nbsp;근로자에게&nbsp;불이익이&nbsp;없고,&nbsp;제반&nbsp;사정에&nbsp;비추어&nbsp;정당하다고&nbsp;인정”될&nbsp;것을&nbsp;요구한다.&nbsp;그러나&nbsp;근로시간의&nbsp;산정이&nbsp;가능하더라도&nbsp;관행적으로&nbsp;포괄임금제를&nbsp;적용하는&nbsp;것은&nbsp;｢근로기준법｣을&nbsp;형해화시키는&nbsp;것이기&nbsp;때문에&nbsp;여러모로&nbsp;비판을&nbsp;받아&nbsp;왔고&nbsp;최근의&nbsp;대법원&nbsp;판결은&nbsp;“감시․단속적&nbsp;근로&nbsp;등과&nbsp;같이&nbsp;근로시간의&nbsp;산정이&nbsp;어려운&nbsp;경우가&nbsp;아니라면&nbsp;달리&nbsp;근로기준법상의&nbsp;근로시간에&nbsp;관한&nbsp;규정을&nbsp;그대로&nbsp;적용할&nbsp;수&nbsp;없다고&nbsp;볼&nbsp;만한&nbsp;특별한&nbsp;사정이&nbsp;없는&nbsp;한&nbsp;근로기준법상의&nbsp;근로시간에&nbsp;따른&nbsp;임금지급의&nbsp;원칙이&nbsp;적용되어야&nbsp;할&nbsp;것이므로,&nbsp;이러한&nbsp;경우에도&nbsp;근로시간&nbsp;수에&nbsp;상관없이&nbsp;일정액을&nbsp;법정수당으로&nbsp;지급하는&nbsp;내용의&nbsp;포괄임금제&nbsp;방식의&nbsp;임금&nbsp;지급계약을&nbsp;체결하는&nbsp;것은&nbsp;그것이&nbsp;근로기준법이&nbsp;정한&nbsp;근로시간에&nbsp;관한&nbsp;규제를&nbsp;위반하는&nbsp;이상&nbsp;허용될&nbsp;수&nbsp;없다”고&nbsp;판시하여&nbsp;무분별한&nbsp;포괄임금제에&nbsp;대해&nbsp;제동을&nbsp;걸었다.&nbsp;또한&nbsp;｢근로기준법｣&nbsp;제15조가&nbsp;규정한&nbsp;강행성과&nbsp;보충성의&nbsp;원칙에&nbsp;따라&nbsp;근로자가&nbsp;지급받은&nbsp;포괄임금이&nbsp;법령에&nbsp;따라&nbsp;산정된&nbsp;임금에&nbsp;미달할&nbsp;때에는&nbsp;근로계약&nbsp;중&nbsp;포괄임금에&nbsp;관한&nbsp;부분은&nbsp;무효가&nbsp;되고&nbsp;법정수당과의&nbsp;차액을&nbsp;지급할&nbsp;의무가&nbsp;있다고&nbsp;판시하였다.&nbsp;즉,&nbsp;예전에는&nbsp;근로시간의&nbsp;산정&nbsp;여부에&nbsp;관계없이&nbsp;‘근로자의&nbsp;승낙’과&nbsp;‘근로자에게&nbsp;불이익이&nbsp;없고,&nbsp;제반사정에&nbsp;비추어&nbsp;정당하다고&nbsp;인정될&nbsp;때’에는&nbsp;포괄임금제를&nbsp;인정하여&nbsp;왔으나&nbsp;현재는&nbsp;먼저&nbsp;근무형태가&nbsp;근로시간의&nbsp;산정이&nbsp;가능한&nbsp;것인지&nbsp;여부를&nbsp;포괄임금제의&nbsp;유효성&nbsp;심사&nbsp;첫&nbsp;관문으로&nbsp;심사한다는&nbsp;것을&nbsp;알&nbsp;수&nbsp;있다.</p><p>이&nbsp;사건&nbsp;또한&nbsp;제1심은&nbsp;요양보호사들의&nbsp;근무형태가&nbsp;근로시간의&nbsp;산정이&nbsp;가능한지&nbsp;여부를&nbsp;따져&nbsp;이를&nbsp;부정하고&nbsp;근처&nbsp;지역의&nbsp;광범위한&nbsp;관행을&nbsp;근거로&nbsp;근로자들에게&nbsp;불리하지&nbsp;않다고&nbsp;쉽게&nbsp;판단하였으나,&nbsp;원심과&nbsp;대법원은&nbsp;요양보호사들의&nbsp;실제&nbsp;근무&nbsp;형태를&nbsp;꼼꼼히&nbsp;따져&nbsp;근로시간의&nbsp;산정이&nbsp;충분히&nbsp;가능하며&nbsp;｢근로기준법｣이&nbsp;정한&nbsp;근로시간에&nbsp;대한&nbsp;규정을&nbsp;침탈하는&nbsp;결과로&nbsp;사건의&nbsp;포괄임금제를&nbsp;부정하였다.</p><p>생각건대,&nbsp;우리&nbsp;｢근로기준법｣이&nbsp;근로시간의&nbsp;산정이&nbsp;어려운&nbsp;근무형태의&nbsp;경우&nbsp;제58조와&nbsp;제59조상의&nbsp;특례와&nbsp;제63조상의&nbsp;적용&nbsp;제외를&nbsp;꼼꼼히&nbsp;규정한&nbsp;취지를&nbsp;생각하면,&nbsp;위&nbsp;규정들이&nbsp;정한&nbsp;경우를&nbsp;제외하고는&nbsp;근무형태에&nbsp;있어&nbsp;쉽게&nbsp;근로시간의&nbsp;산정이&nbsp;불가능하다고&nbsp;판단하여서는&nbsp;안&nbsp;될&nbsp;것이다.&nbsp;따라서&nbsp;대법원의&nbsp;이번&nbsp;판시는&nbsp;무분별한&nbsp;포괄임금제&nbsp;관행에&nbsp;제동을&nbsp;걸&nbsp;수&nbsp;있는&nbsp;표본이&nbsp;될&nbsp;수&nbsp;있다고&nbsp;여겨진다.&nbsp;다만,&nbsp;양형에&nbsp;관한&nbsp;문제는&nbsp;통상&nbsp;법리적&nbsp;논의&nbsp;영역&nbsp;밖으로&nbsp;여겨지지만&nbsp;100만&nbsp;원의&nbsp;벌금형이&nbsp;과연&nbsp;부적법한&nbsp;포괄임금제&nbsp;관행에&nbsp;얼마나&nbsp;방어벽이&nbsp;될&nbsp;수&nbsp;있을까도&nbsp;고민해&nbsp;볼&nbsp;문제이다.&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>양승엽(경제․인문사회연구회&nbsp;전문위원)</p>
+	</div>
+</div>
+	
+<div class="btn_area_right">
+	<a href="https://www.kli.re.kr/kli/selectBbsNttList.do?key=43&amp;bbsNo=9&amp;nttNo=129782&amp;searchY=&amp;searchCtgry=&amp;searchDplcCtgry=&amp;searchCnd=all&amp;searchKrwd=&amp;pageIndex=1&amp;integrDeptCode=" class="open btn_type01">목록보기</a>
+	<!-- <a href="#n" onclick="precedent_view('close')" class="close btn_type01">요약보기</a> -->
+</div>
+	
+<!-- 관리자 -->
+<div class="putB_right clearfix">
+	<div class="fl">
+		
+		<form name="ScrapForm" id="ScrapForm" action="https://www.kli.re.kr/kli/insertScrapUser.do">
+			<input type="hidden" name="key" value="43">
+			<input type="hidden" name="linkUrl" value="https://www.kli.re.kr/kli/selectBbsNttView.do?key=43&amp;bbsNo=9&amp;nttNo=129782">
+			<input type="hidden" name="menuNm" value="노동판례리뷰">
+			<input type="hidden" name="nttNm" value="근로시간이 산정가능한 경우의 포괄임금제 인정 요건">
+			<!-- <input type="submit" value="스크랩" class="btnD" /> -->
+		</form>
+		
+	</div>
+
+	
+		
+		
+	
+	
+	
+	
+</div>
+<!-- //관리자 -->
+				</div>
+				<!-- //contents -->
+			</div>
+			<!-- //colgroup -->
+		</div>
+	</div>
+	<!-- //container -->
+	<hr>
+	<div id="footer">
+		<ul class="fsidemenu">
+			<li><a href="https://www.kli.re.kr/kli/contents.do?key=67">이용안내</a></li>
+			<li><a href="https://www.kli.re.kr/kli/sub.do?key=351">저작권정책</a></li>
+			<li><a href="https://www.kli.re.kr/kli/contents.do?key=122" class="point02">개인정보처리방침</a></li>
+			<li><a href="https://www.kli.re.kr/kli/contents.do?key=123">이메일무단수집거부</a></li>
+			<li><a href="https://www.kli.re.kr/kli/contents.do?key=103">찾아오시는길</a></li>
+			<li><a href="https://www.kli.re.kr/kli/contents.do?key=76">연구원소개</a></li>
+		</ul>
+		<address>
+			우) 30147 세종특별자치시 시청대로 370 세종국책연구단지 경제정책동 5-7층 TEL : 044-287-6114 E-mail : webmaster@kli.re.kr
+		</address>
+		<p class="copyright">COPYRIGHT KOREA LABOR INSTITUTE.ALL RIGHTS RESERVED BY KOREA LABOR INSTITUTE.</p>
+	</div>
+</div>
+
+
+</body></html>

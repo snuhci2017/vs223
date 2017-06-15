@@ -1,0 +1,155 @@
+/*Example CSS for the two demo scrollers*/
+#scrollDiv {
+	z-index:99999999999;
+	height: 60px;
+	display:none;
+}
+
+
+
+#pscroller1{
+	width: 55px;
+	padding: 0;
+	background-color:#fefefe;
+	z-index:99999999999;
+	float:left;
+	border: 1px solid #aaaaaa;
+}
+
+#pscroller2{
+	width: 55px;
+	padding: 0;
+	background-color:#fefefe;
+	z-index:99999999999;
+	float:left;
+	border: 1px solid #aaaaaa;
+}
+
+#iconlasOut{    
+	overflow:hidden;
+    float:left;
+	width:230px;
+	height:60px;
+}
+
+#textLasOut{    
+	overflow:hidden;
+    float:left;
+	width:230px;
+	height:60px;	
+}
+
+#sliderDefImage{
+	float:left;
+}
+
+#sliderAdImage {
+	width:232px;
+	display: none;	
+}
+
+#sliderAdImage div {
+	float:left;
+}
+
+#sliderAdText {
+	width:230px;
+	display: none;
+}
+
+#sliderAdText div {
+	float:left;
+	text-decoration:none;
+}
+
+
+.titleAdLink {
+	clear:both;
+}
+
+.textAdTitle {
+	letter-spacing:0px;
+	color: #2251a8;
+	margin-top:4px;
+	margin-left:5px;
+	cursor: pointer;
+	line-height:14px;
+	font-size:12px;
+}
+
+.textAdDesc {
+	letter-spacing:0px;
+	color: #666;
+	margin-top:4px;
+	margin-left:5px;
+	cursor: pointer;
+	line-height:14px;
+	font-size:12px;
+}
+
+.textAdSite {
+	letter-spacing:0px;
+	color: #218d44;
+	margin-top:4px;
+	margin-left:5px;
+	cursor: pointer;
+	line-height:14px;
+	font-size:12px;
+}
+
+
+.textAdLink {
+	color: #ffffff;
+}
+
+.closeBox {
+	z-index:1000000;
+	position:relative;
+	float:left;
+	width:14px;
+	height:60px;
+}
+
+.closeBox #btnClose {
+	position:absolute;
+	width: 11px;
+	height: 11px;
+	background-color:#888888;
+	top: 7px;
+	left:0;
+}
+
+.closeBox #btnClose img {
+	margin: 2px;	
+}
+
+#iconAdRel{
+	display:none;
+	clear: both;
+	padding-bottom:6px;
+	text-align:left;
+}
+
+#iconAdRel #iconAdRelSplit {
+	width:238px;
+	height:0px;
+	border-top:1px solid #c7c7c7;
+	margin: 0 auto;
+}
+
+#iconAdRel #iconAdRelTitle {	
+	clear:both;
+	line-height: 16px;
+	padding:6px 0 3px 10px;
+	font-size: 12px;
+	color:#1D1D1D;
+	font-weight:bold;
+}
+
+#iconAdRel a {
+	line-height: 16px;
+	font-size: 12px;
+	color:#377D9F;
+	margin-left:10px;
+	font-family:dotum;
+}

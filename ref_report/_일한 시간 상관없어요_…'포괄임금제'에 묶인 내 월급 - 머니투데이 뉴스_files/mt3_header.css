@@ -1,0 +1,159 @@
+@import url('mt3_base.css');
+
+/* 공통적용(관련 사이트,MT미디어그룹) */
+.hd_rellink {position:relative; height:24px;}
+.hd_rellink .login_area1 {float:left; overflow:hidden; height:24px; line-height:24px; letter-spacing:-0.5px; color:#808080;}
+.ie9 .hd_rellink .login_area1 {line-height:21px;}
+.ie10 .hd_rellink .login_area1 {line-height:21px;}
+.ie11 .hd_rellink .login_area1 {line-height:21px;}
+.hd_rellink .login_area1 .ymd {letter-spacing:0;}
+.hd_rellink .login_area1 a {color:#808080;}
+.hd_rellink .mt_mgroup {float:right; position:relative; height:24px; font-size:11px; line-height:24px; color:#808080;}
+.ie9 .hd_rellink .mt_mgroup {line-height:21px;}
+.ie10 .hd_rellink .mt_mgroup {line-height:21px;}
+.ie11 .hd_rellink .mt_mgroup {line-height:21px;}
+.hd_rellink .mt_mgroup a {color:#808080;}
+.hd_rellink .mt_mgroup .bar {display:inline-block; height:24px; background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_bar1.gif) no-repeat center center; vertical-align:top;}
+.hd_rellink .mt_mgroup .more {background:none; height:24px; font-size:11px; line-height:24px; vertical-align:top; color:#808080;}
+.ie9 .hd_rellink .mt_mgroup .more {padding-bottom:3px; line-height:21px;}
+.ie10 .hd_rellink .mt_mgroup .more {padding-bottom:3px; line-height:21px;}
+.ie11 .hd_rellink .mt_mgroup .more {padding-bottom:3px; line-height:21px;}
+.hd_rellink .mt_mgroup .svlbox {position:absolute; top:24px; right:0; width:466px; background:#fff; border:1px solid #e31d39; z-index:2;}
+.hd_rellink .mt_mgroup .svlbox:before {content:' '; position:absolute; top:-6px; right:10px; width:7px; height:5px; background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_arrow1.png) no-repeat 0 0;}
+.hd_rellink .mt_mgroup .svlbox:after {content:' '; position:absolute; bottom:31px; right:30px; width:118px; height:13px; background:url(http://menu.mt.co.kr/common/title/title_mtService1.png) no-repeat 0 0;}
+.hd_rellink .mt_mgroup .svlbox .groupbox {overflow:hidden; padding:24px 0 23px 30px;}
+.hd_rellink .mt_mgroup .svlbox .groupbox .bundle {float:left; line-height:24px; letter-spacing:-0.5px;}
+.hd_rellink .mt_mgroup .svlbox .groupbox .bundle .sort {display:block; font-weight:normal; color:#f52525;}
+.hd_rellink .mt_mgroup .svlbox .groupbox .bundle .group1 {overflow:hidden;}
+.hd_rellink .mt_mgroup .svlbox .groupbox .bundle .group1 a {color:#595959;}
+.hd_rellink .mt_mgroup .svlbox .ly_close {position:absolute; top:-3px; right:-4px; width:13px; height:13px; background:url(http://menu.mt.co.kr/common/button/btn_close10.gif) no-repeat 0 0;}
+/* 머니투데이 헤더 */
+#mt_header {position:relative; background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_header1.gif) repeat-x 0 0;}
+#mt_header.another1 {background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_header2.gif) repeat-x 0 0;}
+#mt_header .limit1 {position:relative; margin:0 auto; width:970px; height:179px;}
+#mt_header .logo {position:absolute; top:49px; left:0; z-index:2;}
+#mt_header.another1 .logo {top:64px;}
+#mt_header .logo a {display:block;}
+
+#mt_header .another_gnb1 {position:absolute; top:71px; left:199px; overflow:hidden;}
+#mt_header .another_gnb1 a {float:left; position:relative; margin-left:27px; height:30px; font-size:0; line-height:0;}
+#mt_header .another_gnb1 a:first-child {margin-left:0;}
+#mt_header .another_gnb1 a:after {content:' '; position:absolute; top:0; left:-14px; width:1px; height:30px; background:#e6e6e6; font-size:0; line-height:0;}
+#mt_header .another_gnb1 a.subscribe {width:108px; background:url(http://menu.mt.co.kr/new_navi3/title_subscribe1.png) no-repeat 0 0;} /* 구독신청 */
+#mt_header .another_gnb1 a.mobile {width:81px; background:url(http://menu.mt.co.kr/new_navi3/title_mobile1.png) no-repeat 0 0;} /* 모바일 */
+#mt_header .another_gnb1 a.comic {width:55px; background:url(http://menu.mt.co.kr/new_navi3/title_comic1.png) no-repeat 0 0;} /* 만화 */
+#mt_header .another_gnb1 a.on,
+#mt_header .another_gnb1 a:hover,
+#mt_header .another_gnb1 a:focus {background-position:0 bottom;}
+
+#mt_header .another_gnb2 {position:absolute; top:71px; left:199px; overflow:hidden;}
+#mt_header .another_gnb2 a {display:block;}
+
+#mt_header .gnbbox {position:relative; height:88px;}
+#mt_header .gnbbox .gnb {float:right; margin-top:17px;}
+#mt_header .gnbbox .gnb .sec {float:left; overflow:hidden; display:table; height:50px; letter-spacing:-0.4px;}
+#mt_header .gnbbox .gnb .sec.news {margin-right:33px; min-width:32px;} /* 뉴스 */
+#mt_header .gnbbox .gnb .sec.tom {margin-right:29px; min-width:30px;} /* TOM */
+#mt_header .gnbbox .gnb .sec.stock {margin-right:25px; min-width:33px;} /* 증권 */	/* 수정 170403 해리 */
+#mt_header .gnbbox .gnb .sec.realty {margin-right:20px; min-width:34px;} /* 부동산 */
+#mt_header .gnbbox .gnb .sec.starsports {margin-right:16px; min-width:61px;} /* 연예/스포츠 */
+#mt_header .gnbbox .gnb .sec.opinion {margin-right:23px; min-width:44px;} /* 오피니언 */
+#mt_header .gnbbox .gnb .sec.special {margin-right:25px; min-width:34px;} /* 스페셜 */
+#mt_header .gnbbox .gnb .sec.photovod {margin-right:20px; min-width:52px;} /* 포토/영상 */
+#mt_header .gnbbox .gnb .sec.theissue {margin-left:27px; margin-right:5px; min-width:34px;} /* 더이슈 추가 160309 세종 */
+#mt_header .gnbbox .gnb .sec.autom {min-width:44px;} /* 오토M */
+#mt_header .gnbbox .gnb .sec a {display:table-cell; overflow:hidden; min-width:28px; height:100%; text-align:center; vertical-align:bottom; color:#666;}
+#mt_header .gnbbox .gnb .sec.news a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_news.png) no-repeat center 4px;} /* 뉴스 */
+#mt_header .gnbbox .gnb .sec.tom a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_tom.png) no-repeat center 2px;} /* TOM */
+#mt_header .gnbbox .gnb .sec.stock a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_stock.png) no-repeat center 2px;} /* 증권 */
+#mt_header .gnbbox .gnb .sec.realty a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_realty.png) no-repeat center 4px;} /* 부동산 */
+#mt_header .gnbbox .gnb .sec.starsports a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_starsports.png) no-repeat center 3px;} /* 연예/스포츠 */
+#mt_header .gnbbox .gnb .sec.opinion a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_opinion.png) no-repeat center 5px;} /* 오피니언 */
+#mt_header .gnbbox .gnb .sec.special a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_special.png) no-repeat center 4px;} /* 스페셜 */
+#mt_header .gnbbox .gnb .sec.photovod a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_photovod.png) no-repeat center 7px;} /* 포토/영상 */
+#mt_header .gnbbox .gnb .sec.autom a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_autom.png) no-repeat center 7px;} /* 오토M */
+#mt_header .gnbbox .gnb .sec.theissue a {background:url(http://menu.mt.co.kr/new_navi3/bg_gnb_theissue.png) no-repeat center 6px;} /* 더이슈 추가 160309 세종 */
+#mt_header .gnbbox .gnb .sec a.on,
+#mt_header .gnbbox .gnb .sec a:hover,
+#mt_header .gnbbox .gnb .sec a:focus {text-decoration:none; color:#df2d2d;}
+#mt_header .gnbbox .gnb .sec.news a.on,
+#mt_header .gnbbox .gnb .sec.news a:hover,
+#mt_header .gnbbox .gnb .sec.news a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_newsOn.png);} /* 뉴스 */
+#mt_header .gnbbox .gnb .sec.tom a.on,
+#mt_header .gnbbox .gnb .sec.tom a:hover,
+#mt_header .gnbbox .gnb .sec.tom a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_tomOn.png);} /* TOM */
+#mt_header .gnbbox .gnb .sec.stock a.on,
+#mt_header .gnbbox .gnb .sec.stock a:hover,
+#mt_header .gnbbox .gnb .sec.stock a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_stockOn.png);} /* 증권 */
+#mt_header .gnbbox .gnb .sec.realty a.on,
+#mt_header .gnbbox .gnb .sec.realty a:hover,
+#mt_header .gnbbox .gnb .sec.realty a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_realtyOn.png);} /* 부동산 */
+#mt_header .gnbbox .gnb .sec.starsports a.on,
+#mt_header .gnbbox .gnb .sec.starsports a:hover,
+#mt_header .gnbbox .gnb .sec.starsports a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_starsportsOn.png);} /* 연예/스포츠 */
+#mt_header .gnbbox .gnb .sec.opinion a.on,
+#mt_header .gnbbox .gnb .sec.opinion a:hover,
+#mt_header .gnbbox .gnb .sec.opinion a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_opinionOn.png);} /* 오피니언 */
+#mt_header .gnbbox .gnb .sec.special a.on,
+#mt_header .gnbbox .gnb .sec.special a:hover,
+#mt_header .gnbbox .gnb .sec.special a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_specialOn.png);} /* 스페셜 */
+#mt_header .gnbbox .gnb .sec.photovod a.on,
+#mt_header .gnbbox .gnb .sec.photovod a:hover,
+#mt_header .gnbbox .gnb .sec.photovod a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_photovodOn.png);} /* 포토/영상 */
+#mt_header .gnbbox .gnb .sec.autom a.on,
+#mt_header .gnbbox .gnb .sec.autom a:hover,
+#mt_header .gnbbox .gnb .sec.autom a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_automOn.png);} /* 오토M */
+#mt_header .gnbbox .gnb .sec.theissue a.on,
+#mt_header .gnbbox .gnb .sec.theissue a:hover,
+#mt_header .gnbbox .gnb .sec.theissue a:focus {background-image:url(http://menu.mt.co.kr/new_navi3/bg_gnb_theissueOn.png);} /* 더이슈 추가 160309 세종 */
+#mt_header .gnbbox .gnb .snb {position:absolute; top:88px; left:0; width:790px;}
+#mt_header .gnbbox .gnb .snb ul.snb_group {height:37px;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle {float:left; height:37px; font-size:16px; letter-spacing:-1px; line-height:35px;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle > a {display:block; padding:0 22px; height:100%; color:#fff;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle > a.on,
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle > a:hover,
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle > a:focus {background:#c42828; text-decoration:none; color:#fff !important;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 {position:absolute; top:37px; left:0; right:0; height:30px;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 .depth3_bundle {float:left; overflow:hidden; height:100%; font-size:12px; line-height:30px; letter-spacing:-0.6px;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 .depth3_bundle a {float:left; padding:0 15px; height:100%; text-decoration:none; color:#808080;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 .depth3_bundle:first-child a {padding-left:0;}
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 .depth3_bundle a.on,
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 .depth3_bundle a:hover,
+#mt_header .gnbbox .gnb .snb ul.snb_group li.snb_bundle .depth3 .depth3_bundle a:focus {color:#d90000;}
+
+#mt_header .search1 {position:absolute; top:118px; right:0; width:172px; height:25px; background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_search1.png) no-repeat 0 0; z-index:1;}
+#mt_header .search1 input[type='text'] {position:absolute; top:0; left:11px; width:130px; height:25px; background:none; font-size:14px; letter-spacing:-0.5px; line-height:25px; color:#595959; border:none;}
+#mt_header .search1 input[type='image'] {position:absolute; top:0; right:0; background:none;}
+
+#mt_header .search2 {position:absolute; top:69px; left:309px; width:380px; height:35px; background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_search2.png) no-repeat 0 0;}
+#mt_header .search2 input[type='text'] {position:absolute; top:0; left:17px; width:320px; height:35px; background:none; font-size:14px; letter-spacing:-0.5px; line-height:35px; color:#595959; border:none;}
+#mt_header .search2 input[type='image'] {position:absolute; top:0; right:0; background:none;}
+
+#mt_header .etc_link {position:absolute; bottom:0; right:0; overflow:hidden; width:172px; height:30px;}
+#mt_header .etc_link .pop_link {float:left;}
+#mt_header .etc_link .pop_link a {float:left; padding:0 5px; height:30px; letter-spacing:-0.6px; line-height:30px; color:#808080;}
+.ie9 #mt_header .etc_link .pop_link a {line-height:27px;}
+.ie10 #mt_header .etc_link .pop_link a {line-height:27px;}
+.ie11 #mt_header .etc_link .pop_link a {line-height:27px;}
+#mt_header .etc_link .pop_link .bar {float:left; width:7px; height:30px; background:url(http://menu.mt.co.kr/new_navi3/bg_mt3_bar2.gif) no-repeat center 10px;}
+#mt_header .etc_link .sns_link {float:right; margin:3px 3px 0 0;}
+#mt_header .etc_link .sns_link a {float:left; margin-left:7px;}
+#mt_header .etc_link .sns_link a:first-child {margin-left:0;}
+
+#mt_header .livenews1 {position:absolute; bottom:0; left:0; overflow:hidden; max-width:640px; height:30px;}
+#mt_header .livenews1 .lmbox {position:relative; overflow:hidden; margin-top:6px; height:19px;}
+#mt_header .livenews1 .lmbox h3 {position:absolute; top:0; left:0;}
+#mt_header .livenews1 .lmbox .lmbox2 {position:relative; overflow:hidden; margin-left:85px; height:19px;}
+#mt_header .livenews1 .lmbox ul {overflow:hidden;}
+#mt_header .livenews1 .lmbox ul li {overflow:hidden; height:19px; line-height:18px;}
+.ie9 #mt_header .livenews1 .lmbox ul li {line-height:15px;}
+.ie10 #mt_header .livenews1 .lmbox ul li {line-height:15px;}
+.ie11 #mt_header .livenews1 .lmbox ul li {line-height:15px;}
+#mt_header .livenews1 .lmbox ul li a {float:left; margin-right:60px; letter-spacing:-0.3px; color:#808080;}
+#mt_header .livenews1 .lmbox ul li .time {float:left; margin-left:-60px; width:60px; height:19px; background:url(http://menu.mt.co.kr/new_navi3/icon_clock1.png) no-repeat 12px 2px; text-indent:28px; color:#808080;}
+
+#mt_header .socialquick {overflow:hidden; position:relative;}
+#mt_header .socialquick ul {float:right;}
+#mt_header .socialquick ul li {margin-top:10px;}
+#mt_header .socialquick ul li:first-child {margin-top:0;}
+#mt_header .socialquick ul li a {display:block;}

@@ -1,0 +1,2006 @@
+/* 공통적용 */
+	/* mt3 */
+	/* edge */
+	.edge1 {position:absolute; top:0; left:0; right:0; bottom:0; border:1px solid #000; opacity:0.07; filter:alpha(opacity:7);}
+	.edge2 {position:absolute; top:0; left:0; right:0; bottom:0; border:1px solid #000; opacity:0.06; filter:alpha(opacity:6);}
+	.edge3 {position:absolute; top:0; left:0; right:0; bottom:0; border:1px solid #000; opacity:0.15; filter:alpha(opacity:15);}
+	.edge4 {position:absolute; top:0; left:0; right:0; bottom:0; border:1px solid #000; opacity:0.10; filter:alpha(opacity:10);}
+	/* 더보기 */
+	.more1 {position:absolute;}
+	/* 버튼
+	.btn_area1 {text-align:center;}
+	.btn_area1 .lgroup {float:left;}
+	.btn_area1 .rgroup {float:right;}
+	.btn_area1 span[class$='group'] a,
+	.btn_area1 span[class$='group'] button,
+	.btn_area1 span[class$='group'] input {float:left; margin-left:4px;}
+	.btn_area1 span[class^='lg'] a,
+	.btn_area1 span[class^='lg'] button,
+	.btn_area1 span[class^='lg'] input {margin-left:0; margin-right:4px;}
+	 */
+	 /* 셀렉트 */
+	.sbHolder {position:relative; width:100%; height:100%; color:#666;}
+	.sbHolder a {color:#666;}
+	.sbSelector {position:absolute; top:0; left:0; right:27px; overflow:hidden; height:22px; line-height:22px; text-indent:5px;}
+	.sbSelector:visited, .sbSelector:hover {text-decoration:none;}
+	.sbToggle {position:absolute; top:0; right:0; width:27px; height:22px; background:url(http://menu.mt.co.kr/common/etc/select-icons1.gif) no-repeat 0 0;}
+	.sbToggleOpen {background: url(http://menu.mt.co.kr/common/etc/select-icons1.gif) no-repeat 0 bottom;}
+	.sbHolderDisabled {background-color: #3C3C3C;border: solid 1px #515151;}
+	.sbHolderDisabled .sbHolder {}
+	.sbHolderDisabled .sbToggle {}
+	.sbOptions {position:absolute; top:20px; left:-1px; overflow-y:auto; width:100%; background:#fff; border:1px solid #ccc; z-index:1;}
+	.sbOptions * {float:none !important;}
+	.sbOptions li {overflow:hidden;}
+	.sbOptions li.last {border-bottom:none;}
+	.sbOptions a {display:block; padding:0 5px; height:22px; line-height:22px; color:#666;}
+	.sbOptions a:hover,
+	.sbOptions a:focus {background:#efefef; text-decoration:none;}
+	/* tab */
+	.sorttab1 {position:relative; overflow:hidden; border:1px solid #d9d9d9;}
+	.sorttab1.one {height:44px;}
+	.sorttab1.two {height:77px;}
+	.sorttab1 .table {display:block;}
+	.sorttab1.one .table {position:relative; margin-right:-10px;}
+	.sorttab1.two .table {position:relative; margin:0 -10px;}
+	.sorttab1 .table .tr {}
+	.sorttab1.two .table .tr {display:block; overflow:hidden; height:33px;}
+	.sorttab1 .table .td {float:left; padding:15px 21px 0 20px; font-size:13px; letter-spacing:-1px; text-align:center; line-height:14px; vertical-align:top;}
+	.ie9 .sorttab1 .table .td {letter-spacing:-1px; line-height:11px;}
+	.ie10 .sorttab1 .table .td {letter-spacing:-1px; line-height:11px;}
+	.ie11 .sorttab1 .table .td {letter-spacing:-1px; line-height:11px;}
+	.sorttab1.two .table .td {padding:15px 0 0; width:94px;}
+	.sorttab1 a {position:relative; color:#666;}
+	.sorttab1 a.on,
+	.sorttab1 a:hover,
+	.sorttab1 a:focus {text-decoration:none; color:#3d58a5;}
+	.sorttab1 a.on:after,
+	.sorttab1 a:hover:after,
+	.sorttab1 a:focus:after {content:' '; position:absolute; top:-3px; left:1px; right:0; height:2px; background:#3d58a5;}
+	.ie9 .sorttab1 a.on:after,
+	.ie9 .sorttab1 a:hover:after,
+	.ie9 .sorttab1 a:focus:after {top:-2px;}
+	.ie10 .sorttab1 a.on:after,
+	.ie10 .sorttab1 a:hover:after,
+	.ie10 .sorttab1 a:focus:after {top:-2px;}
+	.ie11 .sorttab1 a.on:after,
+	.ie11 .sorttab1 a:hover:after,
+	.ie11 .sorttab1 a:focus:after {top:-2px;}
+
+	.sorttab2 {overflow:hidden; height:23px;}
+	.sorttab2 li {float:left; overflow:hidden; width:33%;}
+	.sorttab2 li:first-child {width:34%;}
+	.sorttab2 li a {display:block; height:21px; font-size:11px; text-align:center; line-height:21px; letter-spacing:-0.5px; color:#666; border:1px solid #d9d9d9;}
+	.ie9 .sorttab2 li a {line-height:19px;}
+	.ie10 .sorttab2 li a {line-height:19px;}
+	.ie11 .sorttab2 li a {line-height:19px;}
+	.sorttab2 li a.on,
+	.sorttab2 li a:hover,
+	.sorttab2 li a:focus {background:#f54f4f; text-decoration:none; letter-spacing:0; color:#fff !important; border-color:#f54f4f;}
+
+	.sorttab4 {overflow:hidden;}
+	.sorttab4 .group {overflow:hidden; height:41px; border:1px solid #d9d9d9;}
+	.sorttab4 .group + .group {margin-top:-1px;}
+	.sorttab4 .group .bundle {float:left; display:table; margin-left:-1px; width:25%; height:41px; border-left:1px solid #d9d9d9;}
+	.sorttab4 .group .bundle a {display:table-cell; font-size:13px; letter-spacing:-0.5px; text-align:center; vertical-align:middle; text-decoration:none; color:#666;}
+	.sorttab4 .group .bundle a .txt {position:relative;}
+	.sorttab4 .group .bundle a.on,
+	.sorttab4 .group .bundle a:hover,
+	.sorttab4 .group .bundle a:focus {color:#3d58a5;}
+	.sorttab4 .group .bundle a.on .txt:after,
+	.sorttab4 .group .bundle a:hover .txt:after,
+	.sorttab4 .group .bundle a:focus .txt:after {content:' '; position:absolute; top:-3px; left:1px; width:12px; height:2px; background:#3d58a5; font-size:0; line-height:0;}
+
+	.sorttab5 {display:table; overflow:hidden; width:100%; height:43px;}
+	.sorttab5 li {display:table-cell; overflow:hidden; width:33%; height:100%; border-top:1px solid #b3b3b3; border-right:1px solid #b3b3b3;}
+	.sorttab5 li:first-child {border-left:1px solid #b3b3b3;}
+	.sorttab5 li:first-child + li {width:34%;}
+	.sorttab5 li a {display:block; overflow:hidden; height:41px; background:#bfbfbf; font-size:16px; line-height:41px; letter-spacing:-0.5px; text-align:center; text-decoration:none; color:#666; border-bottom:1px solid #b3b3b3;}
+	.sorttab5 li a.on,
+	.sorttab5 li a:hover,
+	.sorttab5 li a:focus {background:#fff; color:#333; border-bottom:#fff;}
+
+	.sorttab6 {display:table; overflow:hidden; width:100%; height:43px;}
+	.sorttab6 li {display:table-cell; overflow:hidden; width:50%; height:100%; border-top:1px solid #b3b3b3; border-right:1px solid #b3b3b3;}
+	.sorttab6 li:first-child {border-left:1px solid #b3b3b3;}
+	.sorttab6 li a {display:block; overflow:hidden; height:41px; background:#bfbfbf; font-size:16px; font-weight:bold; line-height:41px; letter-spacing:-0.5px; text-align:center; text-decoration:none; color:#666; border-bottom:1px solid #b3b3b3;}
+	.sorttab6 li a.on,
+	.sorttab6 li a:hover,
+	.sorttab6 li a:focus {background:#fff; color:#333; border-bottom:#fff;}
+
+	.sorttab7 {overflow:hidden; height:32px;}
+	.sorttab7 li {float:left; overflow:hidden; width:137px; height:30px; background:#666; font-size:13px; letter-spacing:-0.5px; text-align:center; line-height:30px; border:1px solid #666;}
+	.ie9 .sorttab7 li {line-height:27px;}
+	.ie10 .sorttab7 li {line-height:27px;}
+	.ie11 .sorttab7 li {line-height:27px;}
+	.sorttab7 li a {display:block; height:100%; text-decoration:none; color:#ccc;}
+	.sorttab7 li a.on,
+	.sorttab7 li a:hover,
+	.sorttab7 li a:focus {background:#fff; color:#333;}
+
+	.sorttab8 {display:table; overflow:hidden; width:100%; height:43px;}
+	.sorttab8 li {display:table-cell; overflow:hidden; width:25%; height:100%; border-top:1px solid #b3b3b3; border-right:1px solid #b3b3b3;}
+	.sorttab8 li:first-child {border-left:1px solid #b3b3b3;}
+	.sorttab8 li a {display:block; overflow:hidden; height:41px; background:#bfbfbf; font-size:15px; line-height:41px; letter-spacing:-0.5px; text-align:center; text-decoration:none; color:#666; border-bottom:1px solid #b3b3b3;}
+	.sorttab8 li a.on,
+	.sorttab8 li a:hover,
+	.sorttab8 li a:focus {background:#fff; color:#333; border-bottom:#fff;}
+	/* 페이징버튼 */
+	.pn_num1 {position:absolute; overflow:hidden; height:16px; font-size:11px; line-height:16px; color:#808080;}
+	.pn_num1 .bar {padding:0 3px;}
+	.pn_num1 strong {font-weight:normal; color:#ef2222;}
+
+	.pn_btn1 {position:absolute; overflow:hidden; width:34px; height:16px;}
+	.pn_btn1 button {position:absolute; width:16px; height:16px;}
+	.pn_btn1 .prev {left:0; background:url(http://menu.mt.co.kr/bil/btn_prev5.png) no-repeat 0 0;}
+	.pn_btn1 .next {right:0; background:url(http://menu.mt.co.kr/bil/btn_next5.png) no-repeat right 0;}
+	/* 카테고리 */
+	.secm_catit {overflow:hidden; font-size:15px; line-height:20px; letter-spacing:-0.8px; color:#262626;}
+	.secm_catit img {display:block;}
+	.secm_catit a {float:left; padding-right:11px; background:url(http://menu.mt.co.kr/bil/bl_arrow37.gif) no-repeat right 7px; color:#262626;} /* 수정 151020 세종 */
+
+	.secm_catit2 {clear:both; font-size:16px; letter-spacing:-0.5px; color:#262626;}
+	.secm_catit2 span {float:left;}
+	.secm_catit2 img {display:block;}
+
+	.secm_catit3 {position:relative; overflow:hidden; height:50px; font-size:22px; font-weight:normal; line-height:42px; letter-spacing:-0.8px; color:#d90000;}
+	.secm_catit3 .line {position:absolute; top:0; left:0; height:2px; font-size:0; line-height:0; background:#d90000;}
+
+	.secm_catit4 {overflow:hidden; min-height:17px; font-size:15px; font-weight:normal; letter-spacing:-0.6px; line-height:15px; color:#262626;}
+	.ie9 .secm_catit4 {line-height:13px;}
+	.ie10 .secm_catit4 {line-height:13px;}
+	.ie11 .secm_catit4 {line-height:13px;}
+	.secm_catit4 img {display:block;}
+	.secm_catit4 a {float:left; padding-right:10px; background:url(http://menu.mt.co.kr/bil/bl_arrow32.gif) no-repeat right center; color:#262626;}
+
+	.secm_catit5 {overflow:hidden; padding-bottom:2px; font-size:16px; line-height:21px; letter-spacing:-0.5px; color:#262626;}
+	.secm_catit5 img {display:block;}
+	.secm_catit5 a {float:left; padding-right:12px; background:url(http://menu.mt.co.kr/bil/bl_arrow33.gif) no-repeat right center; color:#262626;} /* 수정 170113 세종 */
+	.ie8 .secm_catit5 a {background-position:right 7px;}
+
+	.secm_catit6 {overflow:hidden; padding-bottom:2px; font-size:15px; line-height:21px; letter-spacing:-0.5px; color:#f74444;}
+	.secm_catit6 img {display:block;}
+	.secm_catit6 a {float:left; padding-right:10px; background:url(http://menu.mt.co.kr/bil/bl_arrow32.gif) no-repeat right center; color:#f74444;}
+
+	.secm_catit7 {position:absolute; font-size:17px; font-weight:normal; line-height:20px; letter-spacing:-0.4px; color:#d90000;}
+	.secm_catit7 .bar {position:absolute; top:-10px; left:1px; height:2px; background:#d90000;}
+
+	/* 추가 160726 세종 */
+	.secm_catit8 {overflow:hidden; padding-bottom:2px; font-size:16px; font-weight:normal; line-height:21px; letter-spacing:-0.5px; color:#262626;}
+	.secm_catit8 img {display:block;}
+	.secm_catit8 a {float:left; padding-right:12px; background:url(http://menu.mt.co.kr/bil/bl_arrow33.gif) no-repeat right 8px; color:#262626;}
+	.ie8 .secm_catit8 a {background-position:right 7px;}
+	/* //추가 160726 세종 */
+	/* 리스트 */
+	.conlist_t1 {overflow:hidden;}
+	.conlist_t1 + .conlist_t1 {margin-top:35px;}
+	.conlist_t1 .bundle {position:relative; overflow:hidden; padding-right:120px; height:31px; line-height:31px;}
+	.conlist_t1 .bundle .subject {float:left; overflow:hidden; max-width:100%; font-size:17px; letter-spacing:-0.5px; text-overflow:ellipsis; white-space:nowrap; color:#262626;}
+	.conlist_t1 .bundle .date {position:absolute; top:0; right:0; height:31px; font-size:12px; color:#999;}
+
+	.conlist_t5 {overflow:hidden;}
+	.conlist_t5 .bundle {overflow:hidden; height:24px; font-size:13px; line-height:24px; letter-spacing:-0.6px;}
+	.conlist_t5 .bundle a {color:#808080;}
+
+	.conlist_t6 {overflow:hidden;}
+	.conlist_t6 .bundle {overflow:hidden; height:27px; font-size:14px; letter-spacing:-0.5px; line-height:27px; white-space:nowrap; text-overflow:ellipsis; color:#404040;}
+	.conlist_t6 .bundle a {color:#404040;}
+
+	.conlist_t7 {overflow:hidden;}
+	.conlist_t7 .bundle {overflow:hidden; height:28px; font-size:14px; letter-spacing:-0.6px; line-height:28px; white-space:nowrap; text-overflow:ellipsis;}
+	.conlist_t7 .bundle:first-child {font-weight:bold;}
+	.conlist_t7 .bundle a {color:#333;}
+
+	.conlist_t9 {overflow:hidden;}
+	.conlist_t9 .bundle {position:relative; overflow:hidden; background:#3d58a5;}
+	.conlist_t9 .bundle .sort {position:absolute; top:20px; left:20px;}
+	.conlist_t9 .bundle a {display:block; padding:49px 20px 18px; font-size:17px; line-height:24px; letter-spacing:-1.3px; color:#fff;}
+
+	.conlist_t10 {overflow:hidden;}
+	.conlist_t10 .bundle {position:relative; overflow:hidden; margin-top:5px; padding-left:79px; height:50px; background:#f3f3f3;}
+	.conlist_t10 .bundle:first-child {margin-top:0;}
+	.conlist_t10 .bundle .thum {position:absolute; top:0; left:0; overflow:hidden; width:70px; height:50px;}
+	.conlist_t10 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_t10 .bundle .sort {display:block; margin-top:9px; font-size:11px; letter-spacing:-0.6px; color:#3d58a5;}
+	.conlist_t10 .bundle .subject {display:block; overflow:hidden; margin-top:1px; margin-right:10px; font-size:13px; letter-spacing:-0.6px; white-space:nowrap; text-overflow:ellipsis; color:#333;}
+
+	.conlist_t11 {overflow:hidden;}
+	.conlist_t11 .bundle {overflow:hidden; height:28px; font-size:14px; letter-spacing:-0.6px; line-height:28px; white-space:nowrap; text-overflow:ellipsis;}
+	.conlist_t11 .bundle a {color:#4c4c4c;}
+
+	.conlist_t12 {overflow:hidden;}
+	.conlist_t12 .group {overflow:hidden; border-top:1px solid #ccc; border-left:1px solid #ccc;}
+	.conlist_t12 .group .bundle {float:left; position:relative; overflow:hidden; margin:-1px 0 0 -1px; width:212px; height:161px; background:#fff; border:1px solid #ccc;} /* 수정 160111 윤선 */
+	.conlist_t12 .group .bundle .cate {position:absolute; top:13px; left:19px; color:#3d58a5;} /* 수정 160111 윤선 */
+	.conlist_t12 .group .bundle a {display:block; width:100%; height:100%; text-decoration:none;}
+	.conlist_t12 .group .bundle .subject {display:block; overflow:hidden; margin:38px 19px 0; height:42px; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.4px; color:#3d58a5;} /* 수정 160111 윤선 */
+	.conlist_t12 .group .bundle .txt {display:block; overflow:hidden; margin:7px 19px 0; height:78px; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#808080;} /* 수정 160111 윤선 */
+	.conlist_t12 .group .bundle a:hover .subject,
+	.conlist_t12 .group .bundle a:focus .subject {text-decoration:underline;}
+	.conlist_t12 .group .bundle a:hover .txt,
+	.conlist_t12 .group .bundle a:focus .txt {text-decoration:underline;}
+
+	.conlist_t13 {overflow:hidden;}
+	.conlist_t13 .bundle {overflow:hidden; padding-left:8px; height:29px; background:url(http://menu.mt.co.kr/bil/bl_square1.gif) no-repeat 0 14px; font-size:14px; line-height:29px; letter-spacing:-0.5px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_t13 .bundle a {color:#333;}
+
+	.conlist_t14 {overflow:hidden;}
+	.conlist_t14 .bundle {position:relative; overflow:hidden; padding-right:35px; height:30px; line-height:30px;}
+	.conlist_t14 .bundle .subject {float:left; overflow:hidden; max-width:100%; font-size:13px; letter-spacing:-0.5px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_t14 .bundle .subject .sort {padding-right:4px; color:#f74444;}
+	.conlist_t14 .bundle .subject a {color:#1a1a1a;}
+	.conlist_t14 .bundle .time {position:absolute; top:0; right:0; height:31px; font-size:12px; color:#999;}
+
+	.conlist_t15 {overflow:hidden;}
+	.conlist_t15 .bundle {position:relative; overflow:hidden; padding:0 40px 0 128px; height:29px; line-height:29px;}
+	.conlist_t15 .bundle .item {position:absolute; top:0; left:0; overflow:hidden; max-width:120px; font-size:13px; letter-spacing:-0.5px; color:#f74444;}
+	.conlist_t15 .bundle .subject {display:block; overflow:hidden; font-size:13px; font-weight:normal; letter-spacing:-0.5px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_t15 .bundle .subject a {color:#1a1a1a;}
+	.conlist_t15 .bundle .time {position:absolute; top:0; right:0; font-size:12px; color:#999;}
+
+	.conlist_t16 {display:table; background:#e6e6e6; border-collapse:collapse;}
+	.conlist_t16 .bundle {display:table-cell; height:148px; border:1px solid #ccc;}
+	.conlist_t16 .bundle a {display:inline-block; overflow:hidden; padding:0 18px; height:100%; text-decoration:none;} /* 수정 160525 세종 */
+	.conlist_t16 .bundle a .subject {display:block; overflow:hidden; margin-top:19px; height:42px; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.4px; color:#1a1a1a;}
+	.conlist_t16 .bundle a .txt {display:block; overflow:hidden; margin-top:7px; height:59px; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#8c8c8c;}
+	.conlist_t16 .bundle a:hover .subject,
+	.conlist_t16 .bundle a:focus .subject {color:#3d58a5;}
+
+	.conlist_t17 {overflow:hidden;}
+	.conlist_t17 .bundle {margin-top:22px;}
+	.conlist_t17 .bundle:first-child {margin-top:0;}
+	.conlist_t17 .bundle .subject {display:block; overflow:hidden; height:20px; font-size:16px; font-weight:normal; line-height:15px; letter-spacing:-0.5px;}
+	.ie8 .conlist_t17 .bundle .subject {line-height:16px;}
+	.conlist_t17 .bundle .subject .sort {float:left; color:#f54f4f;}
+	.conlist_t17 .bundle .subject a {float:left; overflow:hidden; max-width:450px; height:20px; color:#1a1a1a;}
+	.conlist_t17 .bundle .subject .relsu {float:left; margin-left:9px; padding:0 6px; height:18px; font-size:12px; line-height:17px; letter-spacing:-1px; color:#666; border:1px solid #bfbfbf;}
+	.ie9 .conlist_t17 .bundle .subject .relsu {line-height:15px;}
+	.ie10 .conlist_t17 .bundle .subject .relsu {line-height:15px;}
+	.ie11 .conlist_t17 .bundle .subject .relsu {line-height:15px;}
+	.conlist_t17 .bundle .relgroup {overflow:hidden; margin-top:5px;}
+	.conlist_t17 .bundle .relgroup .relbundle {overflow:hidden; padding-left:16px; height:27px; background:url(http://menu.mt.co.kr/bil/bl_rel14.gif) no-repeat 0 10px; font-size:14px; line-height:27px; letter-spacing:-0.5px;}
+	.conlist_t17 .bundle .relgroup .relbundle a {float:left; overflow:hidden; margin-right:10px; max-width:410px; text-decoration:none; color:#666;}
+	.conlist_t17 .bundle .relgroup .relbundle:hover,
+	.conlist_t17 .bundle .relgroup .relbundle:focus {color:#3d58a5;}
+	.conlist_t17 .bundle .relgroup .relbundle .date {font-size:12px; letter-spacing:0; color:#999;}
+
+	/* 추가 151020 세종 */
+	.conlist_t18 {overflow:hidden;}
+	.conlist_t18 .bundle {position:relative; overflow:hidden; height:95px;}
+	.conlist_t18 .bundle.bg1 {background:#83a7ee;}
+	.conlist_t18 .bundle.bg2 {background:#3d58a5;}
+	.conlist_t18 .bundle .thum {position:absolute; top:21px; left:8px; overflow:hidden; width:52px; height:52px;}
+	.conlist_t18 .bundle .thum:after {content:' '; position:absolute; top:0; left:0; width:52px; height:52px;}
+	.conlist_t18 .bundle.bg1 .thum:after {background:url(http://menu.mt.co.kr/common/etc/bg_frame52x52_1.png) no-repeat 0 0;}
+	.conlist_t18 .bundle.bg2 .thum:after {background:url(http://menu.mt.co.kr/common/etc/bg_frame52x52_2.png) no-repeat 0 0;}
+	.conlist_t18 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_t18 .bundle .subject {display:table-cell; overflow:hidden; padding:0 15px 0 68px; height:95px; font-size:13px; line-height:20px; letter-spacing:-1.5px; vertical-align:middle; color:#fff;}
+
+	/* 추가 160309 세종 */
+	.conlist_t19 {overflow:hidden;}
+	.conlist_t19 .bundle {overflow:hidden; padding-left:7px; height:29px; background:url(http://menu.mt.co.kr/bil/bl_square1.gif) no-repeat 0 14px; font-size:14px; line-height:29px; letter-spacing:-0.5px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_t19 .bundle a {color:#585858;}
+
+	/* 추가 160726 세종 */
+	.conlist_t20 {overflow:hidden;}
+	.conlist_t20 .bundle {float:left; width:212px; height:74px; border:1px solid #ccc;}
+	.conlist_t20 .bundle + .bundle {margin-left:-1px;}
+	.conlist_t20 .bundle a {display:block; overflow:hidden; margin:17px 20px 0; height:42px; font-size:15px; line-height:20px; letter-spacing:-0.4px; color:#1a1a1a;}
+
+	.conlist_t21 {overflow:hidden;}
+	.conlist_t21 .group {overflow:hidden; border-top:1px solid #ccc; border-left:1px solid #ccc;}
+	.conlist_t21 .group .bundle {float:left; position:relative; overflow:hidden; margin:-1px 0 0 -1px; width:212px; height:181px; background:#fff; border:1px solid #ccc;}
+	.conlist_t21 .group .bundle a {display:block; width:100%; height:100%;}
+	.conlist_t21 .group .bundle .thum {display:block; position:relative; overflow:hidden; margin:20px 20px 0; width:172px; height:97px;}
+	.conlist_t21 .group .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_t21 .group .bundle .subject {display:block; overflow:hidden; margin:15px 20px 0; height:48px; font-size:19px; font-weight:normal; line-height:24px; letter-spacing:-0.4px; color:#333;}
+	.conlist_t21 .group .bundle .thum + .subject {margin-top:12px; height:34px; font-size:14px; line-height:16px;}
+	.conlist_t21 .group .bundle .txt {display:block; overflow:hidden; margin:9px 20px 0; height:90px; font-size:13px; line-height:18px; letter-spacing:-0.6px; color:#8c8c8c;}
+	.conlist_t21 .group .bundle .thum + .subject + .txt {display:none;}
+	.conlist_t21 .group .bundle a:hover .subject,
+	.conlist_t21 .group .bundle a:focus .subject {text-decoration:underline;}
+	.conlist_t21 .group .bundle a:hover .txt,
+	.conlist_t21 .group .bundle a:focus .txt {text-decoration:underline;}
+
+	.conlist_t22 {overflow:hidden; border:1px solid #ccc;}
+	.conlist_t22 .bundle {float:left; overflow:hidden; margin-top:-1px; height:248px; border-top:1px solid #ccc;}
+	.conlist_t22 .bundle.odd {width:319px;}
+	.conlist_t22 .bundle.even {width:318px; border-left:1px solid #ccc;}
+	.conlist_t22 .bundle .lmb {overflow:hidden; margin:0 19px;}
+	.conlist_t22 .bundle h4 {margin-top:15px;}
+	.conlist_t22 .bundle h4 img {display:block;}
+	.conlist_t22 .bundle .subject {display:block; overflow:hidden; margin-top:10px; font-size:19px; font-weight:normal; line-height:24px; letter-spacing:-0.8px; color:#262626;}
+	.conlist_t22 .bundle .subject a {color:#262626;}
+	.conlist_t22 .bundle .s_subject {display:block; margin-top:7px; line-height:20px; color:#999;}
+	.conlist_t22 .bundle .txt {display:block; overflow:hidden; margin-top:11px; padding-top:11px; height:84px; font-size:14px; line-height:21px; letter-spacing:-0.7px; color:#8c8c8c; border-top:1px solid #d9d9d9;}
+	.conlist_t22 .bundle .txt a {color:#8c8c8c;}
+	/* //추가 160726 세종 */
+
+	/* 추가 170412 윤선 */
+	.conlist_t23 {overflow:hidden;}
+	.conlist_t23 .bundle {position:relative; overflow:hidden; height:27px; font-size:14px; letter-spacing:-0.5px; line-height:27px; color:#333;}
+	.conlist_t23 .bundle a {color:#404040;}
+	.conlist_t23 .bundle span[class^="rank"] {margin:8px 10px 0 0; float:left; width:18px; height:13px; background:url(http://menu.mt.co.kr/bil/bg_num1.png) no-repeat 0 0; text-indent:-9999px;}
+	.conlist_t23 .bundle span.rank1 {background-position:0 0;}
+	.conlist_t23 .bundle span.rank2 {background-position:0 -13px;}
+	.conlist_t23 .bundle span.rank3 {background-position:0 -26px;}
+	.conlist_t23 .bundle span.rank4 {background-position:0 -39px;}
+	.conlist_t23 .bundle span.rank5 {background-position:0 -52px;}
+	.conlist_t23 .bundle span.rank6 {background-position:0 -65px;}
+	.conlist_t23 .bundle span.rank7 {background-position:0 -78px;}
+	.conlist_t23 .bundle span.rank8 {background-position:0 -91px;}
+	.conlist_t23 .bundle span.rank9 {background-position:0 -104px;}
+	.conlist_t23 .bundle span.rank10 {background-position:0 -117px;}
+
+	.conlist_p1 {overflow:hidden;}
+	.conlist_p1 .bundle {overflow:hidden; position:relative; margin-top:20px; padding-bottom:2px; max-height:93px;} /* 수정 160809 세종 */
+	.conlist_p1 .bundle:first-child {margin-top:0;}
+	.conlist_p1 .bundle .thum {position:absolute; top:5px; left:0; overflow:hidden; width:136px; height:86px;} /* 수정 160722 윤선 */
+	.conlist_p1 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p1 .bundle .con {}
+	.conlist_p1 .bundle .thum + .con {margin-left:155px;}
+	.conlist_p1 .bundle .con .subject {display:block; overflow:hidden; font-size:17px; letter-spacing:-0.5px; line-height:normal; white-space:nowrap; text-overflow:ellipsis;} /* 수정 160722 윤선 */
+	.ie9 .conlist_p1 .bundle .con .subject {margin-top:-3px;} /* 수정 160114 윤선 */
+	.ie10 .conlist_p1 .bundle .con .subject {margin-top:-3px;} /* 수정 160114 윤선 */
+	.ie11 .conlist_p1 .bundle .con .subject {margin-top:-3px;} /* 수정 160114 윤선 */
+	.conlist_p1 .bundle .con .subject a {color:#262626;}
+	.conlist_p1 .bundle .con .subject a:hover,
+	.conlist_p1 .bundle .con .subject a:focus {color:#d90000;}
+	.conlist_p1 .bundle .con .subject .sort {color:#3d58a5;}
+	.conlist_p1 .bundle .con .subject a.sort:hover,
+	.conlist_p1 .bundle .con .subject a.sort:focus {text-decoration:underline; color:#3d58a5;}
+	.conlist_p1 .bundle .con .txt {position:relative; margin-top:6px; font-size:14px; line-height:19px; letter-spacing:-0.2px; color:#666;}
+	.conlist_p1 .bundle .con .txt a {display:block; overflow:hidden; padding-bottom:1px; height:38px; color:#666;}
+	.conlist_p1 .bundle .con .txt .etc {display:block; overflow:hidden; padding-top:7px; font-size:12px; letter-spacing:0; color:#999;}
+	.ie9 .conlist_p1 .bundle .con .txt .etc {line-height:15px;}
+	.ie10 .conlist_p1 .bundle .con .txt .etc {line-height:15px;}
+	.ie11 .conlist_p1 .bundle .con .txt .etc {line-height:15px;}
+	.conlist_p1 .bundle .con .txt .etc a.sort {float:left; margin-right:20px; height:auto;}
+
+	.conlist_p5 {overflow:hidden; position:relative; height:100%;}
+	.conlist_p5 .subject {display:block; font-size:15px; color:#303642;}
+	.conlist_p5 .subject a {color:#303642;}
+	.conlist_p5 .rel_list {overflow:hidden; margin-top:6px; padding-left:4px;}
+	.conlist_p5 .rel_list li {overflow:hidden; padding-left:14px; height:24px; background:url(http://menu.mt.co.kr/bil/bl_rel9.gif) no-repeat 0 6px; line-height:24px;}
+	.ie9 .conlist_p5 .rel_list li {line-height:20px;}
+	.ie10 .conlist_p5 .rel_list li {line-height:20px;}
+	.ie11 .conlist_p5 .rel_list li {line-height:20px;}
+	.conlist_p5 .rel_list li a {color:#303642;}
+	.conlist_p5 .rel_list2 {position:absolute; left:0; overflow:hidden; width:100%; height:62px;}
+	.conlist_p5 .rel_list2 li {float:left; overflow:hidden; margin-left:8px; width:83px; height:60px; border:1px solid #e4e4e4;}
+	.conlist_p5 .rel_list2 li:first-child {margin-left:0;}
+	.conlist_p5 .rel_list2 li a {display:block;}
+	.conlist_p5 .rel_list2 li img {display:block; width:83px; height:60px;}
+	.conlist_p5 .etc {position:absolute; left:0; overflow:hidden; height:24px;}
+	.conlist_p5 .etc .rel_su {float:left; overflow:hidden; margin-right:8px; width:83px; height:24px; background:url(http://menu.mt.co.kr/common/etc/bg_relNews.gif) no-repeat 0 0;}
+	.conlist_p5 .etc .rel_su .txt {float:left; visibility:hidden; width:49px; height:24px; font-size:0; line-height:0;}
+	.conlist_p5 .etc .rel_su .su {float:left; width:29px; font-size:11px; text-align:center; line-height:25px; color:#fff;}
+	.ie9 .conlist_p5 .etc .rel_su .su {line-height:23px;}
+	.ie10 .conlist_p5 .etc .rel_su .su {line-height:23px;}
+	.ie11 .conlist_p5 .etc .rel_su .su {line-height:23px;}
+	.conlist_p5 .etc .date {float:left; overflow:hidden; height:24px; font-size:11px; line-height:25px; color:#9ea1a9;}
+	.ie9 .conlist_p5 .etc .date {line-height:23px;}
+	.ie10 .conlist_p5 .etc .date {line-height:23px;}
+	.ie11 .conlist_p5 .etc .date {line-height:23px;}
+
+	.conlist_p10 {overflow:hidden;}
+	.conlist_p10 .bundle {overflow:hidden; margin-top:22px;}
+	.conlist_p10 .bundle:first-child {margin-top:0;}
+	.conlist_p10 .bundle a {display:block; font-size:13px; line-height:16px; letter-spacing:-0.6px; text-decoration:none !important; color:#595959;}
+	.conlist_p10 .bundle .thum {display:block; position:relative; overflow:hidden; width:172px; height:84px;}
+	.conlist_p10 .bundle .thum.h98 {height:98px;}
+	.conlist_p10 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p10 .bundle .sort {display:block; color:#3d58a5;}
+	.conlist_p10 .bundle .thum + .sort {margin-top:8px;}
+	.conlist_p10 .bundle .subject {display:block; padding-bottom:2px; font-weight:normal;}
+	.conlist_p10 .bundle .thum + .subject {margin-top:8px;}
+	.conlist_p10 .bundle a:hover .subject,
+	.conlist_p10 .bundle a:focus .subject {text-decoration:underline;}
+
+	.conlist_p12 {overflow:hidden;}
+	.conlist_p12 .bundle {float:left; position:relative; overflow:hidden; width:93px; height:63px;}
+	.conlist_p12 .bundle:first-child + .bundle {width:94px;}
+	.conlist_p12 .bundle a {display:block; overflow:hidden; height:100%; font-size:13px; letter-spacing:-0.6px; color:#fff;}
+	.conlist_p12 .bundle a:after {content:' '; position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_shadow60.png) repeat 0 0;}
+	.conlist_p12 .bundle a.on:after,
+	.conlist_p12 .bundle a:hover:after,
+	.conlist_p12 .bundle a:focus:after {display:none;}
+	.conlist_p12 .bundle img {display:block; width:100%; min-height:100%;}
+	.conlist_p12 .bundle:first-child {float:none; width:280px; height:164px}
+	.conlist_p12 .bundle:first-child a:before {content:' '; position:absolute; left:0; bottom:0; overflow:hidden; width:100%; height:32px; background:url(http://menu.mt.co.kr/common/etc/bg_shadow60.png) repeat 0 0;}
+	.conlist_p12 .bundle:first-child a:after {display:none;}
+	.conlist_p12 .bundle:first-child img {width:100%; min-height:100%;}
+	.conlist_p12 .bundle:first-child .subject {position:absolute; bottom:0; left:9px; right:9px; overflow:hidden; height:32px; line-height:32px; white-space:nowrap; text-overflow:ellipsis;}
+	.conlist_p12 .bundle:first-child a:hover .subject,
+	.conlist_p12 .bundle:first-child a:focus .subject {text-decoration:underline;}
+
+	.conlist_p14 {overflow:hidden;}
+	.conlist_p14 .bundle {float:left; overflow:hidden; width:124px; height:138px;}
+	.conlist_p14 .bundle:nth-child(even) {float:right;}
+	.conlist_p14 .bundle.even {float:right;}
+	.conlist_p14 .bundle:nth-child(odd) {float:left;}
+	.conlist_p14 .bundle a {display:block; width:100%; height:100%; font-size:13px; line-height:17px; letter-spacing:-0.6px; color:#4c4c4c;}
+	.conlist_p14 .bundle .thum {display:block; overflow:hidden; position:relative; width:124px; height:84px;}
+	.conlist_p14 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p14 .bundle .subject {display:block; overflow:hidden; margin-top:7px; height:35px; font-weight:normal;}
+
+	.conlist_p19 {}
+	.conlist_p19 table {}
+	.conlist_p19 table td {padding:0; border:1px solid #d9d9d9;}
+	.conlist_p19 table td .limit1 {overflow:hidden; padding:0 19px; height:178px;}
+	.conlist_p19 table td .subject {display:block; overflow:hidden; margin-top:16px; height:41px; font-size:17px; font-weight:normal; letter-spacing:-0.4px; line-height:20px;}
+	.conlist_p19 table td .subject a {color:#333;}
+	.conlist_p19 table td .con {overflow:hidden; position:relative; margin-top:10px; height:92px;} /* 수정 160722 윤선 */
+	.conlist_p19 table td .con .thum {position:absolute; top:4px; left:1px; overflow:hidden; width:136px; height:88px;} /* 수정 160722 윤선 */
+	.conlist_p19 table td .con .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p19 table td .con .txt {display:block; overflow:hidden; max-height:75px; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#808080;} /* 수정 160722 윤선 */
+	.conlist_p19 table td .con .thum + .txt {margin-left:146px;}
+	.conlist_p19 table td .con .date {position:absolute; bottom:-3px; font-size:13px; letter-spacing:-0.6px; color:#b2b2b2;}
+	.conlist_p19 table td .con .thum + .txt + .date {margin-left:146px;}
+
+	.conlist_p20 {position:relative;}
+	.conlist_p20 table {}
+	.conlist_p20 table tbody {}
+	.conlist_p20 table tbody td {padding:0; border:1px solid #d9d9d9;}
+	.conlist_p20 table tbody td .limit1 {overflow:hidden; margin:0 20px; height:235px;}
+	.conlist_p20 table tbody td .subject {display:block; overflow:hidden; margin-top:16px; height:44px; font-size:17px; font-weight:normal; letter-spacing:-0.4px; line-height:20px;}
+	.conlist_p20 table tbody td .subject a {color:#333;}
+	.conlist_p20 table tbody td .thum {display:block; position:relative; overflow:hidden; margin-top:11px; width:172px; height:84px;}
+	.conlist_p20 table tbody td .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p20 table tbody td .con {overflow:hidden; margin-top:6px; height:154px; font-size:13px; line-height:19px; letter-spacing:-0.6px;}
+	.conlist_p20 table tbody td .thum + .con {height:59px;}
+	.conlist_p20 table tbody td .con a {color:#808080;}
+
+	.conlist_p21 {overflow:hidden;}
+	.conlist_p21 .bundle {position:relative; overflow:hidden; margin-top:10px; height:194px; background:#e6e6e6;}
+	.conlist_p21 .bundle:first-child {margin-top:0;}
+	.conlist_p21 .bundle .title {position:absolute; top:20px; left:20px; z-index:2;}
+	.conlist_p21 .bundle.type1 a {display:block; position:relative; overflow:hidden; height:100%; color:#fff;}
+	.conlist_p21 .bundle.type1 a:hover,
+	.conlist_p21 .bundle.type1 a:focus {color:#fff !important;}
+	.conlist_p21 .bundle.type1 .lmbox {position:relative; display:block; width:100%; height:100%;}
+	.conlist_p21 .bundle.type1 .thum {position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;}
+	.conlist_p21 .bundle.type1 .thum img {display:block; width:100%; height:100%;}
+	.conlist_p21 .bundle.type1 .thum .mosaic {position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_mosaic1.png) repeat 0 0;}
+	.conlist_p21 .bundle.type1 .subject {position:absolute; top:40px; left:20px; overflow:hidden; font-size:27px; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type1 a:hover .subject,
+	.conlist_p21 .bundle.type1 a:focus .subject {text-decoration:underline;}
+	.conlist_p21 .bundle.type1 .txt {position:absolute; top:91px; left:20px; overflow:hidden; margin-right:200px; max-height:40px; font-size:14px; line-height:20px; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type1 a:hover .txt,
+	.conlist_p21 .bundle.type1 a:focus .txt {text-decoration:underline;}
+	.conlist_p21 .bundle.type1 .date {position:absolute; left:19px; bottom:9px; height:20px; letter-spacing:-0.4px; line-height:20px; color:#fff !important;}
+	.conlist_p21 .bundle.type2 .lmbox {overflow:hidden; height:100%;}
+	.conlist_p21 .bundle.type2 .thum {float:left; width:280px; height:100%;}
+	.conlist_p21 .bundle.type2 .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p21 .bundle.type2 .thum .mosaic {display:none;}
+	.conlist_p21 .bundle.type2 .lmbox2 {float:right; overflow:hidden; width:671px; height:100%; color:#4c4c4c;}
+	.conlist_p21 .bundle.type2 .subject {display:block; overflow:hidden; margin-top:14px; font-size:27px; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type2 .subject a {color:#4c4c4c;}
+	.conlist_p21 .bundle.type2 .subject a:hover,
+	.conlist_p21 .bundle.type2 .subject a:focus {color:#4c4c4c !important;}
+	.conlist_p21 .bundle.type2 .sublist {overflow:hidden; margin-top:11px; width:680px;}
+	.conlist_p21 .bundle.type2 .sublist li {float:left; overflow:hidden; width:340px; height:26px; background:url(http://menu.mt.co.kr/bil/bl_rel12.gif) no-repeat 1px 10px; font-size:16px; text-indent:12px; letter-spacing:-0.8px; line-height:26px;}
+	.conlist_p21 .bundle.type2 .sublist li a {display:block; overflow:hidden; max-width:300px; color:#666;}
+	.conlist_p21 .bundle.type2 .sublist li a:hover,
+	.conlist_p21 .bundle.type2 .sublist li a:focus {color:#666 !important;}
+	.conlist_p21 .bundle.type2 .date {position:absolute; bottom:11px; height:20px; letter-spacing:-0.4px; line-height:20px; color:#999 !important;}
+	.conlist_p21 .bundle .rel_cnt {position:absolute; right:10px; bottom:10px; overflow:hidden; width:97px; height:24px; background:#666; font-family:dotum; font-size:11px; text-indent:6px; letter-spacing:-0.6px; line-height:25px; color:#e5e5e5;}
+	.ie8 .conlist_p21 .bundle .rel_cnt {line-height:27px;}
+	.ie9 .conlist_p21 .bundle .rel_cnt {line-height:29px;}
+	.ie10 .conlist_p21 .bundle .rel_cnt {line-height:29px;}
+	.ie11 .conlist_p21 .bundle .rel_cnt {line-height:29px;}
+	.conlist_p21 .bundle .rel_cnt .su {position:absolute; top:0; right:6px; height:24px;}
+	.conlist_p21 .bundle .rel_cnt .su strong {position:absolute; top:0; right:13px; font-size:13px; letter-spacing:0; line-height:24px; height:24px;}
+	.ie8 .conlist_p21 .bundle .rel_cnt .su strong {line-height:25px;}
+	.ie9 .conlist_p21 .bundle .rel_cnt .su strong {line-height:28px;}
+	.ie10 .conlist_p21 .bundle .rel_cnt .su strong {line-height:28px;}
+	.ie11 .conlist_p21 .bundle .rel_cnt .su strong {line-height:28px;}
+	/* 추가 161026 해리 */
+	.conlist_p21 .bundle.type3 .lmbox {position:relative; display:block; width:100%; height:100%;}
+	.conlist_p21 .bundle.type3 a {display:block; position:relative; overflow:hidden; height:100%; color:#333;}
+	.conlist_p21 .bundle.type3 .thum {position:absolute; top:0; right:0; width:280px; height:100%; z-index:0;}
+	.conlist_p21 .bundle.type3 .thum img {display:block; width:100%; height:100%;}
+	.conlist_p21 .bundle.type3 .subject {position:absolute; top:52px; left:20px; overflow:hidden; width:630px; height:37px; font-size:27px; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type3 a:hover .subject,
+	.conlist_p21 .bundle.type3 a:focus .subject {text-decoration:underline;}
+	.conlist_p21 .bundle.type3 .txt {position:absolute; top:95px; left:20px; overflow:hidden; width:630px; height:22px; font-size:16px; line-height:22px; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type3 a:hover .txt,
+	.conlist_p21 .bundle.type3 a:focus .txt {text-decoration:underline;}
+	.conlist_p21 .bundle.type3 .sublist {position:absolute; top:126px; left:20px; overflow:hidden; width:660px;}
+	.conlist_p21 .bundle.type3 .sublist li {float:left; overflow:hidden; padding-left:27px; width:300px; height:26px; font-size:15px; letter-spacing:-0.8px; line-height:26px;}
+	.conlist_p21 .bundle.type3 .sublist li.no1 {background:url(http://menu.mt.co.kr/common/etc/font_num01.png) no-repeat 0 6px;}
+	.conlist_p21 .bundle.type3 .sublist li.no2 {background:url(http://menu.mt.co.kr/common/etc/font_num02.png) no-repeat 0 6px;}
+	.conlist_p21 .bundle.type3 .sublist li.no3 {background:url(http://menu.mt.co.kr/common/etc/font_num03.png) no-repeat 0 6px;}
+	.conlist_p21 .bundle.type3 .sublist li.no4 {background:url(http://menu.mt.co.kr/common/etc/font_num04.png) no-repeat 0 6px;}
+	.conlist_p21 .bundle.type3 .sublist li a {display:block; overflow:hidden; max-width:300px; color:#666;}
+	.conlist_p21 .bundle.type3 .sublist li a:hover,
+	.conlist_p21 .bundle.type3 .sublist li a:focus {color:#666 !important;}
+
+	.conlist_p21 .bundle.type4 a {display:block; position:relative; overflow:hidden; height:100%; color:#fff;}
+	.conlist_p21 .bundle.type4 a:hover,
+	.conlist_p21 .bundle.type4 a:focus {color:#fff !important;}
+	.conlist_p21 .bundle.type4 .lmbox {position:relative; display:block; margin:0 auto; width:820px; height:100%;}
+	.conlist_p21 .bundle.type4 .thum {position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;}
+	.conlist_p21 .bundle.type4 .thum img {display:block; width:100%; height:100%;}
+	.conlist_p21 .bundle.type4 .thum .bg_back {position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_png40.png) repeat 0 0;}
+	.conlist_p21 .bundle.type4 .subject {position:absolute; top:54px; left:0; overflow:hidden; width:100%; height:42px; font-size:30px; text-align:center; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type4 a:hover .subject,
+	.conlist_p21 .bundle.type4 a:focus .subject {text-decoration:underline;}
+	.conlist_p21 .bundle.type4 .txt {position:absolute; top:107px; left:0; overflow:hidden; width:100%; height:26px; font-size:20px; line-height:24px; text-align:center; letter-spacing:-1px;}
+	.conlist_p21 .bundle.type4 a:hover .txt,
+	.conlist_p21 .bundle.type4 a:focus .txt {text-decoration:underline;}
+	/*// 추가 161026 해리 */
+
+	.conlist_p22 {overflow:hidden;}
+	.conlist_p22 .bundle {float:left; margin-left:18px; width:150px;}
+	.conlist_p22 .bundle:first-child {margin-left:0;}
+	.conlist_p22 .bundle a {display:block; color:#000;}
+	.conlist_p22 .bundle img {display:block; width:150px; height:150px;}
+	.conlist_p22 .bundle .subject {display:block; overflow:hidden; margin-top:8px; max-height:45px; font-weight:normal; line-height:15px;}
+
+	.conlist_p23 {overflow:hidden;}
+	.conlist_p23 .bundle {float:left; overflow:hidden; width:130px; height:124px;}
+	.conlist_p23 .bundle:nth-child(even) {float:right;}
+	.conlist_p23 .bundle.even {float:right;}
+	.conlist_p23 .bundle:nth-child(odd) {float:left;}
+	.conlist_p23 .bundle a {display:block; width:100%; height:100%; font-size:13px; line-height:17px; letter-spacing:-0.6px; color:#4c4c4c;}
+	.conlist_p23 .bundle .thum {display:block; overflow:hidden; position:relative; width:130px; height:75px;}
+	.conlist_p23 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p23 .bundle .subject {display:block; overflow:hidden; margin-top:7px; height:35px; font-weight:normal;}
+
+	.conlist_p24 {overflow:hidden;}
+	.conlist_p24 .bundle {float:left; margin-left:18px; width:150px;}
+	.conlist_p24 .bundle:first-child {margin-left:0;}
+	.conlist_p24 .bundle a {display:block; color:#000;}
+	.conlist_p24 .bundle a .thum {display:block; position:relative; overflow:hidden; width:150px; height:150px;}
+	.conlist_p24 .bundle a .thum img {display:block; width:150px; min-height:150px;}
+	.conlist_p24 .bundle a .thum .edge {position:absolute; top:0; left:0; width:100%; height:100%; border:1px solid rgba(0,0,0,0.10); -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+	.conlist_p24 .bundle a .subject {display:block; overflow:hidden; margin-top:8px; height:32px; font-weight:normal; line-height:15px;}
+
+	.conlist_p25 {overflow:hidden; position:relative; width:200px; height:275px;}
+	.conlist_p25 .group {overflow:hidden; height:100%; background:#b3b3b3;}
+	.conlist_p25 .group .bundle {float:left; width:200px; height:100%;}
+	.conlist_p25 .group .bundle a {display:block; overflow:hidden; width:100%; height:100%; font-size:13px; line-height:17px; letter-spacing:-0.6px; color:#fff;}
+	.conlist_p25 .group .bundle .thum {display:block; position:relative; overflow:hidden; width:200px; height:200px;}
+	.conlist_p25 .group .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p25 .group .bundle .subject {display:block; overflow:hidden; padding:7px 10px 0; height:36px; font-weight:normal;}
+	.conlist_p25 .pgcircle {position:absolute; right:14px; bottom:10px; height:11px; text-align:right; vertical-align:top;}
+	.conlist_p25 .pgcircle a {display:inline-block; overflow:hidden; margin-left:5px; width:11px; height:11px; background:url(http://menu.mt.co.kr/bil/bl_circle9.png) no-repeat 0 0; font-size:0; line-height:0;}
+	.conlist_p25 .pgcircle a.on,
+	.conlist_p25 .pgcircle a:hover,
+	.conlist_p25 .pgcircle a:focus {background-position:right 0;}
+
+	.conlist_p26 {overflow:hidden;}
+	.conlist_p26 .bundle {position:relative; overflow:hidden; padding:11px 0 12px; border-top:1px solid #dedede;}
+	.conlist_p26 .bundle:first-child {padding-top:0; border-top:none;}
+	.conlist_p26 .bundle a.thum {display:block; position:relative; overflow:hidden; margin-top:0 !important; width:200px; height:130px;}
+	.conlist_p26 .bundle a.thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p26 .bundle a {display:block; overflow:hidden; height:40px; font-size:14px; line-height:20px; letter-spacing:-0.6px; color:#4c4c4c;}
+	.conlist_p26 .bundle:first-child a {margin-top:6px;}
+
+	.conlist_p27 {overflow:hidden; position:relative; width:280px; height:194px;}
+	.conlist_p27 .group {overflow:hidden; width:100%; height:100%;}
+	.conlist_p27 .group .bundle {overflow:hidden; width:100%; height:100%;}
+	.conlist_p27 .group .bundle a {display:block; position:relative; overflow:hidden; width:100%; height:100%; font-size:13px; letter-spacing:-0.6px; color:#fff;}
+	.conlist_p27 .group .bundle a:before {content:' '; position:absolute; bottom:0; left:0; width:100%; height:32px; background:url(http://menu.mt.co.kr/common/etc/bg_shadow60.png) repeat 0 0;}
+	.conlist_p27 .group .bundle .thum {display:block; width:100%; height:100%;}
+	.conlist_p27 .group .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p27 .group .bundle .subject {position:absolute; bottom:0; left:10px; right:10px; overflow:hidden; height:32px; font-weight:normal; line-height:32px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_p27 .group .bundle a:hover .subject,
+	.conlist_p27 .group .bundle a:focus .subject {text-decoration:underline;}
+	.conlist_p27 button {position:absolute; top:74px; width:29px; height:36px; background:url(http://menu.mt.co.kr/common/button/btn_pnbtn6.png) no-repeat 0 0;}
+	.conlist_p27 .prev {left:0; background-position:0 0;}
+	.conlist_p27 .next {right:0; background-position:0 bottom;}
+
+	.conlist_p28 {overflow:hidden;}
+	.conlist_p28 .bundle {overflow:hidden; position:relative;}
+	.conlist_p28 .bundle a {display:block; overflow:hidden; color:#808080;}
+	.conlist_p28 .bundle .thum {position:absolute; top:0; right:0;}
+	.conlist_p28 .bundle .thum.people {overflow:hidden; width:81px; height:81px;}
+	.conlist_p28 .bundle .thum.people:after {content:' '; position:absolute; top:0; right:0; width:81px; height:81px; background:url(http://menu.mt.co.kr/common/etc/bg_frame81x81.png) no-repeat 0 0;}
+	.conlist_p28 .bundle .thum img {display:block; max-height:81px;}
+	.conlist_p28 .bundle .thum.people img {width:81px; min-height:81px;} /* 수정 170216 세종 */
+	.conlist_p28 .bundle .con {display:block;}
+	.conlist_p28 .bundle .thum + .con {margin-right:95px; height:81px;}
+	.conlist_p28 .bundle .con .subject {display:block; overflow:hidden; margin-top:6px; padding-bottom:2px; max-height:32px; font-size:13px; font-weight:normal; line-height:16px; letter-spacing:-0.6px; color:#3d58a5;}
+	.conlist_p28 .bundle .con .txt {display:block; overflow:hidden; margin-top:3px; padding-bottom:1px; max-height:36px; font-size:13px; line-height:18px; letter-spacing:-0.6px;}
+	.conlist_p28 .bundle a:hover .con .subject,
+	.conlist_p28 .bundle a:focus .con .subject {color:#3d58a5; text-decoration:underline;}
+
+	.conlist_p29 {overflow:hidden;}
+	.conlist_p29 .bundle {overflow:hidden; position:relative; margin-top:4px; height:51px;}
+	.conlist_p29 .bundle:first-child {margin-top:0;}
+	.conlist_p29 .bundle a {display:block; overflow:hidden; text-decoration:none !important; color:#333;}
+	.conlist_p29 .bundle .thum {position:absolute; top:0; right:0; overflow:hidden; width:51px; height:51px;}
+	.conlist_p29 .bundle .thum:after {content:' '; position:absolute; top:0; right:0; width:51px; height:51px; background:url(http://menu.mt.co.kr/common/etc/bg_frame51x51.png) no-repeat 0 0;}
+	.conlist_p29 .bundle .thum img {display:block; margin-left:-10px;}
+	.conlist_p29 .bundle .con {display:block;}
+	.conlist_p29 .bundle .thum + .con {margin-right:60px; height:51px;}
+	.conlist_p29 .bundle .con .sort {display:block; overflow:hidden; margin-top:8px; font-size:11px; letter-spacing:-0.6px; color:#3d58a5;}
+	.conlist_p29 .bundle .con .subject {display:block; overflow:hidden; margin-top:3px; padding-bottom:1px; font-size:13px; font-weight:normal; letter-spacing:-0.6px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_p29 .bundle a:hover .con .subject,
+	.conlist_p29 .bundle a:focus .con .subject {text-decoration:underline;}
+
+	.conlist_p30 {overflow:hidden;}
+	.conlist_p30 .bundle {overflow:hidden; position:relative; margin-top:16px; height:34px;}
+	.conlist_p30 .bundle:first-child {margin-top:0;}
+	.conlist_p30 .bundle a {display:block; height:100%; color:#808080;}
+	.conlist_p30 .bundle a:after {content:' '; position:absolute; top:2px; left:63px; width:1px; height:30px; background:#cecece; font-size:0; line-height:0;}
+	.conlist_p30 .bundle a img {position:absolute; top:2px; left:0;}
+	.conlist_p30 .bundle a strong {display:block; overflow:hidden; margin-top:-1px; margin-left:74px; padding-bottom:1px; font-size:13px; font-weight:normal; line-height:18px; letter-spacing:-0.6px;}
+
+	.conlist_p31 {overflow:hidden;}
+	.conlist_p31 .bundle {overflow:hidden; position:relative;}
+	.conlist_p31 .bundle a {display:block; text-decoration:none;}
+	.conlist_p31 .bundle .subject {display:block; overflow:hidden; height:42px; font-size:17px; font-weight:normal; line-height:20px; letter-spacing:-0.4px; color:#3d58a5;}
+	.conlist_p31 .bundle .con {display:block; position:relative; overflow:hidden; margin-top:13px;}
+	.conlist_p31 .bundle .con .thum {position:absolute; top:0; left:0; overflow:hidden; width:136px; height:88px;}
+	.conlist_p31 .bundle .con .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p31 .bundle .con .txt {display:block; overflow:hidden; margin-top:-4px; padding-bottom:5px; max-height:90px; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#8c8c8c;}
+	.conlist_p31 .bundle .con .txt.col2 {color:#808080}
+	.ie8 .conlist_p31 .bundle .con .txt {padding-top:1px; padding-bottom:4px;}
+	.conlist_p31 .bundle .con .thum + .txt {margin-left:145px; height:90px;}
+	.conlist_p31 .bundle a:hover .subject,
+	.conlist_p31 .bundle a:focus .subject {text-decoration:underline;}
+	.conlist_p31 .bundle a:hover .txt,
+	.conlist_p31 .bundle a:focus .txt {text-decoration:underline;}
+
+	.conlist_p32 {overflow:hidden; position:relative; width:298px; height:361px; background:#eee; border:1px solid #ccc;}
+	.conlist_p32 .group {overflow:hidden; height:100%;}
+	.conlist_p32 .group .bundle {float:left; width:100%; height:100%;}
+	.conlist_p32 .group .bundle a {display:block; overflow:hidden; width:100%; height:100%; text-decoration:none; color:#333;}
+	.conlist_p32 .group .bundle .thum {display:block; overflow:hidden; width:298px; height:198px; border-bottom:1px solid #ccc;}
+	.conlist_p32 .group .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p32 .group .bundle .con {display:block; overflow:hidden; padding:11px 13px 0;}
+	.conlist_p32 .group .bundle .con .subject {display:block; overflow:hidden; height:40px; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.4px;}
+	.conlist_p32 .group .bundle .con .txt {display:block; overflow:hidden; margin-top:4px; max-height:97px; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#8c8c8c;}
+	.conlist_p32 .group .bundle a:hover .subject,
+	.conlist_p32 .group .bundle a:focus .subject {text-decoration:underline;}
+	.conlist_p32 button {position:absolute; top:78px; width:33px; height:40px; background:url(http://menu.mt.co.kr/common/button/btn_pnbtn7.png) no-repeat 0 0;}
+	.conlist_p32 .prev {left:0; background-position:0 0;}
+	.conlist_p32 .next {right:0; background-position:0 bottom;}
+	.conlist_p32 .pgcircle {position:absolute; top:173px; left:0; right:0px; height:11px; text-align:center; vertical-align:top;}
+	.conlist_p32 .pgcircle a {display:inline-block; overflow:hidden; margin:0 3px; width:11px; height:11px; background:url(http://menu.mt.co.kr/bil/bl_circle11.png) no-repeat 0 0; font-size:0; line-height:0;}
+	.conlist_p32 .pgcircle a.on,
+	.conlist_p32 .pgcircle a:hover,
+	.conlist_p32 .pgcircle a:focus {background-position:right 0;}
+
+	.conlist_p33 {overflow:hidden;}
+	.conlist_p33 .bundle {float:left; position:relative; overflow:hidden; margin-left:40px; width:203px; height:203px; background:#484a53;}
+	.conlist_p33 .bundle:first-child {margin-left:0;}
+	.conlist_p33 .bundle:first-child + .bundle {margin-left:38px;}
+	.conlist_p33 .bundle .big_thum {position:absolute; width:100%; height:100%; color:#fff;}
+	.conlist_p33 .bundle .big_thum:before {content:' '; position:absolute; top:121px; left:0; right:0; height:31px; background:url(http://menu.mt.co.kr/common/etc/bg_shadow60.png) repeat 0 0;}
+	.conlist_p33 .bundle .big_thum .thum {display:block; overflow:hidden; width:100%; height:152px;}
+	.conlist_p33 .bundle .big_thum .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p33 .bundle .big_thum .subject {position:absolute; top:121px; left:6px; right:6px; overflow:hidden; height:31px; font-size:13px; font-weight:normal; letter-spacing:-1px; line-height:31px; text-align:center;}
+	.ie9 .conlist_p33 .bundle .big_thum .subject {line-height:27px;}
+	.ie10 .conlist_p33 .bundle .big_thum .subject {line-height:27px;}
+	.ie11 .conlist_p33 .bundle .big_thum .subject {line-height:27px;}
+	.conlist_p33 .bundle .small_thum {overflow:hidden; margin-top:153px; height:50px;}
+	.conlist_p33 .bundle .small_thum .bundle2 {float:left; overflow:hidden; margin-left:1px; width:50px; height:50px;}
+	.conlist_p33 .bundle .small_thum .bundle2:first-child {margin-left:0;}
+	.conlist_p33 .bundle .small_thum .bundle2 img {display:block; width:100%; min-height:100%;}
+	.conlist_p33 .bundle .small_thum .bundle2 .num {display:block; width:100; height:100%; background:#686e7a; font-size:14px; text-align:center; line-height:50px; color:#000;}
+
+	.conlist_p34 {overflow:hidden;}
+	.conlist_p34 .bundle {float:left; position:relative; overflow:hidden; margin-left:17px; width:220px; height:330px;}
+	.conlist_p34 .bundle:first-child {margin-left:0;}
+	.conlist_p34 .bundle:first-child + .bundle {margin-left:16px;}
+	.conlist_p34 .bundle .cate {position:absolute; top:7px; right:9px; overflow:hidden; width:60px; height:26px; background:url(http://menu.mt.co.kr/common/etc/bg_png_r58x24.png) no-repeat 0 0; font-size:11px; line-height:26px; letter-spacing:-1px; text-align:center; color:#fff;}
+	.ie9 .conlist_p34 .bundle .cate {line-height:22px;}
+	.ie10 .conlist_p34 .bundle .cate {line-height:22px;}
+	.ie11 .conlist_p34 .bundle .cate {line-height:22px;}
+	.conlist_p34 .bundle a {display:block; width:100%; height:100%; color:#fff;}
+	.conlist_p34 .bundle .thum {display:block; overflow:hidden; width:100%; height:100%;}
+	.conlist_p34 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p34 .bundle .subject {position:absolute; bottom:0; left:0; overflow:hidden; padding:0 8px; width:204px; height:35px; background:url(http://menu.mt.co.kr/common/etc/bg_shadow60.png) repeat 0 0; font-size:13px; font-weight:normal; line-height:35px; letter-spacing:-0.25px;}
+	.ie9 .conlist_p34 .bundle .subject {line-height:31px;}
+	.ie10 .conlist_p34 .bundle .subject {line-height:31px;}
+	.ie11 .conlist_p34 .bundle .subject {line-height:31px;}
+
+	.conlist_p35 {overflow:hidden;}
+	.conlist_p35 .bundle {position:relative; overflow:hidden; margin-top:15px; height:255px; background:#fff;}
+	.conlist_p35 .bundle:first-child {margin-top:0;}
+	.conlist_p35 .bundle a {display:block; overflow:hidden; width:100%; height:100%; font-size:15px; line-height:20px; letter-spacing:-0.4px; color:#333;}
+	.conlist_p35 .bundle .thum {position:absolute; top:0; left:0; overflow:hidden; width:100%; height:190px;}
+	.conlist_p35 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p35 .bundle .subject {display:block; margin-top:189px; padding:11px 15px 0; height:53px; font-weight:normal; border:1px solid #ccc;}
+
+	.conlist_p36 {position:relative;}
+	.conlist_p36 .group {overflow:hidden; height:67px;}
+	.conlist_p36 .bundle {height:100%;}
+	.conlist_p36 .bundle .tit {display:block; overflow:hidden; margin-top:2px; padding-bottom:2px; height:20px; font-size:15px; line-height:20px; letter-spacing:-0.6px;}
+	.conlist_p36 .bundle .tit a {color:#4a61a7;}
+	.conlist_p36 .bundle .subject {display:block; overflow:hidden; margin-top:3px; height:37px; font-size:13px; font-weight:normal; line-height:18px; letter-spacing:-0.6px; }
+	.conlist_p36 .bundle .subject a {color:#333;}
+	.conlist_p36 .pgcircle {position:absolute; right:1px; bottom:0px; height:11px; text-align:right; vertical-align:top;}
+	.conlist_p36 .pgcircle a {display:inline-block; overflow:hidden; margin-left:5px; width:11px; height:11px; background:url(http://menu.mt.co.kr/bil/bl_circle12.png) no-repeat 0 0; font-size:0; line-height:0;}
+	.conlist_p36 .pgcircle a.on,
+	.conlist_p36 .pgcircle a:hover,
+	.conlist_p36 .pgcircle a:focus {background-position:right 0;}
+
+	.conlist_p37 {overflow:hidden;}
+	.conlist_p37 .bundle {overflow:hidden; margin-top:-1px; height:90px; border:1px solid #ccc;}
+	.conlist_p37 .bundle:first-child {margin-top:0;}
+	.conlist_p37 .bundle a {display:table-cell; padding:0 19px; height:90px; vertical-align:middle; text-decoration:none;}
+	.conlist_p37 .bundle a .subject {display:block; overflow:hidden; padding-bottom:2px; min-height:25px; font-size:16px; font-weight:normal; line-height:20px; letter-spacing:-0.6px; color:#333;}
+	.conlist_p37 .bundle a .info {display:block; overflow:hidden; margin-top:4px; height:25px;}
+	.conlist_p37 .bundle a .thum {float:left; overflow:hidden; margin-right:6px; width:35px; height:25px;}
+	.conlist_p37 .bundle a .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p37 .bundle a .txt {float:left; overflow:hidden; height:25px; line-height:25px; color:#3d58a5;}
+	.conlist_p37 .bundle a:hover .subject,
+	.conlist_p37 .bundle a:focus .subject {text-decoration:underline;}
+
+	.conlist_p38 {overflow:hidden; position:relative; min-height:180px;}
+	.conlist_p38 .cate {position:absolute; top:0; left:0;}
+	.conlist_p38 .cate a {display:block;}
+	.conlist_p38 .group {overflow:hidden; padding-top:1px; padding-left:1px;}
+	.conlist_p38 .group .bundle {float:left; overflow:hidden; margin-top:-1px; margin-left:-1px; width:212px; height:178px; border:1px solid #ccc;}
+	.conlist_p38 .group .bundle a {display:block; position:relative; overflow:hidden; padding:0 20px; height:100%; text-decoration:none;}
+	.conlist_p38 .group .bundle .subject {display:block; overflow:hidden; margin-top:16px; height:74px; font-size:19px; font-weight:normal; line-height:24px; letter-spacing:-0.4px; color:#333;}
+	.conlist_p38 .group .bundle .info {position:absolute; left:20px; right:20px; bottom:20px; height:50px;}
+	.conlist_p38 .group .bundle .info .thum {display:block; overflow:hidden; width:70px; height:50px;}
+	.conlist_p38 .group .bundle .info .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p38 .group .bundle .info .name {position:absolute; left:76px; right:0; bottom:0; line-height:16px; color:#3d58a5;}
+	.conlist_p38 .group .bundle a:hover .subject,
+	.conlist_p38 .group .bundle a:focus .subject {text-decoration:underline; color:#3d58a5;}
+
+	.conlist_p39 {overflow:hidden; background:#e6e6e6;}
+	.conlist_p39 .bundle {float:left; position:relative; overflow:hidden; margin-left:-1px; width:212px; height:181px; border:1px solid #d9d9d9;}
+	.conlist_p39 .bundle:first-child {margin-left:0;}
+	.conlist_p39 .bundle a {display:block; overflow:hidden; padding:0 20px; height:100%; text-decoration:none;}
+	.conlist_p39 .bundle a .subject {display:block; overflow:hidden; height:49px; font-size:19px; font-weight:normal; line-height:24px; letter-spacing:-0.4px; color:#262626;}
+	.conlist_p39 .bundle a .con {display:block; position:relative; overflow:hidden; margin-top:12px; height:52px;}
+	.conlist_p39 .bundle a .con .txt {display:block; overflow:hidden; margin-top:-3px; font-size:13px; line-height:18px; letter-spacing:-0.6px; color:#7a7a7a;}
+	.conlist_p39 .bundle a .column {display:block; overflow:hidden; position:relative; margin-top:15px; padding-left:42px; height:35px;}
+	.conlist_p39 .bundle a .column .img {position:absolute; top:0; left:0; overflow:hidden; width:35px; height:25px;}
+	.conlist_p39 .bundle a .column .img img {display:block; width:100%; min-height:100%;}
+	.conlist_p39 .bundle a .column .tit {display:block; height:25px; line-height:25px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; color:#3d58a5;} /* 수정 160120 윤선 */
+	.conlist_p39 .bundle a.on,
+	.conlist_p39 .bundle a:hover,
+	.conlist_p39 .bundle a:focus {background:#fff;}
+	.conlist_p39 .bundle a.on .subject,
+	.conlist_p39 .bundle a:hover .subject,
+	.conlist_p39 .bundle a:focus .subject {color:#3d58a5;}
+
+	.conlist_p40 {overflow:hidden; margin-left:-10px; margin-right:-10px;}
+	.conlist_p40 .bundle {float:left; margin:0 10px 20px; width:200px; height:190px;}
+	.conlist_p40 .bundle a {display:block; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#262626;}
+	.conlist_p40 .bundle .thum {display:block; position:relative; overflow:hidden; width:200px; height:134px;}
+	.conlist_p40 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p40 .bundle .subject {display:block; padding:8px 8px 0; height:47px; font-weight:normal; border:1px solid #ccc; border-top:none;}
+
+	.conlist_p41 {overflow:hidden; margin-left:-4px;}
+	.conlist_p41.w16 {margin-left:-16px;}
+	.conlist_p41 .bundle {float:left; position:relative; margin-top:4px; margin-left:4px; width:155px; height:172px; border:1px solid #ddd;}
+	.conlist_p41.w16 .bundle {margin-top:16px; margin-left:16px;}
+	.conlist_p41 .bundle:first-child,
+	.conlist_p41 .bundle:first-child + .bundle,
+	.conlist_p41 .bundle:first-child + .bundle + .bundle,
+	.conlist_p41 .bundle:first-child + .bundle + .bundle + .bundle {margin-top:0;}
+	.conlist_p41 .bundle a {display:block; width:100%; height:100%; font-size:13px; line-height:20px; letter-spacing:-0.5px; color:#1a1a1a;}
+	.conlist_p41 .bundle .thum {display:block; width:100%; height:114px; background:#eaeaea;}
+	.conlist_p41 .bundle .thum .td {display:table-cell; width:155px; height:114px; text-align:center; vertical-align:middle;}
+	.conlist_p41 .bundle .thum .td img {max-width:155px; max-height:114px;}
+	.conlist_p41 .bundle .subject {display:block; overflow:hidden; padding:8px 8px 0; max-height:41px; font-weight:normal; border-top:1px solid #ddd;}
+
+	.conlist_p42 {overflow:hidden; margin-left:-20px;}
+	.conlist_p42 .bundle {float:left; position:relative; overflow:hidden; margin-top:20px;  margin-left:20px; width:200px; height:275px; background:#b3b3b3;}
+	.conlist_p42 .bundle:first-child,
+	.conlist_p42 .bundle:first-child + .bundle,
+	.conlist_p42 .bundle:first-child + .bundle + .bundle {margin-top:0;}
+	.conlist_p42 .bundle .cate {position:absolute; left:10px; bottom:9px; font-size:13px; letter-spacing:-0.6px; color:#3d58a5; z-index:2;}
+	.conlist_p42 .bundle .con {overflow:hidden; width:200px; height:100%;}
+	.conlist_p42 .bundle a {display:block; overflow:hidden; width:100%; height:100%; font-size:13px; line-height:17px; letter-spacing:-0.6px; color:#fff;}
+	.conlist_p42 .bundle .thum {display:block; position:relative; overflow:hidden; width:200px; height:200px;}
+	.conlist_p42 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p42 .bundle .subject {display:block; overflow:hidden; padding:7px 10px 0; height:36px; font-weight:normal;}
+
+	.conlist_p43 {overflow:hidden; position:relative; height:100%;}
+	.conlist_p43 .subject {display:block; overflow:hidden; height:50px; font-size:19px; font-weight:normal; line-height:24px; letter-spacing:-0.4px;}
+	.conlist_p43 .subject a {color:#262626;}
+	.conlist_p43 .subject.ty2 a {color:#3d58a5;}
+	.conlist_p43 .rel_list {overflow:hidden; margin-top:6px;}
+	.conlist_p43 .rel_list li {overflow:hidden; padding-left:13px; height:27px; background:url(http://menu.mt.co.kr/bil/bl_rel14.gif) no-repeat 0 9px; font-size:14px; line-height:27px; letter-spacing:-0.5px;}
+	.ie9 .conlist_p43 .rel_list li {line-height:23px;}
+	.ie10 .conlist_p43 .rel_list li {line-height:23px;}
+	.ie11 .conlist_p43 .rel_list li {line-height:23px;}
+	.conlist_p43 .rel_list li a {color:#666;}
+
+	.conlist_p43 .etc {position:absolute; left:0; right:0; overflow:hidden; height:20px; text-align:right;}
+	.conlist_p43 .etc .rel_su {position:absolute; top:0; left:0; overflow:hidden; padding:0 6px; width:85px; height:20px; background:#999; font-family:dotum; font-size:11px; letter-spacing:-0.6px; line-height:21px; color:#e5e5e5;}
+	.ie8 .conlist_p43 .etc .rel_su {line-height:22px;}
+	.ie9 .conlist_p43 .etc .rel_su {line-height:24px;}
+	.ie10 .conlist_p43 .etc .rel_su {line-height:24px;}
+	.ie11 .conlist_p43 .etc .rel_su {line-height:24px;}
+	.conlist_p43 .etc .rel_su .txt {position:absolute; top:0; left:6px;}
+	.conlist_p43 .etc .rel_su .su {}
+	.conlist_p43 .etc .date {font-size:11px; letter-spacing:-0.6px; line-height:20px; color:#999;}
+	.ie9 .conlist_p43 .etc .date {line-height:18px;}
+	.ie10 .conlist_p43 .etc .date {line-height:18px;}
+	.ie11 .conlist_p43 .etc .date {line-height:18px;}
+
+	.conlist_p43 .rel_list2 {position:absolute; left:0; overflow:hidden; width:100%; height:62px;}
+	.conlist_p43 .rel_list2 li {float:left; overflow:hidden; margin-left:8px; width:83px; height:60px; border:1px solid #e4e4e4;}
+	.conlist_p43 .rel_list2 li:first-child {margin-left:0;}
+	.conlist_p43 .rel_list2 li a {display:block;}
+	.conlist_p43 .rel_list2 li img {display:block; width:83px; height:60px;}
+
+	.conlist_p44 {overflow:hidden;}
+	.conlist_p44 .bundle {overflow:hidden; position:relative; margin-top:27px;}
+	.conlist_p44 .bundle:first-child {margin-top:0;}
+	.conlist_p44 .bundle .con {}
+	.conlist_p44 .bundle .con .subject {display:block; overflow:hidden; margin-top:-6px; padding-bottom:1px; font-size:17px; font-weight:normal; letter-spacing:-0.5px; line-height:24px; white-space:nowrap; text-overflow:ellipsis;}
+	.conlist_p44 .bundle .con .subject a {color:#262626;}
+	.conlist_p44 .bundle .con .subject a:hover,
+	.conlist_p44 .bundle .con .subject a:focus {color:#d90000;}
+	.conlist_p44 .bundle .con .subject .sort {color:#3d58a5;}
+	.conlist_p44 .bundle .con .txt {margin-top:5px; font-size:14px; line-height:19px; letter-spacing:-0.2px;}
+	.conlist_p44 .bundle .con .txt a {padding-bottom:1px; color:#666;}
+	.conlist_p44 .bundle .con .txt .etc {display:block; overflow:hidden; padding-top:3px; font-size:12px; letter-spacing:0; color:#999;}
+	.ie9 .conlist_p44 .bundle .con .txt .etc {line-height:17px;}
+	.ie10 .conlist_p44 .bundle .con .txt .etc {line-height:17px;}
+	.ie11 .conlist_p44 .bundle .con .txt .etc {line-height:17px;}
+
+	/* 추가 151020 세종 */
+	.conlist_p45 {overflow:hidden; position:relative; width:280px; height:157px;} /* 수정 160303 세종 */
+	.conlist_p45 .group {overflow:hidden; width:100%; height:100%;}
+	.conlist_p45 .group .bundle {overflow:hidden; width:100%; height:100%;}
+	.conlist_p45 .group .bundle.kkulbbang:after {content:' '; position:absolute; top:20px; left:20px; width:93px; height:40px; background:url(http://menu.mt.co.kr/common/title/title_kkulbbang1.png) no-repeat 0 0; background-size:93px auto;} /* 추가 170202 세종 */
+	.conlist_p45 .group .bundle a {display:block; position:relative; overflow:hidden; width:100%; height:100%; font-size:13px; letter-spacing:-0.6px; color:#fff;}
+	.conlist_p45 .group .bundle a:before {content:' '; position:absolute; bottom:0; left:0; width:100%; height:32px; background:url(http://menu.mt.co.kr/common/etc/bg_shadow60.png) repeat 0 0;}
+	.conlist_p45 .group .bundle .thum {display:block; width:100%; height:100%;}
+	.conlist_p45 .group .bundle .thum img {display:block; margin-top:-27px; width:100%; min-height:100%;} /* 수정 160303 세종 */
+	.conlist_p45 .group .bundle .subject {position:absolute; bottom:0; left:10px; right:10px; overflow:hidden; height:32px; font-weight:normal; line-height:32px; text-overflow:ellipsis; white-space:nowrap;}
+	.conlist_p45 .group .bundle a:hover .subject,
+	.conlist_p45 .group .bundle a:focus .subject {text-decoration:underline;}
+	/* 추가 160111 윤선 */
+	.conlist_p46 {}
+	.conlist_p46 {position:relative; overflow:hidden; border:1px solid #ccc;}
+	.conlist_p46 .bundle {width:260px; height:175px; padding:26px 19px 0; border-top:1px solid #ccc;} /* 수정 170224 윤선 */
+	.conlist_p46 .bundle:first-child {padding-top:19px; border-top:none;} /* 수정 170224 윤선 */
+	.conlist_p46 .bundle a {display:block; text-decoration:none;}
+	.conlist_p46 .bundle a:hover *,
+	.conlist_p46 .bundle a:focus * {text-decoration:underline;}
+	.conlist_p46 .bundle a .subject {display:block; overflow:hidden; height:52px; font-size:20px; font-weight:normal; line-height:25px; letter-spacing:-0.4px; color:#000;} /* 수정 170224 윤선 */
+	.conlist_p46 .bundle a .cont {display:block; overflow:hidden; margin-top:9px; max-height:55px; font-size:13px; line-height:18px; letter-spacing:-0.6px; color:#7a7a7a;}
+	.conlist_p46 .bundle a .cont strong,
+	.conlist_p46 .bundle a .cont b {font-weight:normal;}  /* 추가 160418 윤선 */
+	.conlist_p46 .bundle a .box {margin-top:13px; position:relative; display:block; overflow:hidden; font-size:13px; line-height:18px; letter-spacing:-0.6px; color:#7a7a7a;} /* 수정 170224 윤선 */
+	.conlist_p46 .bundle a .box .thum {margin-right:10px; float:left; width:105px; height:79px;} /* 추가 170224 윤선 */
+	.conlist_p46 .bundle a .box .thum img {display:block; width:100%; min-height:100%;} /* 수정 170224 윤선 */
+	.conlist_p46 .bundle a .box .txt {padding-top:4px; display:block; max-height:72px;} /* 추가 170224 윤선 */
+	.conlist_p46 .bundle a .info {display:block; margin-top:16px; overflow:hidden; width:100%; height:25px; font-size:12px; color:#3d58a5;}
+	.conlist_p46 .bundle a .info img {margin-right:7px; float:left; width:35px; height:25px;}
+	.conlist_p46 .bundle a .info .name {float:left; margin-top:-1px; width:218px; line-height:25px;}
+
+			/* conlist_p47 */ /* 추가 160218 윤선 */
+	.conlist_p47 {position:relative; overflow:hidden;}
+	.conlist_p47.bx_big {width:472px; height:444px; background:url(http://menu.mt.co.kr/common/etc/bg_png_pattern3.png) repeat 0 0; border:1px solid #d5d5d5;}
+	.conlist_p47 a {position:relative; display:block; width:100%; height:100%;}
+	.conlist_p47 a:hover,
+	.conlist_p47 a:focus {text-decoration:none;}
+	.conlist_p47 a:hover .title,
+	.conlist_p47 a:focus .title {text-decoration:underline;}
+	.conlist_p47 .thum {overflow:hidden; display:block; width:472px; height:444px;}
+	.conlist_p47 .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p47 .group {float:left; margin-top:22px; margin-left:22px;}
+	.conlist_p47 .group a {display:block; width:226px; height:212px; background:#FFF;}
+	.conlist_p47 .group .thum {position:relative; overflow:hidden; display:block; width:226px; height:135px;}
+	.conlist_p47 .area {padding:5px 11px 0 11px; height:71px; display:block;}
+	.conlist_p47 .area .title {margin-top:2px; overflow:hidden; display:block; height:42px; font-size:16px; line-height:21px; letter-spacing:-0.8px; color:#1a1a1a;}
+	.conlist_p47 .area .cate {display:block; font-weight:normal; letter-spacing:-1px; color:#3d58a5;}
+
+			/* conlist_p48 */ /* 추가 160218 윤선 */
+	.conlist_p48 {margin-left:-16px; position:relative; overflow:hidden;}
+	.conlist_p48 a {position:relative; display:block; width:100%; height:100%;}
+	.conlist_p48 a:hover,
+	.conlist_p48 a:focus {text-decoration:none;}
+	.conlist_p48 a:hover .title,
+	.conlist_p48 a:focus .title {text-decoration:underline;}
+	.conlist_p48 .thum {position:relative; overflow:hidden; display:block; width:472px; height:444px;}
+	.conlist_p48 .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p48 .group {float:left; margin:20px 0 0 16px;}
+	.conlist_p48 .group a {display:block; width:220px; height:270px; background:#FFF;}
+	.conlist_p48 .group .thum {overflow:hidden; display:block; width:220px; height:215px;}
+	.conlist_p48 .area {padding:5px 11px 0 11px; display:block; height:51px;}
+	.conlist_p48 .area .cate {display:block; font-weight:normal; letter-spacing:-1px; color:#3d58a5;}
+	.conlist_p48 .area .title {overflow:hidden; display:block; padding-top:1px; height:21px; font-size:16px; line-height:21px; letter-spacing:-0.8px; color:#1a1a1a;}
+
+			/* 추가 160309 세종 */
+	.conlist_p49 {position:relative;}
+	.conlist_p49 .group {overflow:hidden; width:100%; height:74px;}
+	.conlist_p49 .bundle {position:relative; overflow:hidden; width:100%; height:74px;}
+	.conlist_p49 .bundle a {display:block; overflow:hidden; padding-left:79px; height:100%; color:#585858;}
+	.conlist_p49 .bundle .thum {position:absolute; top:0; left:0; overflow:hidden; width:65px; height:74px;}
+	.conlist_p49 .bundle .thum:after {content:' '; position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_frame65x74.png) no-repeat 0 0;}
+	.conlist_p49 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p49 .bundle .subject {display:block; overflow:hidden; margin-top:7px; height:40px; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.4px;}
+	.ie9 .conlist_p49 .bundle .subject {margin-bottom:-4px; padding-bottom:2px;}
+	.ie10 .conlist_p49 .bundle .subject {margin-bottom:-4px; padding-bottom:2px;}
+	.ie11 .conlist_p49 .bundle .subject {margin-bottom:-4px; padding-bottom:2px;}
+	.conlist_p49 .bundle a:hover,
+	.conlist_p49 .bundle a:focus {text-decoration:none;}
+	.conlist_p49 .bundle a:hover .subject,
+	.conlist_p49 .bundle a:focus .subject {text-decoration:underline;}
+	.conlist_p49 .bundle .date {display:block; margin-top:6px; font-size:11px; color:#888;}
+	.conlist_p49 .fnc {position:absolute; top:-22px; right:8px; overflow:hidden; width:32px; height:16px;}
+	.conlist_p49 .fnc button {float:left; width:16px; height:16px; background:url(http://menu.mt.co.kr/common/button/btn_pnbtn12.png) no-repeat;}
+	.conlist_p49 .fnc button.prev {background-position:0 0;}
+	.conlist_p49 .fnc button.next {background-position:right 0;}
+
+	.conlist_p50 {overflow:hidden;}
+	.conlist_p50 .bundle {float:left; overflow:hidden; width:120px;}
+	.conlist_p50 .bundle.even {float:right;}
+	.conlist_p50 .bundle a {display:block; width:100%; height:100%; font-size:13px; line-height:17px; letter-spacing:-0.5px; color:#585858;}
+	.conlist_p50 .bundle .thum {display:block; overflow:hidden; position:relative; width:120px; height:90px;}
+	.conlist_p50 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p50 .bundle .subject {display:block; overflow:hidden; margin-top:7px; height:35px; font-weight:normal;}
+
+	.conlist_p51 {position:relative; width:100%; height:150px;}
+	.conlist_p51 .pgcircle {position:absolute; top:-14px; right:0; height:12px; text-align:right; vertical-align:top;}
+	.conlist_p51 .pgcircle a {display:inline-block; overflow:hidden; margin-left:5px; width:12px; height:12px; background:url(http://menu.mt.co.kr/bil/bl_circle13.png) no-repeat 0 0; font-size:0; line-height:0;}
+	.conlist_p51 .pgcircle a.on,
+	.conlist_p51 .pgcircle a:hover,
+	.conlist_p51 .pgcircle a:focus {background-position:right 0;}
+
+	.conlist_p52 {overflow:hidden; width:100%; height:100%;}
+	.conlist_p52 .bundle {overflow:hidden; width:100%; height:100%;}
+	.conlist_p52 .bundle a {display:block; position:relative; overflow:hidden; width:100%; height:100%; font-size:14px; letter-spacing:-0.5px; color:#585858;}
+	.conlist_p52 .bundle .thum {display:block; position:relative; overflow:hidden; width:100%; height:104px;}
+	.conlist_p52 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p52 .bundle .subject {display:block; overflow:hidden; margin-top:10px; height:25px; font-weight:normal; line-height:22px; text-overflow:ellipsis; white-space:nowrap;}
+	.ie9 .conlist_p52 .bundle .subject {line-height:21px;}
+	.ie10 .conlist_p52 .bundle .subject {line-height:21px;}
+	.ie11 .conlist_p52 .bundle .subject {line-height:21px;}
+			/* //추가 160309 세종 */
+			/* 추가 160726 세종 */
+	.conlist_p53 {position:relative; overflow:hidden; height:84px;}
+	.conlist_p53 .bundle {width:100%; height:100%;}
+	.conlist_p53 .bundle .group {overflow:hidden; width:100%; height:100%;}
+	.conlist_p53 .bundle .group li {float:left; overflow:hidden; width:314px; height:100%;}
+	.conlist_p53 .bundle .group li + li {float:right; width:300px;}
+	.conlist_p53 .bundle .group li a {display:block; position:relative; padding-left:134px; height:100%;}
+	.conlist_p53 .bundle .group li a .thum {position:absolute; top:0; left:0; overflow:hidden; width:124px; height:84px;}
+	.conlist_p53 .bundle .group li a .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p53 .bundle .group li a .subject {display:block; overflow:hidden; height:44px; font-size:16px; font-weight:normal; line-height:21px; letter-spacing:-0.6px; color:#1a1a1a;}
+	.conlist_p53 .bundle .group li a .txt {display:block; overflow:hidden; margin-top:5px; height:36px; font-size:13px; line-height:18px; letter-spacing:-0.4px; color:#666;}
+	.conlist_p53 .bundle .group li a:hover *,
+	.conlist_p53 .bundle .group li a:focus * {text-decoration:underline;}
+
+	.conlist_p54 {overflow:hidden;}
+	.conlist_p54 .bundle {float:left; overflow:hidden; width:212px; height:295px; background:url(http://menu.mt.co.kr/common/etc/bg_quotes1.gif) no-repeat 0 0; border:1px solid #ccc;}
+	.conlist_p54 .bundle + .bundle {margin-left:-1px;}
+	.conlist_p54 .bundle a {display:block; position:relative; width:100%; height:100%;}
+	.conlist_p54 .bundle a .thum {position:absolute; top:20px; left:0; right:0; overflow:hidden; height:126px;}
+	.conlist_p54 .bundle a .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p54 .bundle a .thum:after {content:' '; position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_frame126x126.png) no-repeat 0 0;}
+	.conlist_p54 .bundle a .subject {position:absolute; top:185px; left:17px; overflow:hidden; width:178px; height:42px; font-size:16px; font-weight:normal; line-height:20px; letter-spacing:-0.8px; color:#333;}
+	.conlist_p54 .bundle a .txt {position:absolute; top:233px; left:0; right:0; overflow:hidden; text-align:center; letter-spacing:-0.4px; color:#3d58a5;}
+	.conlist_p54 .bundle a:hover .subject,
+	.conlist_p54 .bundle a:focus .subject {text-decoration:underline;}
+
+	.conlist_p55 {overflow:hidden;}
+	.conlist_p55 .bundle {float:left; overflow:hidden; width:212px; height:196px; border:1px solid #ccc;}
+	.conlist_p55 .bundle + .bundle {margin-left:-1px;}
+	.conlist_p55 .bundle .name {display:block; margin:17px 20px 0; color:#3d58a5;}
+	.conlist_p55 .bundle .subject {display:block; overflow:hidden; margin:10px 20px 0; width:172px; height:; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.4px;}
+	.conlist_p55 .bundle .subject a {color:#1a1a1a;}
+	.conlist_p55 .bundle .thum {display:block; position:relative; overflow:hidden; margin:7px 20px 0; width:172px; height:84px;}
+	.conlist_p55 .bundle .thum img {display:block; width:100%; min-height:100%;}
+
+	.conlist_p56 {overflow:hidden; position:relative; height:265px;}
+	.conlist_p56 .group {position:absolute; overflow:hidden;}
+	.conlist_p56 .group .bundle {float:left; width:100%; height:100%;}
+	.conlist_p56 .group .bundle a {display:block; width:100%; height:100%; font-size:15px; line-height:20px; letter-spacing:-0.4px; color:#333;}
+	.conlist_p56 .group .bundle a .thum {display:block; position:relative; overflow:hidden; width:300px; height:200px;}
+	.conlist_p56 .group .bundle a .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p56 .group .bundle a .subject {display:block; overflow:hidden; height:64px; font-weight:normal; border:1px solid #e6e6e6; border-top:none;}
+	.conlist_p56 .group .bundle a .subject span {display:block; overflow:hidden; margin:12px 15px 0; height:40px;}
+	.conlist_p56 .pgcircle {position:absolute; top:174px; left:0; right:0px; height:11px; text-align:center; vertical-align:top;}
+	.conlist_p56 .pgcircle a {display:inline-block; overflow:hidden; margin:0 3px; width:11px; height:11px; background:url(http://menu.mt.co.kr/bil/bl_circle11.png) no-repeat 0 0; font-size:0; line-height:0;}
+	.conlist_p56 .pgcircle a.on,
+	.conlist_p56 .pgcircle a:hover,
+	.conlist_p56 .pgcircle a:focus {background-position:right 0;}
+			/* //추가 160726 세종 */
+		/* 추가 170308 윤선 */
+	.conlist_p57 {margin:-16px 0 0 -18px; position:relative; overflow:hidden;}
+	.conlist_p57 .bundle {float:left; margin:16px 0 0 18px; height:215px;}
+	.conlist_p57 > .bundle:first-child {height:440px;}
+	.conlist_p57 .bundle.num12 {clear:left;}
+	.conlist_p57 .bundle.num14 {margin-top:-215px; height:440px;}
+	.conlist_p57 .bundle a {position:relative; display:block; width:229px; height:100%;}
+	.conlist_p57 .bundle .thum {overflow:hidden; display:block; width:229px; height:158px;}
+	.conlist_p57 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p57 .bundle .area {margin-top:14px; display:block;}
+	.conlist_p57 .bundle .area .cate {display:block; font-weight:normal; font-size:14px; letter-spacing:-1px; color:#3d58a5;}
+	.conlist_p57 .bundle .area .title {margin-top:2px; overflow:hidden; display:block; height:20px; font-weight:normal; font-size:16px; line-height:20px; letter-spacing:-0.8px; white-space:nowrap;
+    text-overflow:ellipsis; color:#666;}
+	.conlist_p57 .bundle .area .num {position:absolute; top:0; left:0; width:53px; height:27px; font-weight:bold; line-height:27px; text-indent:28px; background:rgba(0,0,0,0.42) url(http://menu.mt.co.kr/common/etc/bg_photoNum.png) no-repeat 8px 6px; color:#dedede;}
+	.conlist_p57 .bundle .big_thumList {overflow:hidden;}
+	.conlist_p57 .bundle .big_thumList .bundle {margin-left:8px; float:left; position:relative; overflow:hidden; width:113px; height:81px;}
+	.conlist_p57 .bundle .big_thumList .bundle.big_thum {margin:0; float:none; width:476px; height:347px;}
+	.conlist_p57 .bundle .big_thumList .bundle.big_thum + .bundle {margin-left:0;}
+	.conlist_p57 .bundle .big_thumList .bundle a {display:block; overflow:hidden; width:113px; height:81px; font-size:13px; letter-spacing:-0.6px; color:#fff;}
+	.conlist_p57 .bundle .big_thumList .bundle.big_thum a {width:476px; height:347px;}
+	.conlist_p57 .bundle .big_thumList .bundle:first-child a:before {content:''; position:absolute; left:0; bottom:0; overflow:hidden; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_shadow3.png) repeat 0 0;}
+	.conlist_p57 .bundle .big_thumList .bundle a.on:before {content:''; position:absolute; left:0; bottom:0; overflow:hidden; width:100%; height:100%; border:3px solid #ff5454; box-sizing:border-box;}
+	.conlist_p57 .bundle .big_thumList .bundle a img {display:block; width:100%; min-height:100%;}
+	.conlist_p57 .bundle .big_thumList .bundle a .subject {position:absolute; bottom:16px; left:20px; right:20px; overflow:hidden; height:30px; font-weight:normal; font-size:20px; line-height:30px; white-space:nowrap; text-overflow:ellipsis;}
+	.conlist_p57 .bundle .big_thumList .bundle a:hover .subject {text-decoration:underline;}
+	.conlist_p57 .bundle .big_thumList .bundle .num {position:absolute; top:0; left:0; right:0; width:100%; text-align:center; font-weight:bold; font-size:18px; line-height:81px; color:#FFF; z-index:9;}
+	.conlist_p57 .bundle .big_thumList .bundle .num:before {content:''; position:absolute; top:0; left:0; width:100%; height:81px; background:url(http://menu.mt.co.kr/common/etc/bg_shadow50.png) repeat 0 0; z-index:-1;}
+	.conlist_p57 a:hover,
+	.conlist_p57 a:focus {text-decoration:none;}
+	.conlist_p57 a:hover .title,
+	.conlist_p57 a:focus .title {text-decoration:underline;}
+
+	.conlist_p59 {margin-top:-16px; margin-left:-20px; position:relative; overflow:hidden;}
+	.conlist_p59 .bundle {margin-top:16px; margin-left:20px; float:left; width:310px;}
+	.conlist_p59 .bundle a {position:relative; display:block; width:310px; height:100%; background:#FFF;}
+	.conlist_p59 a:hover,
+	.conlist_p59 a:focus {text-decoration:none;}
+	.conlist_p59 a:hover .title,
+	.conlist_p59 a:focus .title {text-decoration:underline;}
+	.conlist_p59 .bundle .thum {overflow:hidden; display:block; width:310px; height:232px;}
+	.conlist_p59 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p59 .area {margin-top:9px; display:block;}
+	.conlist_p59 .area .title {overflow:hidden; display:block; height:48px; font-weight:normal; font-size:16px; line-height:23px; letter-spacing:-0.8px; color:#666;}
+
+	.conlist_p60 {margin:-14px 0 0 -14px; overflow:hidden;}
+	.conlist_p60 .bundle {float:left; margin:14px 0 0 14px; width:230px; height:100%; border:1px solid #e5e5e5;}
+	.conlist_p60 .bundle a {display:block; width:100%; height:100%; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#262626;}
+	.conlist_p60 .bundle .thum {display:block; position:relative; overflow:hidden; width:230px; height:182px;}
+	.conlist_p60 .bundle .thum img {display:block; width:100%; min-height:100%;}
+	.conlist_p60 .bundle .subject {display:block; margin:0; padding:14px 14px 13px; height:46px; font-weight:normal; font-size:15px; line-height:22px; border-top:1px solid #e5e5e5; color:#333;}
+		/* //추가 170308 윤선 */
+	/* 테이블 스타일 */
+	.table_type1 {border-top:2px solid #666;}
+	.table_type1 table {border-bottom:1px solid #e6e6e6;}
+	.table_type1 thead th {position:relative; height:28px; background:#f3f3f3; font-weight:normal; letter-spacing:-0.5px; color:#333;}
+	.table_type1 thead th .fnc1 {position:absolute; width:13px; height:13px; background:url(http://menu.mt.co.kr/common/button/btn_sorting1.gif) no-repeat;}
+	.table_type1 thead th .fnc1.low {background-position:0 bottom;}
+	.table_type1 thead th .fnc1.high {background-position:0 0;}
+	.table_type1 thead th .unit {display:block; font-size:11px; line-height:12px; color:#999;}
+	.table_type1 tbody td {height:28px; font-size:13px; border-top:1px solid #e6e6e6;}
+	.table_type1 tbody .mdline td {border-top:1px solid #b3b3b3;}
+	.table_type1 tbody td.no {text-align:center; color:#808080;}
+	.table_type1 tbody td.check {text-align:center;}
+	.table_type1 tbody td.time {text-align:center; color:#f74444;}
+	.table_type1 tbody td.name {color:#4c4c4c;}
+	.table_type1 tbody td.name a {float:left; margin-left:10px; color:#4c4c4c;}
+	.table_type1 tbody td.name2 {color:#4c4c4c;}
+	.table_type1 tbody td.name2 a {float:left; margin-left:20px; color:#4c4c4c;}
+	.table_type1 tbody td.su1 {padding-right:18px; text-align:right; color:#4c4c4c;}
+	.table_type1 tbody td.su1.pr30 {padding-right:30px;}
+	.table_type1 tbody td.su1 .icon {float:right; width:50px;}
+	.table_type1 tbody td.su1.up {color:#eb1d1d;}
+	.table_type1 tbody td.su1.up .icon {background:url(http://menu.mt.co.kr/bil/ico_up9.gif) no-repeat 0 center;}
+	.table_type1 tbody td.su1.dn {color:#1872df;}
+	.table_type1 tbody td.su1.dn .icon {background:url(http://menu.mt.co.kr/bil/ico_down10.gif) no-repeat 0 center;}
+	.table_type1 tbody td.date {text-align:center; color:#4c4c4c;}
+	.table_type1 tbody td.etc1 {text-align:center;}
+
+	.table_type2 {border-top:2px solid #666;}
+	.table_type2 table {border-bottom:1px solid #e6e6e6;}
+	.table_type2 tbody th {padding-left:10px; height:28px; background:#eee; font-size:13px; font-weight:normal; text-align:left; color:#4c4c4c; border-bottom:1px solid #e6e6e6;}
+	.table_type2 tbody td {padding-right:20px; height:28px; font-size:13px; text-align:right; color:#4c4c4c; border-bottom:1px solid #e6e6e6;}
+	.table_type2 tbody td.up {color:#eb1d1d;}
+	.table_type2 tbody td.dn {color:#1872df;}
+
+	.table_type3 {border-top:2px solid #666;}
+	.table_type3 table {border-bottom:1px solid #e6e6e6;}
+	.table_type3 thead th {position:relative; padding:0; height:30px; background:#e0e0e0; font-weight:normal; letter-spacing:-0.5px; color:#333;}
+	.table_type3 tbody td {padding:0; height:30px; font-size:13px; color:#4c4c4c; border-top:1px solid #e6e6e6;}
+	.table_type3 tbody td.check {text-align:center;}
+	.table_type3 tbody td.date {text-align:center;}
+	.table_type3 tbody td.sort1 {text-align:center;}
+	.table_type3 tbody td.su1 {text-align:right; color:#4c4c4c;}
+	.table_type3 tbody td.su1.pr65 {padding-right:65px;}
+	.table_type3 tbody td.su1.pr70 {padding-right:70px;}
+	.table_type3 tbody td.etc1 {text-align:center;}
+/* container */
+#container {position:relative; margin:0 auto; width:970px;}
+#container.bk_type {width:100%;}
+#container.bk_type .wbg_100 {position:relative; background:#e4e2e2;}
+#container .con_box2 {height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_conbox2.gif) repeat-y 0 0; border-bottom:1px solid #737373;} /* 수정 151208 세종 */
+	/* content */
+#content {position:relative;}
+#content.f_left {float:left;}
+#content.content {float:left; width:640px;}
+	/* 섹션 탑 */
+#container .secm_top {margin-top:-8px; overflow:hidden; padding-bottom:14px; border-bottom:1px solid #cecece;} /* 수정 160722 윤선 */
+#container .secm_top h1 {overflow:hidden; font-size:26px; letter-spacing:-2px; text-overflow:ellipsis; white-space:nowrap; color:#000;} /* 수정 160722 윤선 */
+#container .secm_top h1 a {color:#000;}
+#container .secm_top h2 {margin-top:4px; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.6px; color:#4c4c4c;}
+#container .secm_top .contxt {font-size:14px; line-height:20px; letter-spacing:-0.4px; color:#666;}
+#container .secm_top h1 + .contxt {margin-top:4px;}
+#container .secm_top h2 + .contxt {margin-top:9px;}
+#container .secm_top .contxt a {color:#666;}
+#container .secm_top .rellist {overflow:hidden; margin-top:14px; width:650px;}
+#container .secm_top .rellist li {float:left; overflow:hidden; width:50%; height:28px; font-size:15px; letter-spacing:-0.6px; line-height:28px;}
+#container .secm_top .rellist li a {float:left; overflow:hidden; max-width:300px; white-space:nowrap; text-overflow:ellipsis; color:#020c51;}
+
+#container .secm_top2 {overflow:hidden; position:relative; padding-bottom:14px; border-bottom:1px solid #cecece;}
+#container .secm_top2 .s_img {position:absolute; top:8px; left:0; overflow:hidden; width:144px; height:104px;} /* 수정 160722 윤선 */
+#container .secm_top2 .s_img img {display:block; width:100%; min-height:100%;}
+#container .secm_top2 .s_txt {overflow:hidden;}
+#container .secm_top2 .s_img + .s_txt {margin-left:161px; min-height:104px;}
+#container .secm_top2 .s_txt .subject {overflow:hidden; padding-bottom:1px; height:36px; font-size:26px; line-height:37px; letter-spacing:-0.4px; text-overflow:ellipsis; white-space:nowrap;} /* 수정 160722 윤선 */
+#container .secm_top2 .s_txt .subject a {color:#000;}
+#container .secm_top2 .s_txt .contxt {overflow:hidden; margin-top:8px; padding-bottom:2px; max-height:40px; font-size:14px; line-height:20px; letter-spacing:-0.4px;}
+#container .secm_top2 .s_img + .s_txt .contxt {max-height:61px;}
+#container .secm_top2 .s_txt .contxt a {color:#666;}
+#container .secm_top2 .s_txt .info {display:block; margin-top:7px; color:#999;}
+
+/* 추가 160726 세종 */
+#container .secm_top3 {}
+#container .secm_top3 h1 {overflow:hidden; font-size:26px; letter-spacing:-4px; text-overflow:ellipsis; white-space:nowrap; color:#000;}
+#container .secm_top3 h1 a {color:#000;}
+#container .secm_top3 .con {overflow:hidden; margin-top:11px;}
+#container .secm_top3 .con .thum {float:left; position:relative; overflow:hidden; width:206px; height:126px;}
+#container .secm_top3 .con .thum img {display:block; width:100%; min-height:100%;}
+#container .secm_top3 .con h2 {overflow:hidden; font-size:17px; font-weight:normal; letter-spacing:-0.6px; text-overflow:ellipsis; white-space:nowrap; color:#4c4c4c;}
+#container .secm_top3 .con h2 a {color:#4c4c4c;}
+#container .secm_top3 .con .thum + h2 {margin-top:6px; margin-left:225px;}
+#container .secm_top3 .con .txt {overflow:hidden; max-height:84px; font-size:14px; line-height:21px; text-align:justify; letter-spacing:-0.4px; color:#808080;}
+#container .secm_top3 .con .txt a {color:#808080;}
+#container .secm_top3 .con .thum + h2 + .txt {margin-left:225px;}
+#container .secm_top3 .con h2 + .txt {margin-top:9px;}
+/* //추가 160726 세종 */
+	/* 섹션 하단 */
+#container .mtf_list_p1 {overflow:hidden;}
+#container .mtf_list_p1 .bundle {float:left; overflow:hidden; margin-left:14px; width:150px; height:160px;}
+#container .mtf_list_p1 .bundle:first-child {margin-left:0;}
+#container .mtf_list_p1 .bundle a {display:block; position:relative; overflow:hidden; width:100%; height:100%; color:#fff;}
+#container .mtf_list_p1 .bundle .thum {display:block; overflow:hidden; width:100%; height:100%;}
+#container .mtf_list_p1 .bundle .thum img {display:block; width:100%;}
+#container .mtf_list_p1 .bundle .subject {position:absolute; left:0; bottom:0; width:100%; height:48px; background:#324772; font-size:13px; font-weight:normal; line-height:16px; letter-spacing:-0.6px;}
+#container .mtf_list_p1 .bundle .subject .lmt {display:block; overflow:hidden; margin:8px 10px 0; padding-bottom:2px; height:32px;}
+#container .mtf_list_p1 .bundle a.on .subject .lmt,
+#container .mtf_list_p1 .bundle a:hover .subject .lmt,
+#container .mtf_list_p1 .bundle a:focus .subject .lmt {text-decoration:underline;}
+
+#container .mtf_listbox1 {overflow:hidden; background:#f9f9f9; border:1px solid #d1d4dc; border-top:1px solid #abaaaa;}
+#container .mtf_listbox1 .mtf_bundle {float:left; overflow:hidden; width:322px; height:158px; border-left:1px solid #d1d4dc;}
+#container .mtf_listbox1 .mtf_bundle:first-child {border-left:none;}
+#container .mtf_listbox1 .mtf_bundle .lmbox {overflow:hidden; margin:0 17px; height:100%;}
+	/* 리스트 그룹영역 */
+#container .list_groupbox {overflow:hidden; padding-top:0; border-top:1px solid #cecece;}
+#container .list_groupbox .list_bundle {overflow:hidden; padding:25px 0 10px;}
+
+#container .list_groupbox2 {position:relative; overflow:hidden;}
+#container .list_groupbox2 h3 {position:absolute; background:#3d58a5;}
+#container .list_groupbox2 h3.t1 {top:0; left:0; width:214px; height:276px;}
+#container .list_groupbox2 h3.t2 {top:0; left:0; width:100%; height:111px;}
+#container .list_groupbox2 h3 a {display:block; height:100%;}
+#container .list_groupbox2 .table {display:table; border-collapse:collapse;}
+#container .list_groupbox2 .tr {display:table-row;}
+#container .list_groupbox2 .td {display:table-cell; width:212px; vertical-align:top; border:1px solid #ccc;}
+#container .list_groupbox2 .td .limit1 {overflow:hidden; padding:0 20px; height:274px;}
+#container .list_groupbox2 .td .list1 {overflow:hidden; margin-top:17px;}
+#container .list_groupbox2 .td .list1 .sort1 {letter-spacing:-1px; color:#3d58a5;}
+#container .list_groupbox2 .td .list1 .box {margin-top:5px;}
+#container .list_groupbox2 .td .list1 .box a {display:block; text-decoration:none;}
+#container .list_groupbox2 .td .list1 .box .subject {display:block; overflow:hidden; height:41px; font-size:17px; font-weight:normal; line-height:20px; letter-spacing:-1.3px; color:#333;}
+#container .list_groupbox2 .td .list1 .box .thum1 {display:block; position:relative; overflow:hidden; margin-top:14px; width:172px; height:84px;}
+#container .list_groupbox2 .td .list1 .box .thum1 img {display:block; width:100%; min-height:100%;}
+#container .list_groupbox2 .td .list1 .box .thum2 {display:block; position:relative; overflow:hidden; margin:14px auto 0; width:60px; height:84px;}
+#container .list_groupbox2 .td .list1 .box .thum2 img {display:block; width:100%; min-height:100%;}
+#container .list_groupbox2 .td .list1 .box .thum3 {display:block; position:relative; overflow:hidden; margin:12px auto 0; width:128px; height:127px;}
+#container .list_groupbox2 .td .list1 .box .thum3 img {display:block; width:100%; height:100%;}
+#container .list_groupbox2 .td .list1 .box .thum3 .frame {position:absolute; top:0; left;0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_frame128x127.png) no-repeat 0 0;}
+#container .list_groupbox2 .td .list1 .box .txt {display:block; overflow:hidden; margin-top:6px; height:58px; font-size:13px; line-height:19px; letter-spacing:-1.2px; color:#7a7a7a;}
+#container .list_groupbox2 .td .list1 .box .subject + .txt {height:96px;}
+#container .list_groupbox2 .td .list1 .box .thum3 + .txt {margin-top:2px; height:39px;}
+#container .list_groupbox2 .td .list1 .box a:hover .subject,
+#container .list_groupbox2 .td .list1 .box a:focus .subject {text-decoration:underline;}
+#container .list_groupbox2 .td .list1 .box a:hover .txt,
+#container .list_groupbox2 .td .list1 .box a:focus .txt {text-decoration:underline;}
+#container .list_groupbox2 .td .list1 .date {display:block; margin-top:4px; font-size:11px; letter-spacing:-0.6px; color:#8c8c8c;}
+
+#container .list_groupbox3 {}
+#container .list_groupbox3 table {}
+#container .list_groupbox3 table td {padding:0; border:1px solid #d9d9d9;}
+#container .list_groupbox3 table td .limit1 {position:relative; padding:0 19px; height:203px;}
+#container .list_groupbox3 table td .limit1 .hicon {display:none; position:absolute; top:163px; left:19px;}
+#container .list_groupbox3 table td.hot .limit1 .hicon {display:block;}
+#container .list_groupbox3 table td.hot .conlist_p43 .etc {left:68px;}
+	/* 날짜 페이징 */
+#container .date_search {position:relative; height:49px;}
+#container .date_search.no_sch {text-align:center; line-height:47px;}
+#container .date_search.no_sch .date {font-size:21px; font-weight:bold; text-align:center; line-height:47px; color:#999;}
+.ie8 #container .date_search.no_sch .date {line-height:43px;}
+.ie9 #container .date_search.no_sch .date {line-height:43px;}
+.ie10 #container .date_search.no_sch .date {line-height:43px;}
+.ie11 #container .date_search.no_sch .date {line-height:43px;}
+#container .date_search.no_sch .date strong {padding:0 4px; font-family:Arial; font-size:28px; color:#697083;}
+#container .date_search.no_sch .date .day {position:relative; top:-2px;}
+#container .date_search.no_sch img {position:relative; top:-5px;}
+#container .date_search .group1 {position:absolute; left:50%; width:270px; height:47px;}
+#container .date_search .group1 .date {display:block; height:100%; font-size:21px; font-weight:bold; text-align:center; line-height:47px; color:#999;}
+.ie8 #container .date_search .group1 .date {line-height:43px;}
+.ie9 #container .date_search .group1 .date {line-height:43px;}
+.ie10 #container .date_search .group1 .date {line-height:43px;}
+.ie11 #container .date_search .group1 .date {line-height:43px;}
+#container .date_search .group1 .date strong {padding:0 4px; font-family:Arial; font-size:28px; color:#697083;}
+#container .date_search .group1 .date .day {position:relative; top:-2px;}
+#container .date_search .group1 .prev {position:absolute; top:15px; left:0; width:9px; height:17px; background:url(http://menu.mt.co.kr/common/button/btn_prev10.gif) no-repeat 0 0;}
+#container .date_search .group1 .prev.nl {background:url(http://menu.mt.co.kr/common/button/btn_prev10_nl.gif) no-repeat 0 0;}
+#container .date_search .group1 .next {position:absolute; top:15px; right:0; width:9px; height:17px; background:url(http://menu.mt.co.kr/common/button/btn_next10.gif) no-repeat 0 0;}
+#container .date_search .group1 .next.nl {background:url(http://menu.mt.co.kr/common/button/btn_next10_nl.gif) no-repeat 0 0;}
+
+#container .date_search .group2 {position:absolute; left:50%; width:77px; height:24px;}
+#container .date_search .group2 .func {display:block; overflow:hidden;}
+#container .date_search .group2 .func a {overflow:hidden; background:url(http://menu.mt.co.kr/common/button/btn_cadToday2.gif) no-repeat 0 0; text-indent:-9999px;}
+#container .date_search .group2 .func a.cad {float:left; width:28px; height:24px; background-position:0 0;}
+#container .date_search .group2 .func a.tdy {float:right; width:42px; height:24px; background-position:right 0;}
+
+#container .date_search .group3 {position:absolute; top:-7px; left:0; width:290px; text-align:center;}
+#container .date_search .group3 .date {display:block; font-size:24px; text-align:center; color:#3d58a5;}
+#container .date_search .group3 .date strong {position:relative; bottom:-3px; font-family:Arial; font-size:32px; font-weight:normal;}
+#container .date_search .group3 button {position:absolute; top:6px; width:28px; height:29px;}
+#container .date_search .group3 .prev {left:0;  background:url(http://menu.mt.co.kr/common/button/btn_prev15.png) no-repeat 0 0;}
+#container .date_search .group3 .next {right:0; background:url(http://menu.mt.co.kr/common/button/btn_next15.png) no-repeat 0 0;}
+#container .date_search .group4 {position:absolute; top:0; right:0; height:24px;}
+#container .date_search .group4 .sel_replaced {float:left; height:22px; border:1px solid #ccc;}
+#container .date_search .group4 select {float:left; height:24px; color:#666; border:1px solid #ccc;}
+#container .date_search .group4 input[type='image'] {float:right; margin-left:-1px; border:none;}
+	/* 섹션 소개 */
+#container .m_info {margin-top:-3px; overflow:hidden; position:relative; min-height:82px;} /* 수정 160722 윤선 */
+#container .m_info .info_img {position:absolute; top:3px; left:0;} /* 수정 160722 윤선 */
+#container .m_info .info_img img {display:block;}
+#container .m_info .info_txt {overflow:hidden; margin-left:155px;}
+#container .m_info .info_txt .tit {display:block; font-size:15px; font-weight:normal; line-height:18px; letter-spacing:-0.6px; color:#3d58a5;} /* 수정 160722 윤선 */
+#container .m_info .info_txt .txt {display:block; margin-top:-4px; font-size:13px; line-height:20px; letter-spacing:-0.5px; color:#999;}
+#container .m_info .info_txt .tit + .txt {margin-top:11px;}
+	/* 섹션 부제목 */
+#container .m_subject_area {position:relative; min-height:40px;}
+#container .m_subject_area .subject {float:left; position:relative; height:100%; font-size:17px; font-weight:normal; letter-spacing:-0.5px; line-height:36px; color:#3d58a5;}
+#container .m_subject_area .subject a {color:#3d58a5;}
+#container .m_subject_area .subject:before {content:' '; position:absolute; top:0; left:0; width:13px; height:2px; background:#3d58a5;}
+#container .m_subject_area .rel_su {float:right; overflow:hidden; margin:10px 0 0 14px; width:97px; height:20px; background:#999; font-family:dotum; font-size:11px; line-height:21px; color:#e5e5e5;}
+.ie8 #container .m_subject_area .rel_su {line-height:22px;}
+.ie9 #container .m_subject_area .rel_su {line-height:24px;}
+.ie10 #container .m_subject_area .rel_su {line-height:24px;}
+.ie11 #container .m_subject_area .rel_su {line-height:24px;}
+#container .m_subject_area .rel_su .txt {float:left; margin-left:6px;}
+#container .m_subject_area .rel_su .su {float:right; margin-right:5px;}
+#container .m_subject_area .editor {position:relative; overflow:hidden; margin-top:2px; padding-left:64px; padding-bottom:13px; font-size:13px; letter-spacing:-0.6px; line-height:20px; color:#808080;}
+.ie9 #container .m_subject_area .editor {margin-top:0; padding-bottom:15px;}
+.ie10 #container .m_subject_area .editor {margin-top:0; padding-bottom:15px;}
+.ie11 #container .m_subject_area .editor {margin-top:0; padding-bottom:15px;}
+#container .m_subject_area .editor .title {position:absolute; top:0; left:0; width:64px; color:#3d58a5;}
+	/* 섹션 부부제목 - 추가 161026 해리 */
+#container .m_subject_area2 {position:relative; padding:10px 20px 14px; background:#f8dbda;}
+#container .m_subject_area2 strong {display:block; font-size:20px; line-height:24px; letter-spacing:-1px; color:#000;}
+	/*// 섹션 부부제목 - 추가 161026 해리 */
+	/* 상단 기능영역 */
+#container .fncbox1 {position:relative; height:32px;}
+#container .fncbox1 .check_type1 {position:absolute; overflow:hidden; height:14px;}
+#container .fncbox1 .check_type1 li {float:left; margin-left:14px;}
+#container .fncbox1 .check_type1 li:first-child {margin-left:0;}
+#container .fncbox1 .check_type1 li input {position:absolute; visibility:hidden;}
+#container .fncbox1 .check_type1 li label {float:left; overflow:hidden; padding-left:17px; height:14px; background:url(http://menu.mt.co.kr/common/etc/bg_radio1.png) no-repeat 0 0; font-size:13px; line-height:14px; letter-spacing:-0.5px; color:#f74444;}
+.ie9 #container .fncbox1 .check_type1 li label {line-height:11px;}
+.ie10 #container .fncbox1 .check_type1 li label {line-height:11px;}
+.ie11 #container .fncbox1 .check_type1 li label {line-height:11px;}
+#container .fncbox1 .check_type1 li input:checked + label {background-position:0 bottom;}
+#container .fncbox1 .check_type1 li input[checked='checked'] + label {background-position:0 bottom;}
+#container .fncbox1 .time {position:absolute; font-size:11px; letter-spacing:-0.5px; color:#808080;}
+	/* 코너정보 */
+#container .corner_info1 {overflow:hidden; padding:21px 20px 18px; background:#e6e6e6;}
+#container .corner_info1 h3 {overflow:hidden; font-size:19px; font-weight:normal; letter-spacing:-0.4px; line-height:24px; color:#3d58a5;}
+#container .corner_info1 h3 img {float:left; margin-right:10px; width:35px; height:25px;}
+#container .corner_info1 .txt {display:block; overflow:hidden; margin-top:7px; font-size:13px; line-height:18px; letter-spacing:-0.6px; color:#808080;}
+	/* 이슈칼럼 상세 */
+#container .today_hi_detail {}
+#container .today_hi_detail .tdh_top {position:relative; height:194px; background:#e6e6e6; color:#fff;}
+#container .today_hi_detail .tdh_top .title {position:absolute; top:20px; left:20px; z-index:3;}
+#container .today_hi_detail .tdh_top.type1 .thum {position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;}
+#container .today_hi_detail .tdh_top.type1 .thum img {display:block; width:100%; height:100%;}
+#container .today_hi_detail .tdh_top.type1 .thum .mosaic {position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_mosaic1.png) repeat 0 0;}
+#container .today_hi_detail .tdh_top.type1 .subject {position:absolute; top:40px; left:20px; overflow:hidden; font-size:27px; font-weight:normal; letter-spacing:-1px;}
+#container .today_hi_detail .tdh_top.type1 .txt {position:absolute; top:91px; left:20px; overflow:hidden; margin-right:200px; font-size:14px; line-height:20px; letter-spacing:-1px;}
+#container .today_hi_detail .tdh_top.type1 .txt .more {position:relative; top:-2px;}
+#container .today_hi_detail .tdh_top.type1 .txtdt {position:absolute; top:141px; left:20px; overflow:hidden; padding:9px 13px 10px; width:902px; background:#e3e3e3; font-size:14px; line-height:22px; color:#8f8f8f; border:1px solid #e24a5f; z-index:2;}
+#container .today_hi_detail .tdh_top.type1 .txtdt .box1 {float:left; width:70px; font-weight:normal; color:#e55b6e;}
+#container .today_hi_detail .tdh_top.type1 .txtdt .box1 .bar {padding-left:6px; color:#b4b4b4;}
+#container .today_hi_detail .tdh_top.type1 .txtdt .box2 {float:left; width:815px; letter-spacing:-1px;}
+#container .today_hi_detail .tdh_top.type1 .date {position:absolute; left:19px; bottom:6px; height:20px; letter-spacing:-0.4px; line-height:20px; color:#fff !important;}
+
+#container .today_hi_detail .tdh_top.type2 .lmbox {overflow:hidden; height:100%;}
+#container .today_hi_detail .tdh_top.type2 .thum {float:left; width:270px; height:100%;}
+#container .today_hi_detail .tdh_top.type2 .thum img {display:block; width:100%; min-height:100%;}
+#container .today_hi_detail .tdh_top.type2 .thum .mosaic {display:none;}
+#container .today_hi_detail .tdh_top.type2 .lmbox2 {float:right; overflow:hidden; width:671px; height:100%; color:#4c4c4c;}
+#container .today_hi_detail .tdh_top.type2 .subject {display:block; overflow:hidden; margin-top:14px; font-size:27px; font-weight:normal; line-height:1.5; letter-spacing:-1px;} /* 수정 160722 윤선 */
+#container .today_hi_detail .tdh_top.type2 .subject a {color:#4c4c4c;}
+#container .today_hi_detail .tdh_top.type2 .sublist {overflow:hidden; margin-top:11px; width:680px;}
+#container .today_hi_detail .tdh_top.type2 .sublist li {float:left; overflow:hidden; width:340px; height:26px; background:url(http://menu.mt.co.kr/bil/bl_rel12.gif) no-repeat 1px 10px; font-size:16px; text-indent:12px; letter-spacing:-0.8px; line-height:26px;}
+#container .today_hi_detail .tdh_top.type2 .sublist li a {color:#666;}
+#container .today_hi_detail .tdh_top.type2 .date {position:absolute; bottom:11px; height:20px; letter-spacing:-0.4px; line-height:20px; color:#999 !important;}
+
+/* 추가 161026 해리 */
+#container .today_hi_detail .tdh_top.type3 {display:block; position:relative; overflow:hidden; color:#fff;}
+#container .today_hi_detail .tdh_top.type3 .lmbox {position:relative; display:block; margin:0 auto; width:820px; height:100%;}
+#container .today_hi_detail .tdh_top.type3 .thum {position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;}
+#container .today_hi_detail .tdh_top.type3 .thum img {display:block; width:100%; height:100%;}
+#container .today_hi_detail .tdh_top.type3 .thum .bg_back {position:absolute; top:0; left:0; width:100%; height:100%; background:url(http://menu.mt.co.kr/common/etc/bg_png40.png) repeat 0 0;}
+#container .today_hi_detail .tdh_top.type3 .subject {position:absolute; top:54px; left:0; overflow:hidden; width:100%; height:42px; font-size:30px; text-align:center; letter-spacing:-1px;}
+#container .today_hi_detail .tdh_top.type3 a:hover .subject,
+#container .today_hi_detail .tdh_top.type3 a:focus .subject {text-decoration:underline;}
+#container .today_hi_detail .tdh_top.type3 .txt {position:absolute; top:107px; left:0; overflow:hidden; width:100%; height:26px; font-size:20px; line-height:24px; text-align:center; letter-spacing:-1px;}
+#container .today_hi_detail .tdh_top.type3 a:hover .txt,
+#container .today_hi_detail .tdh_top.type3 a:focus .txt {text-decoration:underline;}
+/*// 추가 161026 해리 */
+#container .today_hi_detail .tdh_top .rel_cnt {position:absolute; bottom:8px; left:290px; /*left:676px;*/ overflow:hidden; width:97px; height:24px; background:#666; font-family:dotum; font-size:11px; text-indent:6px; letter-spacing:-0.8px; line-height:25px; color:#e5e5e5;}
+.ie8 #container .today_hi_detail .tdh_top .rel_cnt {line-height:29px;}
+.ie9 #container .today_hi_detail .tdh_top .rel_cnt {line-height:29px;}
+.ie10 #container .today_hi_detail .tdh_top .rel_cnt {line-height:29px;}
+.ie11 #container .today_hi_detail .tdh_top .rel_cnt {line-height:29px;}
+#container .today_hi_detail .tdh_top .rel_cnt .su {position:absolute; top:0; right:6px; height:24px;}
+#container .today_hi_detail .tdh_top .rel_cnt .su strong {position:absolute; top:0; right:13px; font-size:13px; letter-spacing:0; line-height:24px; height:24px;}
+.ie8 #container .today_hi_detail .tdh_top .rel_cnt .su strong {line-height:28px;}
+.ie9 #container .today_hi_detail .tdh_top .rel_cnt .su strong {line-height:28px;}
+.ie10 #container .today_hi_detail .tdh_top .rel_cnt .su strong {line-height:28px;}
+.ie11 #container .today_hi_detail .tdh_top .rel_cnt .su strong {line-height:28px;}
+#container .today_hi_detail .tdh_top .together {position:absolute; bottom:10px; left:402px; /*left:788px;*/ height:20px;}
+#container .today_hi_detail .tdh_top .together ul {}
+#container .today_hi_detail .tdh_top .together ul li {float:left;}
+
+#container .today_hi_detail .tdh_body {}
+#container .today_hi_detail .tdh_body .tdh_left {float:left; overflow:hidden; width:280px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll {overflow:hidden; padding:0 0 0 20px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 {background:#dadada;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 {background:#bfbfbf;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type3 {padding-bottom:18px; background:#ededed;}	 /* 추가 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .title {overflow:hidden; margin-top:13px; font-size:18px; letter-spacing:-1px; color:#fefefe;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .title2 {overflow:hidden; margin-top:19px; margin-right:20px; padding-bottom:19px; border-bottom:1px solid #bdbdbd;}	 /* 추가 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox {margin-top:22px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .group {margin-right:15px; padding-bottom:10px; background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bar1.gif) repeat-y 0 0;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle {position:relative; margin-top:25px; padding-left:21px; background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl4.png) no-repeat -1px 6px; font-size:16px; line-height:23px; letter-spacing:-0.6px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle:first-child {margin-top:0px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle:last-child a:after {content:' '; position:absolute; top:19px; left:0; width:15px; height:100px; background:#dadada;}
+.ie8 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle.last-child a:after {content:' '; position:absolute; top:19px; left:0; width:15px; height:100px; background:#dadada;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle.on {background-image:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl5.png);}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle a {color:#333;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle a:hover,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle a:focus,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .bundle.on a {text-decoration:none; color:#dd1114;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type1 .list_scrollbox .hdline {position:absolute; top:-3px; left:0; width:15px; height:10px; background:#dadada;}
+
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group {overflow:hidden; margin-top:14px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle {margin-right:20px; padding-bottom:15px; border-top:1px solid #6b6b69;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .subject {display:block; overflow:hidden; padding:11px 0 34px; font-size:16px; line-height:23px; letter-spacing:-0.6px; color:#1a1a1a;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt {display:block; position:relative; overflow:hidden; margin-top:-25px; width:97px; height:24px; background:#999; font-family:dotum; font-size:11px; text-indent:6px; letter-spacing:-0.6px; line-height:25px; color:#e6e6e6;}
+.ie8 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt {line-height:29px;}
+.ie9 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt {line-height:29px;}
+.ie10 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt {line-height:29px;}
+.ie11 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt {line-height:29px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt .su {position:absolute; top:0; right:6px; height:24px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt .su strong {position:absolute; top:0; right:13px; font-size:13px; letter-spacing:0; line-height:24px; height:24px;}
+.ie8 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt .su strong {line-height:28px;}
+.ie9 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt .su strong {line-height:28px;}
+.ie10 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt .su strong {line-height:28px;}
+.ie11 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .first_group .first_bundle .rel_cnt .su strong {line-height:28px;}
+
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 {margin-top:15px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .group {margin-right:15px; background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bar1.gif) repeat-y 0 0;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle {position:relative; margin-top:19px; padding-left:21px; background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl3.png) no-repeat -1px 6px; font-size:16px; line-height:22px; letter-spacing:-1.5px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle:first-child {margin-top:0px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle:last-child a:after {content:' '; position:absolute; top:19px; left:0; width:15px; height:100px; background:#bfbfbf;}
+.ie8 #container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle.last-child a:after {content:' '; position:absolute; top:19px; left:0; width:15px; height:100px; background:#bfbfbf;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle.on {background-image:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl1.png);}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle a {color:#4c4c4c;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle a:hover,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle a:focus,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .bundle.on a {text-decoration:none; color:#fff;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll.type2 .list_scrollbox2 .hdline {position:absolute; top:-3px; left:0; width:15px; height:10px; background:#bfbfbf;}
+/* 추가 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 {}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .group {margin-right:20px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle {position:relative; padding:15px 0 18px 17px; background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl6.png) no-repeat 0 20px; border-top:1px solid #bdbdbd;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle:first-child {border-top:0;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle.on {background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl6_on.png) no-repeat 0 20px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle a {overflow:hidden; display:block; max-height:48px; font-size:17px; font-weight:bold; line-height:24px; letter-spacing:-1px; color:#333;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .group2 {position:relative; margin-top:15px; margin-right:10px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .group2:after {content:' '; position:absolute; top:0; left:3px; height:100%; border-left:1px solid #dadada; z-index:0;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .group2 .hdline {position:absolute; top:0; left:0; width:7px; height:5px; background:#ededed; z-index:1;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .group2 .ftline {position:absolute; bottom:0; left:0; width:7px; height:6px; background:#ededed; z-index:1;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2 {position:relative; margin-top:13px; padding-left:12px; background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl7.png) no-repeat 0 5px; z-index:1;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2:hover,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2:focus,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2.on {background:url(http://menu.mt.co.kr/common/etc/bg_scroll_bl7_on.png) no-repeat 0 5px;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2:first-child {margin-top:0;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2 a {display:block; overflow:hidden; height:18px; font-size:13px; font-weight:normal; line-height:16px; letter-spacing:-1px; color:#666;}
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2 a:hover,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2 a:focus,
+#container .today_hi_detail .tdh_body .tdh_left .list_scroll .list_scrollbox3 .bundle2.on a {color:#df2d2d;}
+/*// 추가 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_right {float:right; width:680px;}
+	/* 수정 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_right .tdh_page {overflow:hidden; position:relative; height:56px; background:#f8dbda; text-align:center;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_page .tit1 {display:inline-block; max-width:520px; font-size:20px; line-height:52px; letter-spacing:-1px; color:#000;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_page .num {display:inline-block; font-size:14px; line-height:54px; vertical-align:top; color:#808080;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_page .move {position:absolute; top:0; overflow:hidden; width:32px; height:56px;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_page .prev {left:0; background:url(http://menu.mt.co.kr/common/button/btn_prev12.gif) no-repeat right 12px;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_page .next {right:0; width:31px; background:url(http://menu.mt.co.kr/common/button/btn_next12.gif) no-repeat 0 12px;}
+	/*// 수정 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article {overflow:hidden; margin:40px 20px 30px;} /* 수정 161026 해리 */
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article * {}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article h1 {margin-top:0; font-size:24px; font-weight:normal; letter-spacing:-1.5px;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article h2 {margin-top:2px; font-size:18px; font-weight:normal; letter-spacing:-1.5px; color:#6e6e6e;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .info {border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .info .infobox1 {padding:4px 2px; height:auto; font-size:12px; line-height:18px; color:#999;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .info .infobox1 strong {color:#808080;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .info .infobox1 a {color:#999;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .info .infobox1 .bar {padding:0; font-size:11px; color:#a7a7a7;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .info .infobox1 .num {font-size:12px; letter-spacing:0;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .editor {margin:10px 0; padding:6px 9px 7px; background:#e3e3e3; letter-spacing:-1px; line-height:18px; color:#8e8e8e; border:none;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .editor .title {font-size:12px; color:#e55b6e;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .editor .bar {padding:0; color:#adadad;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .article_view table td .view_text #textBody {font-size:16px; line-height:25px;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_article .article_view table td .view_text .article_photo {background:#fff;}
+
+#container .today_hi_detail .tdh_body .tdh_right .tdh_list {overflow:hidden; height:41px; background:#e0e0e0; text-align:center;}
+#container .today_hi_detail .tdh_body .tdh_right .tdh_list a {display:block; width:100%; height:100%;}
+	/* 데일리랭킹 */
+#container .sl_bestclick {overflow:hidden; border:1px solid #d9d9d9;}
+#container .sl_bestclick .bundle {float:left; position:relative; width:322px; border-left:1px solid #d9d9d9;}
+#container .sl_bestclick .bundle:first-child {border-left:none;}
+#container .sl_bestclick .bundle h4 {position:absolute; top:15px; left:17px; font-size:16px; letter-spacing:-0.5px}
+#container .sl_bestclick .bundle.gr1 h4 {color:#3d58a5;}
+#container .sl_bestclick .bundle.gr2 h4 {color:#26af9c;}
+#container .sl_bestclick .bundle.gr3 h4 {color:#ed6942;}
+#container .sl_bestclick ol {overflow:hidden;}
+#container .sl_bestclick ol li {position:relative; overflow:hidden; height:78px; border-top:1px solid #d9d9d9;}
+#container .sl_bestclick ol li .num {position:absolute; left:19px; bottom:39px; width:60px; font-size:22px; text-align:center; font-style:italic;}
+#container .sl_bestclick .bundle.gr1 ol li .num {color:#3d58a5;}
+#container .sl_bestclick .bundle.gr2 ol li .num {color:#26af9c;}
+#container .sl_bestclick .bundle.gr3 ol li .num {color:#ed6942;}
+#container .sl_bestclick ol li .total {position:absolute; left:19px; top:39px; width:60px; height:19px; background:url(http://menu.mt.co.kr/common/etc/bg_totalbox1.png) no-repeat 0 0; font-size:13px; text-align:center; line-height:19px; font-style:italic; letter-spacing:-0.5px;}
+.ie8 #container .sl_bestclick ol li .total {line-height:20px;}
+.ie9 #container .sl_bestclick ol li .total {line-height:17px;}
+.ie10 #container .sl_bestclick ol li .total {line-height:17px;}
+.ie11 #container .sl_bestclick ol li .total {line-height:17px;}
+#container .sl_bestclick .bundle.gr1 ol li .total {color:#3d58a5;}
+#container .sl_bestclick .bundle.gr2 ol li .total {background-position:0 -19px; color:#26af9c;}
+#container .sl_bestclick .bundle.gr3 ol li .total {background-position:0 bottom; color:#ed6942;}
+#container .sl_bestclick ol li .subject {display:table; overflow:hidden; margin-left:98px; width:205px; height:100%; font-size:15px; font-weight:normal; letter-spacing:-0.4px; vertical-align:middle; line-height:20px;}
+#container .sl_bestclick ol li .subject a {display:table-cell; vertical-align:middle; color:#333;}
+#container .sl_bestclick ol li:first-child {height:212px; border-top:none;}
+#container .sl_bestclick ol li:first-child .box1 {display:block; position:relative; margin-top:16px; height:20px;}
+#container .sl_bestclick ol li:first-child .box1 .num {left:52px; top:-11px; bottom:auto; width:auto; font-size:25px;}
+#container .sl_bestclick ol li:first-child .box1 .total {left:69px; top:0;}
+#container .sl_bestclick ol li:first-child .box2 {margin:15px 19px 0; width:284px;}
+#container .sl_bestclick ol li:first-child .box2 .subject {display:block; overflow:hidden; margin-left:0; width:100%; height:41px; font-size:17px;}
+#container .sl_bestclick ol li:first-child .box2 .subject a {display:inline; color:#333;}
+#container .sl_bestclick ol li:first-child .box2 .con {overflow:hidden; position:relative; margin-top:10px; height:92px;} /* 수정 160722 윤선 */
+#container .sl_bestclick ol li:first-child .box2 .con .thum {position:absolute; top:4px; left:1px; overflow:hidden; width:136px; height:88px;} /* 수정 160722 윤선 */
+#container .sl_bestclick ol li:first-child .box2 .con .thum img {display:block; width:100%; min-height:100%;}
+#container .sl_bestclick ol li:first-child .box2 .con .txt {display:block; overflow:hidden; margin-top:-4px; padding-bottom:2px; max-height:75px; font-size:13px; line-height:19px; letter-spacing:-0.6px; color:#808080;} /* 수정 160722 윤선 */
+.ie8 #container .sl_bestclick ol li:first-child .box2 .con .txt {margin-top:-3px;}
+#container .sl_bestclick ol li:first-child .box2 .con .thum + .txt {margin-left:146px;}
+#container .sl_bestclick ol li:first-child .box2 .con .date {position:absolute; bottom:-3px; font-size:13px; letter-spacing:-0.6px; color:#b2b2b2;}
+#container .sl_bestclick ol li:first-child .box2 .con .thum + .txt + .date {margin-left:146px;}
+	/* 댓글킹 */
+#container .sns_news {}
+#container .sns_news .m_king {position:relative; overflow:hidden; background:#e6e6e6; border:1px solid #d9d9d9; border-right:none;}
+#container .sns_news .m_king .king_list {padding:18px 0 17px; width:224px; background:#fff;}
+#container .sns_news .m_king .king_list .king_top {overflow:hidden;}
+#container .sns_news .m_king .king_list .list {overflow:hidden; display:block; padding:0 18px 0 19px; height:42px; text-decoration:none !important; cursor:pointer;}
+#container .sns_news .m_king .king_list .list.on {}
+#container .sns_news .m_king .king_list .list .comment {display:block; position:relative; height:100%;}
+#container .sns_news .m_king .king_list .list .comment .num {position:absolute; top:0; left:0; width:24px; height:100%; font-size:16px; line-height:42px; letter-spacing:-0.5px; font-style:italic; color:#d90000;}
+#container .sns_news .m_king .king_list .list .comment .info {display:block; overflow:hidden; margin-left:24px; height:100%; line-height:42px;}
+#container .sns_news .m_king .king_list .list .comment .info img {float:right; margin-top:12px; margin-left:-5px;}
+#container .sns_news .m_king .king_list .list .comment .info strong {float:left; overflow:hidden; padding-right:5px; max-width:140px; font-size:16px; font-weight:normal; letter-spacing:-0.5px; font-style:italic; text-transform:uppercase; color:#3d58a5;}
+#container .sns_news .m_king .king_list .list.on .comment .info strong {color:#d90000;}
+#container .sns_news .m_king .king_list .ask_comment {position:absolute; top:0; right:0; overflow:auto; width:744px; height:100%;}
+#container .sns_news .m_king .king_list .ask_comment ul {overflow:hidden; margin-top:24px; padding-bottom:20px;}
+#container .sns_news .m_king .king_list .ask_comment li {margin-top:29px;}
+#container .sns_news .m_king .king_list .ask_comment li:first-child {margin-top:0;}
+#container .sns_news .m_king .king_list .ask_comment li strong {display:block; padding:0px 30px; font-size:17px; font-weight:normal; letter-spacing:-0.4px;}
+#container .sns_news .m_king .king_list .ask_comment li strong a {color:#3d58a5;}
+#container .sns_news .m_king .king_list .ask_comment li .write {position:relative; margin-top:14px; margin-left:30px; width:672px; background:#fff;}
+#container .sns_news .m_king .king_list .ask_comment li .write .top {position:absolute; top:-10px; left:11px; width:13px; height:10px; background:url(http://menu.mt.co.kr/common/etc/bg_boxArrow1.png) no-repeat 0 0;}
+#container .sns_news .m_king .king_list .ask_comment li .write .txt {overflow:hidden; padding:11px 14px; font-size:13px; letter-spacing:-0.4px; line-height:20px; color:#808080;}
+/* 설문 */
+#container .ing_servey {}
+#container .ing_servey .isbundle {overflow:hidden; margin-top:15px; background:#f5f5f5;}
+#container .ing_servey .isbundle:first-child {margin-top:0;}
+#container .ing_servey .isbundle .limit1 {overflow:hidden; padding:23px 30px; background:#d9c9e1;}
+#container .ing_servey .isbundle .limit2 {position:relative; padding:0 0 20px;}
+#container .ing_servey .isbundle .limit3 {overflow:hidden; padding:11px 30px 0; background:#e7e7e7;}
+#container .ing_servey .isbundle .catit {float:left; padding:3px 0; width:80px; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.4px; color:#3d58a5;}
+#container .ing_servey .isbundle .catit.ning {float:none; padding:0; width:auto; height:28px; text-align:center; line-height:26px; color:#333;}
+#container .ing_servey .isbundle .catit .box {position:relative;}
+#container .ing_servey .isbundle .catit .box:after {content:' '; position:absolute; top:-3px; left:1px; width:12px; height:2px; background:#3d58a5;}
+#container .ing_servey .isbundle .catit.ning .box:after {background:#333;}
+#container .ing_servey .isbundle .subject {float:left; position:relative; padding:1px 0 3px 20px; width:470px; min-height:44px; font-size:15px; font-weight:normal; line-height:24px; letter-spacing:-0.5px; color:#333;}
+#container .ing_servey .isbundle .subject .q {position:absolute; top:1px; left:0; font-size:17px; font-weight:normal; color:#3d58a5;}
+#container .ing_servey .isbundle .servey_t1 {overflow:hidden; margin:29px 0 0 128px;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle {overflow:hidden; margin-top:14px;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle:first-child {margin-top:0;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input {position:absolute; visibility:hidden;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle label {display:block; padding-left:24px; height:14px; font-size:14px; letter-spacing:-0.6px; line-height:12px; color:#4c4c4c;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input[type='radio'] + label {background:url(http://menu.mt.co.kr/common/etc/bg_radio1.png) no-repeat 0 0;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input[type='checkbox'] + label {background:url(http://menu.mt.co.kr/common/etc/bg_checkbox1.gif) no-repeat 0 -3px;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input:checked + label {background-position:0 bottom;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input[type='checkbox']:checked + label {background-position:0 -23px;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input[checked='checked'] + label {background-position:0 bottom;}
+#container .ing_servey .isbundle .servey_t1 .t1_bundle input[type='checkbox'][checked='checked'] + label {background-position:0 -23px;}
+#container .ing_servey .isbundle .servey_t2 {overflow:hidden; margin:27px 20px 0;}
+#container .ing_servey .isbundle .servey_t2 + .servey_t2 {margin-top:16px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle {float:left; position:relative; overflow:hidden; margin:0 10px; width:100px; height:158px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input {position:absolute; visibility:hidden;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle label {display:block; overflow:hidden; width:100%; heighT:100%;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle label img {display:block; width:100%; height:84px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle label .box {display:block; margin-top:5px; height:14px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input[type='radio'] + label .box {background:url(http://menu.mt.co.kr/common/etc/bg_radio1.png) no-repeat center 0;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input[type='checkbox'] + label .box {background:url(http://menu.mt.co.kr/common/etc/bg_checkbox1.gif) no-repeat center -3px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input:checked + label .box {background-position:center bottom;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input[checked='checked'] + label .box {background-position:center bottom;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input[type='checkbox']:checked + label .box {background-position:center -23px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle input[type='checkbox'][checked='checked'] + label .box {background-position:center -23px;}
+#container .ing_servey .isbundle .servey_t2 .t2_bundle label .title {display:block; margin-top:2px; padding:0 5px; font-size:14px; letter-spacing:-0.6px; line-height:18px; color:#4c4c4c;}
+#container .ing_servey .isbundle .servey_t3 {overflow:hidden; position:relative; margin:30px 0 0; min-height:108px;}
+#container .ing_servey .isbundle .servey_t3 .thum {position:absolute; top:0; left:50%; overflow:hidden; margin-left:-191px; width:165px; height:108px;}
+#container .ing_servey .isbundle .servey_t3 .thum img {display:block; width:100%; min-height:100%;}
+#container .ing_servey .isbundle .servey_t3 ul {overflow:hidden; margin-left:313px;}
+#container .ing_servey .isbundle .servey_t3 ul li {overflow:hidden; margin-top:14px;}
+#container .ing_servey .isbundle .servey_t3 ul li:first-child {margin-top:0;}
+#container .ing_servey .isbundle .servey_t3 ul li input {position:absolute; visibility:hidden;}
+#container .ing_servey .isbundle .servey_t3 ul li label {display:block; padding-left:24px; height:14px; font-size:14px; letter-spacing:-0.6px; line-height:12px; color:#4c4c4c;}
+#container .ing_servey .isbundle .servey_t3 ul li input[type='radio'] + label {background:url(http://menu.mt.co.kr/common/etc/bg_radio1.png) no-repeat 0 0;}
+#container .ing_servey .isbundle .servey_t3 ul li input[type='checkbox'] + label {background:url(http://menu.mt.co.kr/common/etc/bg_checkbox1.gif) no-repeat 0 -3px;}
+#container .ing_servey .isbundle .servey_t3 ul li input:checked + label {background-position:0 bottom;}
+#container .ing_servey .isbundle .servey_t3 ul li input[type='checkbox']:checked + label {background-position:0 -23px;}
+#container .ing_servey .isbundle .servey_t3 ul li input[checked='checked'] + label {background-position:0 bottom;}
+#container .ing_servey .isbundle .servey_t3 ul li input[type='checkbox'][checked='checked'] + label {background-position:0 -23px;}
+
+#container .ing_servey .isbundle .servey_result {position:relative; padding:30px 0 0 222px; min-height:153px;}
+#container .ing_servey .isbundle .servey_result .graph {position:absolute; top:13px; left:42px; width:164px;}
+#container .ing_servey .isbundle .servey_result .graph .box {display:block; overflow:hidden; height:160px;}
+#container .ing_servey .isbundle .servey_result .graph .cmt {display:block; font-size:11px; letter-spacing:-0.6px; text-align:center; color:#808080;}
+#container .ing_servey .isbundle .servey_result .items {overflow:hidden; width:400px;}
+#container .ing_servey .isbundle .servey_result .items li {position:relative; margin-top:12px; padding-left:20px; height:33px; font-size:14px; letter-spacing:-0.6px; line-height:31px; color:#4c4c4c;}
+#container .ing_servey .isbundle .servey_result .items li:first-child {margin-top:0;}
+#container .ing_servey .isbundle .servey_result .items li em {font-style:normal; color:#5b72b2;}
+#container .ing_servey .isbundle .servey_result .items .blt {position:absolute; top:11px; left:0; width:10px; height:10px;}
+#container .ing_servey .isbundle .servey_result .items .item1 .blt {background:#48aee3;}
+#container .ing_servey .isbundle .servey_result .items .item2 .blt {background:#d7ca1a;}
+#container .ing_servey .isbundle .servey_result .items .item3 .blt {background:#ca6ae9;}
+#container .ing_servey .isbundle .servey_result .items .item4 .blt {background:#e36548;}
+#container .ing_servey .isbundle .servey_result .items .item5 .blt {background:#8b774d;}
+#container .ing_servey .isbundle .servey_result .items .item6 .blt {background:#619c59;}
+#container .ing_servey .isbundle .servey_result .items .item7 .blt {background:#d3a14d;}
+#container .ing_servey .isbundle .servey_result .items .item8 .blt {background:#f17796;}
+#container .ing_servey .isbundle .servey_result .items .item9 .blt {background:#7e7ed1;}
+#container .ing_servey .isbundle .servey_result .items .item10 .blt {background:#23547c;}
+#container .ing_servey .isbundle .servey_result .items2 {overflow:hidden; margin-top:-2px; width:400px;}
+#container .ing_servey .isbundle .servey_result .items2 li {position:relative; margin-top:12px; height:33px;}
+#container .ing_servey .isbundle .servey_result .items2 li:first-child {margin-top:0;}
+#container .ing_servey .isbundle .servey_result .items2 .blt {position:absolute; top:11px; left:0; width:10px; height:10px;}
+#container .ing_servey .isbundle .servey_result .items2 .item1 .blt {background:#48aee3;}
+#container .ing_servey .isbundle .servey_result .items2 .item2 .blt {background:#d7ca1a;}
+#container .ing_servey .isbundle .servey_result .items2 .item3 .blt {background:#ca6ae9;}
+#container .ing_servey .isbundle .servey_result .items2 .item4 .blt {background:#e36548;}
+#container .ing_servey .isbundle .servey_result .items2 .item5 .blt {background:#8b774d;}
+#container .ing_servey .isbundle .servey_result .items2 .item6 .blt {background:#619c59;}
+#container .ing_servey .isbundle .servey_result .items2 .item7 .blt {background:#d3a14d;}
+#container .ing_servey .isbundle .servey_result .items2 .item8 .blt {background:#f17796;}
+#container .ing_servey .isbundle .servey_result .items2 .item9 .blt {background:#7e7ed1;}
+#container .ing_servey .isbundle .servey_result .items2 .item10 .blt {background:#23547c;}
+#container .ing_servey .isbundle .servey_result .items2 li .thum {position:absolute; top:0; left:20px; overflow:hidden; width:40px; height:33px;}
+#container .ing_servey .isbundle .servey_result .items2 li .thum img {display:block; width:100%; min-height:100%;}
+#container .ing_servey .isbundle .servey_result .items2 li .title {display:block; margin-left:70px; height:33px; font-size:14px; letter-spacing:-0.6px; line-height:31px; color:#4c4c4c;}
+#container .ing_servey .isbundle .servey_result .items2 li .title em {font-style:normal; color:#5b72b2;}
+
+#container .ing_servey .isbundle .sv_step {overflow:hidden; text-align:center;}
+#container .ing_servey .isbundle .sv_step button {}
+#container .ing_servey .isbundle .sv_step .vote {margin-right:9px; width:84px; height:32px; background:url(http://menu.mt.co.kr/common/button/btn_svVote3.png) no-repeat 0 0;}
+#container .ing_servey .isbundle .sv_step2 {position:absolute; right:30px; bottom:19px;}
+#container .ing_servey .isbundle .sv_info {margin:40px 0 0 30px;}
+#container .ing_servey .isbundle .sv_info .together {float:left; height:20px;}
+#container .ing_servey .isbundle .sv_info .together li {float:left;}
+#container .ing_servey .isbundle .sv_info .date {float:left; margin-left:8px; height:20px; font-size:14px; line-height:20px; color:#999;}
+#container .ing_servey .isbundle .relbox {overflow:hidden;}
+#container .ing_servey .isbundle .relbox h4 {float:left; position:relative; padding-top:5px; width:86px; font-size:14px; font-weight:normal; letter-spacing:-0.6px; text-indent:-1px; color:#666;}
+#container .ing_servey .isbundle .relbox h4:after {content:' '; position:absolute; top:0; left:0; width:12px; height:2px; background:#666;}
+#container .ing_servey .isbundle .relbox ul {overflow:hidden; padding:1px 0 15px;}
+#container .ing_servey .isbundle .relbox ul li {overflow:hidden; padding-left:12px; height:28px; background:url(http://menu.mt.co.kr/bil/bl_rel15.gif) no-repeat 0 12px; line-height:28px;}
+#container .ing_servey .isbundle .relbox ul li .title {font-size:16px; font-weight:normal; letter-spacing:-0.6px; color:#020c51;}
+#container .ing_servey .isbundle .relbox ul li .date {padding-left:14px; font-size:13px; color:#b2b2b2;}
+	/* 설문결과 */
+#container .end_servey {overflow:hidden;}
+#container .end_servey .edbundle {position:relative; margin-top:10px; background:#f5f5f5;}
+#container .end_servey .edbundle:first-child {margin-top:0;}
+#container .end_servey .edbundle .limit1 {position:relative; padding:24px 80px 26px 53px; background:#d9c9e1;}
+#container .end_servey .edbundle .limit1 .subject {font-size:15px; font-weight:normal; line-height:24px; letter-spacing:-0.5px; color:#4c4c4c;}
+#container .end_servey .edbundle .limit1 .subject .q {position:absolute; top:23px; left:29px; font-size:17px; color:#3d58a5;}
+#container .end_servey .edbundle .limit1 button {position:absolute; top:29px; right:29px; width:25px; height:25px;}
+#container .end_servey .edbundle .limit1 button.open {background:url(http://menu.mt.co.kr/common/button/btn_down2.png) no-repeat 0 0;}
+#container .end_servey .edbundle .limit1 button.close {background:url(http://menu.mt.co.kr/common/button/btn_up2.png) no-repeat 0 0;}
+#container .end_servey .edbundle .limit22 {position:relative; padding:30px 0 31px 222px; min-height:153px;}
+#container .end_servey .edbundle .limit22 .graph {position:absolute; top:13px; left:42px; width:164px;}
+#container .end_servey .edbundle .limit22 .graph .box {display:block; overflow:hidden; height:160px;}
+#container .end_servey .edbundle .limit22 .graph .cmt {display:block; font-size:11px; letter-spacing:-0.6px; text-align:center; color:#808080;}
+#container .end_servey .edbundle .limit22 .items {overflow:hidden; width:400px;}
+#container .end_servey .edbundle .limit22 .items li {position:relative; margin-top:12px; padding-left:20px; height:33px; font-size:14px; letter-spacing:-0.6px; line-height:31px; color:#4c4c4c;}
+#container .end_servey .edbundle .limit22 .items li:first-child {margin-top:0;}
+#container .end_servey .edbundle .limit22 .items li em {font-style:normal; color:#5b72b2;}
+#container .end_servey .edbundle .limit22 .items .blt {position:absolute; top:11px; left:0; width:10px; height:10px;}
+#container .end_servey .edbundle .limit22 .items .item1 .blt {background:#48aee3;}
+#container .end_servey .edbundle .limit22 .items .item2 .blt {background:#d7ca1a;}
+#container .end_servey .edbundle .limit22 .items .item3 .blt {background:#ca6ae9;}
+#container .end_servey .edbundle .limit22 .items .item4 .blt {background:#e36548;}
+#container .end_servey .edbundle .limit22 .items .item5 .blt {background:#8b774d;}
+#container .end_servey .edbundle .limit22 .items .item6 .blt {background:#619c59;}
+#container .end_servey .edbundle .limit22 .items .item7 .blt {background:#d3a14d;}
+#container .end_servey .edbundle .limit22 .items .item8 .blt {background:#f17796;}
+#container .end_servey .edbundle .limit22 .items .item9 .blt {background:#7e7ed1;}
+#container .end_servey .edbundle .limit22 .items .item10 .blt {background:#23547c;}
+#container .end_servey .edbundle .limit22 .items2 {overflow:hidden; margin-top:-2px; width:400px;}
+#container .end_servey .edbundle .limit22 .items2 li {position:relative; margin-top:12px; height:33px;}
+#container .end_servey .edbundle .limit22 .items2 li:first-child {margin-top:0;}
+#container .end_servey .edbundle .limit22 .items2 .blt {position:absolute; top:11px; left:0; width:10px; height:10px;}
+#container .end_servey .edbundle .limit22 .items2 .item1 .blt {background:#48aee3;}
+#container .end_servey .edbundle .limit22 .items2 .item2 .blt {background:#d7ca1a;}
+#container .end_servey .edbundle .limit22 .items2 .item3 .blt {background:#ca6ae9;}
+#container .end_servey .edbundle .limit22 .items2 .item4 .blt {background:#e36548;}
+#container .end_servey .edbundle .limit22 .items2 .item5 .blt {background:#8b774d;}
+#container .end_servey .edbundle .limit22 .items2 .item6 .blt {background:#619c59;}
+#container .end_servey .edbundle .limit22 .items2 .item7 .blt {background:#d3a14d;}
+#container .end_servey .edbundle .limit22 .items2 .item8 .blt {background:#f17796;}
+#container .end_servey .edbundle .limit22 .items2 .item9 .blt {background:#7e7ed1;}
+#container .end_servey .edbundle .limit22 .items2 .item10 .blt {background:#23547c;}
+#container .end_servey .edbundle .limit22 .items2 li .thum {position:absolute; top:0; left:20px; overflow:hidden; width:40px; height:33px;}
+#container .end_servey .edbundle .limit22 .items2 li .thum img {display:block; width:100%; min-height:100%;}
+#container .end_servey .edbundle .limit22 .items2 li .title {display:block; margin-left:70px; height:33px; font-size:14px; letter-spacing:-0.6px; line-height:31px; color:#4c4c4c;}
+#container .end_servey .edbundle .limit22 .items2 li .title em {font-style:normal; color:#5b72b2;}
+
+/* 카드뉴스 */ /* 추가 170310 윤선 */
+#container .cardnews_box {padding:22px 40px; position:relative; background:#f0f0f0;}
+#container .cardnews_box .card_list1 {height:268px; overflow:hidden;}
+#container .cardnews_box .card_list1 li {margin-left:26px; float:left; width:200px; height:266px; background:#FFF; border:1px solid #DDD;}
+#container .cardnews_box .card_list1 li:first-child {margin-left:0;}
+#container .cardnews_box .card_list1 li a {display:block; color:#333;}
+#container .cardnews_box .card_list1 li a .thum {display:block; width:100%; height:201px; overflow:hidden;}
+#container .cardnews_box .card_list1 li a .thum img {width:100%; min-height:100%;}
+#container .cardnews_box .card_list1 li a .subject {margin:12px 14px; display:block; height:42px; overflow:hidden; font-size:15px; line-height:21px; color:#333;}
+
+#container .cardnews_box .btn_slide {}
+#container .cardnews_box .btn_slide a {margin-top:-26px; position:absolute; top:50%; width:55px; height:53px; background:url(http://menu.mt.co.kr/common/button/btn_pnbtn13.png) no-repeat 0 0; text-indent:-9999px;}
+#container .cardnews_box .btn_slide a.prev {left:0; background-position:0 0;}
+#container .cardnews_box .btn_slide a.next {right:0; background-position:0 100%;}
+/* aside */
+#aside {float:right; position:relative; width:300px; min-height:500px;}
+#aside .asidebox {position:relative; border:1px solid #e6e6e6;}
+#aside .asidebox.stockbox {background:#eee; border:1px solid #ccc;}
+#aside.aside_photo {width:300px; border:0; border-top:1px solid #d1d4dd;}
+	/* 우측 공통 */
+	#aside .aside_bundle {position:relative; border-top:1px solid #e6e6e6;}
+	#aside .asidebox.stockbox .aside_bundle {border-top:1px solid #ccc;}
+	#aside .aside_bundle:first-child,
+	#aside .aside_bundle.nbt_line {border-top:none !important;} /* 상단 보더라인 제거 */
+	#aside .aside_bundle.bgf7 {background:#f7f7f7;} /* 바탕색 #f7f7f7 */
+	#aside .aside_bundle .limit19 {padding-left:19px; padding-right:19px;} /* 좌우여백 */
+	#aside .aside_bundle .limit10 {padding-left:10px; padding-right:10px;} /* 좌우여백 */
+	#aside .aside_bundle .limit20 {padding-left:20px; padding-right:20px;} /* 좌우여백 */
+	#aside .aside_bundle .astit {overflow:hidden; font-size:15px; letter-spacing:-0.6px; color:#f74444;} /* 타이틀 */
+	#aside .aside_bundle .astit.ad {color:#262626;}
+	#aside .aside_bundle .astit a {float:left; padding-right:11px; background:url(http://menu.mt.co.kr/bil/bl_arrow30.gif) no-repeat right 7px; color:#f74444;}
+	#aside .asidebox.stockbox .aside_bundle .astit a {color:#262626;}
+	#aside .aside_line {border:1px solid #d1d4dc;}	/* 두개로 영역이 나눠질때 */
+		/* 리스트 */
+		#aside .aside_bundle .aslist_t2 {overflow:hidden;}
+		#aside .aside_bundle .aslist_t2 li {overflow:hidden; height:27px; font-size:14px; letter-spacing:-0.5px; line-height:27px;}
+		#aside .aside_bundle .aslist_t2 li a {color:#333;}
+
+		#aside .aside_bundle .aslist_t4 {overflow:hidden;}
+		#aside .aside_bundle .aslist_t4 .bundle {position:relative; overflow:hidden; margin-top:5px; padding-left:79px; height:50px; background:#d9d9d9;}
+		#aside .aside_bundle .aslist_t4 .bundle:first-child {margin-top:0;}
+		#aside .aside_bundle .aslist_t4 .bundle .thum {position:absolute; top:0; left:0; overflow:hidden; width:70px; height:50px;}
+		#aside .aside_bundle .aslist_t4 .bundle .thum img {display:block; width:100%; min-height:100%;}
+		#aside .aside_bundle .aslist_t4 .bundle .sort {display:block; margin-top:9px; font-size:11px; letter-spacing:-0.6px; color:#999;}
+		#aside .aside_bundle .aslist_t4 .bundle .subject {display:block; overflow:hidden; margin-top:1px; margin-right:20px; font-size:13px; letter-spacing:-0.6px; white-space:nowrap; text-overflow:ellipsis; color:#333;}
+
+		#aside .aside_bundle .aslist_p4 {overflow:hidden; }
+		#aside .aside_bundle .aslist_p4 .bundle {overflow:hidden; position:relative; height:84px;}
+		#aside .aside_bundle .aslist_p4 .bundle .thum {position:absolute; top:0; left:0; overflow:hidden; width:125px; height:84px;}
+		#aside .aside_bundle .aslist_p4 .bundle .thum img {display:block; width:100%; min-height:100%;}
+		#aside .aside_bundle .aslist_p4 .bundle .con {overflow:hidden;}
+		#aside .aside_bundle .aslist_p4 .bundle .thum + .con {margin-left:134px;}
+		#aside .aside_bundle .aslist_p4 .bundle .con .subject {display:block; overflow:hidden; margin-top:4px; height:37px; font-size:14px; font-weight:normal; line-height:18px; letter-spacing:-0.6px;}
+		#aside .aside_bundle .aslist_p4 .bundle .con .subject a {color:#4c4c4c;}
+		#aside .aside_bundle .aslist_p4 .bundle .con .txt {display:block; overflow:hidden; margin-top:6px; padding-bottom:2px; max-height:32px; font-size:13px; line-height:16px; letter-spacing:-0.6px; color:#8c8c8c;}
+		#aside .aside_bundle .aslist_p4 .bundle .con .txt a {color:#8c8c8c;}
+
+		#aside .aside_bundle .aslist_p5 {overflow:hidden; height:193px;}
+		#aside .aside_bundle .aslist_p5 .bundle {position:relative; height:100%;}
+		#aside .aside_bundle .aslist_p5 a {display:block; width:100%; height:100%; color:#fff;}
+		#aside .aside_bundle .aslist_p5 img {display:block; width:100%; min-height:100%;}
+		#aside .aside_bundle .aslist_p5 .subject {position:absolute; bottom:0; left:0; overflow:hidden; width:100%; height:33px; background:url(http://menu.mt.co.kr/common/bg_thum_pb.png) repeat 0 0; font-size:14px; font-weight:normal; line-height:32px; letter-spacing:-0.8px;}
+
+		#aside .aside_bundle .aslist_p6 {overflow:hidden;}
+		#aside .aside_bundle .aslist_p6 .bundle {position:relative; height:295px;}
+		#aside .aside_bundle .aslist_p6 a {display:block; width:100%; height:100%; color:#262626;}
+		#aside .aside_bundle .aslist_p6 .thum {display:block; overflow:hidden; width:260px; height:260px;}
+		#aside .aside_bundle .aslist_p6 .thum img {display:block; width:100%; min-height:100%;}
+		#aside .aside_bundle .aslist_p6 .subject {display:block; overflow:hidden; padding:0 2px; height:35px; font-size:16px; font-weight:normal; line-height:32px; letter-spacing:-0.6px; white-space:nowrap; text-overflow:ellipsis;}
+
+		#aside .aside_bundle .aslist_p7 {overflow:hidden;}
+		#aside .aside_bundle .aslist_p7 .bundle {overflow:hidden; position:relative; height:26px; line-height:26px; color:#666;}
+		.ie9 #aside .aside_bundle .aslist_p7 .bundle {line-height:23px;}
+		.ie10 #aside .aside_bundle .aslist_p7 .bundle {line-height:23px;}
+		.ie11 #aside .aside_bundle .aslist_p7 .bundle {line-height:23px;}
+		#aside .aside_bundle .aslist_p7 .bundle .item {display:block; letter-spacing:0.5px; color:#666;}
+		#aside .aside_bundle .aslist_p7 .bundle .su1 {position:absolute; top:0; right:70px; height:100%; text-align:right;}
+		#aside .aside_bundle .aslist_p7 .bundle .su2 {position:absolute; top:0; right:0; width:50px; height:100%; text-align:right;}
+		#aside .aside_bundle .aslist_p7 .bundle .su2.up {background:url(http://menu.mt.co.kr/bil/ico_up9.gif) no-repeat 0 10px; color:#e42c2c;}
+		#aside .aside_bundle .aslist_p7 .bundle .su2.upp {background:url(http://menu.mt.co.kr/bil/ico_up10.gif) no-repeat 0 9px; color:#e42c2c;}
+		#aside .aside_bundle .aslist_p7 .bundle .su2.dn {background:url(http://menu.mt.co.kr/bil/ico_down10.gif) no-repeat 0 10px; color:#1872df;}
+
+		#aside .aside_bundle .aslist_p8 {overflow:hidden; position:relative;}
+		#aside .aside_bundle .aslist_p8 .bigthum {overflow:hidden; height:210px;}
+		#aside .aside_bundle .aslist_p8 .bigthum .thum {display:block; position:relative; overflow:hidden; width:169px; height:182px;}
+		#aside .aside_bundle .aslist_p8 .bigthum .thum a {display:block; width:100%; height:100%;}
+		#aside .aside_bundle .aslist_p8 .bigthum .thum img {display:block; width:100%; min-height:100%;}
+		#aside .aside_bundle .aslist_p8 .bigthum .subject {display:block; overflow:hidden; height:28px; font-size:14px; font-weight:normal; letter-spacing:-0.3px; line-height:32px;}
+		.ie9 #aside .aside_bundle .aslist_p8 .bigthum .subject {line-height:30px;}
+		.ie10 #aside .aside_bundle .aslist_p8 .bigthum .subject {line-height:30px;}
+		.ie11 #aside .aside_bundle .aslist_p8 .bigthum .subject {line-height:30px;}
+		#aside .aside_bundle .aslist_p8 .bigthum .subject a {color:#737373;}
+		#aside .aside_bundle .aslist_p8 .smallthum {position:absolute; top:0; right:0; overflow:hidden; width:90px; height:182px;}
+		#aside .aside_bundle .aslist_p8 .smallthum .bundle {position:relative; overflow:hidden; margin-top:1px; width:100%; height:60px;}
+		#aside .aside_bundle .aslist_p8 .smallthum .bundle:first-child {margin-top:0;}
+		#aside .aside_bundle .aslist_p8 .smallthum .bundle a {display:block; width:100%; height:100%;}
+		#aside .aside_bundle .aslist_p8 .smallthum .bundle img {display:block; width:100%; min-height:100%;}
+			/* 추가 170125 해리 */
+		#aside .aside_bundle .aslist_p9 {position:relative;}
+		#aside .aside_bundle .aslist_p9 .bundle {overflow:hidden; position:relative; margin-top:6px; height:46px;}
+		#aside .aside_bundle .aslist_p9 .bundle:first-child {margin-top:0;}
+		#aside .aside_bundle .aslist_p9 .bundle .con {}
+		#aside .aside_bundle .aslist_p9 .bundle .thum + .con {display:table; margin-top:2px; margin-right:80px;}
+		.ie8 #aside .aside_bundle .aslist_p9 .bundle .thum + .con {margin-top:3px;}
+		#aside .aside_bundle .aslist_p9 .bundle .con a {display:table-cell; overflow:hidden; height:40px; font-size:14px; line-height:20px; vertical-align:middle; letter-spacing:-0.5px; color:#333;}
+		#aside .aside_bundle .aslist_p9 .bundle .thum {position:absolute; right:0; top:0; width:68px; height:46px;}
+		#aside .aside_bundle .aslist_p9 .bundle .thum a {position:relative; display:block; overflow:hidden; width:68px; height:46px;}
+		#aside .aside_bundle .aslist_p9 .bundle .thum a img {display:block; width:100%; min-height:100%;}
+			/*// 추가 170125 해리 */
+
+		/* 탭 */
+		#aside .aside_bundle .tabbox4 {overflow:hidden; height:23px;}
+		#aside .aside_bundle .tabbox4 li {float:left; overflow:hidden; width:86px; border-left:1px solid #d9d9d9;}
+		#aside .aside_bundle .tabbox4 li:first-child {border-left:none;}
+		#aside .aside_bundle .tabbox4 li.ty2 {width:64px;}
+		#aside .aside_bundle .tabbox4 li.ty2.last {width:65px;}
+		#aside .aside_bundle .tabbox4 li a {display:block; margin-left:-1px; height:21px; font-size:11px; text-align:center; line-height:21px; letter-spacing:-0.5px; color:#666; border:1px solid #d9d9d9; border-right:0;}
+		.ie9 #aside .aside_bundle .tabbox4 li a {line-height:19px;}
+		.ie10 #aside .aside_bundle .tabbox4 li a {line-height:19px;}
+		.ie11 #aside .aside_bundle .tabbox4 li a {line-height:19px;}
+		#aside .aside_bundle .tabbox4 li:first-child a {margin-left:0;}
+		#aside .aside_bundle .tabbox4 li.last a {border-right:1px solid #d9d9d9;}
+		#aside .aside_bundle .tabbox4 li a.on,
+		#aside .aside_bundle .tabbox4 li a:hover,
+		#aside .aside_bundle .tabbox4 li a:focus {background:#f54f4f; text-decoration:none; letter-spacing:0; color:#fff !important; border-color:#f54f4f;}
+
+		#aside .aside_bundle .tabbox5 {overflow:hidden; height:23px;}
+		#aside .aside_bundle .tabbox5 li {float:left; overflow:hidden; width:50%;}
+		#aside .aside_bundle .tabbox5 li a {display:block; height:21px; font-size:11px; text-align:center; line-height:21px; letter-spacing:-0.5px; color:#666; border:1px solid #d9d9d9;}
+		.ie9 #aside .aside_bundle .tabbox5 li a {line-height:19px;}
+		.ie10 #aside .aside_bundle .tabbox5 li a {line-height:19px;}
+		.ie11 #aside .aside_bundle .tabbox5 li a {line-height:19px;}
+		#aside .aside_bundle .tabbox5 li a.on,
+		#aside .aside_bundle .tabbox5 li a:hover,
+		#aside .aside_bundle .tabbox5 li a:focus {background:#f54f4f; text-decoration:none; letter-spacing:0; color:#fff !important; border-color:#f54f4f;}
+
+		#aside .aside_bundle .tabbox6 {display:block; height:21px; background:#fff; border:1px solid #dedede;}
+		#aside .aside_bundle .tabbox6 a {float:left; width:50%; height:21px; font-size:11px; text-align:center; line-height:21px; letter-spacing:-0.5px; text-decoration:none; color:#4c4c4c;}
+		.ie9 #aside .aside_bundle .tabbox6 a {line-height:19px;}
+		.ie10 #aside .aside_bundle .tabbox6 a {line-height:19px;}
+		.ie11 #aside .aside_bundle .tabbox6 a {line-height:19px;}
+		#aside .aside_bundle .tabbox6 a.on,
+		#aside .aside_bundle .tabbox6 a:hover,
+		#aside .aside_bundle .tabbox6 a:focus {position:relative; margin:-1px; background:#cfcfcf; border:1px solid #c4c4c4;}
+		/* 타임라인 */
+		#container .mtimeline1 {overflow:hidden;}
+		#container .mtimeline1 .con {overflow:hidden;}
+		#container .mtimeline1 .con .msbj {display:block; overflow:hidden; margin-top:8px; padding:0 0 13px; font-size:17px; font-weight:normal; letter-spacing:-0.5px; line-height:21px; color:#3d58a5;}
+		#container .mtimeline1 .con .msbj a {color:#3d58a5;}
+		#container .mtimeline1 .con .list {overflow:hidden; padding:0 0 18px; background:url(http://menu.mt.co.kr/common/etc/bg_hline2.gif) repeat-y 8px 0;}
+		#container .mtimeline1 .con .list li {overflow:hidden; margin-top:14px; padding-left:30px; background:url(http://menu.mt.co.kr/bil/bl_circle8.png) no-repeat 0 0;}
+		#container .mtimeline1 .con .list li:first-child {margin-top:9px;}
+		#container .mtimeline1 .con .list li .box {}
+		#container .mtimeline1 .con .list li .info {font-style:italic; color:#8c8c8c;}
+		#container .mtimeline1 .con .list li .subject {padding:6px 0 0; font-size:13px; line-height:18px; letter-spacing:-0.5px; color:#4c4c4c;}
+		#container .mtimeline1 .con .list li .subject a {color:#4c4c4c;}
+		#container .mtimeline1 .allview {display:block; overflow:hidden; padding:0 10px; height:31px; background:#d9d9d9; text-align:right; line-height:31px; color:#666 !important;}
+		#container .mtimeline1 .allview strong {font-weight:normal; color:#3d58a5 !important;}
+		/* 상단 빅배너,한줄광고 */
+		#container .banner_big {margin:-1px -1px 0;} /* 수정 160726 세종 */
+		#container .banner_big iframe {display:block; margin:0 auto;}
+		#container .banner_big .banner_roll {overflow:hidden; border-top:1px solid #e6e6e6;}
+		#container .banner_big .banner_roll .limit {position:relative; padding:3px 10px 5px; letter-spacing:-0.5px; line-height:22px; color:#4c4c4c;}
+		#container .banner_big .banner_roll a {display:block; overflow:hidden; color:#4c4c4c;}
+
+		#container .banner_big .banner_roll ul {padding:4px 19px 5px;}
+		#container .banner_big .banner_roll ul li {overflow:hidden; padding:0 0 0 5px; height:16px; background:url(http://menu.mt.co.kr/bil/bl_square1.gif) no-repeat 0 7px; font-weight:bold; line-height:18px; letter-spacing:-1px;}
+		#container .banner_big .banner_roll ul li a {line-height:16px; color:#495774;}
+		.ie8 #container .banner_big .banner_roll ul li a {line-height:19px;}
+		.ie9 #container .banner_big .banner_roll ul li a {line-height:19px;}
+		.ie10 #container .banner_big .banner_roll ul li a {line-height:19px;}
+		.ie11 #container .banner_big .banner_roll ul li a {line-height:19px;}
+		/* 펀드 운용사 배너 */
+		#aside .irb_type {overflow:hidden;}
+		#aside .irb_type .bundle {overflow:hidden; width:100%; height:48px; border-top:1px solid #f2f2f2;}
+		#aside .irb_type .bundle:first-child {border-top:none;}
+		#aside .irb_type .bundle .piece {float:right; height:100%;}
+		#aside .irb_type .bundle .piece:first-child {float:left;}
+		#aside .irb_type .bundle .bar {float:left; position:relative; height:100%;}
+		#aside .irb_type .bundle .bar:after {content:' '; position:absolute; top:16px; left:50%; width:1px; height:16px; background:#e6e6e6; font-size:0; line-height:0;}
+		/* 종목검색 */
+		#aside .item_search {position:relative; height:24px;}
+		#aside .item_search input[type='text'] {display:block; padding:0 10px; width:237px; height:22px; line-height:22px; letter-spacing:-0.4px; color:#666; border:1px solid #ccc;}
+		#aside .item_search button {position:absolute; top:0; right:0; width:42px; height:24px; background:url(http://menu.mt.co.kr/common/button/btn_search6.gif) no-repeat 0 0;}
+		#aside .item_search .item_layer {position:absolute; top:23px; left:0; right:0; overflow-y:auto; max-height:510px; background:#fff; border:1px solid #ccc; z-index:2;}
+		#aside .item_search .item_layer .group {overflow:hidden;}
+		#aside .item_search .item_layer .group .bundle {overflow:hidden; height:22px;}
+		#aside .item_search .item_layer .group .bundle a {display:block; overflow:hidden; padding-left:10px; height:100%; line-height:22px; letter-spacing:-0.4px; text-decoration:none; color:#333;}
+		.ie9 #aside .item_search .item_layer .group .bundle a {line-height:19px;}
+		.ie10 #aside .item_search .item_layer .group .bundle a {line-height:19px;}
+		.ie11 #aside .item_search .item_layer .group .bundle a {line-height:19px;}
+		#aside .item_search .item_layer .group .bundle a:hover,
+		#aside .item_search .item_layer .group .bundle a:focus {background:#efefef;}
+		/* MY스톡 로그인/관심종목 설정 */
+		#aside .mystock_loginsetting {overflow:hidden; height:87px;}
+		#aside .mystock_loginsetting .txt {display:block; line-height:17px; letter-spacing:-0.5px; text-align:center; color:#666;}
+		#aside .mystock_loginsetting .txt em {font-style:normal; color:#3d58a5;}
+		#aside .mystock_loginsetting .btn {display:block; text-align:center;}
+		/* 페이징,더보기 */
+		#aside .aside_bundle .more1 {position:absolute;}
+		#aside .aside_bundle .more1 img {display:block;}
+		#aside .aside_bundle .box_page {position:absolute; overflow:hidden; height:16px; font-size:11px; line-height:16px; color:#808080;}
+		#aside .aside_bundle .box_page .bar {padding:0 3px;}
+		#aside .aside_bundle .box_page strong {font-weight:normal; color:#ef2222;}
+		#aside .aside_bundle .btn_page1 {position:absolute; overflow:hidden; width:23px; height:13px;}
+		#aside .aside_bundle .btn_page1 button {position:absolute; top:0; width:12px; height:13px;}
+		#aside .aside_bundle .btn_page1 .prev {left:0; background:url(http://menu.mt.co.kr/bil/btn_prev1.gif) no-repeat 0 0;}
+		#aside .aside_bundle .btn_page1 .next {right:0; background:url(http://menu.mt.co.kr/bil/btn_next1.gif) no-repeat right 0;}
+		#aside .aside_bundle .btn_page2 {position:absolute; overflow:hidden; width:34px; height:16px;}
+		#aside .aside_bundle .btn_page2 button {position:absolute; width:16px; height:16px;}
+		#aside .aside_bundle .btn_page2 .prev {left:0; background:url(http://menu.mt.co.kr/bil/btn_prev5.png) no-repeat 0 0;}
+		#aside .aside_bundle .btn_page2 .next {right:0; background:url(http://menu.mt.co.kr/bil/btn_next5.png) no-repeat right 0;}
+		/* 컬쳐박스 */
+		#aside .asm_group {position:relative; border:1px solid #ccc;}
+		#aside .asm_group .asm_title {overflow:hidden; height:36px; font-weight:normal; border-top:1px solid #ccc;}
+		#aside .asm_group .asm_title:first-child {border-top:none;}
+		#aside .asm_group .asm_title a {display:block; overflow:hidden; padding:0 13px; height:100%; background:#ebebeb url(http://menu.mt.co.kr/common/button/btn_openclose1.gif) no-repeat right 0; font-size:13px; letter-spacing:-0.6px; line-height:36px; text-decoration:none; color:#4c4c4c;}
+		.ie9 #aside .asm_group .asm_title a {line-height:33px;}
+		.ie10 #aside .asm_group .asm_title a {line-height:33px;}
+		.ie11 #aside .asm_group .asm_title a {line-height:33px;}
+		#aside .asm_group .asm_title a.on,
+		#aside .asm_group .asm_title a:hover,
+		#aside .asm_group .asm_title a:focus {color:#3d58a5;}
+		#aside .asm_group .asm_title a.on {background-color:#e6e6e6; background-position:right bottom;}
+		#aside .asm_group .asm_bundle {overflow:hidden;}
+		#aside .asm_group .asm_bundle li {position:relative; overflow:hidden; height:39px; border-top:1px solid #ebebeb;}
+		#aside .asm_group .asm_bundle li:first-child {border-top:none;}
+		#aside .asm_group .asm_bundle li a {display:block; padding:0 13px; height:100%; letter-spacing:-0.6px; line-height:39px; text-decoration:none; color:#666;}
+		.ie9 #aside .asm_group .asm_bundle li a {line-height:36px;}
+		.ie10 #aside .asm_group .asm_bundle li a {line-height:36px;}
+		.ie11 #aside .asm_group .asm_bundle li a {line-height:36px;}
+		#aside .asm_group .asm_bundle li a.on,
+		#aside .asm_group .asm_bundle li a:hover,
+		#aside .asm_group .asm_bundle li a:focus {color:#3d58a5;}
+		#aside .asm_group .asm_bundle li a.on:after {content:' '; position:absolute; top:6px; left:13px; width:10px; height:2px; background:#3d58a5;}
+	/* //mt3 */
+		/* 수정 160509 세종 */
+		#aside .asidebox2 {}
+		#aside .asidebox2 .aside_bundle2 {position:relative; overflow:hidden; background:#f0f0f0; border:1px solid #e6e6e6;}
+		#aside .asidebox2 .aside_bundle2 .lmtbox1 {margin:0 19px 20px;}
+		#aside .asidebox2 .aside_bundle2 .lmtbox2 {margin:15px 19px 7px;}
+		#aside .asidebox2 .aside_bundle2 .astit {overflow:hidden; height:20px; font-size:15px; font-weight:600; letter-spacing:-0.5px; line-height:20px; color:#222;}
+		.ie8 #aside .asidebox2 .aside_bundle2 .astit {line-height:22px;}
+		#aside .asidebox2 .aside_bundle2 .astit a {float:left; padding-right:11px; background:url(http://menu.mt.co.kr/bil/bl_arrow30.gif) no-repeat right 7px; color:#222;}
+		#aside .asidebox2 .aside_bundle2 .pgcircle1 {position:absolute; height:10px;}
+		#aside .asidebox2 .aside_bundle2 .pgcircle1 a {display:inline-block; overflow:hidden; margin:0 0px; width:10px; height:10px; background:url(http://menu.mt.co.kr/bil/bl_circle14.png) no-repeat 0 0; background-size:auto 10px; font-size:0; vertical-align:top; line-height:0;}
+		#aside .asidebox2 .aside_bundle2 .pgcircle1 a + a {margin-left:3px;}
+		#aside .asidebox2 .aside_bundle2 .pgcircle1 a.on,
+		#aside .asidebox2 .aside_bundle2 .pgcircle1 a:hover,
+		#aside .asidebox2 .aside_bundle2 .pgcircle1 a:focus {background-position:right 0;}
+		#aside .asidebox2 .aside_bundle2 .plist1 {overflow:hidden; position:relative;}
+		#aside .asidebox2 .aside_bundle2 .plist1 .group {overflow:hidden; width:100%; height:100%;}
+		#aside .asidebox2 .aside_bundle2 .plist1 .group .bundle {float:left; width:100%; height:100%;}
+		#aside .asidebox2 .aside_bundle2 .plist1 a {display:block; width:100%; height:100%; font-size:15px; letter-spacing:-0.3px; color:#4c4c4c;}
+		#aside .asidebox2 .aside_bundle2 .plist1 .thum {display:block; overflow:hidden; width:260px; height:199px;}
+		#aside .asidebox2 .aside_bundle2 .plist1 .thum img {display:block; width:100%; min-height:100%;}
+		#aside .asidebox2 .aside_bundle2 .plist1 .subject {display:block; margin:6px 0 -1px; height:20px; font-weight:normal;}
+		.ie8 #aside .asidebox2 .aside_bundle2 .plist1 .subject {margin-bottom:-2px; padding-bottom:1px;}
+		.ie9 #aside .asidebox2 .aside_bundle2 .plist1 .subject {margin-bottom:-2px; padding-bottom:1px;}
+		.ie10 #aside .asidebox2 .aside_bundle2 .plist1 .subject {margin-bottom:-2px; padding-bottom:1px;}
+		.ie11 #aside .asidebox2 .aside_bundle2 .plist1 .subject {margin-bottom:-2px; padding-bottom:1px;}
+		#aside .asidebox2 .aside_bundle2 .plist2 {position:relative;}
+		#aside .asidebox2 .aside_bundle2 .plist2 .group {overflow:hidden; width:100%; height:285px;}
+		#aside .asidebox2 .aside_bundle2 .plist2 .group .bundle {overflow:hidden; width:100%; height:100%;}
+		#aside .asidebox2 .aside_bundle2 .plist2 .group .bundle a {display:block; width:100%; height:100%;}
+		#aside .asidebox2 .aside_bundle2 .plist2 .group .bundle img {display:block; width:100%; min-height:100%;}
+		#aside .asidebox2 .aside_bundle2 .plist2 button {position:absolute; top:116px; width:33px; height:40px; background:url(http://menu.mt.co.kr/common/button/btn_pnbtn7.png) no-repeat;}
+		#aside .asidebox2 .aside_bundle2 .plist2 button.prev {left:-19px; background-position:0 0;}
+		#aside .asidebox2 .aside_bundle2 .plist2 button.next {right:-19px; background-position:right bottom;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather {position:relative; overflow:hidden; height:87px;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather .date {display:block; height:23px; font-size:13px; line-height:24px; text-align:right; letter-spacing:-0.4px; color:#666;}
+		.ie9 #aside .asidebox2 .aside_bundle2 .aside_weather .date {line-height:22px;}
+		.ie10 #aside .asidebox2 .aside_bundle2 .aside_weather .date {line-height:22px;}
+		.ie11 #aside .asidebox2 .aside_bundle2 .aside_weather .date {line-height:22px;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl {position:relative; height:64px;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dt {position:absolute; top:-23px; left:0; overflow:hidden; width:82px; height:23px; background:#fff}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dd + dt {left:81px;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dt a {display:block; overflow:hidden; width:80px; height:21px; background:#cfcfcf; letter-spacing:-0.5px; line-height:20px; text-align:center; color:#666; border:1px solid #c4c4c4;}
+		.ie9 #aside .asidebox2 .aside_bundle2 .aside_weather dl dt a {line-height:19px;}
+		.ie10 #aside .asidebox2 .aside_bundle2 .aside_weather dl dt a {line-height:19px;}
+		.ie11 #aside .asidebox2 .aside_bundle2 .aside_weather dl dt a {line-height:19px;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dt a.on,
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dt a:hover,
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dt a:focus {position:relative; background:#fff; text-decoration:none; color:#808080; border-color:#dedede; z-index:2;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dd {position:absolute; top:0; left:0; width:100%; height:100%;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dd.sky {background:url(http://menu.mt.co.kr/common/etc/icon_weatherSky1.png) no-repeat 191px 0;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dd.dust {background:url(http://menu.mt.co.kr/common/etc/icon_weatherDust1.png) no-repeat 191px 0;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dd .subject {display:table; width:180px; height:100%; font-size:15px; font-weight:normal; line-height:20px; letter-spacing:-0.3px;}
+		#aside .asidebox2 .aside_bundle2 .aside_weather dl dd .subject a {display:table-cell; width:100%; height:100%; vertical-align:middle; color:#4c4c4c;}
+		#aside .asidebox2 .aside_fortune {overflow:hidden; padding:0 18px; height:100px; background:url(http://menu.mt.co.kr/common/etc/bg_asideFortune1.gif) no-repeat right 0;}
+		#aside .asidebox2 .aside_fortune h4 {overflow:hidden; margin-top:14px; font-size:15px; font-weight:600; letter-spacing:-0.5px; color:#f6dc4d;}
+		#aside .asidebox2 .aside_fortune h4 a {color:#f6dc4d;}
+		#aside .asidebox2 .aside_fortune .subject {display:block; margin-top:6px; font-size:17px; font-weight:normal; line-height:20px; letter-spacing:-0.4px; color:#fff;}
+		#aside .asidebox2 .aside_fortune .subject a {color:#fff;}
+		#aside .asidebox2 .aside_kkulbbang {position:relative; overflow:hidden; height:264px; background:#000;}
+		#aside .asidebox2 .aside_kkulbbang h4 {position:absolute; top:21px; left:22px;}
+		#aside .asidebox2 .aside_kkulbbang .groupbox {overflow:hidden; height:100%;}
+		#aside .asidebox2 .aside_kkulbbang .group {overflow:hidden width:100%; height:100%;}
+		#aside .asidebox2 .aside_kkulbbang .group .bundle {overflow:hidden; width:100%; height:100%;}
+		#aside .asidebox2 .aside_kkulbbang .group .bundle a {display:block; width:100%; height:100%; color:#fff;}
+		#aside .asidebox2 .aside_kkulbbang .group .bundle .thum {display:block; overflow:hidden; width:100%; height:217px;}
+		#aside .asidebox2 .aside_kkulbbang .group .bundle .thum:after {content:' '; position:absolute; top:80px; left:136px; width:35px; height:35px; background:url(http://menu.mt.co.kr/common/etc/icon_vodPlay2.png) no-repeat 0 0;}
+		#aside .asidebox2 .aside_kkulbbang .group .bundle .thum img {display:block; width:100%; min-height:100%;}
+		#aside .asidebox2 .aside_kkulbbang .group .bundle .subject {display:block; overflow:hidden; margin:0 20px; height:47px; font-size:14px; font-weight:normal; line-height:59px; letter-spacing:-0.5px;}
+		#aside .asidebox2 .aside_kkulbbang .pgcircle {position:absolute; bottom:31px; left:0; right:0; height:10px; text-align:center;}
+		#aside .asidebox2 .aside_kkulbbang .pgcircle a {display:inline-block; overflow:hidden; margin:0 0px; width:10px; height:10px; background:url(http://menu.mt.co.kr/bil/bl_circle14.png) no-repeat 0 0; background-size:auto 10px; font-size:0; vertical-align:top; line-height:0;}
+		#aside .asidebox2 .aside_kkulbbang .pgcircle a + a {margin-left:7px;}
+		#aside .asidebox2 .aside_kkulbbang .pgcircle a.on,
+		#aside .asidebox2 .aside_kkulbbang .pgcircle a:hover,
+		#aside .asidebox2 .aside_kkulbbang .pgcircle a:focus {background-position:right 0;}
+		/* //수정 160509 세종 */
+		/* 추가 160726 세종 */
+		#aside .tw_deadline {overflow:hidden; position:relative; height:85px;}
+		#aside .tw_deadline h4 {position:absolute; top:14px; left:14px; overflow:hidden; width:71px; height:23px;}
+		#aside .tw_deadline h4 img {display:block;}
+		#aside .tw_deadline .date {position:absolute; top:15px; left:93px; font-size:14px; color:#808080;}
+		#aside .tw_deadline .subject {position:absolute; top:49px; left:14px; overflow:hidden; width:270px; height:21px; font-size:15px; letter-spacing:-0.4px; color:#333;}
+
+		#aside .itv_god {}
+		#aside .itv_god .title {overflow:hidden; margin-top:-5px; font-weight:normal; line-height:24px;}
+		#aside .itv_god .title a {float:left; font-size:16px; font-weight:normal; letter-spacing:-0.5px; color:#262626;}
+		#aside .itv_god .title span {float:right; margin-top:1px; font-size:13px; letter-spacing:-0.5px; color:#999;}
+
+		#aside .epmt_success {position:relative; margin:-1px -1px 0;}
+		#aside .epmt_success .title {position:absolute; top:40px; left:0; right:0; font-size:16px; font-weight:normal; text-align:center; letter-spacing:-0.5px; color:#fff; z-index:2;}
+		#aside .epmt_success .listarea {position:relative; overflow:hidden; width:300px; height:284px; background:url(http://menu.mt.co.kr/common/etc/bg_epmtSuccess1.jpg) no-repeat 0 0;}
+		#aside .epmt_success .listarea .group {overflow:hidden; height:100%;}
+		#aside .epmt_success .listarea .group .bundle {float:left; position:relative; width:300px; height:100%;}
+		#aside .epmt_success .listarea .group .bundle .subject {position:absolute; top:72px; left:70px; width:160px; font-size:18px; font-weight:normal; line-height:24px; letter-spacing:-0.4px;}
+		#aside .epmt_success .listarea .group .bundle .subject a {color:#94bcff;}
+		#aside .epmt_success .listarea .group .bundle .txt {position:absolute; top:200px; left:14px; overflow:hidden; padding-top:12px; width:270px; height:60px; font-size:15px; line-height:20px; letter-spacing:-0.4px;}
+		#aside .epmt_success .listarea .group .bundle .txt a {color:#404040;}
+		#aside .epmt_success .listarea .pgcircle {}
+		#aside .epmt_success .listarea .pgcircle {position:absolute; top:174px; left:0; right:0px; height:11px; text-align:center; vertical-align:top;}
+		#aside .epmt_success .listarea .pgcircle a {display:inline-block; overflow:hidden; margin:0 3px; width:11px; height:11px; background:url(http://menu.mt.co.kr/bil/bl_circle11.png) no-repeat 0 0; font-size:0; line-height:0;}
+		#aside .epmt_success .listarea .pgcircle a.on,
+		#aside .epmt_success .listarea .pgcircle a:hover,
+		#aside .epmt_success .listarea .pgcircle a:focus {background-position:right 0;}
+		#aside .epmt_success .listarea .btn {}
+		#aside .epmt_success .listarea button {position:absolute; top:81px; width:29px; height:36px; background:url(http://menu.mt.co.kr/common/button/btn_pnbtn6.png) no-repeat 0 0;}
+		#aside .epmt_success .listarea .prev {left:0; background-position:0 0;}
+		#aside .epmt_success .listarea .next {right:0; background-position:0 bottom;}
+		/* //추가 160726 세종 */

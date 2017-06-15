@@ -1,0 +1,10 @@
+document.write('<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">');
+var _n=0;
+document.write('<ins class="daum_ddn_area" style="display:none;"');
+document.write('data-ad-unit    = "DAN-1hbj9k4n2mo9v"');
+document.write('data-ad-media   = "1t"');
+document.write('data-ad-pubuser = "R"');
+document.write('data-ad-type    = "D"');
+document.write('data-ad-width   = "300"');
+document.write('data-ad-height  = "250"></ins>');
+document.write('<scr'+'ipt type="text/javascript" src="//s1.daumcdn.net/svc/original/U03/commonjs/ddn/common/js/ad.min.js"></scr'+'ipt>');

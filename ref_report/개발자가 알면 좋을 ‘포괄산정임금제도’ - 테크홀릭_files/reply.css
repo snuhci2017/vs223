@@ -1,0 +1,107 @@
+#article-reply, #article-reply-header{
+  font-family:'Malgun Gothic'; 
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+#article-reply {display:inline-block;width:100%}
+#article-reply .btn{cursor:pointer; display:inline-block; border:1px solid #e0e0e0; padding:5px 15px; border-radius:2px; background-color:#f6f6f6; 	}
+#article-reply .btn span{display:inline-block; border:0px solid #111;vertical-align: middle;}
+#article-reply .input-box{border:1px solid #cecece; background-color:#fff}
+
+#article-reply-header{padding-bottom:15px}
+#article-reply-header h1{margin-top:7px}
+#article-reply-header h2{margin-top:5px; font-weight:normal;}
+#article-reply-header .by-line li{margin-top:7px; display:inline-block; color:#999}
+#article-reply-header .by-line li.division{padding:0 5px}
+#article-reply-header .section-nav li{margin-top:7px; display:inline-block; color:#333}
+#article-reply-header .section-nav li.division{padding:0 5px}
+
+#article-reply .reply-msg{text-align:center}
+#article-reply .reply-msg.info{}
+#article-reply .reply-msg.more{ margin-top:7px}
+
+#article-reply .reply-header{display:block; padding-bottom:5px;}
+#article-reply .reply-header.msg{text-align:center;color:#333; padding:10px; margin:10px 0;/* font-weight:bold; */}
+
+#article-reply .reply-header.list{border-top:2px solid #444; /*border-bottom:1px solid #bbb;margin-top:15px; */ overflow:hidden; padding:12px 0; color:#333; font-weight:bold;}
+#article-reply .reply-header.list strong{color:#e00000}
+#article-reply .reply-header.list .title{float:left;}
+#article-reply .reply-header.list .order{float:right;}
+#article-reply .reply-header.list .order a{ cursor:pointer; font-weight:normal; margin-left:7px; color:#666}
+#article-reply .reply-header.list .order a.active{color:#111; font-weight:bold;}
+
+#article-reply .reply-write-header{overflow:hidden}
+#article-reply .reply-write-header .placeholder-name{float:left; margin-right:10px}
+#article-reply .reply-write-header .placeholder-password{float:left}
+
+#article-reply .reply-write-container .kcaptcha_image{width:38px; height:17px; display:none}
+#article-reply .reply-write-container{border:1px solid #e6e6e6; background-color:#fdfdfd; border-radius:3px; padding:15px; display:block; margin:10px}
+#article-reply .reply-write-container .writekey-container{float:right;}
+#article-reply .reply-write-container .input-placeholder{background:url('/image2006/reply_placeholder.gif') no-repeat 0 0;}
+#article-reply .reply-write-container .input-placeholder.placeholder-name{background-position:0 -2px}
+#article-reply .reply-write-container .input-placeholder.placeholder-password{background-position:0 -29px}
+#article-reply .reply-write-container .input-placeholder.placeholder-writekey{background-position:0 -56px}
+
+#article-reply .input-box-group{position:relative; border:1px solid #e0e0e0;}
+#article-reply .input-box-group input{border:0 !important}
+
+
+#article-reply .reply-write-header input{padding:5px; color:#444; border:1px solid #e0e0e0; font-size:11px; font-family:dotum; letter-spacing:-1px;}
+#article-reply .reply-write-body{border:1px solid #e0e0e0; background-color:#fff; padding:10px; margin-top:10px;}
+#article-reply .reply-content-container{background:url('/image2006/reply_people.png') no-repeat 0 0; padding-left:55px; min-height:40px;}
+
+#article-reply .reply-write-body textarea{width:100%; border:0; resize:none; font-size:1.1em; line-height:1.5em; color:#636466; overflow:hidden; word-break:break-all; height:40px;}
+#article-reply .reply-write-body textarea:active, .reply-write-body textarea:focus{border:0; outline:0}
+#article-reply .reply-write-footer{overflow:hidden; border:0px solid #111; position:relative;}
+#article-reply .reply-write-footer .n-check{position:absolute; bottom:0; left:0;color:#666; font-size:.9em}
+#article-reply .reply-write-footer .n-check .cur{color:#e00000; font-weight:bold}
+#article-reply .reply-write-footer .w-button{float:right; cursor:pointer; padding:5px 15px; background-color:#fff; border:1px solid #dedede; font-weight:bold; color:#222; border-radius:2px;	 font-family:'Malgun Gothic'; letter-spacing:-1px;}
+#article-reply .reply-write-footer .w-button i{color:#e00000; }
+
+#article-reply .reply-delete-container{text-align:center;border:1px solid #9e9e9e; margin:0 auto; margin-bottom:10px; width:300px;}
+#article-reply .reply-delete-container .reply-delete-header{background-color:#3c3c3c; color:#fff; font-size:1.1em; padding:10px}
+#article-reply .reply-delete-container .reply-delete-body{padding:15px}
+#article-reply .reply-delete-container .reply-delete-body input{padding:5px; width:80%}
+
+#article-reply .reply-list{margin:10px}
+#article-reply .reply-list li{padding:12px 0;}
+#article-reply .reply-list li p{margin:0; line-height:1.6em;}	
+#article-reply .reply-list.sub{border:0}
+#article-reply .reply-list.sub li{border:0}
+
+#article-reply .reply-list .reply-list-header{}
+#article-reply .reply-list .reply-list-header .name{color:#333132;}
+#article-reply .reply-list .reply-list-header .date{color:#636466;}
+
+#article-reply .text-box{border:1px solid #cbcbcb; border-radius:5px; padding:15px; position:relative; margin-top:10px}
+#article-reply .text-box:hover {background-color:#fdfdfd;}
+#article-reply .text-box .text-arrow{
+position:absolute; top:-7px; left:32px; width:13px; height:8px; border:0px solid #111;
+background:url('/image2006/reply_icon.png') no-repeat left -200px
+}
+
+#article-reply .reply-list-body .delete:before{padding:0 3px}
+#article-reply .reply-list-body .declare{margin-left:7px}
+#article-reply .reply-list-body .declare,#article-reply .reply-list-body .delete {font-size:11px; font-family:dotum; letter-spacing:-1px;}
+#article-reply .reply-list-body .delete, #article-reply .reply-list-body .declare{color:#999; font-size:.9em;display:inline-block;cursor:pointer;}
+#article-reply .reply-list-body .division{color:#cfcfcf; font-family:dotum;font-size:.8em;}
+
+#article-reply .reply-list .reply-list-header .report{color:#999; font-size:.9em}
+#article-reply .reply-list .reply-list-body{color:#636466; margin-top:5px; margin-bottom:7px;  background:url('/image2006/reply_people.png') no-repeat 0 0; padding-left:55px; min-height:40px;}
+#article-reply .reply-list .reply-list-footer{overflow:hidden; position:relative;}
+#article-reply .reply-list .reply-list-footer .rreply{float:left; }
+#article-reply .reply-list .reply-list-footer .vote{float:right}
+#article-reply .reply-list .reply-list-footer .rreply a{cursor:pointer; display:inline-block; color:#015a84; letter-spacing:-1px;}	
+#article-reply .reply-list .reply-list-footer .vote .btn.recommend,#article-reply .reply-list .reply-list-footer .vote .btn.dissent {color:#6d6e71; font-size:11px; height:20px; padding:0 6px; line-height:18px;}
+#article-reply .reply-list .reply-list-footer .vote .btn.recommend i,#article-reply .reply-list .reply-list-footer .vote .btn.dissent i{color:#878787;}
+#article-reply .reply-list .reply-list-footer .vote .btn.recommend:hover i {color:#e00000;}
+#article-reply .reply-list .reply-list-footer .vote .btn.dissent:hover i {color:#444;}
+#article-reply .reply-list .reply-list-footer .vote .btn.recommend .count{color:#e00000;}
+#article-reply .reply-list .reply-list-footer .vote .btn.dissent .count{color:#414042;}
+#article-reply .reply-list .reply-list-rr{margin-top:15px; padding-left:20px; display:none;}
+
+#article-reply .reply-list li.admin-row .reply-list-header .name, 
+#article-reply .reply-list li.admin-row .reply-list-body {color:#004483; font-weight:bold}
+#article-reply .reply-list li.admin-row .reply-list-body .declare,
+#article-reply .reply-list li.admin-row .reply-list-body .division,
+#article-reply .reply-list li.admin-row .reply-list-body .delete{font-weight:normal}

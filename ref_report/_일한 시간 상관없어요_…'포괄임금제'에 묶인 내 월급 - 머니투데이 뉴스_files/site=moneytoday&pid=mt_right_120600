@@ -1,0 +1,3 @@
+document.write('<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">');
+var _n=0;
+document.write('<scr'+'ipt async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></scr'+'ipt><in'+'s class="adsbygoogle" style="display:inline-block;width:120px;height:600px" data-ad-client="ca-pub-8980634160113826" data-ad-slot="8459134995"></i'+'ns><scr'+'ipt>(adsbygoogle = window.adsbygoogle || []).push({});</scr'+'ipt>');

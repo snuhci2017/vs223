@@ -1,0 +1,89 @@
+@charset 'utf-8';
+.quiz-area { position:relative; margin:0 0 60px;}
+.quiz-area .quiz-q { display:table; vertical-align:top; text-align:left; width:100%; max-width:640px; }
+.quiz-area .quiz-q .quiz-q-title strong { display:table-cell; font-size:36px; vertical-align:top;  padding-right:15px;line-height:1em}
+.quiz-area .quiz-q .quiz-q-title span { display:table-cell;  font-size:20px; line-height:1.4em;font-weight:bold; vertical-align:top;  padding-top:3px;}
+.quiz-area .quiz-q .quiz-q-title span img { vertical-align:middle; width:37px; height:19px;}
+.quiz-area .quiz-q .quiz-q-text { margin:20px 0 10px;  font-size:17px; line-height:1.5em;}
+.quiz-area .quiz-q-img { text-align:center; max-width:640px;}
+.quiz-area .quiz-q-img  img { width:100%;}
+.quiz-area .quiz-a { margin-top:20px;text-align:left;}
+.quiz-area .quiz-a li { margin-top:10px; }
+.quiz-area .quiz-a li .option { display:inline-block; position:relative; padding:0 12px; border-radius: 3px; background-color:#fff; color:#333; border:1px solid #d7d7d7; font-size:17px; font-weight:bold; cursor:pointer; }
+.quiz-area .quiz-a li .option img { max-width:100%; padding-top:10px; }
+.quiz-area .quiz-a li .option span { display:block; padding:12px 0 10px; }
+.quiz-area .quiz-a li.wrong .option { background-color:#eee; color:#b7b7b7}
+.quiz-area .quiz-a li.correct .option:hover, 
+.quiz-area .quiz-a li.correct .option { background-color:#57c7c8; color:#fff;}
+.quiz-area .quiz-a li.check .option:hover, 
+.quiz-area .quiz-a li.check .option { background-color:#eee;}
+
+.quiz-area .quiz-a li.correct.ok .option { background-color:#fff; color:#000;}
+.quiz-area .quiz-a li.wrong .option span {  background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/quiz-icon-x2.png) no-repeat right 50%; background-size:25px 25px; padding-right:35px;  height:25px;
+background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/quiz-icon-x.png) no-repeat right 50% \9;}
+.quiz-area .quiz-a li.correct .option span { background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/quiz-icon-o2.png) no-repeat right 50%; background-size:25px 25px; padding-right:35px; height:25px;
+ background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/quiz-icon-o.png) no-repeat right 50% \9; }
+.quiz-area .quiz-a li.check .option span { background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/quiz-icon-check2.png) no-repeat right 50%; background-size:22px 22px; padding-right:35px; height:25px;
+ background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/quiz-icon-check.png) no-repeat right 50% \9; }
+.quiz-area .quiz-a li .option:hover { background-color:#eeeeee;}
+.quiz-area .quiz-a.img-ex { position:relative; overflow:hidden;}
+.quiz-area .quiz-a.img-ex li { float:left; width:310px; margin:5px 10px 5px 0;}
+.quiz-area .quiz-a.img-ex li.odd { clear:both; }
+.quiz-area .quiz-a.img-ex li img { width:290px;}
+.quiz-area .quiz-a.img-ex li .option {padding:0 10px 3px; width:290px;}
+.quiz-area .quiz-a.img-ex li .option span {  padding: 10px 0 10px 0;}
+
+.quiz-area .quiz-box { border-top:1px dotted #a7a7a7; border-bottom:2px solid #e6e6e6; background-color:#fafafa; padding:20px; margin-top:20px;}
+.quiz-area .quiz-box .quiz-a-title { font-size:30px; text-align:center; margin-bottom:20px; font-weight:bold;}
+.quiz-area .quiz-box .quiz-a-text {text-align:left; font-size:17px; line-height:1.5em;}
+.quiz-area .quiz-box .quiz-a-text img { width:100%;}
+.quiz-area .quiz-box .quiz-a-text .quiz-a-img  { max-width:580px; margin-top:10px;}
+
+.quiz-box2 { border:6px solid #e6e6e6;background-color:#fafafa; padding:20px;}
+.quiz-box2 .quiz-a-title { font-size:30px; text-align:center; margin-bottom:20px; font-weight:bold; line-height:1.5em;}
+.quiz-box2 .quiz-a-title strong { color:#e91f13}
+.quiz-box2 .quiz-a-score { font-size:20px; text-align:center; margin-bottom:5px; font-weight:bold; line-height:1.7em;}
+.quiz-box2 .quiz-a-score strong { color:#e91f13}
+.quiz-box2 .quiz-a-text {text-align:left; font-size:17px; line-height:1.5em;}
+.quiz-box2 .quiz-a-img  { max-width:580px;  margin: 0 auto; margin-bottom:10px; text-align:center}
+.quiz-box2 .quiz-a-img img { width:100%;}
+
+.quiz-box3 { border:6px solid #e6e6e6;background-color:#fafafa; padding:20px;}
+.quiz-box3 .quiz-q-title {font-size:15px; text-align:center; margin-bottom:20px; font-weight:bold; line-height:1.3em; padding: 5px 0;background-color:#e6e6e6; }
+.quiz-box3 .quiz-a-title { font-size:20px; text-align:center; margin-bottom:20px; font-weight:bold; line-height:1.5em;}
+.quiz-box3 .quiz-a-title strong { color:#e91f13}
+.quiz-box3 .quiz-a-score { font-size:18px; text-align:center; margin-bottom:5px; font-weight:bold; line-height:1.7em;}
+.quiz-box3 .quiz-a-score strong { color:#e91f13}
+.quiz-box3 .quiz-a-text {text-align:left; font-size:17px; line-height:1.5em;}
+.quiz-box3 .quiz-a-img  { max-width:580px;  margin: 0 auto; margin-bottom:10px; text-align:center}
+.quiz-box3 .quiz-a-img img { width:100%;}
+
+.quiz-btn-total { position:relative; display:block;  margin: 0 auto; margin-bottom:30px; text-align:center;/* padding: 20px 0 0;  border-top:1px solid #e4e4e4; */}
+.quiz-btn { display:inline-block; position:relative; border-radius: 3px; background-color:#f35213; color:#fff; border:1px solid #d7d7d7; font-size:17px; font-weight:bold; cursor:pointer; }
+.quiz-btn span { display:block; height:25px;padding:14px 35px 8px; line-height:1.2em; }
+.quiz-btn:hover {background-color:#da450a; color:#fff;}
+
+.quiz-sns { position:relative; display:block;  margin: 0 auto; margin-top:20px; text-align:center;}
+.quiz-btn-sns { display:inline-block; position:relative; border-radius: 3px; background-color:#3a5695; color:#fff; border:1px solid #d7d7d7; font-size:17px; font-weight:bold; cursor:pointer; }
+.quiz-btn-sns span { display:block; height:25px;padding:14px 35px 8px; line-height:1.2em; }
+.quiz-btn-sns:hover {background-color:#112a62; color:#fff;}
+
+.quiz-hani { position:relative; display:block;  margin: 0 auto; margin-top:20px; text-align:center;}
+.quiz-btn-hani { display:inline-block; position:relative; border-radius: 3px; background-color:#04b398; color:#fff; border:1px solid #d7d7d7; font-size:17px; font-weight:bold; cursor:pointer; }
+.quiz-btn-hani span { display:block; height:25px;padding:14px 35px 8px; line-height:1.2em; }
+.quiz-btn-hani:hover {background-color:#058773; color:#fff;}
+
+.hani_quiz_chart_pie .name { text-align:center; font-size:14px; color:#000; }
+.hani_quiz_chart_pie .count { text-align:center; font-size:14px; color:#666666 }
+.hani_quiz_chart_pie .percent { text-align:center; font-size:18px; color:#000;}
+.hani_quiz_chart_bar .name { text-align:center; font-size:14px; color:#000;}
+.hani_quiz_chart_bar .count { text-align:center; font-size:14px; color:#333 }
+.hani_quiz_chart_bar .percent { text-align:center; font-size:18px; color:#000;}
+
+.hani_quiz_chart_pie_legend .name { font-size:14px; color:#000; }
+.hani_quiz_chart_pie_legend .count { font-size:14px; color:#666666; display:inline; }
+.hani_quiz_chart_pie_legend .percent { font-size:18px; color:#000; display:inline; margin-right:5px;}
+
+.hani_quiz_chart_pie_legend2 .name { font-size:12px; color:#000; }
+.hani_quiz_chart_pie_legend2 .count { font-size:12px; color:#666666; display:inline; }
+.hani_quiz_chart_pie_legend2 .percent { font-size:14px; color:#000; display:inline; margin-right:5px;}

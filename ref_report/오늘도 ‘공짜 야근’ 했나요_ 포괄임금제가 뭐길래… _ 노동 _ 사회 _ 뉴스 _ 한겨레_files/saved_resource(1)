@@ -1,0 +1,14 @@
+/**/ window.haniSnsCollector.getFacebook({
+   "share": {
+      "comment_count": 0,
+      "share_count": 1346
+   },
+   "og_object": {
+      "id": "1306320359460996",
+      "description": "\uc5f0\ubd09\uacc4\uc57d \ub54c \u2018\uace0\uc815 \uc5f0\uc7a5\uc218\ub2f9\u2019 \ud3ec\ud568\r\n\uc7a5\uc2dc\uac04 \ucd08\uacfc\ub178\ub3d9 \ud574\ub3c4 \ub354 \ubabb \ubc1b\uc544\r\n\u201c\ub178\ub3d9\uccad \uc9c4\uc815\ub3c4 \uc2e0\uc6d0 \ubc1d\ud600\uc9c8\uae4c \ubabb\ud574\u201d\r\n\uc801\ubc1c \uc804\uc5d4 \uc784\uae08\uccb4\ubd88 \ub4dc\ub7ec\ub098\uc9c0\ub3c4 \uc54a\uc544\r\n\ub178\ub3d9\uacc4 \uac1c\uc120 \uc694\uad6c\u2026\uad6d\ud68c \uae08\uc9c0\ubc95 \ubc1c\uc758",
+      "title": "\uc624\ub298\ub3c4 \u2018\uacf5\uc9dc \uc57c\uadfc\u2019 \ud588\ub098\uc694? \ud3ec\uad04\uc784\uae08\uc81c\uac00 \ubb50\uae38\ub798\u2026",
+      "type": "article",
+      "updated_time": "2017-05-21T03:01:29+0000"
+   },
+   "id": "http://www.hani.co.kr/arti/society/labor/788532.html"
+});

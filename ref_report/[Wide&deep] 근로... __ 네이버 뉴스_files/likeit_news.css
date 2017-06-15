@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* 뉴스 */
+.u_likeit.photo .u_likeit_button {
+	padding: 0 9px 0 4px;
+	border: none;
+	background-color: transparent;
+}
+
+.u_likeit.photo .u_likeit_button .u_likeit_icons {
+	top: 4px;
+}
+
+.u_likeit.photo .u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__like:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -92px -46px;
+	width: 23px;
+	height: 23px;
+}
+
+.u_likeit.photo .u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__warm:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -50px -92px;
+	width: 23px;
+	height: 23px;
+}
+
+.u_likeit.photo .u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__sad:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: 0px -92px;
+	width: 23px;
+	height: 23px;
+}
+
+.u_likeit.photo .u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__angry:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -75px -92px;
+	width: 23px;
+	height: 23px;
+}
+
+.u_likeit.photo .u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__want:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -25px -92px;
+	width: 23px;
+	height: 23px;
+}
+
+.u_likeit.photo .u_likeit_button + .u_likeit_layer {
+	top: auto;
+	bottom: 100%;
+	margin: 0 0 7px 6px;
+}
+
+.u_likeit.photo .u_likeit_button + .u_likeit_layer:before {
+	top: 100%;
+	bottom: auto;
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -138px -101px;
+	width: 11px;
+	height: 7px;
+}
+
+.u_likeit.photo .u_likeit_button + .u_likeit_layer .u_likeit_list_button.on .u_likeit_list_name, .u_likeit.photo .u_likeit_button + .u_likeit_layer .u_likeit_list_button.on .u_likeit_list_count {
+	color: #5279de;
+}
+
+.u_likeit.photo .u_likeit_button.on .u_likeit_text {
+	color: #5279de;
+}
+
+.u_likeit.photo .u_likeit_text {
+	top: -2px;
+	margin-left: 1px;
+	font-size: 15px;
+	letter-spacing: -0.7px;
+	color: #fff;
+}
+
+.u_likeit.photo .u_likeit_text.num {
+	top: -2px;
+	font-size: 17px;
+}
+
+.u_likeit_button {
+	padding: 0 9px 0 8px;
+	height: 31px;
+	font-weight: 700;
+	line-height: 31px;
+	border: 1px solid #ebebeb;
+	background-color: #fff;
+	color: #222;
+}
+
+.u_likeit_button .u_likeit_icons {
+	position: relative;
+	top: 5px;
+	margin-right: 2px;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon {
+	display: inline-block;
+	position: relative;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon:before {
+	display: block;
+	content: '';
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__like:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -138px -46px;
+	width: 21px;
+	height: 21px;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__warm:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -138px 0px;
+	width: 21px;
+	height: 21px;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__sad:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -138px -23px;
+	width: 21px;
+	height: 21px;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__angry:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -138px -69px;
+	width: 21px;
+	height: 21px;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon.__reaction__want:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -100px -92px;
+	width: 21px;
+	height: 21px;
+}
+
+.u_likeit_button .u_likeit_icons .u_likeit_icon ~ .u_likeit_icon {
+	margin-left: -7px;
+}
+
+.u_likeit_button + .u_likeit_layer {
+	width: auto;
+	margin: 10px 0 0 0;
+	padding: 0 11px;
+	border: solid 1px #d6d6d6;
+}
+
+.u_likeit_button + .u_likeit_layer:before {
+	display: inline-block;
+	position: absolute;
+	bottom: 100%;
+	left: 13px;
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -138px -92px;
+	width: 11px;
+	height: 7px;
+	content: '';
+}
+
+.u_likeit_button + .u_likeit_layer .u_likeit_list {
+	display: inline-block;
+}
+
+.u_likeit_button + .u_likeit_layer .u_likeit_list_button {
+	width: 61px;
+}
+
+.u_likeit_button.on .u_likeit_text {
+	top: 0;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -0.4px;
+	color: #3f63bf;
+}
+
+.u_likeit_text {
+	position: relative;
+	top: -1px;
+	font-size: 13px;
+	font-weight: 400;
+	color: #616161;
+}
+
+.u_likeit_text.num {
+	top: 0;
+	font-size: 15px;
+	letter-spacing: -0.4px;
+}
+
+.u_likeit_layer {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	padding: 0;
+	background-color: #fff;
+}
+
+.u_likeit_list {
+	display: table-cell;
+}
+
+.u_likeit_list.good .u_likeit_list_button:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -46px -46px;
+	width: 44px;
+	height: 44px;
+}
+
+.u_likeit_list.warm .u_likeit_list_button:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: 0px 0px;
+	width: 44px;
+	height: 44px;
+}
+
+.u_likeit_list.sad .u_likeit_list_button:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: 0px -46px;
+	width: 44px;
+	height: 44px;
+}
+
+.u_likeit_list.angry .u_likeit_list_button:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -92px 0px;
+	width: 44px;
+	height: 44px;
+}
+
+.u_likeit_list.want .u_likeit_list_button:before {
+	background-image: url(http://static.news.naver.net/image/news/m/2017/04/05/sp_m_likeit_news.png);
+	background-size: 159px 115px;
+	background-position: -46px 0px;
+	width: 44px;
+	height: 44px;
+}
+
+.u_likeit_list_button {
+	padding-top: 61px;
+	height: 47px;
+}
+
+.u_likeit_list_button:before {
+	top: 14px;
+}
+
+.u_likeit_list_button.on .u_likeit_list_name {
+	color: #3f63bf;
+}
+
+.u_likeit_list_button.on .u_likeit_list_count {
+	font-weight: 500;
+	color: #3f63bf;
+}
+
+.u_likeit_list_name {
+	overflow: visible;
+	margin: 0 -7px 3px;
+	font-size: 11px;
+	font-weight: 500;
+	color: #9f9f9f;
+	line-height: 14px;
+	letter-spacing: -0.7px;
+}
+
+.u_likeit_list_count {
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: -0.4px;
+	color: #000;
+	line-height: 14px;
+}
+
+@media screen and (max-width: 320px) {
+	.u_likeit_button + .u_likeit_layer {
+		padding: 0 13px 0 14px;
+	}
+	.u_likeit_button + .u_likeit_layer .u_likeit_list_button {
+		width: 54px;
+	}
+}
+
+div.view_menu ul {
+	overflow: visible;
+	height: 45px;
+}
+
+@media only screen and (min-width: 641px) {
+	div.view_menu ul {
+		height: 48px;
+	}
+}
+
+.view_menu ul li.view_btn_lk a.u_likeit_button {
+	height: 31px;
+	font-size: 0;
+}
+
+.view_menu ul li.u_likeit_list {
+	width: auto;
+}
+
+.view_menu ul li.u_likeit_list a.u_likeit_list_button {
+	height: 47px;
+}
+
+.view_menu ul.u_likeit_layer {
+	height: auto;
+}
+
+/*# sourceMappingURL=likeit_news.css.map */

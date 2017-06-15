@@ -1,0 +1,1508 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+/* 많이 본 뉴스*/
+.container .rightCon .bestNews{
+	border-top: 1px solid #959595;
+}
+.container .rightCon .bestNews > ul{
+	padding: 12px 0;
+}
+.container .rightCon .bestNews > ul li{
+	overflow:hidden;
+	padding: 6px 0;
+}
+.container .rightCon .bestNews > ul li p{
+	float:left;
+}
+.container .rightCon .bestNews > ul li p a{
+	font-size:14px;
+}
+.container .rightCon .bestNews > ul li p:nth-child(1){
+	width: 32px;
+	text-align: left;
+	/* padding:5px 0 0; */
+}
+.container .rightCon .bestNews > ul li p:nth-child(2){
+	width:168px;
+	height:46px;
+	line-height:21px;
+	padding:0 5px 0 0;
+}
+.container .rightCon .bestNews > ul li p:nth-child(3){
+	width:90px; height:58px;
+	overflow:hidden;
+}
+.container .rightCon .bestNews > ul li p:nth-child(3) img{
+	border:1px solid #c1c1c3;
+}
+.container .rightCon .bestNews > ul li p img{display:inline;}
+
+/* page Number */
+.container .rightCon .pageNumber{
+	/* background: #f5f5f5; */
+	border-top: 1px solid #eee;
+	margin:0 0 0 0;
+}
+.container .rightCon .pageNumber ul{
+	overflow:hidden;
+	width: 100%;
+	text-align: center;
+	padding: 8px 0;
+}
+.container .rightCon .pageNumber ul li{
+	padding: 0 2px;
+	display: inline-block;
+	cursor:pointer;
+}
+.container .rightCon .notice{
+	border-top: 1px solid #959595;
+}
+.container .rightCon .notice ul{
+	padding: 15px 0 20px;
+}
+.container .rightCon .notice ul li{
+	background: url("https://image.hankookilbo.com/n/bullet/blt_type7.gif") no-repeat 6px 12px;
+	padding: 6px 16px;
+}
+.container .rightCon .notice ul li a{
+	font-size:14px;
+}
+
+.mt30{
+	margin-top:30px;
+}
+
+/* H3 Type 타이틀 부분 */
+
+.container .h4Tit{
+	overflow:hidden;
+	border-bottom:3px solid #cccccc;
+	padding: 12px;
+	height:51px;
+	position: relative;
+}
+.container .h4Tit.main{border-bottom:3px solid #77c043;}
+.container .h4Tit.main2:hover{border-bottom:3px solid #77c043;}
+.container .h4Tit h4{
+	float:left;
+	width:100%;
+	font-size: 20px;
+	line-height: 22px;
+	/* letter-spacing:-1px; */
+	font-weight:600;
+	/* cursor: pointer; */
+}
+.container .h4Tit p{
+	position: absolute;
+	top:16px;
+	right:20px;
+	min-width:60px;
+	/*
+	float:right;
+	padding: 4px 0 0;
+	*/
+}
+.container .h4Tit p a{
+	display:block;
+	font-size:14px;
+	color:#959595;
+	background:url("https://image.hankookilbo.com/n/icon/ico_arrGreenR.png") no-repeat right 0px;
+}
+.container .h4Tit p a:hover{
+	background-position:right -23px;
+}
+.container .h4Tit img{
+	display:inline-block;
+	vertical-align: top;
+	margin: -4px 5px 0 0;
+	width: 32px;
+}
+
+.container .h4Tit2{
+	overflow:hidden;
+	padding:12px 10px 6px;
+}
+.container .h4Tit2 h4{
+	width:100%;
+	float:left;
+	font-size:24px;
+}
+.container .h4Tit2 h4 strong{
+	font-size:24px;
+	font-weight:600;
+}
+.container .h4Tit2 h4 img{
+	vertical-align:middle;
+	display:inline;
+	margin:-5px 20px 0 0;
+}
+.container .h4Tit2 p{
+	float:right;
+	padding:12px 0 0;
+}
+
+/* H3 Type 타이틀 부분 */
+.container .h4Tit_sub{
+	position: relative;
+	overflow:hidden;
+	border-top: 1px solid #eee;
+	/* border-left: 1px solid #eee; */
+	margin: 14px 7px 0;
+	max-width: 894px;
+	padding: 7px 12px;
+	/* height: 32px; */
+}
+.container .h4Tit_sub.type2{
+	margin: 7px 7px 0px;
+	padding: 7px 12px;
+	/* background:#fff; */
+}
+.container .h4Tit_sub h4{
+	width:100%;
+	float:left;
+	font-size: 20px;
+	letter-spacing:-1px;
+	font-weight:600;
+	color: #353535;
+}
+.container .h4Tit_sub p{
+	position:absolute;
+	top:16px;
+	right:20px;
+	min-width:60px;
+	/*float:right;
+	padding:6px 0 0;*/
+}
+.container .h4Tit_sub p a{
+	display:block;
+	background:url("https://image.hankookilbo.com/n/icon/ico_arrGreenR.png") no-repeat right 0;
+}
+.container .h4Tit_sub p a:hover{
+	background-position:right -23px;
+}
+.container .h4Tit_sub img{display:inline-block; vertical-align:middle; margin:-2px 5px 0 0;}
+
+
+
+/* 브런치 N스토리 Tit_TYPE  */
+.container .H3Type{
+	padding: 0 10px 10px 0;
+	margin: 18px 0 0;
+}
+.container .H3Type h3{
+	font-weight:600;
+	font-size:18px;
+	color: #555555;
+}
+.container .H3Type a{
+	display:block;
+	background:url("https://image.hankookilbo.com/n/icon/ico_arrGreenR.png") no-repeat right 4px;
+}
+.container .H3Type a:hover h3{
+	text-decoration:none !important;
+}
+.container .H3Type a:hover{
+	background-position:right -19px;
+}
+.container .H3Type.bgNone a{
+	background:none;
+}
+
+/* 페이스북 그룹 */
+.container div.snsGroup{
+	/* margin-top:2px; */
+	border:1px solid #dddddd;
+}
+.container div.snsGroup ul{
+	height:50px;
+	background:#fff;
+}
+.container div.snsGroup:after{content:""; display:block; clear:both;}
+.container div.snsGroup ul li{
+	position:relative;
+	float:left;
+	width:59px;
+	text-align:center;
+	background:url("https://image.hankookilbo.com/n/bullet/blt_type3.gif") no-repeat left 1px;
+	margin:12px 0 0;
+}
+.container div.snsGroup ul li:first-child{
+	background:none;
+}
+.container div.snsGroup ul li a{
+	display:block;
+	width:59px; height:32px;
+	background:url("https://image.hankookilbo.com/n/icon/ico_sns1.png") no-repeat center -3px;
+	text-indent:-9999px;
+}
+.container div.snsGroup ul li.on a{
+	background-position:center -35px;
+}
+.container div.snsGroup ul li:nth-child(2) a{
+	background-image:url("https://image.hankookilbo.com/n/icon/ico_sns2.png");
+}
+.container div.snsGroup ul li:nth-child(3) a{
+	background-image:url("https://image.hankookilbo.com/n/icon/ico_sns3.png");
+}
+.container div.snsGroup ul li:nth-child(4) a{
+	background-image:url("https://image.hankookilbo.com/n/icon/ico_sns4.png");
+}
+.container div.snsGroup ul li:nth-child(5) a{
+	background-image:url("https://image.hankookilbo.com/n/icon/ico_sns5.png");
+}
+.container div.snsGroup ul li .imgArrow{
+	display:none;
+	position:absolute; left:50%; bottom:-7px; z-index:10;
+	width:12px; height:6px;
+	margin:0 0 0 -6px;
+}
+
+.container div.snsGroup .snsView{
+	display:none;
+	position:absolute; left:0; top:30px; z-index:10;
+	background:#165333;
+	border:none;
+	border-radius:10px;
+	color:#fff;
+	padding:10px;
+}
+.container .moreSite{
+	display:none;
+	overflow:hidden;
+	background:#eeeeee;
+	border-top:1px solid #dddddd;
+	border-bottom:3px solid #555555;
+	height: 48px;
+	padding: 12px 8px 0 8px;
+}
+.container div.moreSite:nth-child(2){
+	border-bottom: 3px solid rgba(55,94,147,1.00);
+}
+.container div.moreSite:nth-child(3){
+	border-bottom: 3px solid rgba(80,192,232,1.00);
+}
+.container div.moreSite:nth-child(4){
+	border-bottom: 3px solid rgba(255,131,57,1.00);
+}
+.container div.moreSite:nth-child(5){
+	border-bottom: 3px solid rgba(39,124,86,1.00);
+}
+.container div.moreSite:nth-child(6){
+	border-bottom: 3px solid rgba(0,88,4,1.00);
+}
+.container .moreSite > p:first-child{
+	width:115px;
+	float:left;
+	padding: 2px 8px 0 0;
+	letter-spacing:-1px;
+	animation:FadeEffect 1s ease;
+	-webkit-animation: FadeEffect 0.5s ease;
+}
+
+.container div.moreSite:nth-child(3) > p:first-child{
+	width:100px;
+}
+
+.container div.moreSite:nth-child(4) > p:first-child{
+	width:170px;
+}
+
+.container div.moreSite:nth-child(5) > p:first-child{
+	width:200px;
+}
+
+.container div.moreSite:nth-child(6) > p:first-child{
+	width:180px;
+}
+
+.container .moreSite > p:last-child{
+	float:left;
+}
+.container .moreSite > p:last-child span{
+	float:left;
+	background:url("https://image.hankookilbo.com/n/bullet/blt_type3.gif") no-repeat left 1px;
+	padding:0 8px;
+}
+.container .moreSite > p:last-child span:first-child{
+	background:none;
+	padding-left:3px;
+}
+
+/* 문제이슈 */
+.container .centerCon .issue{
+	margin:0 0 18px;
+}
+.container .centerCon .issue:after{
+	content:""; display:block; clear:both;
+}
+.container .centerCon .issue img{
+	display:inline;
+	width: 204px;
+}
+.container .centerCon .issue h4 img{
+	display:inline;
+	width: 32px;
+}
+.container .centerCon .issue .card{
+	width: 552px;
+	border: 1px solid #ddd;
+	border-radius:3px;
+	background:#fff;
+	float:left;
+	margin: 7px;
+	-webkit-box-shadow: 0 0 7px 0 #eee;
+   -moz-box-shadow: 0 0 7px 0 #eee;
+        box-shadow: 0 0 7px 0 #eee;
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=7px, OffY=0, Color='#eee', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate;
+}
+.container .centerCon .issue .problem{
+	width: 328px;
+	border: 1px solid #ddd;
+	border-radius:3px;
+	background:#fff;
+	float:left;
+	margin: 7px;
+	-webkit-box-shadow: 0 0 7px 0 #eee;
+   -moz-box-shadow: 0 0 7px 0 #eee;
+        box-shadow: 0 0 7px 0 #eee;
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=7px, OffY=0, Color='#eee', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate;
+}
+.container .centerCon .issue .issueCon{
+	overflow:hidden;
+}
+.container .centerCon .issue .issueCon .center{
+	float:left;
+	width: 326px;
+}
+.container .centerCon .issue .issueCon .center p:nth-child(1){
+	width: 326px;
+	height: 208px;
+	overflow: hidden;
+	display: block;
+	background-color: #f5f5f5;
+}
+.container .centerCon .issue .issueCon .center p:nth-child(1) img{
+	width: 326px;
+}
+.container .centerCon .issue .issueCon .center p:nth-child(2){
+	padding: 16px 12px;
+	height: 46px;
+	/* width:295px; */
+}
+.container .centerCon .issue .issueCon .center p:nth-child(2) a{
+	font-size: 18px;
+	letter-spacing:-1px;
+	font-weight:600;
+}
+.container .centerCon .issue .issueCon .right{
+	float:left;
+	width: 224px;
+	/* height: 292px; */
+	padding: 10px 10px 0;
+	background:#f5f5f5;
+}
+.container .centerCon .issue .issueCon .right div{
+	position: relative;
+	height: 128px;
+	margin: 0 0 10px;
+}
+.container .centerCon .issue .issueCon .right div p:nth-child(1){
+	/* text-align:center; */
+	height: 128px;
+	/* display: inline-block; */
+	overflow: hidden;
+}
+.container .centerCon .issue .issueCon .right div p:nth-child(2){
+	padding: 8px 4px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: rgba(250,250,250,0.9);
+}
+
+/* 카드뉴스 */
+
+.container .centerCon .cardNews{
+	padding: 7px 0;
+}
+.container .centerCon .cardNews ul{
+
+}
+.container .centerCon .cardNews ul:after{content:""; display:block; clear:both;}
+.container .centerCon .cardNews ul li {
+	position: relative;
+	float: left;
+	width: 212px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #fff;
+	margin: 6.5px;
+-webkit-box-shadow: 0 0 6.5px 0 #eee;
+   -moz-box-shadow: 0 0 6.5px 0 #eee;
+        box-shadow: 0 0 6.5px 0 #eee;
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=5px, OffY=0, Color='#eee', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate; /* Required by IE 9 */}
+
+.container .centerCon .cardNews ul li:hover {
+	background: rgba(220, 220, 220, 0.1);
+-webkit-box-shadow: 0 0 6.5px 0 #ccc;
+   -moz-box-shadow: 0 0 6.5px 0 #ccc;
+        box-shadow: 0 0 6.5px 0 #ccc;
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=5px, OffY=0, Color='#ccc', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate; /* Required by IE 9 */
+}
+
+.container .centerCon .cardNews ul li:nth-child(4),
+.container .centerCon .cardNews ul li:nth-child(8),
+.container .centerCon .cardNews ul li:nth-child(12),
+.container .centerCon .cardNews ul li:nth-child(16){
+	/* margin-right:0; */
+}
+.container .centerCon .cardNews ul li p:nth-child(1) {
+	height: 128px;
+	overflow: hidden;
+	border-bottom: 3px solid #cccccc;
+	background-color: #f5f5f5;
+	position: relative;
+}
+
+.container .centerCon .cardNews ul li .overBg {
+	background: rgba(20, 50, 45, 0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	text-indent: -9999px;
+}
+
+
+.container .centerCon .cardNews ul li:hover .overBg{
+	background:rgba(20,50,45,0.1);
+}
+
+.container .centerCon .cardNews ul li:hover p:nth-child(1){
+	border-bottom: 3px solid #77c043;
+}
+
+.container.vertical1 .cardNews ul li:hover p:nth-child(1){border-bottom: 3px solid #227dcb;}
+.container.vertical2 .cardNews ul li:hover p:nth-child(1){border-bottom: 3px solid #14a866;}
+.container.vertical3 .cardNews ul li:hover p:nth-child(1){border-bottom: 3px solid #ac2626;}
+.container.vertical4 .cardNews ul li:hover p:nth-child(1){border-bottom: 3px solid #e0417d;}
+.container.vertical5 .cardNews ul li:hover p:nth-child(1){border-bottom: 3px solid #23adad;}
+
+.container.vertical1 .centerCon .interviewGallery{border-top: 4px solid #227dcb;}
+.container.vertical1 .rightCon .bestMovie{border-top: 3px solid #227dcb;}
+.container.vertical1 .centerCon .issue .card .h4Tit:hover{border-bottom: 3px solid #227dcb;}
+.container.vertical1 .centerCon .issue .problem .h4Tit:hover{border-bottom: 3px solid #227dcb;}
+
+.container.vertical2 .centerCon .interviewGallery{border-top: 4px solid #14a866;}
+.container.vertical2 .rightCon .bestMovie{border-top: 3px solid #14a866;}
+
+.container.vertical3 .centerCon .interviewGallery{border-top: 4px solid #ac2626;}
+.container.vertical3 .content .centerCon .vGallery_List .tit{border-bottom: 3px solid #ac2626;}
+.container.vertical3 .rightCon .bestMovie{border-top: 3px solid #ac2626;}
+
+.container.vertical4 .centerCon .interviewGallery{border-top: 4px solid #e0417d;}
+.container.vertical4 .content .centerCon .vGallery_List .tit{border-bottom: 3px solid #e0417d;}
+.container.vertical4 .centerCon .issue .card .h4Tit:hover{border-bottom: 3px solid #e0417d;}
+.container.vertical4 .centerCon .issue .problem .h4Tit:hover{border-bottom: 3px solid #e0417d;}
+.container.vertical4 .rightCon .bestMovie{border-top: 3px solid #e0417d;}
+
+.container.vertical5 .centerCon .interviewGallery{border-top: 4px solid #23adad;}
+.container.vertical5 .content .centerCon .vGallery_List .tit{border-bottom: 3px solid #23adad;}
+.container.vertical5 .rightCon .bestMovie{border-top: 3px solid #23adad;}
+
+
+.container .centerCon .cardNews ul li p:nth-child(2){
+	line-height:21px;
+	padding: 12px 10px 14px;
+}
+.container .centerCon .cardNews ul li p:nth-child(2) a{
+	font-weight:400;
+}
+.container .centerCon .cardNews.tit ul li h5{
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-weight:600;
+	padding:15px 0 15px 13px;
+	border-bottom:1px solid #cccccc;
+}
+.container .centerCon .cardNews.tit ul li p:nth-child(2){
+    height: 128px;
+    overflow: hidden;
+	padding:0;
+	border-bottom:3px solid #cccccc;
+}
+.container .centerCon .cardNews.tit ul li:hover p:nth-child(2){
+	border-bottom:3px solid #77c043;
+}
+.container.vertical1 .cardNews.tit ul li:hover p:nth-child(2){border-bottom:3px solid #227dcb;}
+.container.vertical2 .cardNews.tit ul li:hover p:nth-child(2){border-bottom:3px solid #14a866;}
+.container.vertical3 .cardNews.tit ul li:hover p:nth-child(2){border-bottom:3px solid #ac2626;}
+.container.vertical4 .cardNews.tit ul li:hover p:nth-child(2){border-bottom:3px solid #e0417d;}
+.container.vertical5 .cardNews.tit ul li:hover p:nth-child(2){border-bottom:3px solid #23adad;}
+
+.container .centerCon .cardNews.tit ul li p:nth-child(3){
+	line-height:21px;
+	padding:14px 5px 12px 10px;
+	min-height:42px;
+}
+.container .centerCon .cardNews ul li p.cardIcon{
+	position:absolute; left:-6px; top:-6px;
+	z-index:500;
+}
+.container .centerCon .cardNews ul li p.cardIcon img{
+	display:inline;
+	margin-right: 4px;
+	vertical-align:top;
+	width: 32px;
+}
+/* 갤러리 */
+
+
+
+
+/* sub Tit Type */
+.container .subTitType{
+	position:relative;
+	overflow:hidden;
+	border: 1px solid #ddd;
+	border-radius: 3px 3px 0 0;
+	background-color: #fff;
+	/* height: 70px; */
+	width: 894px;
+	margin: 7px 7px 0;
+}
+.container .subTitType h4{
+	width:80%;
+	float:left;
+	font-size:24px;
+	color: #151515;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 600;
+	padding: 14px;
+}
+.container .subTitType p{
+	float:left;
+	padding: 8px;
+}
+
+
+
+
+
+
+/* dday 추가 - dw */
+.container .subTitType span.dday{
+	position:absolute;
+	top:12px;
+	right:20px;
+	font-size:24px;
+}
+.container .subTitType span.dday span{
+	color:#4da525;
+}
+
+
+
+
+
+/* sub 상세기사 */
+
+.container .interviewGallery{
+	/* margin:0 0 35px; */
+	overflow:hidden;
+	width: 894px;
+	margin: 7px;
+	border:1px solid #ddd;
+	border-top:4px solid #ddd;
+	background:#fff;
+}
+.container .interviewGallery .bigCon{
+	float:left;
+	border-right: 1px solid #eee;
+	width: 442px;
+	height:360px;
+}
+.container .interviewGallery .bigCon img{
+	width: 442px;
+}
+.container .interviewGallery .Gallerylist{
+	float:left;
+	width: 450px;
+	height:360px;
+}
+.container .interviewGallery .bigCon p:last-child{
+	font-weight:600;
+	font-size: 18px;
+	/* letter-spacing:-0.02em; */
+	padding: 18px 12px;
+}
+.container .interviewGallery .Gallerylist li{
+	float:left;
+	width: 212px;
+	height:174px;
+	padding: 6px 6px 0 6px;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.container .interviewGallery .Gallerylist li img{
+	width: 212px;
+}
+.container .interviewGallery .Gallerylist li:nth-child(2),
+.container .interviewGallery .Gallerylist li:nth-child(4){
+	border-right:none;
+}
+.container .interviewGallery .Gallerylist li:nth-child(3),
+.container .interviewGallery .Gallerylist li:nth-child(4){
+	border-bottom:none;
+}
+.container .interviewGallery .Gallerylist li p:last-child{
+	padding: 10px 5px;
+}
+/* sub 상세기사 */
+.container .centerCon .newsStoryDetail{
+	background: #fafafa;
+	overflow:hidden;
+	/* width: 100%; */
+	margin: 7px;
+	border:1px solid #eeeeee;
+	position:relative;
+}
+.container .centerCon .newsStoryDetail .author{
+	position:absolute;
+	left:0;
+	top:0;
+	width:176px;
+	padding: 16px 14px;
+	/*display: none;*/
+}
+/*사이드 광고 추가*/
+.container .centerCon .newsStoryDetail .sideAdWrap{
+	width:148px;
+	margin-top: 40px;
+	/*padding: 16px 14px;*/
+}
+/*사이드 광고 ends*/
+.container .centerCon .newsStoryDetail .DetailCon{
+	padding: 25px 0 ;
+	/* border-left: 1px solid #f5f5f5; */
+	min-height: 500px;
+	background: #fff;
+	margin-left: 176px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .oneSection{
+	margin: 0 auto;
+	width: 640px;
+	position: relative;
+}
+.container .centerCon .newsStoryDetail .DetailCon .twoSection{
+	/* padding: 0 32px; */
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.container .centerCon .newsStoryDetail .author_Min{
+	display:none;
+}
+.container .centerCon .newsStoryDetail .author {
+}
+.container .centerCon .newsStoryDetail .author dl {
+	border-top:1px solid #eee;
+	clear:both;
+}
+.container .centerCon .newsStoryDetail .author dl.fst {
+	border: none;
+	padding: 4px 0;
+}
+.container .centerCon .newsStoryDetail .author dl dt{
+	padding: 8px 0;
+}
+.container .centerCon .newsStoryDetail .author dl.sub dt{
+	float:left; width:34px;
+}
+.container .centerCon .newsStoryDetail dl dt .img{
+	position:relative;
+}
+.container .centerCon .newsStoryDetail  dl dt .img .photoFrame{
+	position:absolute; left:0; top:0;
+}
+.container .centerCon .newsStoryDetail .author dl dd{
+	font-size:14px;
+	line-height:1.25;
+}
+.container .centerCon .newsStoryDetail .author dl.sub dd{
+	float:left;
+	width:100px;
+	/* height:30px; */
+	padding:8px 0 8px 4px;
+}
+
+.container .centerCon .newsStoryDetail .author dl dd span.name a{
+	font-size:14px;
+	line-height:32px;
+	font-weight:600;
+}
+.container .centerCon .newsStoryDetail .author dl.sub dd span.name a{
+	font-size:13px;
+}
+.container .centerCon .newsStoryDetail .author dl dd span.hkib {
+	font-size:14px;
+	line-height:32px;
+	color:#959595;
+}
+.container .centerCon .newsStoryDetail .author dl.sub dd span.hkib {
+	font-size:13px;
+}
+.container .centerCon .newsStoryDetail .author dl dd span.sume{
+	font-size: 13px;
+	color:#555555;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 400;
+}
+.container .centerCon .newsStoryDetail .author .authorLink{
+	padding:14px 0 7px
+}
+.container .centerCon .newsStoryDetail .author .authorLink a{
+	color:#507967;
+	font-size:13px;
+	line-height:1;
+}
+.container .centerCon .newsStoryDetail .author .authorLink img {
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 0 3px;
+}
+.container .centerCon .newsStoryDetail .author .writeOption{
+	padding:5px 0;
+	border-top: 1px solid #eee;
+	clear:both;
+}
+.writeOption.writeOption2{display:none}
+.container .centerCon .newsStoryDetail .author .writeOption p{
+	color:#959595;
+	font-size:12px;
+	line-height:1.25;
+	padding: 6px 0;
+}
+.container .centerCon .newsStoryDetail .author .author_sns div{
+	padding:2px 0;
+	display: block;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit{
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	min-height: 72px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .titGroup.show{
+	width: 80%;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .titGroup.hide{
+	width:100%;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .titGroup h4{
+	width:100%;
+	float:left;
+	font-size: 32px;
+	line-height:1.25;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 600;
+	letter-spacing: -0.03em;
+	word-spacing: 0.1em;
+	padding: 0 0 10px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit h5{
+	width:100%;
+	font-size:18px;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 600;
+	padding:0 0 17px;
+	display: inline-block;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .buzznow.show{
+	/* padding: 5px 10px; */
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left:1px solid #eee;
+	width: 20%;
+	display:block;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .buzznow.hide{
+	display:none;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .buzznow p{
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .buzznow p img{
+	display:inline-block;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop{
+	overflow:hidden;
+	padding: 6px 0;
+	/* clear: both; */
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop.bdbLine{
+	border-bottom: 1px solid #ccc;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .snsLink li{
+	float:left;
+	/*padding: 1px;*/
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView{
+	float: right;
+	padding:4px;
+	text-indent:-9999px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView a{
+	width:24px; height:24px;
+	display:block;
+	float:left;
+	margin-left:10px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView a:nth-child(1){
+	background:url("https://image.hankookilbo.com/n/icon/ico_print.png") no-repeat left 0;
+
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView a:nth-child(2){
+	background:url("https://image.hankookilbo.com/n/icon/ico_zomUp.png") no-repeat left 0;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView a:nth-child(3){
+	background:url("https://image.hankookilbo.com/n/icon/ico_zomDown.png") no-repeat left 0;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView a:hover{
+	background-position:0 -24px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop img{
+	display: inline-block;
+	float: left;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .copy{
+	float:right;
+	color:#959595;
+	padding:7px 0 0;
+	width: 270px;
+}
+
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .copy span{
+	font-size:14px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryPhoto .photo{
+	width:100%;
+	margin-top:12px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryPhoto .photo img{
+	/* width:100%; */
+}
+
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryPhoto p:last-child{
+	background: #444444;
+	line-height: 1.5;
+	padding: 10px 12px 11px;
+	margin: 0 auto 6px;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 300;
+	font-size: 13px;
+	color: #ccc;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt{
+	padding:15px 0;
+	width: 640px;
+	margin: 0 auto;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt p{
+	line-height: 1.7;
+	margin: 0.7em 0 1.4em;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 300;
+	font-size: 17px;
+	letter-spacing: -0.01em;
+	word-spacing: 0.1em;
+	color: #000000;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt table{
+	border:4px solid #eee;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt table tr{
+	background-color:#fcfcfc;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt table td{
+	padding:10px;
+	border:1px solid #eee;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt p a{
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 400;
+	font-size: 17px;
+	color:#65b535;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt .reporter{
+	font-weight:600;
+	padding:20px 0 ;
+}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt .reporter a{
+	color:#507967;
+}
+
+/*실시간 급상승 기사 */
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory{
+	margin: 20px 0 10px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory .tit{
+	/* border-top:1px solid #bebebe; */
+	font-size: 18px;
+	border-bottom: 3px solid #ddd;
+	font-family:'Noto Sans KR', 'Malgun Gothic', Helvetica, Arial, sans-serif !important;
+	font-weight: 700;
+	padding: 10px 0;
+}
+
+
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory ul,
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory ol{
+	padding: 12px 6px;
+}
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory ul li,
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory ol li{
+	line-height: 28px;
+}
+
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory ul li a,
+.container .centerCon .newsStoryDetail .DetailCon .relevantStory ol li a{
+	color: #555555;
+}
+
+.container .centerCon .newsStoryDetail .DetailCon .tit{
+	color: #14362d
+}
+
+.container .centerCon .newsStoryDetail .DetailCon .livePopular .tit img{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 20px;
+	height: auto;
+}
+
+.container .centerCon .newsStoryDetail .DetailCon .livePopular ol li span.topPopular {
+	color: #14362d;
+}
+
+/* 본문 스타일 추가 161018 */
+.newsStoryTxt h1 {margin:4px 0;font-size:21px;line-height:1.5;} 
+.newsStoryTxt h2 {margin:4px 0;font-size:17px;line-height:1.5;}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt h1 p{margin:0;font-size:21px;line-height:1.5;font-weight:600 } 
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt h2 p{margin:0;font-size:17px;line-height:1.5;font-weight:600}
+.newsStoryTxt blockquote { padding:0.8em 2.4em 1.6em; margin-bottom:10px; font-size:18px; font-style:italic; line-height:1.5; color:#555555; background:url(http://image.hankookilbo.com/n/bg-quot01.png), url(http://image.hankookilbo.com/n/bg-quot02.png); background-repeat:no-repeat; background-position: top left 0.4em, top right 0.4em;}
+.container .centerCon .newsStoryDetail .DetailCon .newsStoryTxt .article-comment { font-style:italic; color:#757575; }
+/* ad player */
+#ad-player-hk {
+	width:302px;
+	height:248px;
+	margin-top:12px;
+}
+/* reply */
+.reply .inCon{
+	background:#fff;
+	padding:20px 20px 0 20px;
+}
+.reply .inCon .replyTop{
+	overflow:hidden;
+	padding:10px 0 13px 0;
+}
+.reply .inCon .replyTop .cnt{
+	float:left;
+}
+.reply .inCon .replyTop .cnt .btn{
+	width:150px;
+	color:#656565;
+	font-weight:600;
+	border:1px solid #c9c9c9;
+	cursor:pointer;
+	text-align:center;
+	position:relative;
+	padding:15px 45px 15px 18px;
+}
+.reply .inCon .replyTop .cnt .btn span{
+	position:absolute; right:10px; top:12px;
+}
+.reply .inCon .replyTop .cnt .btn span img{width:20px; height:20px;}
+.reply .inCon .replyTop .write{
+	float:right;
+}
+.reply .inCon .replyTop .write p{
+	float:left;
+	margin-left:3px;
+}
+.reply .replyTab{
+	overflow:hidden;
+	border-bottom: 1px solid #c9c9c9;
+}
+.reply .replyTab .replySum{
+	float:left;
+	color: #003528;
+	font-weight:400;
+	border: 1px solid #c9c9c9;
+	background: url("https://image.hankookilbo.com/n/icon/ico_reply.png") no-repeat 12px 12px;
+	background-size: 18px 15px;
+	padding: 9px 10px 9px 35px;
+}
+.reply .replyTab ul{
+	float:right;
+	border-top:1px solid #d9d9d9;
+	border-right:1px solid #d9d9d9;
+	width:300px;
+	margin-bottom:-1px;
+}
+.reply .replyTab ul li{
+	float:left;
+	width:33.3%;
+}
+.reply .replyTab ul li a{
+	text-align:center;
+	color:#757575;
+	background:#f6f6f6;
+	display:block;
+	font-size:14px;
+	font-weight:400;
+	padding:12px 0px;
+	border-left:1px solid #d8d8d8;
+	border-bottom:1px solid #d8d8d8;
+}
+.reply .replyTab ul li.on{
+	border-bottom:1px solid #fff;
+}
+.reply .replyTab ul li.on a{
+	color:#005830;
+	background:#ffffff;
+	border-bottom:none;
+}
+.reply .replyTab ul li:last-child a{
+	border-right:none;
+}
+.reply .replyTab ul li a:hover{
+	color:#005830;
+}
+.replyListGo{
+	padding:0 10px 15px 10px;
+}
+.reply .replyBox{
+	padding:0 0 30px;
+}
+.reply .replyBox .replyCon{
+	padding:13px 10px;
+	border-bottom:1px solid #c9c9c9;
+}
+.reply .replyBox .replyCon.replyType2{
+
+	padding:13px 10px 13px 35px;
+	background:#f8fbfc url("https://image.hankookilbo.com/n/icon/ico_blt6.jpg") no-repeat 12px 23px;
+	background-size:11px 11px;
+}
+.reply .replyBox .replyCon h4 strong {
+	color: #51a936;
+	font-weight: 600;
+}
+.reply .replyBox .replyCon .replyAuthor{
+	overflow:hidden;
+}
+.reply .replyBox .replyCon .replyAuthor h4{
+	float:left;
+
+
+	color:#353535;
+	font-weight:600;
+	padding:8px 0 0;
+}
+.reply .replyBox .replyCon .replyAuthor h4 span{
+	/*background:url("https://image.hankookilbo.com/n/icon/ico_report.png") no-repeat left center;
+	background-size:9px 9px;
+	padding:0 0 0 10px;
+	color:#ee4223;*/
+	margin-left:10px;
+}
+.reply .replyBox .replyCon .replyAuthor .BtnGroup{
+	float:right;
+}
+.reply .replyBox .replyCon .replyAuthor .BtnGroup p{
+	float:left;
+	margin-left:-1px;
+}
+.reply .replyBox .replyCon .replyTxt{
+	position:relative;
+	padding:15px 80px 0 0;
+}
+.reply .replyBox .replyCon .replyTxt p{
+	line-height:21px;
+	padding:0 0 10px 0;
+	color: #555555;
+}
+.reply .replyBox .replyCon .replyTxt span{
+	position:absolute; right:0; top:13px;
+	display:block;
+	background:#f0f7f8;
+	border:1px solid #e1e8e8;
+	text-align:center;
+	color:#666666;
+	padding:4px 8px 3px;
+}
+
+.reply .inCon .replyBtnType1{
+	color:#353535;
+	font-weight:600;
+	border:1px solid #c9c9c9;
+	padding:9px 10px 8px 11px;
+}
+.reply .inCon .replyBtnType2{
+	color:#353535;
+	font-weight:600;
+	border:1px solid #c9c9c9;
+	background:url("https://image.hankookilbo.com/n/icon/ico_best.png") no-repeat 11px 7px;
+	background-size:17px 17px;
+	padding:9px 7px 9px 33px;
+	cursor:pointer;
+}
+.reply .inCon .replyBtnType3{
+	color:#353535;
+	font-weight:600;
+	border:1px solid #c9c9c9;
+	background:url("https://image.hankookilbo.com/n/icon/ico_bad.png") no-repeat 11px 10px;
+	background-size:17px 17px;
+	padding:9px 7px 9px 33px;
+	cursor:pointer;
+}
+.reply .inCon .replyEdit{
+	position:relative;
+	border:1px solid #c9c9c9;
+	overflow:hidden;
+	height:120px;
+	margin:0 0 30px;
+}
+.reply .inCon .replyEdit .textarea{
+	width:83%;
+	padding:5px 0 0 10px;
+	float:left;
+}
+.reply .inCon .replyEdit .textarea textarea{
+	width:100%;
+	border:none;
+	height:87px;
+	line-height:19px;
+}
+.reply .inCon .replyEdit .btn{
+	float:left;
+	width:17%;
+	background-color: #fafafa;
+}
+.reply .inCon .replyEdit .btn a{
+	color:#5cbc41;
+	width:110px;
+	padding:50px 0;
+	text-align:center;
+	display:block;
+}
+.reply .inCon .replyEdit .replyCount{
+	position:absolute; left:10px; bottom:5px;
+	color:#ccc;
+}
+.reply .inCon .replyEdit .replyCount span{
+	color:#a1c06c;
+}
+
+.bdImg img{border:1px solid #eee;}
+
+
+/* list page */
+.container .listBox{
+	background:#fff;
+	border: 1px solid #ddd;
+	/* width: 894px; */
+	margin: 7px;
+	/* padding:0 0 25px; */
+}
+.container .detailViewBtn{
+	background: #f5f5f5;
+	text-align:center;
+	/* width: 894px; */
+	margin: 12px 8px;
+	padding:15px 0;
+}
+.container .listCon{
+	/* padding:40px 0 10px 1px; */
+}
+.container .listCon .titVisual{
+	/* text-align:center; */
+}
+.container .listCon .titVisual img{/* display:inline; */}
+.container .listCon ul{
+
+}
+.container .listCon ul:after{content:""; display:block; clear:both;}
+.container .listCon ul li{
+    position: relative;
+    float: left;
+    width: 212px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background: #fff;
+    margin: 0 0 25px 7px;
+-webkit-box-shadow: -0.5px -0.5px 10px 0 #eee;
+   -moz-box-shadow: -0.5px -0.5px 10px 0 #eee;
+        box-shadow: -0.5px -0.5px 10px 0 #eee;
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=5px, OffY=5px, Color='#eee', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate; /* Required by IE 9 */
+}
+.container .listCon ul li p:nth-child(1){
+    height: 128px;
+    overflow: hidden;
+    border-bottom: 4px solid #cccccc;
+}
+.container .listCon ul li p:nth-child(1) img{display:inline;}
+.container .listCon ul li p:nth-child(2){
+	padding:12px 5px 10px 10px;
+	line-height:21px;
+	min-height:42px;
+}
+.container .listText{
+
+}
+.container .listText ul{
+	padding:50px 6% 0 8%;
+}
+.container .listText ul li{
+	overflow:hidden;
+	background:url("https://image.hankookilbo.com/n/bullet/blt_type12.gif") no-repeat 0 6px;
+	padding:0 0 20px 20px;
+}
+.container .listText ul li p:first-child{
+	float:left;
+	width:80%;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+.container .listText ul li p:first-child a{
+	font-size:14px;
+
+	color:#141414;
+	font-weight:600;
+}
+.container .listText ul li p:last-child{
+	float:right;
+	color:#929292;
+	font-size:12px;
+	width:20%;
+	text-align:right;
+}
+.mb20{
+	margin-bottom:20px;
+}
+
+.container .centerCon .issueView{
+	overflow:hidden;
+	padding:5px 15px;
+	border:1px solid #ededed;
+	margin:20px 0 10px;
+}
+.container .centerCon .issueView h5{
+	float:left;
+	padding: 10px 0 10px 42px;
+}
+.container .centerCon .issueView h5.issue1{
+	background:url("https://image.hankookilbo.com/n/icon/ico_titSum1.png") no-repeat 0 8px;
+}
+.container .centerCon .issueView h5.issue2{
+	background:url("https://image.hankookilbo.com/n/icon/ico_titSum2.png") no-repeat 0 8px;
+}
+.container .centerCon .issueView h5.issue3{
+	background:url("https://image.hankookilbo.com/n/icon/ico_titSum3.png") no-repeat 0 8px;
+}
+.container .centerCon .issueView h5 a{
+	font-size: 18px;
+    font-weight:600;
+    line-height: 28px;
+}
+.container .centerCon .issueView p{
+	width:47px;
+	float:right;
+	background:url("https://image.hankookilbo.com/n/icon/ico_arrGreenR.png") no-repeat right top;
+	padding:0 15px 0 0;
+	margin-top:15px;
+}
+.container .centerCon .issueView p:hover{
+	background-position:right -23px;
+}
+.container .centerCon .issueView p a{
+	color: #aaa;
+	font-size: 14px;
+}
+.container .centerCon .issueView h5 img{
+	vertical-align:middle;
+	display:inline;
+	margin:-2px 5px 0 0;
+}
+
+
+
+
+/* 1024 사이즈 레이아웃 */
+@media all and (max-width:1279px){
+
+/* 선거 관련 css 추가 - dw */
+.header .headerCon .inCon .navi > .election_ico{
+	display:none;
+}
+
+
+.container .centerCon .cardNews ul li{
+		/* margin-right:20px; */
+	}
+	.container .centerCon .cardNews ul li:nth-child(4),
+	.container .centerCon .cardNews ul li:nth-child(8),
+	.container .centerCon .cardNews ul li:nth-child(12),
+	.container .centerCon .cardNews ul li:nth-child(16){
+		/* margin-right:20px; */
+	}
+	.container .centerCon .cardNews ul li:nth-child(3),
+	.container .centerCon .cardNews ul li:nth-child(6),
+	.container .centerCon .cardNews ul li:nth-child(9),
+	.container .centerCon .cardNews ul li:nth-child(12){
+		margin-right:0;
+	}
+	.container .centerCon .issue .card{
+		width: 328px;
+	}
+	.container .centerCon .issue .card .issueCon .right{
+		display:none;
+	}
+	.container .centerCon .cardNews ul li:last-child{
+		display:none;
+	}
+	.container .centerCon .cardNews.lastShow ul li:last-child{
+		display:block;
+	}
+	.container .interviewGallery{
+		width: 666px;
+	}
+	.container .interviewGallery .Gallerylist{
+		/* height: 356px; */
+		width: 218px;
+	}
+	.container .interviewGallery .Gallerylist li{
+		/* width:210px; */
+		/* padding:8px 7px 0 13px; */
+		border-right:1px solid #ddd;
+		border-bottom:1px solid #ddd;
+	}
+	.container .interviewGallery .Gallerylist li:nth-child(2),
+	.container .interviewGallery .Gallerylist li:nth-child(4){
+		display:none;
+	}
+	.container .interviewGallery .Gallerylist li:nth-child(1),
+	.container .interviewGallery .Gallerylist li:nth-child(3){
+		border-right:none;
+	}
+	/* 상세페이지 */
+	.container .centerCon .newsStoryDetail { width:666px }
+	.container .centerCon .newsStoryDetail .DetailCon{
+		margin-left:0;
+	}
+	.container .centerCon .newsGallery ul {
+		display:none;
+	}
+	.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .titGroup h4{
+		font-size: 32px;
+		display: inline-block;
+	}
+	.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .titGroup .minSns{
+		display:block;
+		float:right;
+		width: 124px;
+		padding:5px;
+	}
+	.container .centerCon .newsStoryDetail .DetailCon .newsStoryTit .titGroup .minSns div{
+		padding:2px;
+	}
+	.container .centerCon .newsStoryDetail .author{
+		display:none;
+	}
+	/* 1280px 이하 사이드 메뉴*/
+	.container .centerCon .newsStoryDetail .sideAdWrap {
+		display:none;
+	}
+	.container .centerCon .newsStoryDetail .author_Min{
+		/* display:block; */
+		overflow:hidden;
+		background-color:#fafafa;
+	}
+	/*
+	.container .centerCon .newsStoryDetail .author_Min .writeOption p{
+	color:#959595;
+	font-size:12px;
+	line-height:1.25;
+	padding:10px;
+	}
+	.container .centerCon .newsStoryDetail .author_Min dl{
+		float:left;
+		padding-left:10px; padding-top:10px;
+	}
+	.container .centerCon .newsStoryDetail .author_Min dl dt{
+		float:left;
+		width:36px;
+		height:36px;
+	}
+	.container .centerCon .newsStoryDetail .author_Min dl dt img{
+		width:100%;
+	}
+	.container .centerCon .newsStoryDetail .author_Min dl dd{
+		float:left;
+		text-align:center;
+		padding:10px 0 0 5px;
+		font-size:12px;
+		font-weight:600;
+	}
+	.container .centerCon .newsStoryDetail .author_Min .writeOption{
+		float:right;
+		padding:2px 0 0 0;
+	}*/
+	.container .centerCon .newsStoryTop .writeOption p{
+		/* display:block; */
+		float:right;
+		color:#959595;
+		font-size:12px;
+		line-height:1.25;
+		padding: 0 10px;
+	}
+	.writeOption.writeOption2{display:block}
+	.container .subTitType{
+		width: 666px;
+	}
+	.container .centerCon .newsStoryDetail .DetailCon .newsStoryTop .zoomView{float:left;}
+}

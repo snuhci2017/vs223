@@ -1,0 +1,72 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {margin:0; padding:0;}
+ul,ol,dl,li {list-style:none;}
+html, body {-webkit-text-size-adjust:none;height:100%;}
+
+a:link {text-decoration: none; }
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
+
+.style3 {font-size: 14px}
+.style4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+.style5 {color: #006633;	font-weight: bold;}
+/* 중앙일보 모바일 css 
+div에 . 찍을때 사용
+	<div class='bullet'>.</div>
+*/
+.bullet {  
+    position: absolute;
+    left: -6px;
+    top: 4px;
+    font-size: 15px;
+    color: #231f20;
+    text-align: left;
+    overflow: hidden;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.ja_p {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #231f20;
+ /*   font-family: Helvetica-light, 'AppleSDGothicNeo-Light', 'Noto Sans', 'Roboto-Light', 'Malgun Gothic', '맑은 고딕', Dotm, '돋움', sans-serif;  */
+	font-family: 'Malgun Gothic', '맑은 고딕', Dotm, '돋움', sans-serif; 
+    text-align: left;
+    overflow: hidden;
+    Letter-spacing: -1px;
+}
+
+/* 마이데일리 모바일 css 
+div에 . 찍을때 사용
+	<div class='nmt_c'>.</div>
+*/
+
+.nmt_c { display:block;  cursor:pointer;  overflow:hidden; white-space:nowrap; text-overflow:ellipsis; text-decoration:none;  font-family:'NanumGothic';  font-size:17px;  height:30px; line-height:17px; color:#222222;  margin-left:0px; padding-left:7px;  background:url(http://img.adinc.co.kr/mydailydot2.jpg) 0 30% no-repeat;}
+
+
+/*
+.nmt_c { display:block;  cursor:pointer;  overflow:hidden; white-space:nowrap; text-overflow:ellipsis; text-decoration:none;  font-family:'NanumGothic';  font-size:17px;  height:30px; line-height:30px; color:#222222;  margin-left:0px; padding-left:7px;  background:url(http://img.adinc.co.kr/mydailydot2.jpg) 0 47% no-repeat;}
+*/
+
+#opimg_<?= $data[1] ?> { position:absolute;    }
+#opdiv_<?= $data[1] ?> {   overflow:hidden; white-space:nowrap;   }
+#opspan_<?= $data[1] ?> {  overflow:hidden; white-space:nowrap; text-overflow:ellipsis;  }
+
+
+/* 마이데일리 바이라인 
+#opspan_3810 {  overflow:hidden; white-space:nowrap; text-overflow:ellipsis; color:#333;  font-family:돋움; font-size:17px; letter-spacing:-0.6px; }
+*/
+#opimg_3810 { position:absolute; top: 11px;   }
+#opdiv_3810 {   overflow:hidden; white-space:nowrap; line-height: 27px;  }
+#opspan_3810 {  overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding-left:10px; color:#333;  font-family:돋움; font-size:17px; letter-spacing:-0.6px; }
+

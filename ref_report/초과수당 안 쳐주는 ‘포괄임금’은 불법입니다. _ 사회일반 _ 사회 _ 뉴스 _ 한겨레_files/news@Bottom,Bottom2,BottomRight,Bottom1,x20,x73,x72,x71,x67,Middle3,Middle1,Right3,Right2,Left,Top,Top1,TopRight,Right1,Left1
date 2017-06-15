@@ -1,0 +1,280 @@
+function OAS_RICH(position) {
+if (position == 'Bottom') {
+document.write ('<div id="rcView_hani9" style="margin: auto; width: 570px;position:relative;">\n');
+document.write ('<div id="realclick_view_hani9" style="clear:both;transition:height 0.5s ease-out;height:0;overflow:hidden;position:relative"></div>\n');
+document.write ('<script type=');
+document.write ("'");
+document.write ('text/javascript');
+document.write ("'");
+document.write ('>\n');
+document.write ('var refData=');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write (';var locData=');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write (';refData=document.referrer;locData=location.href;function rc_ad_display(posi){var rcAdStr="";try{if(rcHead!="")rcAdStr+=rcHead;if(rcBody!="")rcAdStr+=rcBody;if(rcFoot!="")rcAdStr+=rcFoot;if(rcAdStr!=""){document.getElementById(posi).innerHTML=rcAdStr;}}catch(e){}}\n');
+document.write ('function loadJS(url,posi,charset){var hd=document.getElementsByTagName(');
+document.write ("'");
+document.write ('head');
+document.write ("'");
+document.write (')[0];var sc=document.createElement(');
+document.write ("'");
+document.write ('script');
+document.write ("'");
+document.write (');sc.type=');
+document.write ("'");
+document.write ('text/javascript');
+document.write ("'");
+document.write (';if(charset!=null){sc.charset="euc-kr";}\n');
+document.write ('var ld=false;sc.onreadystatechange=function(){try{if(this.readyState==');
+document.write ("'");
+document.write ('loaded');
+document.write ("'");
+document.write ('||this.readyState==');
+document.write ("'");
+document.write ('complete');
+document.write ("'");
+document.write ('){if(ld)return;ld=true;rc_ad_display(posi);}}catch(e){}};sc.onload=function(){rc_ad_display(posi);};sc.src=url;hd.appendChild(sc);}\n');
+document.write ('function load_rc_ad(sevn,objf,posi){var adSrc="http://"+sevn+".realclick.co.kr/"+objf;loadJS(adSrc,posi,');
+document.write ("'");
+document.write ('euc-kr');
+document.write ("'");
+document.write (');}\n');
+document.write ('$(document).ready(function(){ var open_height=$(');
+document.write ("'");
+document.write ('#rcView_hani9');
+document.write ("'");
+document.write (').offset().top; var open=false;var w_height=$(window).height();if(open_height<w_height/2){\n');
+document.write ('if(open=="0"){open=true;load_rc_ad(');
+document.write ("'");
+document.write ('adv');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write ('ad_tpl/headcopy.rc?dsn=1&mcode=aGFuaTk=&refData=');
+document.write ("'");
+document.write ('+escape(refData)+');
+document.write ("'");
+document.write ('&locData=');
+document.write ("'");
+document.write ('+escape(locData)+');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write ('realclick_view_hani9');
+document.write ("'");
+document.write (');\n');
+document.write ('document.getElementById("realclick_view_hani9").style.height = 240 +"px";}}$(window).scroll(function(){ var distanceTop=open_height-(w_height*2/5);\n');
+document.write ('var d_height=$(document).height();if($(window).scrollTop()>distanceTop){\n');
+document.write ('if(open=="0"){open=true;load_rc_ad(');
+document.write ("'");
+document.write ('adv');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write ('ad_tpl/headcopy.rc?dsn=1&mcode=aGFuaTk=&refData=');
+document.write ("'");
+document.write ('+escape(refData)+');
+document.write ("'");
+document.write ('&locData=');
+document.write ("'");
+document.write ('+escape(locData)+');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write ('realclick_view_hani9');
+document.write ("'");
+document.write (');document.getElementById("realclick_view_hani9").style.height = 240 +"px";}\n');
+document.write ('}else if(distanceTop >= (d_height-w_height)){$("#rcView_hani9").css({height:"240px"});$("#realclick_view_hani9").css({position:"absolute",bottom:"0"});	if($(window).scrollTop()-240>=open_height-w_height){if(open=="0"){open=true;load_rc_ad(');
+document.write ("'");
+document.write ('adv');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write ('ad_tpl/headcopy.rc?dsn=1&mcode=aGFuaTk=&refData=');
+document.write ("'");
+document.write ('+escape(refData)+');
+document.write ("'");
+document.write ('&locData=');
+document.write ("'");
+document.write ('+escape(locData)+');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write (',');
+document.write ("'");
+document.write ('realclick_view_hani9');
+document.write ("'");
+document.write (');document.getElementById("realclick_view_hani9").style.height = 240 +"px";}}}})});\n');
+document.write ('</script>\n');
+document.write ('</div>');
+}
+if (position == 'Bottom1') {
+document.write ('<script async src=');
+document.write ("'");
+document.write ('http://compass.adop.cc/assets/js/adop/adop.js?v=14');
+document.write ("'");
+document.write (' ></script><ins class=');
+document.write ("'");
+document.write ('adsbyadop');
+document.write ("'");
+document.write (' _adop_zon = ');
+document.write ("'");
+document.write ('c3c82b31-d5a7-43f9-8301-9bc87813bdee');
+document.write ("'");
+document.write (' _adop_type = ');
+document.write ("'");
+document.write ('js');
+document.write ("'");
+document.write (' style=');
+document.write ("'");
+document.write ('display:inline-block;width:300px;height:250px;');
+document.write ("'");
+document.write (' _page_url=');
+document.write ("'");
+document.write ('');
+document.write ("'");
+document.write ('></ins>');
+}
+if (position == 'Bottom2') {
+document.write ('<iframe width=');
+document.write ("'");
+document.write ('300');
+document.write ("'");
+document.write (' height=');
+document.write ("'");
+document.write ('250');
+document.write ("'");
+document.write (' src=');
+document.write ("'");
+document.write ('http://jdaily.co.kr/frame/jad-bin.do?adPageCd=PC010');
+document.write ("'");
+document.write (' allowTransparency=');
+document.write ("'");
+document.write ('true');
+document.write ("'");
+document.write (' marginwidth=');
+document.write ("'");
+document.write ('0');
+document.write ("'");
+document.write (' marginheight=');
+document.write ("'");
+document.write ('0');
+document.write ("'");
+document.write (' hspace=');
+document.write ("'");
+document.write ('0');
+document.write ("'");
+document.write (' vspace=');
+document.write ("'");
+document.write ('0');
+document.write ("'");
+document.write (' frameborder=');
+document.write ("'");
+document.write ('0');
+document.write ("'");
+document.write (' scrolling=');
+document.write ("'");
+document.write ('no');
+document.write ("'");
+document.write (' ></iframe> ');
+}
+if (position == 'BottomRight') {
+document.write ('<script type="text/javascript"><!--\n');
+document.write ('google_ad_client = "ca-pub-5187450830005326";\n');
+document.write ('/* sub_BR_300*600_A1 */\n');
+document.write ('google_ad_slot = "2719802967";\n');
+document.write ('google_ad_width = 300;\n');
+document.write ('google_ad_height = 600;\n');
+document.write ('//-->\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript"\n');
+document.write ('src="//pagead2.googlesyndication.com/pagead/show_ads.js">\n');
+document.write ('</script>');
+}
+if (position == 'Left') {
+document.write ('<iframe src="http://adex.ednplus.com/xc/h/Fz56Jmup" width="120" height="600" frameborder="0" scrolling="no" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0"></iframe>');
+}
+if (position == 'Left1') {
+document.write ('<script type="text/javascript" src="http://js2.keywordsconnect.com/iconad_hani_new.js"></script>');
+}
+if (position == 'Middle1') {
+document.write ('<iframe id="nad_0adu9qMhWT6Jq1trmvPB"  width="643" height="140" frameborder="0" scrolling="no"></iframe>\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('var randomVal_6Jq1trmvPB   =       Math.floor(Math.random() *3 ) + 1;\n');
+document.write ('var ad_url="http://adv.mediaharbor.co.kr/nad/media/0adu9qMhWT/6Jq1trmvPB_"+randomVal_6Jq1trmvPB+".html";\n');
+document.write ('var ad_obj=document.getElementById("nad_0adu9qMhWT6Jq1trmvPB");\n');
+document.write ('ad_obj.src=ad_url;\n');
+document.write ('</script>');
+}
+if (position == 'Middle3') {
+document.write ('<iframe src="http://adex.ednplus.com/xc/h/Fz56JtXg" width="643" height="220" frameborder="0" scrolling="no" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0"></iframe>');
+}
+if (position == 'Right1') {
+document.write ('<iframe id="nad_0adu9qMhWTgCh42zJKQe"  width="300" height="300" frameborder="0" scrolling="no"></iframe>\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('var randomVal_gCh42zJKQe   =       Math.floor(Math.random() *3 ) + 1;\n');
+document.write ('var ad_url="http://adv.mediaharbor.co.kr/nad/media/0adu9qMhWT/gCh42zJKQe_"+randomVal_gCh42zJKQe+".html";\n');
+document.write ('var ad_obj=document.getElementById("nad_0adu9qMhWTgCh42zJKQe");\n');
+document.write ('ad_obj.src=ad_url;\n');
+document.write ('</script>');
+}
+if (position == 'Right2') {
+document.write ('<center><a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/news/L19/506528321/Right2/Hani/hw_sub_R2_300250_gunpo_170508/shinhan_55010061527090715871987289.html/6b79357869566b6a766c4d41426b4d79" target="_blank"><img src="http://img.hani.co.kr/adimg/ad_img/20170508_gunpo/300100_111.jpg" /></a></center>');
+}
+if (position == 'Right3') {
+document.write ('<script type="text/javascript"><!--\n');
+document.write ('google_ad_client = "ca-pub-5187450830005326";\n');
+document.write ('/* hw_sub_Right3_170518 */\n');
+document.write ('google_ad_slot = "7825511727";\n');
+document.write ('google_ad_width = 300;\n');
+document.write ('google_ad_height = 250;\n');
+document.write ('//-->\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript"\n');
+document.write ('src="//pagead2.googlesyndication.com/pagead/show_ads.js">\n');
+document.write ('</script>');
+}
+if (position == 'Top') {
+document.write ('<script type="text/javascript" src="//rsc.adpies.com/js/adpie-min.js?mediaId=5771d1717174ea308b84c523&slotId=577321427174ea39a62a5b8e&adType=banner&width=728&height=90"></script>');
+}
+if (position == 'Top1') {
+document.write ('<script type="text/javascript"><!--\n');
+document.write ('google_ad_client = "ca-pub-5187450830005326";\n');
+document.write ('/* sub_top1_970*90_A1 */\n');
+document.write ('google_ad_slot = "5440422807";\n');
+document.write ('google_ad_width = 970;\n');
+document.write ('google_ad_height = 90;\n');
+document.write ('//-->\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript"\n');
+document.write ('src="//pagead2.googlesyndication.com/pagead/show_ads.js">\n');
+document.write ('</script>');
+}
+if (position == 'TopRight') {
+document.write ('<div id="realssp_hanibiz00001_6928" class="realssp_dv" data-mcode="aGFuaWJpejAwMDAxXzY5Mjg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=hanibiz00001_6928&t=j" async></script>');
+}
+if (position == 'x20') {
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/news/66725455/x20/default/empty.gif/6b79357869566b6a766c4d41426b4d79" target="_top"><img src="http://ad.hani.co.kr/RealMedia/ads/Creatives/default/empty.gif"  width="1" height="1" alt="" BORDER=0 border="0"></a>');
+}
+if (position == 'x67') {
+document.write ('<!-- saved from url=(0022)http://internet.e-mail -->\n');
+document.write ('<iframe src="http://adv.imadrep.co.kr/1635_01.html" width="300" height="150" marginheight="0" marginwidth="0" scrolling="no" frameborder="0" allowTransparency="false"></iframe>');
+}
+if (position == 'x71') {
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/news/L19/992777862/x71/Hani/koreacare_160427_211170_x71/koreacare_160427_211170_x716242645266357354.html/6b79357869566b6a766c4d41426b4d79" target="_blank"><img src="http://img.hani.co.kr/adimg/koreacare_x71_161025/koreacare_x71_170511.gif" border=0 /></a>');
+}
+if (position == 'x72') {
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/news/L19/285712867/x72/Hani/koreacare_160427_211170_x72/koreacare_160427_211170_x7260666130623565576563663767646851696469897253.html/6b79357869566b6a766c4d41426b4d79" target="_blank"><img src="http://img.hani.co.kr/adimg/koreacare_x71_161025/koreacare_x72_170428.jpg" border=0 /></a>');
+}
+if (position == 'x73') {
+document.write ('<a href="http://ad.hani.co.kr/RealMedia/ads/click_lx.ads/www.hani.co.kr/news/L19/772847423/x73/Hani/koreacare_160427_211170_x73/koreacare_160427_211170_x7363316876.html/6b79357869566b6a766c4d41426b4d79" target="_blank"><img src="http://img.hani.co.kr/adimg/koreacare_x71_161025/koreacare_x73_170310.jpg"  border=0 /></a>');
+}
+}

@@ -1,0 +1,151 @@
+@charset 'utf-8';
+/* Reset */
+html, body,
+h1, h2, h3, h4, h5, h6,
+div, p, blockquote, pre, address,
+header,nav,aside,hgroup,footer,article,section,
+ul, ol, li, dl, dt, dd,
+table, caption, th, td,
+form, fieldset, legend,
+hr,frame {margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6 {font-size:100%;}
+ul, ol {list-style:none;}
+table {border-collapse:collapse;border-spacing:0;}
+caption {text-align:left;}
+img, fieldset, abbr, acronym,frameset {border:0;}
+address, caption, cite, code, dfn, em, var {font-style:normal;font-weight:normal;}
+q:before, q:after {content: '';}
+input, select, button {font-size:11px;vertical-align:middle;}
+input, button {overflow:visible;}
+/* Base */
+body {font:12px/1.4 Dotum,돋움,AppleGothic,sans-serif,Gulim,굴림;color:#898989;letter-spacing:0em;}
+hr,table caption, fieldset legend {display:none;}
+img {vertical-align:top;}
+a {color:#898989;text-decoration:none;}
+a:focus, a:hover, a:active {text-decoration:underline;}
+label,input.button, input.submit , input.image,button {cursor:pointer;}
+textarea, pre {color:#898989;font-size:12px;letter-spacing:-0.05em;font-family:Dotum,돋움;overflow:auto;}
+.invisible {position:absolute;width:0;height:0;overflow:hidden;visibility:hidden;font-size:0;}
+html, body {background: transparent !important;color: transparent !important;background-color: transparent !important;position: absolute;top: 0;left: 0;right: 0;-webkit-backface-visibility: visible;}
+
+/* m_shoppingbox  */
+.m_shoppingbox {
+	min-width:320px;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	height:50px;
+	background:#fff;
+	border:1px solid #d9d9d9;
+	font:11px/14px Dotum,AppleGothic,sans-serif;
+	box-sizing:border-box;
+}
+
+.ad_list__wrap {
+	position:relative;
+	height: 44px;
+	padding:2px 0 2px 26px;
+}
+.ad_list__wrap h1.logo {
+	position:absolute;
+	left:-7px;
+	top:19px;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+.ad_list__wrap h1.logo img {
+	width:40px;
+	height:10px;
+}
+.ad_list__wrap .ad_list:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.ad_list__wrap .ad_list__item {
+	float:left;
+	width:50%;
+}
+.ad_list__wrap .ad_list__item a {
+	display:block;
+	height:44px;
+	color:#000;
+	letter-spacing:-1px;
+}
+.ad_list__wrap .ad_list__item a:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.ad_list__wrap .ad_list__item span.img {float:left;}
+.ad_list__wrap .ad_list__item span.img img {
+	width:44px;
+	height:44px;
+}
+.ad_list__wrap .ad_list__item span.txt {
+	display:block;
+	height:24px;
+	overflow:hidden;
+	padding:10px 4px 0 0;
+	line-height:12px;
+}
+
+.m_shoppingbox .iad {position:absolute;z-index:999;right:8px;top:4px;}
+.m_shoppingbox .iad p a {display:block;width:16px;height:16px;background:url(http://img.iacstatic.co.kr/adbayimg/templates/slide/images/svn_info.png) 0 0 no-repeat;font-family:'돋움',Dotum,'굴림',Gulim,Helvetica,sans-serif;font-weight:bold;color:#282095;text-indent:-10000px;}
+.m_shoppingbox .iad p a:hover {width:86px;background:url(http://img.iacstatic.co.kr/adbayimg/templates/slide/images/svn_open.png) 0 0 no-repeat;text-indent:0px;}
+.m_shoppingbox .svgArea .svg_on, .svgArea.svgHover .svg_off {display:none;}
+.m_shoppingbox .svgArea.svgHover .svg_on {display:block;}
+.m_shoppingbox .svgArea.svgHover .svg_on a {text-decoration:none;}
+
+/* Slider */
+.slider {
+	width: 100%;
+	height: 100%;
+}
+
+.slider__item {
+	width: 50%;
+}
+
+/*! Flickity v1.0.0
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}

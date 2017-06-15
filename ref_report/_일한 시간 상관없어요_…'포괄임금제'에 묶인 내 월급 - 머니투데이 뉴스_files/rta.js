@@ -1,0 +1,1 @@
+﻿crtg_content = ''; (function(){document.cookie = 'interworks_ctorta=' + escape(crtg_content) + '; path=/; expires=Sat, 24 Jun 2017 15:25:43 GMT; domain=interworksmedia.co.kr';})();

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+.livere_han .livereSNSLoginIcon .livereSNSImage_B { background:url(//101.livere.co.kr/consumers/hani/new/42x42.png) no-repeat center center; background-size:30px;}
+.livere_han .livereSNSLoginIcon:hover .livereSNSImage_B { background:url(//101.livere.co.kr/consumers/hani/new/42x42_on.png) no-repeat center center; background-size:30px; }
+
+
+#liverePlugIn .livere_han .livereBtn1:hover, #liverePlugIn .livere_han.livere_loggedSNS .livereSNSLoginIcon {
+	border: 2px solid #009891;
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.01, rgb(0,152,145)), color-stop(1, rgb(0,152,145)) );
+    background-image: -moz-linear-gradient( center top, rgb(0,152,145), rgb(0,152,145) );
+    background-image: -ms-linear-gradient( top, rgb(0,152,145) 0%, rgb(0,152,145) 100%);
+    Filter: progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#009891, endColorstr=#009891); }
+
+.livereLogged .livere_han .livereSNSLoginIcon .livereSNSImage_B { background:url(//101.livere.co.kr/consumers/hani/new/42x42_on.png) no-repeat 0 0; }
+.livereLogged.livere_p_han { border: 2px solid #009891; }
+
+#liverePlugIn .livere_pWriter_han { background-color: #009891; border: 1px solid #009891; display: block !important; }
+#liverePlugIn .livereContentTextForm.livereSlideHide.han { border: 2px solid #009891 !important; }
+
+#liverePlugIn .livereReplyThumb .livereFavicon_L.livereFavicon_L_han { background: url("//101.livere.co.kr/consumers/hani/new/16x16.png") no-repeat 0 0; }
+
+
+/* 모바일 */
+.livere_mobile #liverePlugIn .livereFavicon_mobile_L.livereFavicon_mobile_L_han, .livere_mobile #liverePlugIn .livereFavicon_mobile_S.livereFavicon_mobile_S_han {
+	background: url("//101.livere.co.kr/consumers/hani/new/32x32.png") no-repeat 0 0;
+    background-size: 18px 18px;
+}
+.livere_mobile #liverePlugIn .livere_pWriter_han { background: url(//101.livere.co.kr/consumers/hani/new/16x16_on.png) no-repeat 5px center; background-color:#009891; }
+
+/* 스마트로그인 */
+#smartLoginNotLogged #smartLogin_han.off .loginSns_left { background:url(//101.livere.co.kr/consumers/hani/new/42x42.png) no-repeat center center; background-size:30px;}
+#smartLoginLogged #smartLogin_han.on .loginSns_left { background:url(//101.livere.co.kr/consumers/hani/new/42x42_on.png) no-repeat center center; background-size:30px; }
+#smartLoginLogged #smartLogin_han.on {
+	border: 1px solid #009891;
+    background: #009891;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009891', endColorstr='#009891');
+    background: -webkit-gradient(linear, left top, left bottom, from(#009891), to(#009891));
+    background: -moz-linear-gradient(top, #009891, #009891);
+}
+/* 2017년 5월 이후 삭제 요망 */
+#fakenews-wrapper {
+    display: none !important;
+}
+
+/* ie 6,7,8 mobile page #liverePlugIn height */
+@media \0screen\,screen\9 {
+    .box #liverePlugIn {
+        max-height: 600px;
+        overflow-y: scroll;
+    }
+}
+/* ie 9,10 mobile page #liverePlugIn height */
+@media screen and (min-width:0\0) {
+    .box #liverePlugIn {
+        max-height: 600px;
+        overflow-y: scroll;
+    }
+}

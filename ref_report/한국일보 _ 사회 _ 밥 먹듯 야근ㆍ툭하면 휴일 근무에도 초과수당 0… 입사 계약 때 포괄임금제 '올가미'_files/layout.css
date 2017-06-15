@@ -1,0 +1,884 @@
+@charset 'utf-8';
+
+
+#wrap{
+	height:100%;
+	padding:0 !important;
+}
+
+/* header */
+.header{
+	position:fixed !important;
+	background:#fff !important;
+	border-bottom:1px solid #cccccc !important;
+	height:auto !important;
+	width:100%;
+	z-index:2000 !important;
+	display:block;
+}
+	.header .headerCon
+	{
+		position:relative;
+		max-width:1240px; min-width:1008px; height:107px;
+		background:#fefefe;
+		margin:0 auto;
+	}
+	.header .headerCon .logo{
+		position:absolute; left:0; top:0;
+	}
+	.header .headerCon .inCon{
+		padding:0 0 0 104px;
+	}
+	.header .headerCon .inCon .gnb{
+		border-bottom:1px solid #15362d;
+		height:53px;
+		padding:0 13px 0 20px;
+	}
+	.header .headerCon .inCon .gnb > article:first-child{
+
+	}
+	.header .headerCon .inCon .gnb > article:first-child > ul{
+		overflow:hidden;
+		padding:20px 0 0;
+	}
+	.header .headerCon .inCon .gnb > article:first-child > ul > li{
+		float:left;
+		padding:0 13px;
+		background:url("https://image.hankookilbo.com/n/bullet/blt_type1.gif") no-repeat left center;
+	}
+	.header .headerCon .inCon .gnb > article:first-child > ul > li:first-child{
+		width:80px;
+		padding-left:0;
+		background:none;
+	}
+	.header .headerCon .inCon .gnb > article:first-child > ul > li > a{
+		color:#555555;
+		font-size: 14px;
+	}
+	.header .headerCon .inCon article.gnbCategory{
+		position:absolute;
+		right:0;
+		top:0;
+		z-index: 100;
+	}
+	.header .headerCon .inCon article.gnbCategory > ul{
+		overflow:hidden;
+		border-left:1px solid #eeeeee;
+	}
+	.header .headerCon .inCon article.gnbCategory > ul > li{
+		float:left;
+		padding: 11px 5px 11px 10px;
+		cursor:pointer;
+		border-right:1px solid #eeeeee;
+		min-width:36px;
+		text-align:center;
+	}
+	.header .headerCon .inCon article.gnbCategory > ul > li >a{
+	}
+	.header .headerCon .inCon article.gnbCategory > ul > li span{
+		font-size:16px;
+		color:#151515;
+		font-weight:600;
+		width:0;
+		height:20px;
+		overflow:hidden;
+		display:inline-block;
+		text-align:left;
+	}
+	.header .headerCon .inCon article.gnbCategory > ul > li img{
+		display:inline-block;
+		vertical-align:bottom;
+		padding:4px 5px 0;
+		text-align:center;
+	}
+/*	.header .headerCon .inCon article.gnbCategory > ul > li.on{*/
+/*		background:url("https://image.hankookilbo.com/n/bullet/blt_type2.gif") repeat-y right 3px;*/
+/*		padding-right:20px;*/
+/*	}*/
+	.header .headerCon .inCon article.gnbCategory > ul > li.on{
+
+	}
+	.header .headerCon .inCon article.gnbCategory > ul > li.on span{
+		display:inline-block;
+	}
+	.header .headerCon .inCon article.gnbCategory > ul > li.on:last-child{
+		background:none;
+	}
+	.header .headerCon .inCon .navi{
+		height:53px;
+		padding:0 15px 0 20px;
+		position:relative;
+	}
+
+
+
+
+	/* 선거 관련 css 추가 - dw */
+	.header .headerCon .inCon .navi > .election_ico{
+		position:absolute;
+		top:11px;
+		left:476px;
+	}
+
+
+
+
+	.header .headerCon .inCon .navi > article.menu{
+		position:relative;
+		float:left;
+	}
+	.header .headerCon .inCon .navi > article.menu > ul{
+		overflow:hidden;
+		padding:19px 0 0;
+	}
+	.header .headerCon .inCon .navi > article.menu > ul > li{
+		float:left;
+		padding:0 27px 0 0;
+	}
+	.header .headerCon .inCon .navi > article.menu > ul > li > a{
+		color:#151515;
+		font-weight:600;
+		font-size:16px;
+		letter-spacing:-0.1em;
+	}
+	.header .headerCon .inCon .navi > article.menu > ul > li.on a{
+		color:#00592d;
+	}
+	.header .headerCon .inCon .navi > article.menu > ul > li:last-child{
+		padding:0;
+		margin-top:-5px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu{
+		display:none;
+		position:absolute;
+		left:-20px;
+		top:54px;
+		border:1px solid #00592d;
+		border-top:3px solid #00592d;
+		background:#fff/* url("https://image.hankookilbo.com/n/bg/bg_submenu.png") no-repeat right bottom*/;
+		width:250px;
+		-webkit-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.25);
+        box-shadow: 0 2px 5px -1px rgba(0,0,0,0.25);
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=2px, OffY=5px, Color='black', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate; /* Required by IE 9 */
+-webkit-animation: fadeeffect 0.25s ease-in-out;
+   -moz-animation: fadeeffect 0.25s ease-in-out;
+    -ms-animation: fadeeffect 0.25s ease-in-out;
+        animation: fadeeffect 0.25s ease-in-out;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu h3{
+		font-weight:600;
+		font-size:28px;
+		padding:15px 0 13px 12px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth{
+		overflow:hidden;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul{
+		width:123px;
+		float:left;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu.oneColumn{
+		width:165px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu.oneColumn .subDepth ul{
+		width:100%;
+	}
+
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth .arrowP{
+		position:absolute; left:88px; top:-8px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth1{
+
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth1 li{
+		position:relative;
+		height:26px;
+		padding: 8px 4px 6px 20px;
+		color:#14362d;
+		font-size:16px;
+		background:#fff;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth1 li .Depth1_arrow{
+		position:absolute; right:-1px; top:15px; z-index:10;
+		display:none;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth1 li a{
+		font-weight: 600;
+		font-size:15px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth1 li.on{
+		background:#edf7de;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth2{
+		display:none;
+		padding:0 0 0;
+		border-left:1px solid #00592d;
+		min-height:350px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth2 li{
+		padding: 9px 4px 13px 20px;
+		/* height:26px; */
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth2 li a{
+		font-weight:400;
+		color:#757575;
+		font-size: 15px;
+	}
+	.header .headerCon .inCon .navi > article.menu .subMenu .subDepth ul.Depth2 li a:hover{
+		color:#14362d;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu{
+		position:relative;
+		float:right;
+		padding:16px 0 0;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .memberMenu{
+		float:left;
+		display:none;
+		/*background:url("https://image.hankookilbo.com/n/bullet/blt_type3.gif") no-repeat left top;*/
+		padding:0 7px 0 0;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .memberMenu span{
+		background:url("https://image.hankookilbo.com/n/icon/ico_memMenu.png") no-repeat left top;
+		display:block;
+		width:28px; height:28px;
+		text-indent:-9999px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .icon_Paper{
+		float:left;
+		display:none;
+		background:url("https://image.hankookilbo.com/n/bullet/blt_type3-1.gif") no-repeat left top;
+		padding:0 9px 0 10px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .icon_Paper span{
+		background:url("https://image.hankookilbo.com/n/icon/ico_paper.png") no-repeat left top;
+		display:block;
+		width:28px; height:28px;
+		text-indent:-9999px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .icon_Search{
+		float:left;
+		display:block;
+/*		background:url("https://image.hankookilbo.com/n/bullet/blt_type3-1.gif") no-repeat left top;*/
+		padding:0 0 0 8px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .icon_Search span{
+		background:url("https://image.hankookilbo.com/n/icon/ico_search.png") no-repeat left top;
+		display:block;
+		width:28px; height:28px;
+		text-indent:-9999px;
+	}
+
+
+	.header .headerCon .inCon .navi > article.MyMenu > ul{
+		background:url("https://image.hankookilbo.com/n/bullet/blt_type3-1.gif") no-repeat right top;
+		display:block;
+		float:left;
+		padding:4px 18px 0 0;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > ul > li{
+		float:left;
+		padding:0 0 0 12px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > ul > li > a{
+		color:#353535;
+		font-size: 14px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .popup{
+		position:absolute;
+		display:none;
+-webkit-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 0 2px 5px -1px rgba(0,0,0,0.25);
+        box-shadow: 0 2px 5px -1px rgba(0,0,0,0.25);
+
+filter:progid:DXImageTransform.Microsoft.dropshadow(
+    OffX=2px, OffY=5px, Color='black', Positive='false'
+); /* IE 5.5 */
+border-collapse: separate; /* Required by IE 9 */
+-webkit-animation: fadeeffect 0.25s ease-in-out;
+   -moz-animation: fadeeffect 0.25s ease-in-out;
+    -ms-animation: fadeeffect 0.25s ease-in-out;
+        animation: fadeeffect 0.25s ease-in-out;
+
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .popup .loginBox{
+		padding:5px 0;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .popup .loginBox p{
+		padding:11px 0 0;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu > .popup .loginBox p:nth-child(3){
+		padding-left:10px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .paperCon p{
+		padding:7px 0;
+		font-weight:600;
+		color:#b7bbbc;
+		font-size:16px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .paperCon p a{
+		font-weight:600;
+		color:#14362d;
+		font-size:16px;
+		margin:0 5px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .paperCon p img{
+		display:inline;
+		vertical-align:middle;
+		margin-top:-5px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer{
+		position:relative;
+		border:1px solid #00592d;
+		border-top: 3px solid #00592d;
+		background:#fff;
+		width: 302px;
+		padding: 12px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer .arrBlt{
+		position:absolute; right:18px; top:-8px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer .close{
+		position:absolute; right:15px; top:16px;
+		cursor:pointer;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer h4{
+		font-weight:600;
+		color:#14362d;
+		font-size:21px;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer .input{
+		position:relative;
+		/* margin: 0; */
+		/* height: 42px; */
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer input{
+		background:#f5f5f5;
+		border:none;
+		font-weight:400;
+		color:#959595;
+		font-size: 15px;
+		padding: 11px;
+-webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+     -o-box-sizing:border-box;
+        box-sizing:border-box;
+	}
+	.header .headerCon .inCon .navi > article.MyMenu .popupLayer .input p{
+		position:absolute;
+		right:0;
+		top: 0;
+	}
+	.header .headerCon .inCon .navi > .naviCategory{
+		float:right;
+		padding:9px 0 0 15px;
+		display:none;
+	}
+	.header .headerCon .inCon .navi > .naviCategory li{
+		float:left;
+		padding:0 20px 0 0;
+	}
+	.popBtn{cursor:pointer;}
+
+
+/* container */
+.container{
+	padding:107px 0 43px;
+	min-width:1002px;
+}
+
+
+/* 우측영역 */
+.container .rightCon{
+	float:right;
+	width:302px;
+	margin: 7px 7px 0 0;
+	position:relative;
+}
+.container .rightCon a{
+	color:#555555;
+	font-size: 14px;
+}
+.container .rightCon a:hover{
+	color:#151515;
+}
+.container .rightCon li a:hover{
+	text-decoration:underline;
+}
+.container .rightCon dl a:hover{
+	text-decoration:underline;
+}
+.container .rightCon > div:first-child{
+	margin: 0 0 18px;
+}
+.container .rightCon > div:first-child img{
+	border:1px solid #dddddd;
+}
+.container .rightCon .brunch{
+	padding:0 0 18px;
+}
+.container .rightCon .brunch ul li{
+	padding: 6px 0;
+}
+.container .rightCon .brunch ul li img{border:1px solid #eee;}
+.container .rightCon .brunch ul li:hover img{border:1px solid #ccc;}
+.container .rightCon .todayColumn{
+	border-top: 1px solid #959595;
+}
+.container .rightCon .todayColumn > .inCon{
+	overflow:hidden;
+	padding: 12px 8px;
+	border-bottom:1px solid #eaeaea;
+}
+.container .rightCon .todayColumn > .inCon > div.explan{
+	float:left;
+	width:70%;
+	max-width: 218px;
+	padding: 4px 0 0 10px;
+}
+.container .rightCon .todayColumn > .inCon > div.explan > p:nth-child(1){
+	background: url("https://image.hankookilbo.com/n/bullet/blt_type6.gif") no-repeat left 5px;
+	padding:0 0 4px 10px;
+}
+.container .rightCon .todayColumn > .inCon > div.explan > p:nth-child(1) a{
+	/* color: #353535; */
+	font-weight:600;
+	font-size: 15px;
+	width:100%;
+}
+.container .rightCon .todayColumn > .inCon > div.explan > p:nth-child(2){
+	padding: 0 0 0 11px;
+	width:100%;
+}
+.container .rightCon .todayColumn > .inCon > div.explan > p:nth-child(2) a{
+	font-size: 14px;
+}
+.container .rightCon .todayColumn > .inCon > .img{
+	float:left;
+	position:relative;
+}
+.container .rightCon .todayColumn > .inCon > .img .photoFrame{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.container .rightCon .todayColumn > .inCon.critique{
+	background:#f4f4f4;
+}
+.container .rightCon .todayColumn > .inCon.critique > div.explan > p:nth-child(1)
+{
+	margin: 18px 0 0;
+}
+.container .sumnailType .img{
+	position:relative;
+}
+.container .sumnailType .img .photoFrame{
+	position:absolute; left:0; top:0;
+}
+
+
+
+/*
+.container .rightCon .critique > p{
+	background:#f4f4f4 url("https://image.hankookilbo.com/n/bullet/blt_type6.gif") no-repeat 9px 16px;
+	padding:13px 0 0 21px;
+	height:27px;
+	color:#656565;
+	font-weight:600;
+}
+*/
+
+
+.container .rightCon .human{
+	margin: 18px 0;
+}
+.container .rightCon .rightBn{
+	padding:0 0 21px;
+}
+.container .rightCon .rightBn img{
+	border:1px solid #c1c1c3;
+}
+.container .rightCon .subSnsWrap{
+	margin: 18px 0;
+}
+.container .rightCon .realTimeNews{
+	position:relative;
+	margin: 0 0 18px;
+}
+.container .rightCon .realTimeNews .tabList{
+	position:absolute;
+	left:2px;
+	/* top:-34px; */
+	z-index:30;
+	overflow:hidden;
+}
+.container .rightCon .realTimeNews .tabList p{
+	float:left;
+	cursor:pointer;
+}
+.container .rightCon .realTimeNews .tabList p.arrL{
+	padding:8px 8px 0 6px;
+}
+.container .rightCon .realTimeNews .tabList p.arrL span{
+	width:7px; height:20px;
+	background:url("https://image.hankookilbo.com/n/icon/ico_arrGreenL.png") no-repeat left top;
+	text-indent:-9999px;
+	display:block;
+}
+.container .rightCon .realTimeNews .tabList p.arrL span:hover,
+.container .rightCon .realTimeNews .tabList p.arrR span:hover{
+	background-position:0 -23px;
+}
+.container .rightCon .realTimeNews .tabList p.arrR{
+	padding:8px 8px 0 6px;
+	float:right;
+}
+.container .rightCon .realTimeNews .tabList p.arrR span{
+	width:7px; height:20px;
+	background:url("https://image.hankookilbo.com/n/icon/ico_arrGreenR.png") no-repeat left top;
+	text-indent:-9999px;
+	display:block;
+}
+
+.container .rightCon .realTimeNews .tabList ul{
+	float:left;
+	width:258px;
+	cursor:pointer;
+	display:none;
+}
+.container .rightCon .realTimeNews .tabList ul li{
+	float:left;
+	width:86px;
+	text-align:center;
+	padding:8px 0 8px;
+	font-weight:600;
+	color:#555555;
+	background:#f5f5f5;
+	box-sizing:border-box;
+	border-right: 1px solid #fafafa;
+	display:none;
+}
+.container .rightCon .realTimeNews .tabList ul li:nth-child(1),
+.container .rightCon .realTimeNews .tabList ul li:nth-child(2),
+.container .rightCon .realTimeNews .tabList ul li:nth-child(3){
+	display:block;
+}
+.container .rightCon .realTimeNews .tabList ul li.on{
+	background:#fff;
+	color:#151515;
+	border-top:1px solid #dddddd;
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+}
+.container .rightCon .realTimeNews .ListCon{
+	position:relative;
+	top: 34px;
+	margin: 0 0 52px;
+	padding:0 0 0 24px;
+	height:322px;
+	border-top:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+}
+.container .rightCon .realTimeNews .ListCon p.timeImg{
+	position:absolute; left:0; top:0; z-index:10;
+}
+.container .rightCon .realTimeNews .ListCon ul{
+	display:none;
+	background-color:#ffffff;
+}
+.container .rightCon .realTimeNews .ListCon ul li{
+	height:63px;
+	border-bottom:1px solid #eeeeee;
+	padding:0 0 0 13px;
+}
+.container .rightCon .realTimeNews .ListCon ul li:last-child{
+	border-bottom:none;
+}
+.container .rightCon .realTimeNews .ListCon ul li p a{
+	color:#151515;
+	font-weight:600;
+}
+.container .rightCon .realTimeNews .ListCon ul li p:first-child{
+	width:260px;
+     -o-text-overflow:ellipsis;
+        text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	padding: 14px 0 4px;
+}
+.container .rightCon .realTimeNews .ListCon ul li p:last-child{
+	color:#959595;
+	font-size:12px;
+}
+.container .rightCon .realTimeNews .ListCon ul li:nth-child(1) p:last-child{
+	color:#4da525;
+}
+
+
+.container .rightCon .majorNews{
+	border-top: 1px solid #959595;
+	border-bottom: 1px solid #eee;
+	padding: 12px 0;
+}
+.container .rightCon .majorNews dl{
+	overflow:hidden;
+	padding: 6px 0;
+}
+.container .rightCon .majorNews dl:last-child{
+	margin:0;
+}
+.container .rightCon .majorNews dl dt{
+	float:left;
+	margin: 0 12px 0 0;
+	width:90px;
+	height:58px;
+	overflow:hidden;
+}
+.container .rightCon .majorNews dl dt img{
+	width:88px; height:56px;
+	border:1px solid #ccc;
+}
+.container .rightCon .majorNews dl dd{
+	float:left;
+	width: 196px;
+	line-height:21px;
+}
+.container .rightCon .todayPhoto{
+	position:relative;
+	width: 300px;
+	height: 300px;
+	overflow:hidden;
+	margin: 0 1px;
+}
+.container .rightCon .todayPhoto .photo{
+	width:1800px; position:absolute; left:0; top:0;
+
+}
+.container .rightCon .todayPhoto .photo div{
+	position:relative;
+	width: 300px;
+	float:left;
+}
+.container .rightCon .todayPhoto .Explan{
+	position:absolute; left:0; bottom:0;
+	background:#353535;
+	width:100%;
+	height:32px;
+}
+.container .rightCon .todayPhoto .Explan p{
+	font-weight:600;
+	color:#fff;
+	letter-spacing:-0.05em;
+	padding:9px 0 0 13px;
+
+	width:280px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+.container .rightCon .todayPhoto p.arrL{
+	cursor:pointer;
+	position:absolute; left:0; top:75px; z-index:100;
+}
+.container .rightCon .todayPhoto p.arrR{
+	cursor:pointer;
+	position:absolute; right:-2px; top:75px; z-index:100;
+}
+.container .rightCon .todayPageNum{
+	position:absolute; left:0; bottom:0;
+	background:#f3f3f3;
+	border-top:1px solid #ededed;
+	width:100%;
+}
+.container .rightCon .todayPageNum ul{
+	padding:8px 0;
+	text-align:center;
+}
+.container .rightCon .todayPageNum ul li{
+	display:inline-block;
+}
+.container .rightCon .todayMedia{
+
+}
+.container .rightCon .todayMedia .Media{
+	position:relative;
+	border: 1px solid #eee;
+}
+.container .rightCon .todayMedia .Media div:first-child{
+	height:225px;
+}
+.container .rightCon .todayMedia .Media div:first-child img{
+	width:100%; height:100%;
+}
+.container .rightCon .todayMedia .Media div p.playIcon{
+	position:absolute; left:50%; top:50%;
+	text-align:center;
+	text-indent:-9999px;
+	background:url("https://image.hankookilbo.com/n/icon/ico_PlayMovie.png") no-repeat 0px 0px;
+	width:50px; height:50px;
+	margin:-25px 0 0 -30px;
+	cursor:pointer;
+}
+.container .rightCon .todayMedia .Media div p.playIcon:hover{
+	background-position:0px -50px;
+}
+.container .rightCon .todayMedia .Explan{
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:#3e3e3e;
+	width:100%;
+	height:32px;
+}
+.container .rightCon .todayMedia .Explan p{
+	font-weight:600;
+	color:#fff;
+	letter-spacing:-0.05em;
+	padding:9px 0 0 13px;
+	width:280px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.container .rightCon .interactive{
+	/* padding:23px 0 21px; */
+	margin: 18px 0;
+}
+
+/* footer */
+.footer{
+	position:relative;
+	border-top:1px solid #ddd;
+	width:100%;
+	font-size: 14px;
+	line-height:1;
+	background-color: #fff;
+}
+.footer .hidden {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.footer .em {
+	color: #4da525;
+}
+.footer ul {
+	overflow: hidden;
+}
+.footer li {
+	float: left;
+}
+.footer li a {
+	display: block;
+}
+.footer h4 {
+	float:left;
+	margin-left: 10px;
+}
+.footerCon {
+	position: relative;
+	max-width:1240px;
+	min-width:1024px;
+	margin:0 auto;
+	padding: 25px 0 30px;
+}
+.footerLinks {
+	margin-left: 100px;
+}
+.footerLinks li + li {
+	margin-left: 9px;
+	padding-left: 9px;
+	border-left: 1px solid #d5d5d5;
+}
+.footerLinks a {
+	font-weight: 700;
+}
+.footerLinks a span {
+	font-weight: 400;
+}
+.footerSns {
+	position: absolute;
+	top: 12px;
+	right: 5px;
+}
+.footerSns a {
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+	background: #000 url(https://image.hankookilbo.com/n/icon/sns_logo_footer_1705.png) no-repeat;
+}
+.footerSns .fb {
+	background-position: -3px 50%;
+}
+.footerSns .tw {
+	background-position: -41px 50%;
+}
+.footerSns .ks {
+	background-position: -77px 50%;
+}
+.footerSns .fb:hover,
+.footerSns .fb:focus {
+	background-color: #3B5998;
+}
+.footerSns .tw:hover,
+.footerSns .tw:focus {
+	background-color: #1DA1F2;
+}
+.footerSns .ks:hover,
+.footerSns .ks:focus {
+	background-color: #fae100;
+}
+.footerInfo {
+	margin:22px 0 0 100px;
+}
+.footerInfo li + li {
+	margin-left: 9px;
+	padding-left: 9px;
+	border-left: 1px solid #d5d5d5;
+}
+.footerCopy {
+	margin: 9px 0 0 100px;
+	font-size: 0.857em;
+}
+.btnToTop {
+	position: absolute;
+	top: -46px;
+	right: 11px;
+  text-indent: -9999px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff url(https://image.hankookilbo.com/n/icon/ico_footerTop.png) no-repeat;
+  cursor: pointer;
+  border-radius: 3px;
+  border: solid #e2e2e2;
+  border-width: 0 1px 1px 0;
+  transition: box-shadow .2s;
+}
+.btnToTop:hover,
+.btnTotop:focus {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+@media all and (max-width: 1160px) {
+	.footer h4 {
+		margin-left: 20px;
+	}
+	.footerLinks li + li,
+	.footerInfo li + li {
+		margin-left: 7px;
+		padding-left: 7px;
+	}
+	.footerSns {
+		display: none;
+	}
+}

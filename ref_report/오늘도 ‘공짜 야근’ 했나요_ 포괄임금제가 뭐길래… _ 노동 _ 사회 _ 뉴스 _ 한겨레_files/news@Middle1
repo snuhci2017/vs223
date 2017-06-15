@@ -1,0 +1,7 @@
+document.write ('<iframe id="nad_0adu9qMhWT6Jq1trmvPB"  width="643" height="140" frameborder="0" scrolling="no"></iframe>\n');
+document.write ('<script type="text/javascript">\n');
+document.write ('var randomVal_6Jq1trmvPB   =       Math.floor(Math.random() *3 ) + 1;\n');
+document.write ('var ad_url="http://adv.mediaharbor.co.kr/nad/media/0adu9qMhWT/6Jq1trmvPB_"+randomVal_6Jq1trmvPB+".html";\n');
+document.write ('var ad_obj=document.getElementById("nad_0adu9qMhWT6Jq1trmvPB");\n');
+document.write ('ad_obj.src=ad_url;\n');
+document.write ('</script>');

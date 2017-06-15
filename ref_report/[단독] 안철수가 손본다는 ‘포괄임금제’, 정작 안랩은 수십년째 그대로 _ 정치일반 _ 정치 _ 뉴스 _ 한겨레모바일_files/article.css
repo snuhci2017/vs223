@@ -1,0 +1,576 @@
+	.article_slide_box	> .slide_mid	> .slide_article	> section.article:first-child	> article.body	> .headline.type2
+	{
+		padding-top					: 60px;
+	}
+	
+	section.article		article.body
+	{
+		background-color			: white;
+	}
+	section.article		article.body	> .headline
+	{
+		position					: relative;
+	}
+	section.article		article.body	> .headline.type0	.text
+	{
+		position					: absolute;
+		bottom						: 0px;
+		width						: 100%;
+	}
+	section.article		article.body	> .headline.type0	h1
+	{
+		color						: white;
+		padding						: 10px 12px 0 12px;
+		text-shadow					: 1px 1px 3px #000;
+	}
+	
+	section.article		article.body	> .headline		h1
+	{
+		padding						: 10px 12px 5px 12px;
+	    font-size					: 32px;
+	    line-height					: 1.3em;
+	    letter-spacing				: -0.06em;
+		
+	}
+	section.article		article.body	> .headline		.sns_count
+	{
+		padding						: 0 12px 0 12px;
+		font-size					: 16px;
+		text-align					: right;
+	}
+	section.article		article.body	> .headline		.sns_box
+	{
+		display						: inline-block;
+		vertical-align				: middle;
+		background-repeat			: no-repeat;
+		background-position			: left center;
+		padding-left				: 20px;
+		background-size				: 15px 15px;
+	}
+	section.article		article.body	> .headline		.reply_box
+	{
+		display						: inline-block;
+		vertical-align				: middle;
+		background-repeat			: no-repeat;
+		background-position			: left center;
+		padding-left				: 22px;
+		margin-left					: 5px;
+		background-size				: 15px 16px;
+	}	
+	section.article		article.body	> .headline		.sns_count.white	.sns_box
+	{
+		color						: white;
+		background-image			: url(../image/icon/icon_share_article_white.png);
+	}
+	section.article		article.body	> .headline		.sns_count.gray		.sns_box
+	{
+		color						: #cccccc;
+		font-size					: 11px;
+		padding-top					: 2px;
+		background-image			: url(../image/icon/icon_share_article_gray.png);
+	}
+	section.article		article.body	> .headline		.sns_count.black	.sns_box
+	{
+		background-image			: url(../image/icon/icon_share_article_black.png);
+	}
+	section.article		article.body	> .headline		.sns_count.white	.reply_box
+	{
+		color						: white;
+		background-image			: url(../image/icon/icon_reply_article_white.png);
+	}
+	section.article		article.body	> .headline		.sns_count.gray		.reply_box
+	{
+		color						: #cccccc;
+		font-size					: 11px;
+		padding-top					: 2px;
+		background-image			: url(../image/icon/icon_reply_article_gray.png);
+	}
+	section.article		article.body	> .headline		.sns_count.black	.reply_box
+	{
+		background-image			: url(../image/icon/icon_reply_article_black.png);
+	}
+	
+	section.article		article.body	.journalist.size1,
+	section.article		article.body	.journalist.size2,
+	section.article		article.body	.journalist.size3,
+	section.article		article.body	.journalist.size4,
+	section.article		article.body	.journalist.size5
+	{
+		padding						: 5px 12px 0px 12px;
+	}
+	section.article		article.body	.journalist.size2		li,
+	section.article		article.body	.journalist.size3		li,
+	section.article		article.body	.journalist.size4		li,
+	section.article		article.body	.journalist.size5		li
+	{
+		display						: inline-block;
+		text-align					: center;
+	}
+	section.article		article.body	.journalist.size2		li + li,
+	section.article		article.body	.journalist.size3		li + li,
+	section.article		article.body	.journalist.size4		li + li,
+	section.article		article.body	.journalist.size5		li + li
+	{
+		margin-left				: 5px;
+	}
+	section.article		article.body	.headline.type0		.journalist
+	{
+		padding-bottom				: 15px;
+	}
+	section.article		article.body	.journalist			.profile
+	{
+		display						: inline-block;
+		width						: 50px;
+		height						: 50px;
+		background-size				: 50px 50px;
+		background-position			: center center;
+		background-repeat			: no-repeat;
+		border-radius				: 100%;
+		border						: 1px solid #efefef;
+		vertical-align				: top;
+	}
+	section.article		article.body	.journalist.size1		.name
+	{
+		display						: inline-block;
+		vertical-align				: top;
+		font-size					: 14px;
+		padding-top					: 24px;
+	}
+	section.article		article.body	.headline.type0		.journalist.size1		.name
+	{
+		color						: white;
+	}
+	section.article		article.body	.journalist.size2		.name,
+	section.article		article.body	.journalist.size3		.name,
+	section.article		article.body	.journalist.size4		.name,
+	section.article		article.body	.journalist.size5		.name
+	{
+		font-size					: 11px;
+		letter-spacing				: -0.05em;
+		color						: ;
+	}
+	
+	section.article		article.body	> .tools
+	{
+		padding						: 10px 12px 10px 12px;
+		position					: relative;
+	}
+	section.article		article.body	> .tools	> .date
+	{
+		display						: inline-block;
+		font-size					: 11px;
+		color						: #999999;
+		line-height					: 1.5em;
+	}
+	section.article		article.body	> .tools	> .font_size
+	{
+		position					: absolute;
+		top							: 10px;
+		right						: 10px;
+		text-align					: right;
+		font-size					: 35px;
+	/**	font-size					: 24px; **/
+		line-height					: 0px;
+	}
+	section.article		article.body	> .tools	> .font_size	> .button
+	{
+		display						: inline-block;
+		width						: 24px;
+		height						: 24px;
+		cursor						: pointer;
+		background-size				: 24px 24px;
+		background-position			: center center;
+		background-repeat			: no-repeat;
+	}
+	section.article		article.body	> .tools	> .font_size	> .button.up
+	{
+		background-image			: url(../image/icon/icon_font_size_up.png);
+	}
+	section.article		article.body	> .tools	> .font_size	> .button.down
+	{
+		background-image			: url(../image/icon/icon_font_size_down.png);
+	}
+	
+	section.article		article.body	> .article	h4
+	{
+		padding						: 12px;
+		font-size					: 95%;
+		line-height					: 1.5em;
+		letter-spacing				: -0.03em;
+		font-weight					: bold;
+	}
+	section.article		article.body	> .article	.image_box
+	{
+		margin						: 0px auto 0px auto;
+	}
+	section.article		article.body	> .article	.image_box		.image		.background
+	{
+		background-size				: cover;
+    	background-position			: center top;
+	}	
+	section.article		article.body	> .article	.image_box		.caption
+	{
+		margin						: 10px 12px 10px 12px;
+		font-size					: 70%;
+		line-height					: 1.5em;
+		color						: #999;
+	}	
+	section.article		article.body	> .article	.text
+	{
+		padding						: 15px;
+		font-size					: 102%;
+		line-height					: 1.7em;
+		letter-spacing				: 0em;
+	}
+	
+	section.article		article.body	> .article .indent
+	{	
+	    margin                  : auto 10%;	
+	}	
+
+	section.article		article.body	> .article .blockquote_type01
+	{
+		background              : url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_blockquote_up_m.png) no-repeat 5px 26px;
+		background-size         : 20px 14px;
+		border-bottom           : 1px solid #dedede;
+		border-top              : 1px solid #dedede;    
+		color                   : #333;
+		font-size               : 18px;
+		font-weight             : bold;
+		line-height             : 23pt;
+		margin                  : 25px 15%;
+		padding                 : 35px 5%;
+		position                : relative;
+		text-align              : center;
+	}
+
+	section.article		article.body	> .article .blockquote_type01:before
+	{
+		background              : url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_blockquote_down_m.png) no-repeat 0 0;
+		background-size         : 20px 14px;
+		bottom                  : 22px;
+		content                 : "";
+		height                  : 20px;
+		position                : absolute;
+		right                   : 5px;
+		width                   : 25px;
+	}
+
+	section.article		article.body	> .article .blockquote_type02
+    {
+		background              : url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_blockquote_up2_m.png) no-repeat 50% 8px;
+		background-size         : 25px 25px;
+		color                   : #333;
+		font-size               : 20px;
+		font-weight             : bold;
+		line-height             : 23pt;
+		margin                  : 25px 15%;
+		padding                 : 50px 3% 25px;
+		position                : relative;
+		text-align              : center;
+    }
+	section.article		article.body	> .article .indent .blockquote_type01,
+	section.article		article.body	> .article .indent .blockquote_type02
+    {
+         margin                 : 25px 12%;
+    }
+
+    section.article		article.body	> .article	#news-box 
+	{
+		*zoom:1;display:block; 
+		clear:both; 
+		padding:10px 0;
+	}
+    section.article		article.body	> .article	#news-box:after 
+	 {
+		content:""; 
+		display:block; 
+		clear:both;
+	}
+    section.article		article.body	> .article	#news-box .news-box
+	{
+		border:1px solid #e6e6e6; 
+		background-color:#f7f7f7; 
+		padding:10px; 
+	} 
+
+	section.article		article.body	> .article	#news-box2
+	{
+		padding					: 20px 0px 20px 0px;
+	}
+	section.article		article.body	> .article	#news-box2	.news-box2
+	{
+		padding					: 12px 24px 12px 30px;
+		border-left				: 2px solid #474747;
+		background-color		: #f7f7f7;
+		position				: relative;
+		margin-left				: 8px;
+	}
+	section.article		article.body	> .article	#news-box2	.news-box2:before
+	{
+		content					: "";
+		position				: absolute;
+		top						: 10%;
+		left					: -8px;
+		width					: 24px;
+		height					: 30px;
+		background				: url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_forum_48x48.png) no-repeat;
+		background-size			: 24px 24px;
+		background-color		: #f7f7f7;
+		background-position		: 0px 6px;
+	}
+	
+    section.article		article.body	> .article	.news-box01 
+	{
+		*zoom:1;display:block; 
+		clear:both; 
+		padding:10px 0;
+	}
+    section.article		article.body	> .article	.news-box01:after 
+	 {
+		content:""; 
+		display:block; 
+		clear:both;
+	}
+    section.article		article.body	> .article	.news-box01 .news-box
+	{
+		border:1px solid #e6e6e6; 
+		background-color:#f7f7f7; 
+		padding:10px; 
+	} 
+
+	section.article		article.body	> .article	.news-box02
+	{
+		padding					: 20px 0px 20px 0px;
+	}
+	section.article		article.body	> .article	.news-box02	.news-box
+	{
+		padding					: 12px 24px 12px 30px;
+		border-left				: 2px solid #474747;
+		background-color		: #f7f7f7;
+		position				: relative;
+		margin-left				: 8px;
+	}
+	section.article		article.body	> .article	.news-box02	.news-box:before
+	{
+		content					: "";
+		position				: absolute;
+		top						: 10%;
+		left					: -8px;
+		width					: 24px;
+		height					: 30px;
+		background				: url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_forum_48x48.png) no-repeat;
+		background-size			: 24px 24px;
+		background-color		: #f7f7f7;
+		background-position		: 0px 6px;
+	}
+	
+	section.article		article.body	> .reply_button_box		.tb
+	{
+		width						: 100%;
+		table-layout				: fixed;
+	}
+	section.article		article.body	> .reply_button_box		.tr
+	{
+		border-top					: 1px solid #eeeeee;
+		border-bottom				: 1px solid #eeeeee;
+	}
+	section.article		article.body	> .reply_button_box		.tc
+	{
+		padding						: 20px;
+		text-align					: center;
+		font-size					: 17px;
+		cursor						: pointer;
+	}
+	section.article		article.body	> .reply_button_box		.tc.reply
+	{
+		border-right				: 1px solid #eeeeee;
+	}
+	section.article		article.body	> .reply_button_box		.tc.reply	.count
+	{
+		    color					: #00beb7;
+			font-weight				: bold;
+	}
+
+	.base	> .article_share,
+	.base	> .article_reply
+	{
+		position					: fixed;
+		top							: 0px;
+		left						: 0px;
+		width						: 100%;
+		height						: 100%;
+		z-index						: 600;
+		text-align					: center;
+	}
+	.base	> .article_share	> .box,
+	.base	> .article_reply	> .box
+	{
+		position					: relative;
+		max-width					: 640px;
+		width						: 100%;
+		height						: 100%;
+		background-color			: rgba(1,1,1,0.6);
+		margin						: 0px auto 0px auto;
+	}
+	.base	> .article_share	> .box	> header,
+	.base	> .article_reply	> .box	> header,
+	.base	> .article_reply	> .box	> main		> .padding
+	{
+		height						: 50px;
+	}
+	.base	> .article_share	> .box	> header,
+	.base	> .article_reply	> .box	> header
+	{
+		position					: absolute;
+		top							: 0px;
+		width						: 100%;
+	}
+	.base	> .article_share	> .box	> header	> .close,
+	.base	> .article_reply	> .box	> header	> .close
+	{
+		position					: absolute;
+		top							: 0px;
+		right						: 0px;
+		width						: 44px;
+		height						: 44px;
+		cursor						: pointer;
+	/**	background-color			: rgba(250,250,250,0.9);  **/
+		background-image			: url(../image/icon/icon_top_close_white.png);
+		background-position			: center center;
+		background-size				: 16px 16px;
+		background-repeat			: no-repeat;
+		z-index						: 605;
+	}
+	.base	> .article_share	> .box	> main,
+	.base	> .article_reply	> .box	> main
+	{
+		overflow-x					: hidden;
+		overflow-y					: scroll;
+		height						: 100%;
+	}
+	.base	> .article_share	> .box	> main		> section
+	{
+		position					: relative;
+		display						: inline-block;
+		width						: 300px;
+		z-index						: 608;
+		border-radius				: 5px;
+		overflow					: hidden;
+		vertical-align				: middle;
+		box-shadow					: 0px 1px 1px rgba(0,0,0,0.5);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li
+	{
+		padding						: 20px 10px 20px 100px;
+		background-color			: white;
+		text-align					: left;
+		line-height					: 24px;
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li + li
+	{
+		border-top					: 1px solid #eeeeee;
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li			.icon
+	{
+		display						: inline-block;
+		width						: 24px;
+		height						: 24px;
+		background-size				: 24px 24px;
+		background-position			: center center;
+		background-repeat			: no-repeat;
+		margin-right				: 5px;
+		vertical-align				: middle;
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.facebook	.icon
+	{
+		background-image			: url(../image/icon/icon_sns_facebook.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.twitter	.icon
+	{
+		background-image			: url(../image/icon/icon_sns_twitter.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.google		.icon
+	{
+		background-image			: url(../image/icon/icon_sns_google.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.naver		.icon
+	{
+		background-image			: url(../image/icon/icon_sns_naver.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.kakao		.icon
+	{
+		background-image			: url(../image/icon/icon_sns_kakao.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.scrap		.icon
+	{
+		background-image			: url(../image/icon/icon_sns_scrap.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.email		.icon
+	{
+		background-image			: url(../image/icon/icon_mail.png);
+	}
+	.base	> .article_share	> .box	> main		> section	> ul		> li.link_url	.icon
+	{
+		background-image			: url(../image/icon/icon_sns_link.png);
+	}	
+	.base	> .article_reply	> .box	> main		> #livereContainer
+	{
+		background-color			: white;
+	}
+	.base	> .article_share	> .background
+	{
+		position					: absolute;
+		top							: 0px;
+		left						: 0px;
+		width						: 100%;
+		height						: 100%;
+		z-index						: 601;
+	}
+	
+	
+	section.article		> .article_bottom
+	{
+		border-top					: 1px solid #e4e4e4;
+		height						: 10px;
+		background-color			: white;
+	}
+	
+	
+   .base	> .article_reply	> .box	> main .reply-noti
+	{
+	background-color			: white;
+		padding: 10px 10px 0;
+		font-size: 12px;
+		text-align: left;
+		color: #777;
+	}
+
+
+	section.article		article.body	> .article	.relation-area {  border-top:1px solid #eaeaea; padding:10px 15px 5px 15px;  margin:20px 0 10px 0;}
+	section.article		article.body	> .article	.relation-area h5 { font-size:16px; color: #000}
+	section.article		article.body	> .article	.relation-list { padding-top:10px;} 
+	section.article		article.body	> .article	.relation-list li{ background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_dot_2x14.gif) no-repeat left top; padding-left:12px; font-size:14px; color:#444; line-height:1.4em; padding-bottom:13px; letter-spacing:-1px; }
+
+	section.article		article.body	> .article	.relation2-area {  border-top:1px solid #eaeaea; padding:10px 15px 5px 15px;  margin:20px 0 10px 0;}
+	section.article		article.body	> .article	.relation2-area h5 { font-size:16px; color: #000}
+	section.article		article.body	> .article	.relation2-area h5 span { font-size:14px; color: #00a5a4;padding-right:7px;}
+	section.article		article.body	> .article	.relation2-list { padding-top:10px;} 
+	section.article		article.body	> .article	.relation2-list li{ background:url(http://img.hani.co.kr/section-image/15/hani/images/icon/icon_dot_2x14.gif) no-repeat left top; padding-left:12px; font-size:14px; color:#444; line-height:1.4em; padding-bottom:13px; letter-spacing:-1px; }
+	
+	
+	
+
+	
+	section.article	.promotion-banner { position:relative; padding:20px 0 20px; overflow:hidden; margin:0 auto; text-align:center; }
+	section.article	.promotion-banner a { display:inline-block;  width:30%;}
+	section.article	.promotion-banner a .icon { display:inline-block;  margin:0 auto; text-align:center;padding: 5px 0 8px ; line-height:1.3em; font-size:13px; letter-spacing:-0.08em; color:#fff; font-weight:bold;}
+	section.article	.promotion-banner .promotion-bn01 { background-color:#fabb05;}
+	section.article	.promotion-banner .promotion-bn02 { background-color:#00aca6;}
+	section.article	.promotion-banner .promotion-bn03 { background-color:#345fbb;}
+	section.article	.promotion-banner .promotion-bn01 .icon { background:url(http://img.hani.co.kr/section-image/15/mobile/image/icon/icon_bn_talk.png) no-repeat 50% 5px; padding-top:25px;  background-size: 18px 17px;}
+	section.article	.promotion-banner .promotion-bn02 .icon { background:url(http://img.hani.co.kr/section-image/15/mobile/image/icon/icon_bn_hani.png) no-repeat 50% 5px; padding-top:25px;  background-size: 18px 17px;}
+	section.article	.promotion-banner .promotion-bn03 .icon { background:url(http://img.hani.co.kr/section-image/15/mobile/image/icon/icon_bn_face.png) no-repeat 50% 5px; padding-top:25px;  background-size: 18px 17px;}
+
+	
+	

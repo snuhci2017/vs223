@@ -1,0 +1,477 @@
+/******************************************  Scouter ******************************************/
+naver_corp_da.Scouter = function(info){
+	if(!info.unit || !info.domId || !info.templateId || !info.ac) return;
+
+	this.daDomain = info.daDomain || [];
+	this.loggingUrlPrefix = info.loggingUrlPrefix || "http://scouter.naver.com/collect/scriptError?";
+	this.randomNumber = info.randomNumber || 1000;
+	this.unit = info.unit;
+	this.domId = info.domId;
+	this.templateId = info.templateId;
+	this.ac = info.ac;
+
+	this.init = function(){
+		// this.addErrorEventListner();
+	};
+
+	// try catch 로 잡은 에러를 수집한다. 
+	this.collectError = function(e){
+		var errorType = e.name || "";
+		var errorMessage = e.stack || e.message || e.toString() || "";
+
+		if(!this.isRandomNumber()) return;
+
+		this.log(this.loggingUrlPrefix + this.getErrorLogParam(errorType, errorMessage, "", "", ""));
+	};
+
+	// addErrorEventListner : onError 이벤트 핸들러를 등록한다. 광고 도메인 경로가 아니거나 랜덤 값이 아닌 경우 로깅을 하지 않는다. 
+	this.addErrorEventListner = function(){
+		var _this = this;
+		if(window.addEventListener){
+			window.addEventListener('error', function (e) {
+				var errorType = (e.error && e.error.name) || e.type || "";
+				var errorMessage = e.message || "";
+				var fileName = e.filename || "";
+				var lineNo = e.lineno || "";
+				var columnNo = e.colno || "";
+
+				if(!_this.isDaDomain(fileName) || !_this.isRandomNumber()) return;
+
+				_this.log(_this.loggingUrlPrefix + _this.getErrorLogParam(errorType, errorMessage, fileName, lineNo, columnNo));
+			}, false);
+		} else {
+			window.attachEvent('onerror', function(errorMessage, fileName, lineNo, columnNo, errorType) {
+				var errorType = errorType || "";
+				var errorMessage = errorMessage || "";
+				var fileName = fileName || "";
+				var lineNo = lineNo || "";
+				var columnNo = columnNo || "";
+
+				if(!_this.isDaDomain(fileName) || !_this.isRandomNumber()) return;
+
+				_this.log(_this.loggingUrlPrefix + _this.getErrorLogParam(errorType, errorMessage, fileName, lineNo, columnNo));
+			}, false);	
+		}
+	};
+
+	// isDaDomain : 광고 도메인인지 체크
+	this.isDaDomain = function(fileName){
+		if(fileName === "") return false;
+
+		// DA 라이브러리 도메인
+		var ours = this.daDomain;
+
+		for(var i = 0; i < ours.length; i++) {
+			if(fileName.match(ours[i]) !== null) return true; // 하나라도 매칭되면 true
+		}
+
+		return false;
+	};
+
+	// isRandomNumber : 로깅을 랜덤하게 처리할 때 사용
+	this.isRandomNumber = function(){
+		var rNum = Math.floor(Math.random() * this.randomNumber) + 1;
+		if(rNum === this.randomNumber) return true;
+
+		return false;
+	};
+
+	this.getErrorLogParam = function(errorType, errorMessage, fileName, lineNo, columnNo){
+		var errorLogParam = "unit=" + this.unit + "&domId=" + this.domId + 
+					"&templateId=" + this.templateId + "&ac=" + this.ac + 
+					"&errorType=" + errorType + "&errorMessage=" + errorMessage + 
+					"&fileName=" + fileName + "&lineNo=" + lineNo + "&columnNo=" + columnNo;
+		return errorLogParam;
+	};
+
+	this.log = function(url){
+		// var img = document.createElement("img");
+		// img.setAttribute("src", url);
+	};
+};
+
+naver_corp_da.scouters = naver_corp_da.scouters || {};
+
+
+naver_corp_da.scouters["adw_da".trim() || "adw_da"] = new naver_corp_da.Scouter({
+	daDomain : ["adcreative.naver.com", "tveta.naver.net", "ssl.pstatic.net/tveta", "ad.naver.com", "veta.naver.com"],
+	loggingUrlPrefix : "http://scouter.naver.com/collect/scriptError?",
+	randomNumber : 1000,
+	unit : "SU10067",
+	domId : "adw_da".trim() || "adw_da",
+	templateId : "824",
+	ac : "7435812"
+});
+/******************************************  Scouter ******************************************/
+
+/******************************************	ActiveView ******************************************/
+var naver_corp_da = naver_corp_da || {};
+
+naver_corp_da.getDateString = function() {
+	var curDate = new Date();
+	var year = curDate.getFullYear();
+	var month = ((curDate.getMonth() + 1) < 10) ? "0" + (curDate.getMonth() + 1) : curDate.getMonth() + 1;
+	var day = (curDate.getDate() < 10) ? "0" + curDate.getDate() : curDate.getDate();
+	var hour = (curDate.getHours() < 10) ? "0" + curDate.getHours() : curDate.getHours();
+	var minute = (curDate.getMinutes() < 10) ? "0" + curDate.getMinutes() : curDate.getMinutes();
+	var second = (curDate.getSeconds() < 10) ? "0" + curDate.getSeconds() : curDate.getSeconds();
+
+	return year + "" + month + "" + day + "" + hour + "" + minute + "" + second;
+};
+
+naver_corp_da.ActiveViewEmpty = function(info) {
+	if (!info.adDiv) return;
+
+	this.adDiv = info.adDiv;
+	this.acEndDate = info.acEndDate || "20991231235959";
+	this.adEndDate = info.adEndDate || "20991231235959";
+	this.scrollTarget = info.scrollTarget || window;
+	this.activeViewTime = info.activeViewTime || 0;
+	this.activeViewPercentage = info.activeViewPercentage || 1.0;
+	this.orientationChangeTime = info.orientationChangeTime || 500;
+	this.callback = info.callback || null;
+	this.callbackForInValid = info.callbackForInValid || null;
+
+	this.viewPortIn = false;
+	this.timeout = null;
+	this.isValid = true;
+	this.isCalledCallbackForInValid = false;
+
+	this.scrollEventHandler = function(e) {
+		var _this = this;
+		var curDate = naver_corp_da.getDateString();
+		this.isValid = (curDate <= this.adEndDate);
+
+		var flagIn = this.beIntoViewPortWithRatio(this.adDiv, this.activeViewPercentage);
+		var flagOut = !this.beIntoViewPortWithRatio(this.adDiv, 0.01);
+
+		if (!this.isValid && !this.isCalledCallbackForInValid && this.callbackForInValid) { // endDate 이후, 광고 처리
+			var flagInValid = this.beIntoViewPortWithRatio(this.adDiv, -6.0); // 광고 영역의 위치가 -600% 일 경우
+			if (flagInValid) {
+				this.callbackForInValid();
+				this.isCalledCallbackForInValid = true;
+			}
+		}
+
+		if (flagIn) { // viewport 안에 있을 경우
+			this.viewPortIn = true;
+
+			if (this.timeout) return;
+
+			this.timeout = setTimeout(function() {
+				if (!_this.viewPortIn) return;
+				if (_this.callback) _this.callback();
+			}, this.activeViewTime);
+		}
+
+		if (flagOut) { // viewport 밖에 있을 경우
+			this.viewPortIn = false;
+
+			if (!this.timeout) return;
+
+			clearTimeout(this.timeout);
+			this.timeout = null;
+		}
+	};
+
+	this.orientationChangeEventHandler = function(e) {
+		var _this = this;
+		setTimeout(function() {
+			_this.scrollEventHandler();
+		}, this.orientationChangeTime);
+	};
+
+	this.checkActiveView = function() {
+		var _this = this;
+		if (AgentDetect.IS_IOS) {
+			setTimeout(function() {
+				_this.scrollEventHandler();
+			}, 500);
+		} else {
+			this.scrollEventHandler();
+		}
+
+		this.addEventListener();
+	};
+
+	this.clearActiveView = function() {
+		this.removeEventListener();
+		clearTimeout(this.timeout);
+		this.timeout = null;
+	};
+
+	this.getIsValid = function() {
+		return this.isValid;
+	};
+};
+
+naver_corp_da.ActiveViewEmpty.prototype = {
+	beIntoViewPort: function(elem) {
+		if (!elem) return false;
+
+		var eH = parseInt(elem.style.height || elem.getBoundingClientRect().height || elem.offsetHeight);
+		var viewportTop = window.pageYOffset;
+		var viewportBottom = window.pageYOffset + window.innerHeight;
+		var elemTopMargin = this.offset(elem).top - viewportTop;
+		var elemBottomMargin = viewportBottom - (this.offset(elem).top + eH);
+
+		var f1 = (elemTopMargin >= 0);
+		var f2 = (elemBottomMargin >= 0);
+
+		return (f1 && f2);
+	},
+
+	beIntoViewPortWithRatio: function(elem, ratio) {
+		if (!elem) return false;
+
+		var ratio = (ratio) ? ratio : 1.0;
+		var eH = parseInt(elem.style.height || elem.getBoundingClientRect().height || elem.offsetHeight, 10);
+		var viewportTop = window.pageYOffset;
+		var viewportBottom = window.pageYOffset + window.innerHeight;
+
+		var f1 = (viewportTop <= (this.offset(elem).top + (eH * (1.0 - ratio))));
+		var f2 = (viewportBottom >= this.offset(elem).top + (eH * ratio));
+
+		return (f1 && f2);
+	},
+
+	offset: function(elem) {
+		var docElem, win,
+			box = { top: 0, left: 0 },
+			doc = elem && elem.ownerDocument;
+
+		if (!doc) {
+			return;
+		}
+
+		docElem = doc.documentElement;
+
+		if (typeof elem.getBoundingClientRect !== typeof undefined) {
+			box = elem.getBoundingClientRect();
+		}
+
+		win = this.getWindow(doc);
+
+		return {
+			top: box.top + (win.pageYOffset || docElem.scrollTop) - (docElem.clientTop || 0),
+			left: box.left + (win.pageXOffset || docElem.scrollLeft) - (docElem.clientLeft || 0)
+		};
+	},
+
+	getWindow: function(elem) {
+		return (elem && (elem === elem.window)) ? elem : elem.nodeType === 9 && elem.defaultView;
+	},
+
+	removeEventListener: function() {
+		if (this.scrollTarget.removeEventListener) {
+			this.scrollTarget.removeEventListener('scroll', this, false);
+		} else {
+			this.scrollTarget.detachEvent('scroll', this, false);
+		}
+
+		window.removeEventListener('orientationchange', this, false);
+	},
+
+	addEventListener: function() {
+		if (this.scrollTarget.addEventListener) {
+			this.scrollTarget.addEventListener('scroll', this, false);
+		} else {
+			this.scrollTarget.attachEvent('scroll', this, false);
+		}
+
+		window.addEventListener('orientationchange', this, false);
+	},
+
+	handleEvent: function(e) {
+		switch (e.type) {
+			case 'scroll':
+				this.scrollEventHandler(e);
+				break;
+			case 'orientationchange':
+				this.orientationChangeEventHandler(e);
+				break;
+		}
+	}
+};
+
+naver_corp_da.activeViews = naver_corp_da.activeViews || {};
+
+naver_corp_da.clearActiveViews = function() {
+	var target = naver_corp_da.activeViews;
+	for (var i in target) {
+		if (target.hasOwnProperty(i) && !!target[i]) {
+			target[i].clearActiveView();
+			target[i] = null;
+		}
+	}
+};
+
+/******************************************	ActiveView ******************************************/
+
+(function run() {
+	try {
+		if (!window.getComputedStyle) {
+			window.daGetComputedStyle = function(el) {
+				return el.currentStyle;
+			}
+		} else {
+			window.daGetComputedStyle = window.getComputedStyle;
+		}
+
+		// target parents 순회
+		function checkParents(target, action) {
+			while (target) {
+				action(target);
+				target = target.parentNode;
+			}
+		};
+
+		// 유효노출 시 parent의 display is none, visibility is hidden과 광고 dom의 null 여부를 판단한다.
+		function validActiveView(sDivId) {
+			var judgeTheSituation;
+
+			try {
+				judgeTheSituation = [9, 9]; // index 0: parents display check, index 1: parents visibility hidden check, index 2: da dom null
+				var target = NBP_CORP.$(sDivId);
+
+				if (target === null) {
+					judgeTheSituation[1] = 0;
+				} else {
+					if (window.daGetComputedStyle(target, null).display.toLowerCase() === 'none' || window.daGetComputedStyle(target, null).visibility.toLowerCase() === 'hidden') {
+						judgeTheSituation[1] = 0;
+					} else {
+						judgeTheSituation[1] = 1;
+					}
+
+					// 광고와 관련된 Elements 순회
+					checkParents(target.parentNode, function action(el) {
+						if (el.nodeType == 1) {
+							judgeTheSituation[0] = (judgeTheSituation[0] === 1 || judgeTheSituation[0] === 9) ? ((window.daGetComputedStyle(el, null).display.toLowerCase() === 'none') ? 0 : 1) : judgeTheSituation[0];
+
+							judgeTheSituation[0] = (judgeTheSituation[0] === 1 || judgeTheSituation[0] === 9) ? ((window.daGetComputedStyle(el, null).visibility.toLowerCase() === 'hidden') ? 0 : 1) : judgeTheSituation[0];
+						}
+					});
+				}
+			} catch (e) {
+				judgeTheSituation = [0, 0];
+			}
+
+			return judgeTheSituation;
+		}
+
+		var da_dom_id = 'adw_da'.trim();
+		var uId = (da_dom_id.length > 0) ? da_dom_id : (typeof nbp_ad !== 'undefined') ? nbp_ad.mobilenetwork.ad_div_id : 'adw_da';
+		var tarEl = NBP_CORP.$(uId);
+
+		var util = naver_corp_da.Util ? new naver_corp_da.Util() : new NBP_CORP.Nimp();
+
+		if (tarEl) {
+			// 광고 DIV 하위 요소 삭제
+			tarEl.innerHTML = "";
+
+			// 광고 접기
+			var sRootDivId = "container_" + uId;
+			var eRootDiv = (document.querySelector('[data-da="' + sRootDivId + '"]'));
+			eRootDiv = (eRootDiv) ? eRootDiv : tarEl;
+			eRootDiv.style.height = '0px';
+
+			// target 하위 노드 순회
+			function tour(target, action) {
+				var stack, curr, i;
+
+				try {
+					if (target) {
+						//최초 스택을 생성한다.
+						if (target.length) { //리스트인 경우
+							stack = [target];
+						} else {
+							//리스트가 아니면 강제로 배열화시킴
+							stack = [
+								[target]
+							];
+						}
+
+						//스택을 해소할때까지 루프
+						while (curr = stack.pop()) {
+							//해당 스택의 길이만큼 루프
+							i = curr.length;
+							while (i--) {
+								//개별 요소 action처리
+								action(curr[i]);
+								//자식이 있다면
+								if (curr[i].childNodes && curr[i].childNodes.length) {
+									//스택에 추가한다!
+									stack.push(curr[i].childNodes);
+								}
+							}
+						}
+					}; // end of tour
+
+				} catch (e) {
+					// scouter logging
+					naver_corp_da.scouters["adw_da".trim() || "adw_da"].collectError(e);
+				}
+			}; // end of tour
+
+			// 광고와 관련된 Elements 순회하면서 style, css 제거
+			tour(eRootDiv, function action(el) {
+				if (el.nodeType == 1) {
+					el.removeAttribute('class');
+					el.removeAttribute('style');
+				}
+			});
+
+			if (naver_corp_da.setDaRequest) naver_corp_da.setDaRequest();
+
+			// da_scroll_target : 지식인 태블릿 가로모드 대응 시, 선언되는 객체. da_scroll_target.targetEl에 스크롤이 될 div 엘리먼트가 셋팅됨
+			var scroll_target = (typeof da_scroll_target !== 'undefined') ? da_scroll_target.targetEl : window;
+			var orientation_change_time = 500;
+
+			var callback = function() {
+				try {
+					var eid = '';
+					if (validActiveView(uId).join('') === '11') {
+						eid = 'V900';
+						naver_corp_da.activeViews[uId].removeEventListener();
+					} else {
+						eid = 'V000';
+					}
+
+					var url = "http://mv.veta.naver.com/fxview?eu=EU10000083&ac=7435812&src=3052218&eid=" + eid + "&tb=&rk=WSb5ZQpjaZIAAH2QbtIAAAOd&eltts=eu6ktCwiMZ5inPth9RbA5A%3D%3D&evtcd=V900&x_ti=824";
+
+					util.log(url);
+				} catch (e) {
+					// scouter logging
+					naver_corp_da.scouters["adw_da".trim() || "adw_da"].collectError(e);
+				}
+			};
+
+			naver_corp_da.activeViews[uId] = naver_corp_da.activeViews[uId] || null;
+
+			if (naver_corp_da.activeViews[uId]) {
+				naver_corp_da.activeViews[uId].clearActiveView();
+				naver_corp_da.activeViews[uId] = null;
+			}
+
+			naver_corp_da.activeViews[uId] = new naver_corp_da.ActiveViewEmpty({
+				adDiv: tarEl,
+				scrollTarget: scroll_target,
+				orientationChangeTime: orientation_change_time,
+				callback: callback
+			});
+
+			naver_corp_da.activeViews[uId].checkActiveView();
+
+			try {
+				if (typeof sessionStorage !== "undefined" && tarEl.getAttribute("data-state-type") == "persist") {
+					sessionStorage.removeItem(da_dom_id);
+				}
+			} catch (e) {
+
+			}
+		}
+	} catch (e) {
+		// scouter logging
+		naver_corp_da.scouters["adw_da".trim() || "adw_da"].collectError(e);
+	}
+})();

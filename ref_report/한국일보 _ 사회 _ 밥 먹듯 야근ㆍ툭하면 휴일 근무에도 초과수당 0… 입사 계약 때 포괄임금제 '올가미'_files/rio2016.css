@@ -1,0 +1,143 @@
+@charset 'utf-8';
+/* 네비 */
+/* 상단 네비 아이콘 관련 */
+.header .headerCon .inCon .navi > article.menu{position:relative;float:left;}
+.header .headerCon .inCon .navi > article.menu > ul{overflow:hidden;padding:0;}
+.header .headerCon .inCon .navi > article.menu > ul > li{float:left;padding:16px 23px 0 0;}
+.header .headerCon .inCon .navi > article.menu > ul > li > a{color:#151515;font-weight:600;font-size:16px;letter-spacing:-0.1em;}
+.header .headerCon .inCon .navi > article.menu > ul > li.on a{color:#00592d;}
+.header .headerCon .inCon .navi > article.menu > ul > li:last-child{padding:0;margin-top:0;}
+.header .headerCon .inCon .navi > article.menu > ul > li.naviOnly{padding:13px 15px 0 0;}
+
+/* 메인배너 */
+/* 올림픽 전까지 사용하는 배너 css */
+.container .mainCon .mainBn .l_Banner{position:relative;float:left;cursor:pointer}
+.container .mainCon .mainBn .l_Banner .count_tx{position:absolute;top:32px;right:140px;font-size:24px;color:#fff100}
+
+/* 올림픽 기간 내 사용하는 배너 css */
+.container .mainCon .mainBn .l_Banner.type2 .count_tx{right:405px;color:#004a97;}
+.container .mainCon .mainBn .l_Banner.type2 .count_tx.type2{right:210px;width:115px;color:#ff0090;}
+.container .mainCon .mainBn .l_Banner.type2 .medal_count{color:#fff;font-size:18px;}
+.container .mainCon .mainBn .l_Banner.type2 .medal_count > span{position:absolute;top:37px;right:176px;display:block;width:20px;height:23px;text-align:center;}
+.container .mainCon .mainBn .l_Banner.type2 .medal_count > span.nth2{right:131px;}
+.container .mainCon .mainBn .l_Banner.type2 .medal_count > span.last{right:87px;}
+
+/* 리우특집페이지 */
+.rio_container{padding:107px 0;min-width:960px;background:#f5f5f5 url(../rio_img/bg_bottom.png) repeat-x bottom;}
+.rio_top{background:url(../rio_img/bg_visual.jpg) no-repeat center 0;}
+.rio_visual{position:relative;width:960px;margin:0 auto;}
+.rio_visual .dday_count{position:absolute;top:132px;left:505px;font-size:24px;color:#fff100;}
+.rio_visual .visual_box{position:absolute;bottom:17px;right:80px;width:205px;height:189px;background:url(../rio_img/visual_box.png) no-repeat}
+.rio_visual .visual_box ul > li{height:27px;margin:14px 0 18px;}
+.rio_visual .visual_box ul > li > a{padding-left:40px;font-size:18px;color:#c6edff;background:url(../rio_img/box_arrow.png) no-repeat 14px -26px;}
+.rio_visual .visual_box ul > li > a:hover{color:#fff;background-position:14px 6px;}
+
+/* 개막 후 상단 css */
+.open_title_dday{position:relative;}
+.open_title_dday .champ_dday{position:absolute;top:45px;right:45px;font-size:32px;color:#fff100;}
+.open_title_dday .champ_dday span{font-weight:bold;}
+.open_rank_view{width:960px;height:334px;background:url(../rio_img/rio_open_bg.png) no-repeat 0 0;}
+.open_rank_view:after{content:"";display:block;clear:both;}
+.open_rank_view .rank_korea{float:left;position:relative;width:346px;height:334px;}
+.open_rank_view .rank_korea .total_ranking{position:absolute;top:27px;right:78px;color:#ff0090;font-size:48px;}
+.open_rank_view .rank_korea .medal_count li{position:absolute;bottom:120px;left:70px;width:28px;text-align:center;font-size:24px;color:#fff;}
+.open_rank_view .rank_korea .medal_count li.nth2{left:167px;}
+.open_rank_view .rank_korea .medal_count li.last{left:264px;}
+
+.open_rank_view .rank_list{float:left;width:614px;height:334px;padding:0 40px;}
+.open_rank_view .rank_list .rank_list_table{width:100%;margin-top:60px;border-top:2px solid #2b5366;}
+.open_rank_view .rank_list .rank_list_table tr td{padding:10px 0 11px;text-align:center;color:#fff;font-size:16px;border-bottom:1px solid #2b5366;}
+.open_rank_view .rank_list .rank_list_table tr.last td{border-bottom:0;}
+.open_rank_view .rank_list .rank_list_table tr td.rank{color:#ff0090;}
+.open_rank_view .rank_list .rank_list_table tr td.state{vertical-align:bottom;}
+.open_rank_view .rank_list .rank_list_table tr td.country{text-align:left;}
+.open_rank_view .rank_list .rank_list_table tr td.gold{color:#ebd01c;}
+.open_rank_view .rank_list .rank_list_table tr td.silver{color:#e5e5e5;}
+.open_rank_view .rank_list .rank_list_table tr td.bronze{color:#b28850;}
+
+.rio_content{background:url(../rio_img/bg_con.jpg) no-repeat center 0;}
+.rio_con{width:960px;margin:0 auto;background:#fff;}
+.rio_con:after{content:"";display:block;clear:both;}
+.rio_con.rio_ban{border:0;min-height:200px;text-align:center;line-height:200px;}
+.container.rio_container .centerCon{padding:20px 25px;border-top:5px solid #e3e3e3;}
+.container.rio_container h4{letter-spacing:0;}
+.container.rio_container .rio_h4Tit{border-bottom:3px solid #e3e3e3;}
+.container.rio_container .rio_h4Tit img{width:26px;margin:0 3px 0 0;}
+.container.rio_container .h4Tit_sub{clear:both;max-width:960px;margin:0;padding:0px 6px 10px;border-top:0;}
+.container.rio_container .h4Tit_sub.type2{padding:15px 6px}
+.container.rio_container .h4Tit_sub img{margin:-5px 3px 0 0;}
+.container.rio_container .h4Tit_sub p{top:5px;right:10px;}
+.container.rio_container .h4Tit_sub.type2 p{top:20px;}
+.container.rio_container .mainCon .centerCon{width:960px;}
+.container.rio_container .interviewGallery .bigCon{height:370px;}
+.container.rio_container .interviewGallery .bigCon p:last-child{padding:16px 12px;}
+.container.rio_container .interviewGallery .Gallerylist{height:370px;}
+.container.rio_container .interviewGallery .Gallerylist li{height:179px;}
+.container.rio_container .interviewGallery .Gallerylist li p:last-child{padding:10px 5px 7px;}
+.container.rio_container .mainCon .centerCon .sliderBanner .bannerCon .sumList ul li p:nth-child(2){width:213px;}
+
+
+/* quiz */
+.page_quiz_wrap{width:960px;margin:1% auto 2%;overflow:hidden;}
+.page_quiz_wrap:after{content:"";display:block;clear:both;}
+.page_quiz_wrap .page_quiz_vi{position:relative;float:left;width:487px;height:393px;}
+.page_quiz_wrap .page_quiz{float:left;padding:25px 20px 20px;width:473px;height:393px;background:#fff;border:9px solid #2096dc;border-left:0;}
+
+.page_quiz_wrap_s{width:640px;}
+.page_quiz_wrap_s .page_quiz_vi{width:295px;height:377px;}
+.page_quiz_wrap_s .ok_btn_quiz{bottom:56%;}
+.page_quiz_wrap_s .ok_btn_quiz img{width:224px;}
+.page_quiz_wrap_s .page_quiz{width:345px;height:377px;padding:20px 8px 0;}
+.page_quiz_wrap_s .page_quiz .check_ok label{font-size:13px;}
+.page_quiz_wrap_s .page_quiz .event_ok img{width:100px;}
+
+.page_quiz_wrap_s .page_quiz .quiz_que .que_day{top:-20%;}
+
+
+/* quiz 관련 */
+.rio_quiz_wrap{max-width:640px;min-width:320px;text-align:center;}
+.mo_quiz_vi{position:relative;}
+.ok_btn_quiz{position:absolute;bottom:44%;left:0;right:0;display:inline-block;vertical-align:middle;text-align:center;}
+.ok_btn_quiz img{display:inline-block;}
+.ok_btn_quiz:after{content:"";height:100%;display:inline-block;vertical-align:middle;}
+.mo_page_bg{padding:30px 30px 0;background:url(../event_img/mo_bg_line.jpg) repeat-y;background-size:contain;}
+.quiz_que{position:relative;width:100%;height:65px;background:url(../event_img/bg_quiz_q.jpg) no-repeat 0 0;background-size:cover;}
+.quiz_que .que_day{position:absolute;top:-10%;left:-1%;right:0;min-height:20px;margin-right:60%;border:3px solid #00a1e9;border-radius:30px 30px;background:#fff;text-align:center;color:#00a1e9;font-size:12px;line-height:145%;}
+.quiz_que .que_c{position:absolute;top:0;bottom:0;left:0;right:0;display:block;text-align:center;background:url(../event_img/bg_quiz_box_q.png) no-repeat right bottom;background-size:40px 40px;}
+.quiz_que .que_c:after{content:"";height:100%;display:inline-block;vertical-align:middle;}
+.quiz_que .que_c .que_cc{display:inline-block;width:95%;font-size:16px;color:#fff;vertical-align:middle;}
+.quiz_a:after{content:"";display:block;clear:both;}
+.quiz_a li{width:100%;height:45px;background:url(../event_img/bg_quiz_a.jpg) no-repeat 0 0;background-size:cover;box-sizing:border-box;border-top:10px solid #fff;}
+.quiz_a li > .quiz_box{position:relative;display:block;width:100%;height:100%;cursor:pointer;background:url(../event_img/bg_quiz_box_a.png) no-repeat right bottom;background-size:40px 40px;}
+.quiz_a li > .quiz_box .quiz_num{position:absolute;top:-6px;left:-6px;display:block;width:30px;height:30px;background:url(../event_img/question_num.png) no-repeat -51px 0;background-size:cover;}
+.quiz_a li:nth-child(2) > .quiz_box .quiz_num{background-position:-103px 0;}
+.quiz_a li:nth-child(3) > .quiz_box .quiz_num{background-position:-154px 0;}
+.quiz_a li:nth-child(4) > .quiz_box .quiz_num{background-position:-205px 0;}
+.quiz_a li > .quiz_box .question_qu .question_quu{width:95%;font-size:14px;}
+.quiz_a li > .quiz_box.check .quiz_num{background-position:0 0;}
+.quiz_a li > .quiz_box.check .question_qu .question_quu{color:#fff;}
+.quiz_a li > .quiz_box .question_qu{position:absolute;top:0;left:0;bottom:0;right:0;display:block;text-align:center;}
+.quiz_a li > .quiz_box .question_qu:after{content:"";height:100%;display:inline-block;vertical-align:middle;}
+.quiz_a li > .quiz_box .question_qu .question_quu{display:inline-block;width:95%;color:#abe2ff;vertical-align:middle;font-size:14px;}
+.check_ok{margin:3% 0 0;}
+.check_ok #ev_check{width:15px;height:15px;vertical-align:-2px;border:0;padding:0;margin:0;}
+.check_ok label{font-size:15px;color:#959595;letter-spacing:-1px;}
+.event_ok{display:inline-block;margin:5% 0 0;}
+.event_ok img{width:120px;}
+
+
+@media all and (max-width:1279px){
+	.container.rio_container .centerCon .cardNews ul li:nth-child(3),
+	.container.rio_container .centerCon .cardNews ul li:nth-child(6),
+	.container.rio_container .centerCon .cardNews ul li:nth-child(9),
+	.container.rio_container .centerCon .cardNews ul li:nth-child(12){margin-right:6.5px;}
+	.container.rio_container .mainCon .centerCon .sliderBanner{width:894px;}
+	.container.rio_container .mainCon .centerCon .sliderBanner .bannerCon .sumList{width:342px;}
+	.container.rio_container .mainCon .centerCon .sliderBanner .bannerCon .sumList ul li p:nth-child(2){display:block;}
+	.container.rio_container .interviewGallery{width:894px;}
+	.container.rio_container .interviewGallery .Gallerylist{width:450px;}
+	.container.rio_container .interviewGallery .Gallerylist li:nth-child(2),
+	.container.rio_container .interviewGallery .Gallerylist li:nth-child(4){display:block;}
+	.container.rio_container .interviewGallery .Gallerylist li:nth-child(1),
+	.container.rio_container .interviewGallery .Gallerylist li:nth-child(3){border-right:1px solid #ddd;}
+}

@@ -1,0 +1,14 @@
+/**/ window.haniSnsCollector.getFacebook({
+   "share": {
+      "comment_count": 0,
+      "share_count": 2329
+   },
+   "og_object": {
+      "id": "1213746685315021",
+      "description": "[\ubc25&\ubc95 / \ud310\uacb0 \uccb4\ud06c] \r\n\uc694\uc591\ubcf4\ud638\uc0ac \ub4f1\uc5d0\uac8c \ud3ec\uad04\uc784\uae08\uc81c\ub294 \ubb34\ud6a8\r\n\uc218\ub2f9 \uc0c1\uad00\uc5c6\uc774 \ucd1d\uc561 \uadfc\ub85c\uacc4\uc57d\r\n\uace0\uc6a9\uc8fc \ucc98\ubc8c\u00b73\ub144\uce58 \uc18c\uae09 \uc9c0\uae09",
+      "title": "\ucd08\uacfc\uc218\ub2f9 \uc548 \uccd0\uc8fc\ub294 \u2018\ud3ec\uad04\uc784\uae08\u2019\uc740 \ubd88\ubc95\uc785\ub2c8\ub2e4.",
+      "type": "article",
+      "updated_time": "2017-05-24T08:08:08+0000"
+   },
+   "id": "http://www.hani.co.kr/arti/society/society_general/762888.html"
+});
